@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Level mapname="Introduction" maptype="Cut Scene: Static" maxplayers="1" musictrack="" winAura="0" nextbattle="First Battle" saveable="true" saveCheck="false" campaign="Secret Jam" lastEdited="8/24/2025 1:56:39 PM">
+<Level mapname="Introduction" maptype="Cut Scene: Static" maxplayers="1" musictrack="" winAura="0" nextbattle="First Battle" saveable="true" saveCheck="false" campaign="Secret Jam" lastEdited="8/24/2025 2:29:08 PM">
 
 	<Narration> -DIA:Introduction-</Narration>
 
@@ -31,8 +31,16 @@
 	</Menu>
 
 	<Dialogue trigger="None/" convID="Introduction" r="false">
-		<Branch num="0" name="">/This is the dialogue that happens at the start of the campaign.
-			<Reply>Continue/NextScene</Reply>
+		<Branch num="0" name="">/This is the dialogue that happens at the start of the campaign. Would you like to add your custom characters to your roster?
+			<Action>Run/Initialize_Try</Action>
+			<Reply>No, play with only the premade campaign characters./NextScene</Reply>
+			<Reply>Yes, add my custom characters to the roster./NextBranch</Reply>
+		</Branch>
+		<Branch num="1" name="">/
+			<Action>CustomCharsToRoster/0,true</Action>
+			<Action>NextScene/</Action>
+			<Action>EndConvImmediately/</Action>
+			<Reply>.../NextBranch</Reply>
 		</Branch>
 	</Dialogue>
 

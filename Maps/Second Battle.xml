@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Level mapname="Second Battle" maptype="Single Player" maxplayers="0" battleBG="" musictrack="" winAura="0" winMorale="0" lossMorale="0" nextbattle="Final Scene" defeatScene="" saveable="true" procgen="false" campaign="Secret Jam" lastEdited="8/24/2025 1:57:12 PM">
+<Level mapname="Second Battle" maptype="Single Player" maxplayers="2" battleBG="" musictrack="" winAura="0" winMorale="0" lossMorale="0" nextbattle="Final Scene" defeatScene="" saveable="true" procgen="false" campaign="Secret Jam" lastEdited="8/24/2025 2:31:10 PM">
 
-	<Army num="0" AI="false" aiProfile="Balanced" name="Army 1" color="Blue" alliedWith="" assignRoster="-1"></Army>
+	<Army num="0" AI="false" aiProfile="Balanced" name="Army 1" color="Blue" alliedWith="" assignRoster="0"></Army>
 	<Army num="1" AI="true" aiProfile="Balanced" name="Army 2" color="Red" alliedWith="" assignRoster="-1"></Army>
+	
+	<Condition>Defeat Army,0,1</Condition>
+	<Condition>Deployment,0,0</Condition>
 	
 	<Tileset>01,Grass</Tileset>
 	
@@ -23,5 +26,26 @@
 	<RowElev>1,1,1,1,1,1,1,1,1,1,1,1</RowElev>
 	<RowElev>1,1,1,1,1,1,1,1,1,1,1,1</RowElev>
 	<RowElev>1,1,1,1,1,1,1,1,1,1,1,1</RowElev>
+	
+	<Unit>0,0,FromPlayerRoster,7,3,Down,None</Unit>
+	<Unit>0,0,FromPlayerRoster,7,4,Down,None</Unit>
+	<Unit>0,0,FromPlayerRoster,7,5,Down,None</Unit>
+	<Unit>0,0,FromPlayerRoster,7,6,Down,None</Unit>
+	<Unit>0,0,FromPlayerRoster,7,7,Down,None</Unit>
+	<Unit>0,0,FromPlayerRoster,7,8,Down,None</Unit>
+	<Unit>0,1,Generate:Swordsman/Enemy////1/true/0/0,0,3,Down,None</Unit>
+	<Unit>0,1,Generate:Swordsman/Enemy////1/true/0/0,0,4,Down,None</Unit>
+	<Unit>0,1,Generate:Swordsman/Enemy////1/true/0/0,0,5,Down,None</Unit>
+	<Unit>0,1,Generate:Swordsman/Enemy////1/true/0/0,0,6,Down,None</Unit>
+	<Unit>0,1,Generate:Swordsman/Enemy////1/true/0/0,0,7,Down,None</Unit>
+	<Unit>0,1,Generate:Swordsman/Enemy////1/true/0/0,0,8,Down,None</Unit>
+
+	<Dialogue trigger="OnLoaded/" convID="Initialize" r="false">
+		<Branch num="0" name="">/
+			<Action>Run/Initialize_Try</Action>
+			<Action>EndConvImmediately/</Action>
+			<Reply>Continue./NextBranch</Reply>
+		</Branch>
+	</Dialogue>
 
 </Level>

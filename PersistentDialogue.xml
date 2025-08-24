@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PersistentDialogue desc="Dialogue and scripts that are universally available in every scene in the campaign (e.g. death monologues or scripts used in items and skills)." campaign="Secret Jam" lastEdited="8/24/2025 2:32:56 PM">
+
+	<Script>Initialize_Try
+		<Action>IfValRun/Initialized,!=,1,Initialize_Do</Action>
+	</Script>
+
+	<Script>Initialize_Do
+		<Action>SetVal/Initialized,=:1</Action>
+		<Action>Recruit/First/Sword-Er,0</Action>
+		<Action>Recruit/Second/Axe-Er,0</Action>
+		<Action>Recruit/Third/Spear-Er,0</Action>
+		<Action>Recruit/Fourth/Bow-Er,0</Action>
+		<Action>Recruit/Fifth/Mental-Er,0</Action>
+		<Action>Recruit/Sixth/Heal-Er,0</Action>
+	</Script>
+
+	<Script>AddCustomCharactersToRoster
+		<Action>CustomCharsToRoster/0,true</Action>
+	</Script>
+
+</PersistentDialogue>
