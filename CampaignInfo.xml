@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CampaignInfo>
+
+	<Name txt="Placeholder"></Name>
+	
+	<Description txt="This is the default campaign so I can copy it over"></Description>
+	
+	<FirstScene txt="Introduction"></FirstScene>
+
+</CampaignInfo>

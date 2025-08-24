@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomAssetInfo>
+	Custom voice acting for the campaign should be stored in this folder.
+	
+	All VA audio must be saved as .ogg files, easily accomplished
+	by recording them using the free, open-source audio recording and editing
+	program Audacity (https://www.audacityteam.org/).
+	
+		&gt; Within a dialogue tree, these files can be played using the PlayDialogue
+		  script action.
+	
+		&gt; Within cutscene narration, they can be played using the special character
+		  -VO:Custom/X- (where 'X' is the file name of the voice-over to be used).
+		  For example--to play a voice-over file named Intro.ogg, your narration might
+		  look something like this:
+		  
+		  I had never understood why Father didn't talk about the war...until the
+		  night of Insidia's betrayal. Then, suddenly, it made a kind of terrible sense. -VO:Custom/Intro-
+</CustomAssetInfo>

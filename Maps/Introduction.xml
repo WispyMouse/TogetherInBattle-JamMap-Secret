@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Level mapname="Introduction" maptype="Cut Scene: Static" maxplayers="1" musictrack="" winAura="0" nextbattle="" campaign="">
+  <Narration>To edit this text, click the Narration button above.-NL-To change the background from pure black, click the Background button above.-NL-Click Edit Rosters to assign the player's starting characters.-NL-Click New Frame to add new frames to this cut scene.-NL-Use the arrows to switch between frames for editing. -VO:Cutscene Editor Intro-| -DIA:Intro- </Narration>
+  <Shop costPercent="100" salePricePercent="50" itemQuality="3" qualityVariance="2" foodCostPercent="300">Default Store
+		<Stock type="Weapons" materials="WeaponMaterials" num="1-5" chance="100">GEN:Axe</Stock><Stock type="Weapons" materials="WeaponMaterials" num="1-5" chance="100">GEN:Bow</Stock><Stock type="Weapons" materials="WeaponMaterials" num="1-5" chance="100">GEN:Crossbow</Stock><Stock type="Weapons" materials="WeaponMaterials" num="1-5" chance="100">GEN:Knife</Stock><Stock type="Weapons" materials="WeaponMaterials" num="1-5" chance="100">GEN:Lance</Stock><Stock type="Weapons" materials="WeaponMaterials" num="1-5" chance="100">GEN:Mace</Stock><Stock type="Weapons" materials="WeaponMaterials" num="1-5" chance="100">GEN:Spear</Stock><Stock type="Weapons" materials="WeaponMaterials" num="1-5" chance="100">GEN:Talwar</Stock><Stock type="Weapons" materials="WeaponMaterials" num="1-2" chance="80">GEN:Wrench</Stock><Stock type="Weapons" materials="WeaponMaterials" num="1-3" chance="40">GEN:Flail,GEN:Halberd,GEN:Javelins,GEN:Longbow,GEN:Rapier,GEN:Throwing Axes</Stock><Stock type="Armor" materials="ArmorMaterials" num="16-24" chance="100">GEN:Helm,GEN:Winged Helm,GEN:Boots,GEN:Plated Boots,GEN:Vest,GEN:Mail,GEN:Plate,GEN:Small Shield,GEN:Kite Shield</Stock><Stock type="Armor" materials="ArmorMaterials" num="1-5" chance="25">Armored Plating,Light Plating,GEN:Main Gauche,GEN:Wing Armor</Stock><Stock type="Consumables" num="0" chance="100">Bandages,Focus Pills,Mango</Stock><Stock type="Consumables" num="3-4" chance="100">Adrenaline Pills,Caffeine Pills,Eye Drops,Lead Ointment,Splint,Thermal Paste,Whetstone,Wine</Stock><Stock type="Consumables" num="1" chance="50">Novice Battle Primer,Novice Battle Primer,Novice Battle Primer,Novice Battle Primer,Novice Battle Primer,Novice Battle Primer,Intermediate Battle Primer,Intermediate Battle Primer,Intermediate Battle Primer,Expert Battle Primer</Stock><Stock type="Misc." num="1-4" chance="100">Binoculars,Bowman's Gloves,Bracing Gloves,Fur-Lined Cloak,Grapple Chain,Runner's Cleats,Shadow Cloak,Steamthopter</Stock><Stock type="Misc." num="1" chance="50">Snare Kit,Satchel Charge</Stock><Stock type="Misc." num="1" chance="40">Blood Orb,Blood Orb,Black Orb,Blue Orb,Orange Orb,White Orb,Energy Orb,Energy Orb,Power Orb,Power Orb,Swift Orb,Foreseeing Orb,Crystal Orb,Rejuvenation Orb,Azure Orb</Stock><Stock type="Food" num="0" chance="100">10,20,50,100,240</Stock><!-- num="0" means "generate each item listed exactly once"	--></Shop>
+  <Menu txt="This is a menu! Place it in a frame of your cut scene--when that frame is reached, the player will see this message and buttons below it.">Default Menu
+		<Btn name="Button 1" explanation="What's this do?|Clicking this runs the DoNothing script." runScript="DoNothing"></Btn><Btn name="Button 2" explanation="What's this do?|Clicking this runs the CloseMenu script." runScript="CloseMenu"></Btn></Menu>
+  <Dialogue trigger="OnTurn/0" convID="Intro">
+    <Branch num="0">
+		This is dialogue./Click the Edit Dialogue button above, then click the box containing branch 0 to edit!
+		<Action>Run/StartGameValues</Action><Reply>Enough of that--time for a new scene!/NextScene</Reply></Branch>
+    <Branch num="1">
+		Another branch./Did you see how branch 0 has a reply of the **NextScene** type? NextScene replies advance the game to the scene you specify as Next Scene in the Scene Settings. Experiment with different reply types to change how conversations proceed!
+		<Reply>Let's talk some more./NextBranch</Reply><Reply>I'm done with this dialogue./EndConv</Reply></Branch>
+    <Branch num="2">
+		Yet another branch./Notice the StartGameValues script on the right? Scripts are bundles of script actions--every script action you can put in dialogue, you can also put into a script! Running a script makes every script action in the script execute, in order. Click an action box to edit it!
+		<Reply>Yeah, we're done./EndConv</Reply></Branch>
+  </Dialogue>
+  <Script>StartGameValues
+    <Action>SetStartDate/1,1,4452</Action><Action>SetAura/=:2500</Action><Action>SetFood/=:100</Action><Action>SetList/WeaponMaterials,Bronze|Iron|Steel|Duoterre</Action><Action>SetList/ArmorMaterials,Leather|Boiled Leather|Wood|Bronze|Iron|Steel</Action><Action>SetList/RecruitableSpecies,Human|Human|Human|Human|Human|Human|Lissit|Lissit|Spriggat|Shadowling|Golem|Spirit</Action><Action>SetStr/TeamName,The Good Guys</Action></Script>
+  <Script>DoNothing
+  </Script>
+  <Script>CloseMenu
+		<Action>HideMenu/</Action></Script>
+</Level>

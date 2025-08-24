@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomAssetInfo>
+	Custom static portraits can be saved in subfolders within this folder, then selected as custom portraits for your campaign's characters.
+	
+	These portraits must be saved as PNG files. (Recommended dimensions: 512 x 512, 1024 x 1024, or something similar. If the width and height are not
+	equal, your portrait may appear distorted or fail to load in the correct location!)
+	
+	Unlike the game's dynamic portraits, static portraits like these are just a single layer with all features fully baked in.
+	This means that they will not support changing palette, facial expressions, clothing, or other aspects on the fly. To change a static portrait's
+	expression, clothing, or other features, a suitable variant of the portrait will need to exist in a separate image; that variant must then be loaded 
+	at runtime using the AddPortrait script action.
+	
+	You can add a character's custom portrait in dialogue as normal by supplying the character's name in AddPortrait; however, to add
+	a variant not assigned as a character's default portrait, use the shortcut 'Custom:' to tell the game to look inside the Portraits folder.
+	Follow this with the subfolder name, a backslash, and finally the filename of the variant portrait (including its .png file extension).
+	
+	FOR EXAMPLE: suppose you have a folder called Hero inside your campaign's Portraits folder containing portrait images for the character Hero.
+	Suppose to wanted to load the variant portrait image HeroMad.png from that folder as a dialogue portrait. You would use the following script action:   
+	
+	AddPortrait   
+	Custom:Hero\HeroMad.png
+</CustomAssetInfo>
