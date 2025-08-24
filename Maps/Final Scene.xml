@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Level mapname="Final Scene" maptype="Cut Scene: Static" maxplayers="1" musictrack="" winAura="0" nextbattle="" saveable="true" saveCheck="true" campaign="Secret Jam" lastEdited="8/24/2025 1:55:54 PM">
+
+	<Narration> -DIA:Finish-</Narration>
+
+	<Dialogue trigger="None/" convID="Finish" r="false">
+		<Branch num="0" name="">/This is the dialogue that shows at the end of the campaign.
+			<Reply>Finish/NextScene</Reply>
+		</Branch>
+	</Dialogue>
+
+</Level>

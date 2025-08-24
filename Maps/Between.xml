@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Level mapname="Between" maptype="Cut Scene: Static" maxplayers="1" musictrack="" winAura="0" nextbattle="Second Battle" saveable="true" saveCheck="true" campaign="Secret Jam" lastEdited="8/24/2025 1:56:52 PM">
+
+	<Narration> -DIA:Between Start-</Narration>
+
+	<Dialogue trigger="None/" convID="Between Start" r="false">
+		<Branch num="0" name="">/This is the dialogue that plays between scenes!
+			<Reply>Continue/NextScene</Reply>
+		</Branch>
+	</Dialogue>
+
+</Level>
