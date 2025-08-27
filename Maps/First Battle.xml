@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Level mapname="First Battle" maptype="Single Player" maxplayers="2" battleBG="" musictrack="" winAura="0" winMorale="0" lossMorale="0" nextbattle="Between" defeatScene="" saveable="true" procgen="false" campaign="Secret Jam" lastEdited="8/26/2025 8:06:31 PM">
+<Level mapname="First Battle" maptype="Single Player" maxplayers="2" battleBG="" musictrack="" winAura="0" winMorale="0" lossMorale="0" nextbattle="Between" defeatScene="" saveable="true" procgen="false" campaign="Secret Jam" lastEdited="8/26/2025 8:25:58 PM">
 
 	<Army num="0" AI="false" aiProfile="Balanced" name="Army 1" color="Blue" alliedWith="" assignRoster="0"></Army>
 	<Army num="1" AI="true" aiProfile="Balanced" name="Army 2" color="Red" alliedWith="" assignRoster="-1"></Army>
@@ -21,8 +21,10 @@
 	<Row>04.01,04.01,04.01,04.01,01.03,01.01,01.01,01.01,01.01,01.01,01.01,01.01,02.01,01.01,01.0e,01.0e</Row>
 	<Row>04.01,04.01,04.01,04.01,01.06,01.02,01.02,01.0e,01.0e,01.01,01.01,01.01,02.01,03.0L,03.01,03.01</Row>
 	<Row>04.01,04.01,04.01,04.01,04.01,04.01,04.01,03.0b,03.01,05.0q,05.01,05.1k,03.0N,03.0U,03.01,03.01</Row>
-	<Row>04.01,04.01,04.01,04.01,04.01,04.01,04.01,03.0e,03.0a,03.01,05.0n,05.0o,03.01,03.01,03.01,03.01</Row>
-	<Row>04.01,04.01,04.01,04.01,04.01,04.01,04.01,04.01,04.01,04.01,05.0b,05.0o,03.01,03.01,03.01,03.01</Row>
+	<Row>04.01,04.01,04.01,04.01,04.01,04.01,04.01,03.0e,03.0a,03.01,05.0n,05.0x,05.0p,05.0p,05.0p,05.0p</Row>
+	<Row>04.01,04.01,04.01,04.01,04.01,04.01,04.01,04.01,04.01,04.01,05.0b,05.01,05.01,05.01,05.01,05.01</Row>
+	
+	<Light type="Point Light" size="2" intensity="1.5" y="4" x="6" A="1" R="1" G="1" B="1" animType="Static" direction="Up"></Light>
 	
 	<RowElev>1,1,1,0,1,1,1,1,1,1,1,1,1,1,1,1</RowElev>
 	<RowElev>0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1</RowElev>
@@ -45,7 +47,8 @@
 	<Unit>0,99,CastleWallNE,2,4,None,None</Unit>
 	<Unit>0,99,DoorWoodVertical,3,4,None,None</Unit>
 	<Unit>0,99,CastleWallVertical,4,4,None,None</Unit>
-	<Unit>0,99,Altar,4,6,None,None</Unit>
+	<Unit>0,99,RugTurq,4,6,None,None</Unit>
+	<Unit trigger="UseOnce,Get Lantern">0,99,Altar,4,6,None,None</Unit>
 	<Unit>0,99,Rug9TL,4,13,None,None</Unit>
 	<Unit>0,99,Rug9T,4,14,None,None</Unit>
 	<Unit>0,99,Rug9TR,4,15,None,None</Unit>
@@ -71,9 +74,9 @@
 	<Unit>0,0,FromPlayerRoster,9,1,Down,None</Unit>
 	<Unit>0,0,FromPlayerRoster,9,2,Down,None</Unit>
 	<Unit>0,0,FromPlayerRoster,9,3,Down,None</Unit>
-	<Unit>0,1,Generate:Spearman/Northmost Mooks////1/true/0/0,0,4,Down,None</Unit>
-	<Unit>0,1,Generate:Spearman/Northmost Mooks////1/true/0/0,0,5,Down,None</Unit>
-	<Unit>0,1,Generate:Spearman/Northmost Mooks////1/true/0/0,0,6,Down,None</Unit>
+	<Unit tag="Add,AggroGroup,2">0,1,Generate:Spearman/Northmost Mooks////1/true/0/0,0,4,Down,None</Unit>
+	<Unit tag="Add,AggroGroup,2">0,1,Generate:Spearman/Northmost Mooks////1/true/0/0,0,5,Down,None</Unit>
+	<Unit tag="Add,AggroGroup,2">0,1,Generate:Spearman/Northmost Mooks////1/true/0/0,0,6,Down,None</Unit>
 	<Unit>0,1,Generate:Cryokineticist/Boss////1/true/0/0,1,14,Down,None</Unit>
 	<Unit tag="Add,AggroGroup,1">0,1,Generate:Axefighter/North Mook////1/true/0/0,4,2,Down,None</Unit>
 	<Unit tag="Add,AggroGroup,1">0,1,Generate:Axefighter/North Mook////1/true/0/0,4,3,Down,None</Unit>
@@ -84,11 +87,56 @@
 	<Unit tag="Add,AggroGroup,0">0,1,Generate:Swordsman/East Mook////1/true/0/0,8,10,Left,None</Unit>
 	<Unit tag="Add,AggroGroup,0">0,1,Generate:Swordsman/East Mook////1/true/0/0,8,11,Left,None</Unit>
 
+	<Script>Grab Lantern
+		<Action>LoadConv/Grab Lantern Dialogue</Action>
+	</Script>
+
 	<Dialogue trigger="OnLoaded/" convID="Initialize" r="false">
 		<Branch num="0" name="">/
 			<Action>Run/Initialize_Try</Action>
+			<Action>SetArea/Inside,0,5,5,15</Action>
+			<Action>SetVal/Lantern Grabbed,=:0</Action>
+			<Action>SetArea/Escape,4,5,13,15</Action>
 			<Action>EndConvImmediately/</Action>
 			<Reply>Continue./...</Reply>
+		</Branch>
+	</Dialogue>
+
+	<Dialogue trigger="OnReachingArea/Inside,-ANY-,0" convID="Inside Trigger" r="false">
+		<Branch num="0" name="">Enemy Boss/Whoa! I see you're in the inside area, so now everyone is gonna fight you.
+			<Action>AggroGroup/0</Action>
+			<Action>AggroGroup/1</Action>
+			<Action>AggroGroup/2</Action>
+			<Reply>Continue./NextBranch</Reply>
+		</Branch>
+	</Dialogue>
+
+	<Dialogue trigger="None/" convID="Grab Lantern Dialogue" r="false">
+		<Branch num="0" name="">/Wow, a lantern? How fancy.
+			<Action>RemoveList/Variable Name</Action>
+			<Action>SetVal/Lantern Grabbed,=:1</Action>
+			<Reply>Continue./NextBranch</Reply>
+		</Branch>
+	</Dialogue>
+
+	<Dialogue trigger="None/" convID="Escape With Lantern" r="true">
+		<Branch num="1" name="">/
+			<Action>IfValGoTo/Grabbed Lantern,=:1,1</Action>
+			<Action>GoTo/2</Action>
+			<Action>EndConvImmediately/</Action>
+			<Reply>.../NextBranch</Reply>
+		</Branch>
+		<Branch num="2" name="">Player Person/This is where we'll be leaving. Wait, we need the thing we came here for! Go stand next to it and interact with it!
+			<Reply>Continue./EndConv</Reply>
+		</Branch>
+		<Branch num="0" name="">Player Person/Oh wow, we've escaped!
+			<Reply>Continue./WinBattle</Reply>
+		</Branch>
+	</Dialogue>
+
+	<Dialogue trigger="None/" convID="Need Lantern To Escape" r="true">
+		<Branch num="0" name="">Player Person/This is where we'll be leaving. Wait, we need the thing we came here for! Go stand next to it and interact with it!
+			<Reply>Continue./NextBranch</Reply>
 		</Branch>
 	</Dialogue>
 
