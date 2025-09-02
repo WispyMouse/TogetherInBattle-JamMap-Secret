@@ -1,18 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
-<PersistentDialogue desc="Dialogue and scripts that are universally available in every scene in the campaign (e.g. death monologues or scripts used in items and skills)." campaign="Secret Jam" lastEdited="8/24/2025 2:32:56 PM">
+<PersistentDialogue desc="Dialogue and scripts that are universally available in every scene in the campaign (e.g. death monologues or scripts used in items and skills)." campaign="Secret Jam" lastEdited="9/2/2025 3:02:19 AM">
 
 	<Script>Initialize_Try
+		<Action>Log/Running Initialize_Try. Have we already initialized? (-VAL:Initialized-)</Action>
 		<Action>IfValRun/Initialized,!=,1,Initialize_Do</Action>
 	</Script>
 
 	<Script>Initialize_Do
 		<Action>SetVal/Initialized,=:1</Action>
-		<Action>Recruit/First/Sword-Er,0</Action>
-		<Action>Recruit/Second/Axe-Er,0</Action>
-		<Action>Recruit/Third/Spear-Er,0</Action>
-		<Action>Recruit/Fourth/Bow-Er,0</Action>
-		<Action>Recruit/Fifth/Mental-Er,0</Action>
-		<Action>Recruit/Sixth/Heal-Er,0</Action>
+		<Action>SwitchRoster/0</Action>
+		<Action>Recruit/First:SwordEr,0</Action>
+		<Action>Recruit/Second:AxeEr,0</Action>
+		<Action>Recruit/Third:SpearEr,0</Action>
+		<Action>Recruit/Fourth:BowEr,0</Action>
+		<Action>Recruit/Fifth:MentalEr,0</Action>
+		<Action>Recruit/Sixth:HealEr,0</Action>
 	</Script>
 
 	<Script>AddCustomCharactersToRoster
