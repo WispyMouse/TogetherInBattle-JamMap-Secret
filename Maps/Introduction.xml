@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Level mapname="Introduction" maptype="Cut Scene: Static" maxplayers="1" musictrack="" winAura="0" nextbattle="First Battle" saveable="true" saveCheck="false" campaign="Secret Jam" lastEdited="9/2/2025 3:01:52 AM">
+<Level mapname="Introduction" maptype="Cut Scene: Static" maxplayers="1" musictrack="" winAura="0" nextbattle="First Battle" saveable="true" saveCheck="false" campaign="Secret Jam" lastEdited="9/2/2025 3:50:09 AM">
 
 	<Narration> -DIA:Introduction-</Narration>
+	
+	<NewRoster num="0"></NewRoster>
 
 	<Shop costMultiplier="100" baseSalePrice="50" itemQuality="3" qualityVariance="2" foodCostPercent="300">Default Store
 		<Stock type="Weapons" chance="100" num="1-5" materials="WeaponMaterials">GEN:Axe</Stock>
