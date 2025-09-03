@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Level mapname="First Battle" maptype="Single Player" maxplayers="2" battleBG="" musictrack="" winAura="0" winMorale="0" lossMorale="0" nextbattle="Between" defeatScene="" saveable="true" procgen="false" campaign="Secret Jam" lastEdited="9/2/2025 4:50:45 AM">
+<Level mapname="First Battle" maptype="Single Player" maxplayers="2" battleBG="" musictrack="" winAura="0" winMorale="0" lossMorale="0" nextbattle="Between" defeatScene="" saveable="true" procgen="false" campaign="Secret Jam" lastEdited="9/3/2025 9:56:01 AM">
 
 	<Army num="0" AI="false" aiProfile="Balanced" name="Army 1" color="Blue" alliedWith="" assignRoster="0"></Army>
 	<Army num="1" AI="true" aiProfile="Balanced" name="Army 2" color="Red" alliedWith="" assignRoster="-1"></Army>
@@ -78,18 +78,17 @@
 	<Unit>0,0,FromPlayerRoster,9,1,Up,None</Unit>
 	<Unit>0,0,FromPlayerRoster,9,2,Up,None</Unit>
 	<Unit>0,0,FromPlayerRoster,9,3,Up,None</Unit>
-	<Unit tag="Add,AggroGroup,3/Add,Passve">0,1,Mook Three/,0,4,Down,None</Unit>
-	<Unit tag="Add,AggroGroup,3/Add,Passve">0,1,Mook Three/,0,5,Down,None</Unit>
-	<Unit tag="Add,AggroGroup,3/Add,Passve">0,1,Mook Three/,0,6,Down,None</Unit>
-	<Unit tag="Add,AggroGroup,3/Add,Passve">0,1,Boss/,1,14,Down,None</Unit>
-	<Unit tag="Add,AggroGroup,2/Add,Passve">0,1,Mook Two/,4,2,Down,None</Unit>
-	<Unit tag="Add,AggroGroup,2/Add,Passve">0,1,Mook Two/,4,3,Down,None</Unit>
-	<Unit tag="Add,AggroGroup,2/Add,Passve">0,1,Mook Two/,5,2,Down,None</Unit>
-	<Unit>0,1,Mook Two/,5,3,Down,None</Unit>
-	<Unit tag="Add,AggroGroup,2/Add,Passve">0,1,Mook Two/,5,3,Down,None</Unit>
-	<Unit tag="Add,AggroGroup,1/Add,Passve">0,1,Mook One/,7,11,Right,None</Unit>
-	<Unit tag="Add,AggroGroup,1/Add,Passve">0,1,Mook One/,7,13,Left,None</Unit>
-	<Unit tag="Add,AggroGroup,1/Add,Passve">0,1,Mook One/,8,12,Up,None</Unit>
+	<Unit tag="Add,AggroGroup,3/Add,Passive">0,1,Mook Three/,0,4,Down,None</Unit>
+	<Unit tag="Add,AggroGroup,3/Add,Passive">0,1,Mook Three/,0,5,Down,None</Unit>
+	<Unit tag="Add,AggroGroup,3/Add,Passive">0,1,Mook Three/,0,6,Down,None</Unit>
+	<Unit tag="Add,AggroGroup,3/Add,Passive">0,1,Boss/,1,14,Down,None</Unit>
+	<Unit tag="Add,AggroGroup,2/Add,Passive">0,1,Mook Two/,4,2,Down,None</Unit>
+	<Unit tag="Add,AggroGroup,2/Add,Passive">0,1,Mook Two/,4,3,Down,None</Unit>
+	<Unit tag="Add,AggroGroup,2/Add,Passive">0,1,Mook Two/,5,2,Down,None</Unit>
+	<Unit tag="Add,AggroGroup,2/Add,Passive">0,1,Mook Two/,5,3,Down,None</Unit>
+	<Unit tag="Add,AggroGroup,1/Add,Passive">0,1,Mook One/,7,11,Right,None</Unit>
+	<Unit tag="Add,AggroGroup,1/Add,Passive">0,1,Mook One/,7,13,Left,None</Unit>
+	<Unit tag="Add,AggroGroup,1/Add,Passive">0,1,Mook One/,8,12,Up,None</Unit>
 
 	<Script>Grab Lantern
 		<Action>LoadConv/Grab Lantern Dialogue</Action>
