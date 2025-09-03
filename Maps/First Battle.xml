@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Level mapname="First Battle" maptype="Single Player" maxplayers="2" battleBG="" musictrack="" winAura="0" winMorale="0" lossMorale="0" nextbattle="Between" defeatScene="" saveable="true" procgen="false" campaign="Secret Jam" lastEdited="9/3/2025 9:56:01 AM">
+<Level mapname="First Battle" maptype="Single Player" maxplayers="2" battleBG="" musictrack="" winAura="0" winMorale="0" lossMorale="0" nextbattle="Between" defeatScene="" saveable="true" procgen="false" campaign="Secret Jam" lastEdited="9/3/2025 10:40:01 AM">
 
-	<Army num="0" AI="false" aiProfile="Balanced" name="Army 1" color="Blue" alliedWith="" assignRoster="0"></Army>
-	<Army num="1" AI="true" aiProfile="Balanced" name="Army 2" color="Red" alliedWith="" assignRoster="-1"></Army>
+	<Army num="0" AI="false" aiProfile="Balanced" name="Seekers of Ice" color="Blue" alliedWith="" assignRoster="0"></Army>
+	<Army num="1" AI="true" aiProfile="Balanced" name="Deities of Frost" color="Red" alliedWith="" assignRoster="-1"></Army>
 	
 	<Condition>Defeat Army,0,1</Condition>
 	<Condition>Deployment,0,0</Condition>
@@ -12,33 +12,33 @@
 	
 	<Tileset>01,Castle</Tileset>
 	<Tileset>02,Water</Tileset>
-	<Tileset>03,Grass</Tileset>
-	<Tileset>04,Dirt</Tileset>
+	<Tileset>03,Dirt</Tileset>
+	<Tileset>04,Snow</Tileset>
 	<Tileset>05,Street</Tileset>
 	
 	<Row>01.01,01.01,01.01,02.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01</Row>
 	<Row>02.01,02.01,02.01,02.01,02.01,02.01,02.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01</Row>
 	<Row>03.0N,03.0N,03.0N,03.0N,01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01</Row>
-	<Row>04.01,04.01,04.01,04.01,01.03,01.01,01.01,01.01,01.01,01.01,01.01,02.01,02.01,02.01,01.01,01.01</Row>
-	<Row>04.01,04.01,04.01,04.01,01.03,01.01,01.01,01.01,01.01,01.01,01.01,01.01,02.01,01.01,01.01,01.01</Row>
-	<Row>04.01,04.01,04.01,04.01,01.03,01.01,01.01,01.01,01.01,01.01,01.01,01.01,02.01,01.01,01.0e,01.0e</Row>
-	<Row>04.01,04.01,04.01,04.01,01.06,01.02,01.02,01.0e,01.0e,01.01,01.01,01.01,01.01,03.0U,03.01,03.01</Row>
-	<Row>04.01,04.01,04.01,04.01,04.01,04.01,04.01,03.0b,03.01,05.0q,05.01,05.0o,03.01,03.01,03.01,03.01</Row>
-	<Row>04.01,04.01,04.01,04.01,04.01,04.01,04.01,03.0e,03.0a,03.01,05.0n,05.0x,05.0p,05.0p,05.0p,05.0p</Row>
-	<Row>04.01,04.01,04.01,04.01,04.01,04.01,04.01,04.01,04.01,04.01,05.0b,05.01,05.01,05.01,05.01,05.01</Row>
+	<Row>04.2R,04.2R,04.06,03.01,01.03,01.01,01.01,01.01,01.01,01.01,01.01,02.01,02.01,02.01,01.01,01.01</Row>
+	<Row>04.01,04.01,04.2Q,03.01,01.03,01.01,01.01,01.01,01.01,01.01,01.01,01.01,02.01,01.01,01.01,01.01</Row>
+	<Row>04.06,04.01,04.02,04.06,01.0c,01.01,01.01,01.01,01.01,01.01,01.01,01.01,02.01,01.01,01.01,01.01</Row>
+	<Row>04.2Q,04.01,04.01,04.2Q,01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01,04.0U,04.01,04.01</Row>
+	<Row>04.02,04.2R,04.06,04.02,04.2R,04.2R,04.2R,04.2R,04.2R,05.06,05.01,05.01,04.3D,04.01,04.01,04.01</Row>
+	<Row>04.01,04.01,04.02,04.06,04.01,04.01,04.01,04.01,04.01,04.02,05.06,05.01,05.0V,05.0N,05.0N,05.0N</Row>
+	<Row>04.06,04.01,04.01,04.2Q,04.01,04.01,04.3H,04.01,04.01,04.01,05.02,05.06,05.01,05.01,05.01,05.01</Row>
 	
 	<Light type="Point Light" size="2" intensity="1.5" y="4" x="6" A="1" R="1" G="1" B="1" animType="Static" direction="Up"></Light>
 	
-	<RowElev>1,1,1,0,1,1,1,1,1,1,1,1,1,1,1,1</RowElev>
-	<RowElev>0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1</RowElev>
-	<RowElev>1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1</RowElev>
-	<RowElev>1,1,1,1,1,1,1,1,1,1,1,0,0,0,1,1</RowElev>
-	<RowElev>1,1,1,1,1,1,1,1,1,1,1,1,0,1,1,1</RowElev>
-	<RowElev>1,1,1,1,1,1,1,1,1,1,1,1,0,1,1,1</RowElev>
-	<RowElev>1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1</RowElev>
-	<RowElev>1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1</RowElev>
-	<RowElev>1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1</RowElev>
-	<RowElev>1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1</RowElev>
+	<RowElev>2,2,2,0,2,2,2,2,2,2,2,2,2,2,2,2</RowElev>
+	<RowElev>0,0,0,0,0,0,0,2,2,2,2,2,2,2,2,2</RowElev>
+	<RowElev>1,1,1,1,1,2,2,2,2,2,2,2,2,2,2,2</RowElev>
+	<RowElev>2,2,2,1,1,1,1,1,2,2,2,0,0,0,2,2</RowElev>
+	<RowElev>2,2,2,1,1,1,2,1,2,2,2,2,0,2,2,2</RowElev>
+	<RowElev>3,2,2,2,1,1,1,1,2,2,2,2,0,2,2,2</RowElev>
+	<RowElev>3,2,2,2,1,1,1,1,1,1,1,1,1,1,1,1</RowElev>
+	<RowElev>3,3,3,2,2,2,2,2,2,2,1,1,2,1,1,1</RowElev>
+	<RowElev>3,3,3,3,2,2,2,2,2,2,2,1,1,1,1,1</RowElev>
+	<RowElev>4,3,3,3,2,2,3,2,2,2,2,2,1,1,1,1</RowElev>
 	
 	<Unit>0,99,Chest,0,0,None,None</Unit>
 	<Unit>0,99,Chest,0,2,None,None</Unit>
@@ -48,6 +48,7 @@
 	<Unit>0,99,CastleWallHorizontal,2,2,None,None</Unit>
 	<Unit>0,99,CastleWallHorizontal,2,3,None,None</Unit>
 	<Unit>0,99,CastleWallNE,2,4,None,None</Unit>
+	<Unit>0,99,BushSnow,3,0,None,None</Unit>
 	<Unit>0,99,DoorWoodVertical,3,4,None,None</Unit>
 	<Unit>0,99,CastleWallVertical,4,4,None,None</Unit>
 	<Unit trigger="UseOnce,Get Lantern">0,99,Altar,4,6,None,None</Unit>
@@ -59,6 +60,7 @@
 	<Unit>0,99,Rug9BL,5,13,None,None</Unit>
 	<Unit>0,99,Rug9B,5,14,None,None</Unit>
 	<Unit>0,99,Rug9BR,5,15,None,None</Unit>
+	<Unit>0,99,BushSnow,6,1,None,None</Unit>
 	<Unit>0,99,CastleWallSW,6,4,None,None</Unit>
 	<Unit>0,99,CastleWallHorizontal,6,5,None,None</Unit>
 	<Unit>0,99,CastleWallHorizontal,6,6,None,None</Unit>
@@ -71,7 +73,9 @@
 	<Unit>0,99,CastleWallHorizontal,6,13,None,None</Unit>
 	<Unit>0,99,CastleWallHorizontal,6,14,None,None</Unit>
 	<Unit>0,99,CastleWallHorizontal,6,15,None,None</Unit>
+	<Unit>0,99,BoulderSnow,7,4,None,None</Unit>
 	<Unit>0,99,TableDice,7,12,None,None</Unit>
+	<Unit>0,99,EvergreenSnow,8,7,None,None</Unit>
 	<Unit>0,0,FromPlayerRoster,8,1,Up,None</Unit>
 	<Unit>0,0,FromPlayerRoster,8,2,Up,None</Unit>
 	<Unit>0,0,FromPlayerRoster,8,3,Up,None</Unit>
@@ -82,7 +86,7 @@
 	<Unit tag="Add,AggroGroup,3/Add,Passive">0,1,Mook Three/,0,5,Down,None</Unit>
 	<Unit tag="Add,AggroGroup,3/Add,Passive">0,1,Mook Three/,0,6,Down,None</Unit>
 	<Unit tag="Add,AggroGroup,3/Add,Passive">0,1,Boss/,1,14,Down,None</Unit>
-	<Unit tag="Add,AggroGroup,2/Add,Passive">0,1,Mook Two/,4,2,Down,None</Unit>
+	<Unit tag="Add,AggroGroup,2/Add,Passive">0,1,Mook Two/,4,1,Down,None</Unit>
 	<Unit tag="Add,AggroGroup,2/Add,Passive">0,1,Mook Two/,4,3,Down,None</Unit>
 	<Unit tag="Add,AggroGroup,2/Add,Passive">0,1,Mook Two/,5,2,Down,None</Unit>
 	<Unit tag="Add,AggroGroup,2/Add,Passive">0,1,Mook Two/,5,3,Down,None</Unit>
