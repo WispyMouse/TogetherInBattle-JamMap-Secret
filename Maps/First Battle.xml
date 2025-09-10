@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Level mapname="First Battle" maptype="Single Player" maxplayers="2" battleBG="" musictrack="" winAura="0" winMorale="0" lossMorale="0" nextbattle="Between" defeatScene="" saveable="true" procgen="false" campaign="Secret Jam" lastEdited="9/4/2025 5:25:52 PM">
+<Level mapname="First Battle" maptype="Single Player" maxplayers="2" battleBG="" musictrack="" winAura="0" winMorale="0" lossMorale="0" nextbattle="Between" defeatScene="" saveable="true" procgen="false" campaign="Secret Jam" lastEdited="9/9/2025 8:50:53 PM">
 
 	<Army num="0" AI="false" aiProfile="Balanced" name="Seekers of Ice" color="Blue" alliedWith="" assignRoster="0"></Army>
 	<Army num="1" AI="true" aiProfile="Balanced" name="Deities of Frost" color="Red" alliedWith="" assignRoster="-1"></Army>
@@ -35,8 +35,6 @@
 	<Row>04.01,04.01,04.02,04.06,04.01,04.01,04.01,04.01,04.01,04.02,05.06,05.01,05.0V,05.0N,05.0N,05.0N</Row>
 	<Row>04.06,04.01,04.01,04.2Q,04.01,04.01,04.3H,04.01,04.01,04.01,05.02,05.06,05.01,05.01,05.01,05.01</Row>
 	
-	<Light type="Point Light" size="2.5" intensity="8" y="2" x="6" A="1" R="0.5" G="0.6" B="1" animType="Pulse" direction="Up"></Light>
-	
 	<RowElev>2,2,2,1,1,1,1,1,1,2,2,2,2,2,2,2</RowElev>
 	<RowElev>1,2,2,2,1,3,3,3,1,2,2,2,2,1,1,1</RowElev>
 	<RowElev>1,1,1,1,1,3,5,3,1,1,1,1,1,1,1,1</RowElev>
@@ -58,7 +56,8 @@
 	<Unit>0,99,ChestRoyalAlt,0,1,None,1000 Coins/Intermediate Battle Primer/Cake</Unit>
 	<Unit>0,99,ChestRoyal,0,10,None,Intermediate Battle Primer/1000 Coins</Unit>
 	<Unit>0,99,Rug,2,6,None,None</Unit>
-	<Unit trigger="UseOnce,Get Lantern">0,99,Altar,2,6,None,None</Unit>
+	<Unit>0,99,Altar,2,6,None,None</Unit>
+	<Unit trigger="Use Once,Grab Lantern">0,99,LanternLightingAltar,2,6,None,None</Unit>
 	<Unit trigger="UseOnce,Open Altar Gate">0,99,Switch,3,1,None,None</Unit>
 	<Unit>0,99,CastleWallVertical,3,2,None,None</Unit>
 	<Unit>0,99,RugVT,3,3,None,None</Unit>
@@ -149,16 +148,22 @@
 	<Unit tag="Add,AggroGroup,2/Add,Passive">0,1,Mook Two/,11,3,Down,None</Unit>
 	<Unit tag="Add,AggroGroup,2/Add,Passive">0,1,Mook Two/,12,2,Down,None</Unit>
 	<Unit tag="Add,AggroGroup,2/Add,Passive">0,1,Mook Two/,12,3,Down,None</Unit>
-	<Unit tag="Add,AggroGroup,1/Add,Passive">0,1,Mook One/,14,11,Right,None</Unit>
+	<Unit tag="Add,AggroGroup,1/Add,Passive">0,1,Mook One/,14,11,Down,None</Unit>
 	<Unit tag="Add,AggroGroup,1/Add,Passive">0,1,Mook One/,14,13,Left,None</Unit>
 	<Unit tag="Add,AggroGroup,1/Add,Passive">0,1,Mook One/,15,12,Up,None</Unit>
 
 	<Script>Grab Lantern
+		<Action>Log/Running Grab Lantern Dialogue</Action>
 		<Action>LoadConv/Grab Lantern Dialogue</Action>
 	</Script>
 
 	<Script>Open Altar Gate
 		<Action>Unlock/6,6</Action>
+	</Script>
+
+	<Script>Give Everyone Blessing of Frost
+		<Action>RosterToList/Everyone,0,true</Action>
+		<Action>ForLoop/-ii-,0-LASTINLIST[Everyone],1,GiveItem,LIST{Everyone,-ii-},Blessing of Frost,,,true</Action>
 	</Script>
 
 	<Dialogue trigger="OnLoaded/" convID="Initialize" r="false">
@@ -181,9 +186,11 @@
 	</Dialogue>
 
 	<Dialogue trigger="None/" convID="Grab Lantern Dialogue" r="false">
-		<Branch num="0" name="">/Wow, a lantern? How fancy.
-			<Action>RemoveList/Variable Name</Action>
+		<Branch num="0" name="">-FNAME-/Wow, a lantern? How fancy.
 			<Action>SetVal/Lantern Grabbed,=:1</Action>
+			<Action>GiveItem/-FNAME-,Lantern of Frost,,,true</Action>
+			<Action>AddSpeakerPortrait/left,Quizzical</Action>
+			<Action>Run/Give Everyone Blessing of Frost</Action>
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
 	</Dialogue>
