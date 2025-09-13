@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Level mapname="First Battle" maptype="Single Player" maxplayers="2" battleBG="" musictrack="" winAura="0" winMorale="0" lossMorale="0" nextbattle="Between" defeatScene="" saveable="true" procgen="false" campaign="Secret Jam" lastEdited="9/9/2025 8:50:53 PM">
+<Level mapname="First Battle" maptype="Single Player" maxplayers="2" battleBG="" musictrack="Against the Cult" winAura="0" winMorale="0" lossMorale="0" nextbattle="Between" defeatScene="" saveable="true" procgen="false" campaign="Secret Jam" lastEdited="9/9/2025 10:26:47 PM">
 
 	<Army num="0" AI="false" aiProfile="Balanced" name="Seekers of Ice" color="Blue" alliedWith="" assignRoster="0"></Army>
 	<Army num="1" AI="true" aiProfile="Balanced" name="Deities of Frost" color="Red" alliedWith="" assignRoster="-1"></Army>
@@ -29,7 +29,7 @@
 	<Row>03.01,03.01,03.01,03.01,01.03,01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01</Row>
 	<Row>04.2R,04.2R,04.06,03.01,01.03,01.01,01.01,01.01,01.01,01.01,01.01,02.01,02.01,02.01,01.01,01.01</Row>
 	<Row>04.01,04.01,04.2Q,03.01,01.03,01.01,01.01,01.01,01.01,01.01,01.01,01.01,02.01,01.01,01.01,01.01</Row>
-	<Row>04.06,04.01,04.02,04.06,01.0c,01.01,01.01,01.01,01.01,01.01,01.01,01.01,02.01,01.01,01.01,01.01</Row>
+	<Row>04.06,04.01,04.02,04.06,01.0c,01.01,01.01,01.01,01.01,01.01,01.01,01.01,02.01,01.01,01.0C,01.0C</Row>
 	<Row>04.2Q,04.01,04.01,04.2Q,01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01,04.0U,04.01,04.01</Row>
 	<Row>04.02,04.2R,04.06,04.02,04.2R,04.2R,04.2R,04.2R,04.2R,05.06,05.01,05.01,04.3D,04.01,04.01,04.01</Row>
 	<Row>04.01,04.01,04.02,04.06,04.01,04.01,04.01,04.01,04.01,04.02,05.06,05.01,05.0V,05.0N,05.0N,05.0N</Row>
@@ -43,11 +43,11 @@
 	<RowElev>2,2,2,3,3,3,3,3,3,3,2,2,2,2,2,2</RowElev>
 	<RowElev>2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2</RowElev>
 	<RowElev>2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2</RowElev>
-	<RowElev>2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2</RowElev>
-	<RowElev>1,1,1,1,1,2,2,2,2,2,2,2,2,2,2,2</RowElev>
-	<RowElev>2,2,2,1,1,1,1,1,2,2,2,0,0,0,2,2</RowElev>
-	<RowElev>2,2,2,1,1,1,1,1,2,2,2,2,0,2,2,2</RowElev>
-	<RowElev>3,2,2,2,1,1,1,1,2,2,2,2,0,2,2,2</RowElev>
+	<RowElev>2,2,2,2,2,2,2,2,2,2,2,2,1,1,1,1</RowElev>
+	<RowElev>1,1,1,1,1,2,2,2,2,2,2,1,1,1,1,1</RowElev>
+	<RowElev>2,2,2,1,1,1,1,1,2,2,2,0,0,0,1,1</RowElev>
+	<RowElev>2,2,2,1,1,1,1,1,2,2,2,2,0,1,1,1</RowElev>
+	<RowElev>3,2,2,2,1,1,1,1,2,2,2,2,0,1,1,1</RowElev>
 	<RowElev>3,2,2,2,1,1,1,1,1,1,1,1,1,1,1,1</RowElev>
 	<RowElev>3,3,3,2,2,2,2,2,2,2,1,1,2,1,1,1</RowElev>
 	<RowElev>3,3,3,3,2,2,2,2,2,2,2,1,1,1,1,1</RowElev>
@@ -132,23 +132,23 @@
 	<Unit>0,99,BoulderSnow,14,4,None,None</Unit>
 	<Unit>0,99,TableDice,14,12,None,None</Unit>
 	<Unit>0,99,EvergreenSnow,15,7,None,None</Unit>
+	<Unit>0,0,FromPlayerRoster,14,1,Up,None</Unit>
+	<Unit>0,0,FromPlayerRoster,14,2,Up,None</Unit>
+	<Unit>0,0,FromPlayerRoster,15,0,Up,None</Unit>
 	<Unit>0,0,FromPlayerRoster,15,1,Up,None</Unit>
-	<Unit>0,0,FromPlayerRoster,15,2,Up,None</Unit>
 	<Unit>0,0,FromPlayerRoster,15,3,Up,None</Unit>
-	<Unit>0,0,FromPlayerRoster,16,1,Up,None</Unit>
-	<Unit>0,0,FromPlayerRoster,16,2,Up,None</Unit>
 	<Unit>0,0,FromPlayerRoster,16,3,Up,None</Unit>
 	<Unit tag="Add,AggroGroup,3/Add,Passive">0,1,Mook Two/,3,14,Down,None</Unit>
 	<Unit tag="Add,AggroGroup,3/Add,Passive">0,1,Boss/,5,11,Right,None</Unit>
-	<Unit tag="Add,AggroGroup,3/Add,Passive">0,1,Mook Three/,6,14,Left,None</Unit>
-	<Unit tag="Add,AggroGroup,3/Add,Passive">0,1,Mook Three/,7,4,Down,None</Unit>
+	<Unit tag="Add,AggroGroup,3/Add,Passive">0,1,Mook Three/,6,14,Up,None</Unit>
+	<Unit tag="Add,AggroGroup,3/Add,Passive">0,1,Mook Four/,7,4,Down,None</Unit>
 	<Unit tag="Add,AggroGroup,3/Add,Passive">0,1,Mook Three/,7,6,Down,None</Unit>
 	<Unit tag="Add,AggroGroup,3/Add,Passive">0,1,Mook Three/,10,8,Left,None</Unit>
 	<Unit tag="Add,AggroGroup,2/Add,Passive">0,1,Mook Two/,11,1,Down,None</Unit>
 	<Unit tag="Add,AggroGroup,2/Add,Passive">0,1,Mook Two/,11,3,Down,None</Unit>
 	<Unit tag="Add,AggroGroup,2/Add,Passive">0,1,Mook Two/,12,2,Down,None</Unit>
 	<Unit tag="Add,AggroGroup,2/Add,Passive">0,1,Mook Two/,12,3,Down,None</Unit>
-	<Unit tag="Add,AggroGroup,1/Add,Passive">0,1,Mook One/,14,11,Down,None</Unit>
+	<Unit tag="Add,AggroGroup,1/Add,Passive">0,1,Mook One/,14,11,Right,None</Unit>
 	<Unit tag="Add,AggroGroup,1/Add,Passive">0,1,Mook One/,14,13,Left,None</Unit>
 	<Unit tag="Add,AggroGroup,1/Add,Passive">0,1,Mook One/,15,12,Up,None</Unit>
 
