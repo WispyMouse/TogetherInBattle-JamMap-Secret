@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<PersistentDialogue desc="Dialogue and scripts that are universally available in every scene in the campaign (e.g. death monologues or scripts used in items and skills)." campaign="Secret Jam" lastEdited="9/2/2025 5:04:11 AM">
+<PersistentDialogue desc="Dialogue and scripts that are universally available in every scene in the campaign (e.g. death monologues or scripts used in items and skills)." campaign="Secret Jam" lastEdited="9/14/2025 3:36:38 PM">
 
 	<Script>Initialize_Try
 		<Action>Log/Running Initialize_Try. Have we already initialized? (-VAL:Initialized-)</Action>
@@ -9,8 +9,12 @@
 	<Script>Initialize_Do
 		<Action>SetVal/Initialized,=:1</Action>
 		<Action>SwitchRoster/0</Action>
-		<Action>Recruit/First:SwordEr,0</Action>
-		<Action>Recruit/Second:AxeEr,0</Action>
+		<Action>Recruit/Cowardly:Knight,0</Action>
+		<Action>Recruit/Ride:Enjoyer,0</Action>
+		<Action>Recruit/Large:Ncharge,0</Action>
+		<Action>Recruit/Jokes:Alot,0</Action>
+		<Action>Recruit/Shouty:Seraphic,0</Action>
+		<Action>Recruit/Noit:All,0</Action>
 		<Action>Run/LevelRoster</Action>
 		<Action>Log/Recruited default units.</Action>
 	</Script>

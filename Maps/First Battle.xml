@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Level mapname="First Battle" maptype="Single Player" maxplayers="2" battleBG="" musictrack="Against the Cult" winAura="0" winMorale="0" lossMorale="0" nextbattle="Between" defeatScene="" saveable="true" procgen="false" campaign="Secret Jam" lastEdited="9/9/2025 10:26:47 PM">
+<Level mapname="First Battle" maptype="Single Player" maxplayers="3" battleBG="" musictrack="Against the Cult" winAura="0" winMorale="0" lossMorale="0" nextbattle="Between" defeatScene="" saveable="true" procgen="false" campaign="Secret Jam" lastEdited="9/14/2025 3:48:52 PM">
 
 	<Army num="0" AI="false" aiProfile="Balanced" name="Seekers of Ice" color="Blue" alliedWith="" assignRoster="0"></Army>
-	<Army num="1" AI="true" aiProfile="Balanced" name="Deities of Frost" color="Red" alliedWith="" assignRoster="-1"></Army>
+	<Army num="1" AI="true" aiProfile="Balanced" name="Deities of Frost" color="Red" alliedWith="2" assignRoster="-1"></Army>
+	<Army num="2" AI="true" aiProfile="Balanced" name="Deactivated Trash" color="Black" alliedWith="1" assignRoster="-1"></Army>
 	
 	<Condition>Defeat Army,0,1</Condition>
 	<Condition>Deployment,0,0</Condition>
@@ -151,6 +152,7 @@
 	<Unit tag="Add,AggroGroup,1/Add,Passive">0,1,Mook One/,14,11,Right,None</Unit>
 	<Unit tag="Add,AggroGroup,1/Add,Passive">0,1,Mook One/,14,13,Left,None</Unit>
 	<Unit tag="Add,AggroGroup,1/Add,Passive">0,1,Mook One/,15,12,Up,None</Unit>
+	<Unit tag="Inactive">0,2,Our/Frost Golem,3,0,Down,None</Unit>
 
 	<Script>Grab Lantern
 		<Action>Log/Running Grab Lantern Dialogue</Action>
@@ -173,6 +175,7 @@
 			<Action>SetVal/Lantern Grabbed,=:0</Action>
 			<Action>SetArea/Escape,11,12,13,15</Action>
 			<Action>SetArea/Inside,9,12,5,15</Action>
+			<Action>AddStatus/Our Frost Golem,Talkable</Action>
 			<Action>EndConvImmediately/</Action>
 			<Reply>Continue./...</Reply>
 		</Branch>
@@ -212,6 +215,15 @@
 
 	<Dialogue trigger="None/" convID="Need Lantern To Escape" r="true">
 		<Branch num="0" name="">Player Person/This is where we'll be leaving. Wait, we need the thing we came here for! Go stand next to it and interact with it!
+			<Reply>Continue./NextBranch</Reply>
+		</Branch>
+	</Dialogue>
+
+	<Dialogue trigger="OnTalk/-ANY-,Our Frost Golem" convID="Activate Our Golem" r="false">
+		<Branch num="0" name="">/Oh, this is a golem. Ours now!
+			<Action>SetStat/Our Frost Golem,Army,=:0</Action>
+			<Action>RemoveStatus/Our Frost Golem,Talkable</Action>
+			<Action>Recruit/Our Frost Golem,0</Action>
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
 	</Dialogue>
