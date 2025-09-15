@@ -232,6 +232,7 @@
     <Item loadID="Riddle 7D" name="Scrap of Paper" useableWith="Quest" personalItem="false" sellable="true" consumedAfter="0" itemValue="0" commonality="0" image="Paper Scrap BR" bookContents="(4 of 4)^then back to our mountain home." description="A torn scrap of paper; something is written on it..."></Item>
   </Misc>
   <Custom>
+    <Item name="Custom Throwing Knives" useableWith="Off Hand" personalItem="false" sellable="true" addsStatus="" endsStatus="" addsTags="" grantsSkills="Juggler Knife Toss" runsScripts="" masteriesReq="Throwing Knife" consumedAfter="15" maxUses="15" itemValue="60" commonality="4" altersEquipment="" statPlus="Strength,6" image="Throwing Knife Iron" description="Set of throwing knives, well fit for the off hand."></Item>
     <Item name="Blessing of Frost" useableWith="Neck" personalItem="false" sellable="true" addsStatus="" endsStatus="" addsTags="" grantsSkills="Cryo Blast" runsScripts="" masteriesReq="" consumedAfter="0" maxUses="0" itemValue="0" commonality="0" altersEquipment="" statPlus="" image="Orb Blue" description="This character is blessed by the Lantern of Frost, and can use Cryokinetics."></Item>
     <Item name="Lantern of Frost" useableWith="Off Hand" personalItem="false" sellable="false" addsStatus="" endsStatus="" addsTags="" grantsSkills="Create Ice/Frost Armor" runsScripts="" masteriesReq="" consumedAfter="0" maxUses="0" itemValue="0" commonality="0" altersEquipment="" statPlus="" image="Torch" description="A gently glowing lantern, eminating an unsettling cold."></Item>
   </Custom>
