@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Level mapname="First Battle" maptype="Single Player" maxplayers="3" battleBG="" musictrack="Against the Cult" winAura="0" winMorale="0" lossMorale="0" nextbattle="Between" defeatScene="" saveable="true" procgen="false" campaign="Secret Jam" lastEdited="9/16/2025 8:03:28 PM">
+<Level mapname="First Battle" maptype="Single Player" maxplayers="3" battleBG="" musictrack="Against the Cult" winAura="0" winMorale="0" lossMorale="0" nextbattle="Between" defeatScene="" saveable="true" procgen="false" campaign="Secret Jam" lastEdited="9/16/2025 11:31:02 PM">
 
 	<Army num="0" AI="false" aiProfile="Balanced" name="Seekers of Ice" color="Blue" alliedWith="" assignRoster="0"></Army>
 	<Army num="1" AI="true" aiProfile="Balanced" name="Deities of Frost" color="Red" alliedWith="2" assignRoster="-1"></Army>
@@ -15,41 +15,38 @@
 	<Tileset>01,Castle</Tileset>
 	<Tileset>02,Cave</Tileset>
 	<Tileset>03,Water</Tileset>
-	<Tileset>04,Dirt</Tileset>
-	<Tileset>05,Snow</Tileset>
-	<Tileset>06,Street</Tileset>
+	<Tileset>04,Snow</Tileset>
+	<Tileset>05,Street</Tileset>
 	
 	<Row>01.01,01.01,01.01,01.01,01.01,01.0Q,02.01,02.3J,02.0M,03.01,01.01,01.01,01.01,01.01,01.01,01.01</Row>
 	<Row>01.01,01.01,01.01,01.01,01.01,01.0Q,02.01,02.3E,02.0M,03.01,01.01,01.01,01.01,01.01,01.01,01.01</Row>
 	<Row>01.01,01.01,01.01,01.01,01.01,01.0Q,02.01,02.01,02.0M,03.01,03.01,01.01,01.01,01.01,01.01,01.01</Row>
 	<Row>01.01,01.01,01.01,01.01,01.01,01.0Z,01.0R,01.0R,01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01</Row>
-	<Row>01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01</Row>
-	<Row>01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01</Row>
-	<Row>01.01,01.01,01.01,01.01,01.0a,01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01</Row>
-	<Row>04.01,04.01,04.01,04.09,01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01</Row>
-	<Row>05.2R,05.2R,05.06,04.01,04.01,01.01,01.01,01.01,01.01,01.01,01.01,03.01,03.01,03.01,01.01,01.01</Row>
-	<Row>05.01,05.01,05.2Q,04.01,04.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01,03.01,01.01,01.01,01.01</Row>
-	<Row>05.06,05.01,05.02,05.06,04.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01,03.01,01.01,01.01,01.01</Row>
-	<Row>05.2Q,05.01,05.01,05.2Q,04.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01,05.3I,05.3I,05.3I</Row>
-	<Row>05.02,05.2R,05.06,05.02,05.2R,05.03,05.01,05.01,05.01,06.1M,06.01,06.01,05.3E,05.01,05.01,05.01</Row>
-	<Row>05.01,05.01,05.02,05.06,05.01,05.01,05.01,05.01,05.01,05.02,06.06,06.01,06.0V,06.0N,06.0N,06.0N</Row>
-	<Row>05.06,05.01,05.01,05.2Q,05.01,05.01,05.3H,05.01,05.01,05.01,06.02,06.06,06.01,06.01,06.01,06.01</Row>
+	<Row>01.0C,01.0C,01.0K,01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01</Row>
+	<Row>04.01,04.01,01.0D,01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01</Row>
+	<Row>04.01,04.01,01.0G,01.0C,01.0C,01.0K,01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01</Row>
+	<Row>04.01,04.01,04.01,04.01,04.01,01.0D,01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01</Row>
+	<Row>04.01,04.01,04.01,04.01,04.01,01.0D,01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01</Row>
+	<Row>04.2R,04.06,04.01,04.01,04.01,01.0G,01.0C,01.0C,01.0C,01.01,01.01,01.01,01.01,01.01,01.01,01.01</Row>
+	<Row>04.01,04.02,04.06,04.01,04.01,04.01,04.01,04.01,04.01,05.0L,05.01,01.01,01.01,01.01,01.01,01.01</Row>
+	<Row>04.01,04.01,04.02,04.06,04.01,04.01,04.01,04.01,04.01,05.0L,05.01,05.01,01.0C,01.0C,05.01,01.0C</Row>
+	<Row>04.01,04.01,04.01,04.02,04.2R,04.06,04.01,04.01,04.01,05.0O,05.0S,05.0M,04.01,04.01,05.01,04.01</Row>
+	<Row>04.01,04.01,04.01,04.01,04.01,04.02,04.2R,04.06,04.01,04.01,05.0L,05.0V,05.0N,05.0N,05.01,05.0N</Row>
 	
-	<RowElev>2,2,2,2,2,2,2,3,2,1,2,2,2,2,2,2</RowElev>
-	<RowElev>2,2,2,2,2,2,2,3,2,1,2,2,2,2,2,2</RowElev>
-	<RowElev>2,2,2,2,2,2,2,2,2,1,1,2,2,2,2,2</RowElev>
+	<RowElev>2,2,2,2,2,2,2,3,2,1,2,2,2,2,2,4</RowElev>
+	<RowElev>2,2,2,2,2,2,2,3,2,1,2,2,2,2,2,4</RowElev>
+	<RowElev>2,2,2,2,2,2,2,2,2,1,1,2,2,2,2,4</RowElev>
+	<RowElev>2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,4</RowElev>
+	<RowElev>2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,6</RowElev>
+	<RowElev>2,2,2,2,2,2,2,2,2,2,2,2,2,4,4,6</RowElev>
+	<RowElev>2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,4</RowElev>
+	<RowElev>2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,4</RowElev>
 	<RowElev>2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2</RowElev>
-	<RowElev>2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2</RowElev>
-	<RowElev>2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2</RowElev>
-	<RowElev>2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2</RowElev>
-	<RowElev>1,1,1,2,2,2,2,2,2,2,2,1,1,1,1,1</RowElev>
-	<RowElev>2,2,2,1,1,2,1,1,2,2,2,0,0,0,1,1</RowElev>
-	<RowElev>2,2,2,1,1,2,1,1,2,2,2,2,0,1,1,1</RowElev>
-	<RowElev>3,2,2,2,1,2,1,1,2,2,2,2,0,1,1,1</RowElev>
-	<RowElev>3,2,2,2,1,2,2,2,2,2,2,2,2,2,2,2</RowElev>
-	<RowElev>3,3,3,2,2,2,2,2,2,2,1,1,2,1,1,1</RowElev>
-	<RowElev>3,3,3,3,2,2,2,2,2,2,2,1,1,1,1,1</RowElev>
-	<RowElev>4,3,3,3,2,2,3,2,2,2,2,2,1,1,1,1</RowElev>
+	<RowElev>3,3,2,2,2,2,2,2,2,2,2,2,2,2,2,2</RowElev>
+	<RowElev>3,3,3,2,2,2,2,2,2,2,2,2,2,2,2,2</RowElev>
+	<RowElev>3,3,3,3,2,2,2,2,2,2,2,2,2,2,2,2</RowElev>
+	<RowElev>3,3,3,3,3,3,2,2,2,2,2,2,2,2,2,2</RowElev>
+	<RowElev>3,3,3,3,3,3,3,3,2,2,2,2,2,2,2,2</RowElev>
 	
 	<Unit>0,99,RackSparse,0,0,None,None</Unit>
 	<Unit>0,99,Chest,0,3,None,Kite Shield/Steel Sword/Intermediate Battle Primer</Unit>
@@ -57,90 +54,110 @@
 	<Unit>0,99,CastleWallVertical,0,5,None,None</Unit>
 	<Unit>0,99,Altar,0,7,None,None</Unit>
 	<Unit trigger="Use Once,Grab Lantern">0,99,LanternLightingAltar,0,7,None,None</Unit>
+	<Unit>0,99,Chair,0,12,None,None</Unit>
+	<Unit>0,99,CandelabraLit,0,14,None,None</Unit>
+	<Unit>0,99,StairsCastle_N,0,15,None,None</Unit>
 	<Unit>0,99,ItemSack,1,0,None,Medicated Bandages/Focus Pills/Key Ring</Unit>
 	<Unit trigger="UseOnce,Armory Switch">0,99,Switch,1,4,None,None</Unit>
 	<Unit>0,99,CastleWallVertical,1,5,None,None</Unit>
+	<Unit>0,99,TableBeer,1,12,None,None</Unit>
 	<Unit>0,99,ChestRoyalAlt,2,0,None,Partial Plate/Javelins/Steel Spear/Winged Helm/Plated Boots</Unit>
 	<Unit>0,99,CastleWallNW,2,2,None,None</Unit>
 	<Unit tag="Locked">0,99,DoorWood,2,3,None,None</Unit>
 	<Unit>0,99,CastleWallHorizontal,2,4,None,None</Unit>
 	<Unit>0,99,CastleWallT_E,2,5,None,None</Unit>
+	<Unit>0,99,StairsCastle_E,2,14,None,None</Unit>
 	<Unit>0,99,CandelabraLit,3,0,None,None</Unit>
 	<Unit>0,99,CastleWallVertical,3,2,None,None</Unit>
 	<Unit>0,99,CastleWallSW,3,5,None,None</Unit>
 	<Unit>0,99,CastleWallHorizontal,3,6,None,None</Unit>
 	<Unit tag="Locked">0,99,DoorSteelHorizontal,3,7,None,None</Unit>
+	<Unit>0,99,RugVT,3,7,None,None</Unit>
 	<Unit>0,99,CastleWallHorizontal,3,8,None,None</Unit>
 	<Unit>0,99,CastleWallHorizontal,3,9,None,None</Unit>
-	<Unit>0,99,CastleWallNE,3,10,None,None</Unit>
-	<Unit>0,99,CandelabraLit,3,11,None,None</Unit>
+	<Unit>0,99,CastleWallHorizontal,3,10,None,None</Unit>
+	<Unit>0,99,CastleWallNE,3,11,None,None</Unit>
+	<Unit>0,99,StairsCastle_S,3,15,None,None</Unit>
 	<Unit>0,99,CastleWallHorizontal,4,0,None,None</Unit>
 	<Unit tag="Locked">0,99,DoorWood,4,1,None,None</Unit>
 	<Unit>0,99,CastleWallT_E,4,2,None,None</Unit>
-	<Unit>0,99,CastleWallVertical,4,10,None,None</Unit>
-	<Unit>0,99,Chair,4,12,None,None</Unit>
-	<Unit>0,99,CastleWallSW,5,2,None,None</Unit>
-	<Unit>0,99,CastleWallNE,5,3,None,None</Unit>
-	<Unit>0,99,CastleWallVertical,5,10,None,None</Unit>
-	<Unit>0,99,TableBeer,5,12,None,None</Unit>
+	<Unit>0,99,RugVC,4,7,None,None</Unit>
+	<Unit>0,99,CandelabraLit,4,8,None,None</Unit>
+	<Unit>0,99,BookcaseSparse,4,9,None,None</Unit>
+	<Unit>0,99,BookcaseFull,4,10,None,None</Unit>
+	<Unit>0,99,CastleWallSW,4,11,None,None</Unit>
+	<Unit>0,99,DoorWood,4,12,None,None</Unit>
+	<Unit>0,99,RugVT,4,12,None,None</Unit>
+	<Unit>0,99,CastleWallHorizontal,4,13,None,None</Unit>
+	<Unit>0,99,CastleWallHorizontal,4,14,None,None</Unit>
+	<Unit>0,99,CastleWallVertical,5,2,None,None</Unit>
+	<Unit>0,99,Chair,5,3,None,None</Unit>
+	<Unit>0,99,TableBeer,5,4,None,None</Unit>
+	<Unit>0,99,Rug9BL,5,7,None,None</Unit>
+	<Unit>0,99,RugHC,5,8,None,None</Unit>
+	<Unit>0,99,RugHC,5,9,None,None</Unit>
+	<Unit>0,99,RugHC,5,10,None,None</Unit>
+	<Unit>0,99,RugHC,5,11,None,None</Unit>
+	<Unit>0,99,Rug9BR,5,12,None,None</Unit>
+	<Unit>0,99,StairsCastle_E,5,14,None,None</Unit>
 	<Unit>0,99,RubbleCastle,6,1,None,None</Unit>
-	<Unit>0,99,CastleWallVertical,6,3,None,None</Unit>
-	<Unit tag="Add,Locked">0,99,DoorSteelHorizontal,6,6,None,None</Unit>
-	<Unit>0,99,CastleWallHorizontal,6,7,None,None</Unit>
-	<Unit>0,99,CastleWallHorizontal,6,8,None,None</Unit>
-	<Unit>0,99,CastleWallHorizontal,6,9,None,None</Unit>
-	<Unit>0,99,CastleWallT_S,6,10,None,None</Unit>
-	<Unit>0,99,CastleWallWindowHorizontal,6,11,None,None</Unit>
-	<Unit>0,99,DoorWood,6,12,None,None</Unit>
+	<Unit>0,99,CastleWallSW,6,2,None,None</Unit>
+	<Unit>0,99,CastleWallHorizontal,6,3,None,None</Unit>
+	<Unit>0,99,CastleWallHorizontal,6,4,None,None</Unit>
+	<Unit>0,99,CastleWallNE,6,5,None,None</Unit>
+	<Unit>0,99,TableBooks,6,10,None,None</Unit>
+	<Unit>0,99,CastleWallNW,6,11,None,None</Unit>
+	<Unit>0,99,CastleWallHorizontal,6,12,None,None</Unit>
 	<Unit>0,99,CastleWallHorizontal,6,13,None,None</Unit>
 	<Unit>0,99,CastleWallHorizontal,6,14,None,None</Unit>
-	<Unit>0,99,CastleWallHorizontal,6,15,None,None</Unit>
-	<Unit>0,99,CastleWallSW,7,3,None,None</Unit>
-	<Unit>0,99,CastleWallHorizontal,7,4,None,None</Unit>
-	<Unit>0,99,CastleWallNE,7,5,None,None</Unit>
-	<Unit>0,99,CandelabraLit,7,7,None,None</Unit>
-	<Unit>0,99,BookcaseSparse,7,8,None,None</Unit>
-	<Unit>0,99,BookcaseFull,7,9,None,None</Unit>
+	<Unit>0,99,StairsCastle_N,6,15,None,None</Unit>
+	<Unit>0,99,DoorWoodVertical,7,5,None,None</Unit>
+	<Unit>0,99,Chair,7,10,None,None</Unit>
+	<Unit>0,99,CastleWallVertical,7,11,None,None</Unit>
+	<Unit>0,99,BedHorizontal,7,12,None,None</Unit>
+	<Unit>0,99,ChestAlt,7,13,None,Medicated Bandages/Focus Pills/Intermediate Battle Primer/Fur-Lined Cloak</Unit>
+	<Unit>0,99,BedHorizontalAlt,7,14,None,None</Unit>
 	<Unit>0,99,BushSnow,8,0,None,None</Unit>
+	<Unit>0,99,BushSnow,8,3,None,None</Unit>
 	<Unit>0,99,DoorWoodVertical,8,5,None,None</Unit>
-	<Unit>0,99,DoorWoodVertical,9,5,None,None</Unit>
-	<Unit>0,99,Rug9TL,9,13,None,None</Unit>
-	<Unit>0,99,Rug9T,9,14,None,None</Unit>
-	<Unit>0,99,Rug9TR,9,15,None,None</Unit>
-	<Unit>0,99,CastleWallVertical,10,5,None,None</Unit>
-	<Unit>0,99,Rug9BL,10,13,None,None</Unit>
-	<Unit>0,99,Rug9B,10,14,None,None</Unit>
-	<Unit>0,99,Rug9BR,10,15,None,None</Unit>
-	<Unit>0,99,BushSnow,11,1,None,None</Unit>
-	<Unit>0,99,CastleWallSW,11,5,None,None</Unit>
-	<Unit>0,99,CastleWallHorizontal,11,6,None,None</Unit>
-	<Unit>0,99,CastleWallHorizontal,11,7,None,None</Unit>
-	<Unit>0,99,CastleWallHorizontal,11,8,None,None</Unit>
-	<Unit>0,99,CastleWallHorizontal,11,9,None,None</Unit>
-	<Unit>0,99,DoorWood,11,10,None,None</Unit>
-	<Unit>0,99,CastleWallHorizontal,11,11,None,None</Unit>
+	<Unit>0,99,DoorWoodVertical,8,11,None,None</Unit>
+	<Unit>0,99,StairsCastle_N,8,15,None,None</Unit>
+	<Unit>0,99,CastleWallSW,9,5,None,None</Unit>
+	<Unit>0,99,CastleWallHorizontal,9,6,None,None</Unit>
+	<Unit>0,99,CastleWallHorizontal,9,7,None,None</Unit>
+	<Unit>0,99,CastleWallHorizontal,9,8,None,None</Unit>
+	<Unit>0,99,DoorWood,9,9,None,None</Unit>
+	<Unit>0,99,DoorWood,9,10,None,None</Unit>
+	<Unit>0,99,CastleWallT_E,9,11,None,None</Unit>
+	<Unit>0,99,CastleWallVertical,10,11,None,None</Unit>
+	<Unit>0,99,BedHorizontal,10,12,None,None</Unit>
+	<Unit>0,99,CandelabraLit,10,13,None,None</Unit>
+	<Unit>0,99,TreeSnow,11,0,None,None</Unit>
+	<Unit>0,99,BoulderSnow,11,6,None,None</Unit>
+	<Unit>0,99,CastleWallSW,11,11,None,None</Unit>
 	<Unit>0,99,CastleWallHorizontal,11,12,None,None</Unit>
 	<Unit>0,99,CastleWallHorizontal,11,13,None,None</Unit>
-	<Unit>0,99,CastleWallHorizontal,11,14,None,None</Unit>
+	<Unit>0,99,DoorWood,11,14,None,None</Unit>
 	<Unit>0,99,CastleWallHorizontal,11,15,None,None</Unit>
-	<Unit>0,99,BoulderSnow,12,4,None,None</Unit>
 	<Unit>0,99,TableDice,12,12,None,None</Unit>
-	<Unit>0,99,EvergreenSnow,13,7,None,None</Unit>
-	<Unit>0,0,FromPlayerRoster,12,1,Up,None</Unit>
+	<Unit>0,99,EvergreenSnow,13,8,None,None</Unit>
 	<Unit>0,0,FromPlayerRoster,12,2,Up,None</Unit>
-	<Unit>0,0,FromPlayerRoster,13,0,Up,None</Unit>
-	<Unit>0,0,FromPlayerRoster,13,1,Up,None</Unit>
+	<Unit>0,0,FromPlayerRoster,12,3,Up,None</Unit>
+	<Unit>0,0,FromPlayerRoster,12,4,Up,None</Unit>
+	<Unit>0,0,FromPlayerRoster,13,2,Up,None</Unit>
 	<Unit>0,0,FromPlayerRoster,13,3,Up,None</Unit>
-	<Unit>0,0,FromPlayerRoster,14,3,Up,None</Unit>
-	<Unit tag="Add,AggroGroup,3/Add,Passive">0,1,Mook Two/,3,14,Down,None</Unit>
+	<Unit>0,0,FromPlayerRoster,13,4,Up,None</Unit>
+	<Unit tag="Add,AggroGroup,4/Add,Passive">0,1,Mook Two/,0,13,Down,None</Unit>
+	<Unit tag="Add,AggroGroup,4/Add,Passive">0,1,Boss/,1,11,Right,None</Unit>
+	<Unit tag="Add,AggroGroup,4/Add,Passive">0,1,Mook Three/,2,13,Up,None</Unit>
 	<Unit tag="Add,AggroGroup,2/Add,Passive">0,1,Mook Two/,5,0,Down,None</Unit>
-	<Unit tag="Add,AggroGroup,3/Add,Passive">0,1,Boss/,5,11,Right,None</Unit>
-	<Unit tag="Add,AggroGroup,3/Add,Passive">0,1,Mook Three/,5,14,Up,None</Unit>
-	<Unit tag="Add,AggroGroup,2/Add,Passive">0,1,Mook Two/,7,2,Down,None</Unit>
 	<Unit tag="Add,AggroGroup,3/Add,Passive">0,1,Mook Three/,7,6,Down,None</Unit>
 	<Unit tag="Add,AggroGroup,2/Add,Passive">0,1,Mook Two/,8,1,Down,None</Unit>
 	<Unit tag="Add,AggroGroup,2/Add,Passive">0,1,Mook Two/,8,4,Down,None</Unit>
-	<Unit tag="Add,AggroGroup,3/Add,Passive">0,1,Mook Three/,8,8,Left,None</Unit>
+	<Unit tag="Add,AggroGroup,3/Add,Passive">0,1,Mook Three/,8,8,Up,None</Unit>
+	<Unit tag="Add,AggroGroup,1/Add,Passive">0,1,Their/Frost Golem,9,15,Left,None</Unit>
+	<Unit tag="Add,AggroGroup,2/Add,Passive">0,1,Mook Two/,10,6,Up,None</Unit>
+	<Unit tag="Add,AggroGroup,1/Add,Passive">0,1,Their/Frost Golem,10,15,Left,None</Unit>
 	<Unit tag="Add,AggroGroup,1/Add,Passive">0,1,Mook One/,12,11,Right,None</Unit>
 	<Unit tag="Add,AggroGroup,1/Add,Passive">0,1,Mook One/,12,13,Left,None</Unit>
 	<Unit tag="Add,AggroGroup,1/Add,Passive">0,1,Mook One/,13,12,Up,None</Unit>
@@ -188,27 +205,6 @@
 		</Branch>
 	</Dialogue>
 
-	<Dialogue trigger="None/" convID="Escape With Lantern" r="true">
-		<Branch num="1" name="">/
-			<Action>IfValGoTo/Grabbed Lantern,=:1,1</Action>
-			<Action>GoTo/2</Action>
-			<Action>EndConvImmediately/</Action>
-			<Reply>.../NextBranch</Reply>
-		</Branch>
-		<Branch num="2" name="">Player Person/This is where we'll be leaving. Wait, we need the thing we came here for! Go stand next to it and interact with it!
-			<Reply>Continue./EndConv</Reply>
-		</Branch>
-		<Branch num="0" name="">Player Person/Oh wow, we've escaped!
-			<Reply>Continue./WinBattle</Reply>
-		</Branch>
-	</Dialogue>
-
-	<Dialogue trigger="None/" convID="Need Lantern To Escape" r="true">
-		<Branch num="0" name="">Player Person/This is where we'll be leaving. Wait, we need the thing we came here for! Go stand next to it and interact with it!
-			<Reply>Continue./NextBranch</Reply>
-		</Branch>
-	</Dialogue>
-
 	<Dialogue trigger="OnTalk/-ANY-,Our Frost Golem" convID="Activate Our Golem" r="false">
 		<Branch num="0" name="">/Oh, this is a golem. Ours now!
 			<Action>SetStat/Our Frost Golem,Army,=:0</Action>
@@ -220,8 +216,8 @@
 
 	<Dialogue trigger="OnCharAttacked/-ANY-,-ANY-,-ANY-,-ANY-" convID="Alert Inside Enemies Attacked" r="true">
 		<Branch num="0" name="">Nothing/You see nothing!
-			<Action>IfTagRun/-FNAME-,AggroGroup,_AlertInside,3</Action>
-			<Action>IfTagRun/-FNAME2-,AggroGroup,_AlertInside,3</Action>
+			<Action>IfTagRun/-FNAME-,AggroGroup,_AlertInside,4</Action>
+			<Action>IfTagRun/-FNAME2-,AggroGroup,_AlertInside,4</Action>
 			<Action>EndConvImmediately/</Action>
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
@@ -230,7 +226,10 @@
 	<Dialogue trigger="None/" convID="Alert Inside Enemies" r="false">
 		<Branch num="0" name="">Enemies/Oh hey we noticed you. Let's fight!
 			<Action>RemoveConv/Alert Inside Enemies Attacked</Action>
+			<Action>AggroGroup/1</Action>
+			<Action>AggroGroup/2</Action>
 			<Action>AggroGroup/3</Action>
+			<Action>AggroGroup/4</Action>
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
 	</Dialogue>
