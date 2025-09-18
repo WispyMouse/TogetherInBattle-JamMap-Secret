@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Level mapname="Second Battle" maptype="Single Player" maxplayers="2" battleBG="" musictrack="" winAura="0" winMorale="0" lossMorale="0" nextbattle="Final Scene" defeatScene="" saveable="true" procgen="false" campaign="Secret Jam" lastEdited="8/24/2025 2:31:10 PM">
+<Level mapname="Second Battle" maptype="Single Player" maxplayers="2" battleBG="" musictrack="" winAura="0" winMorale="0" lossMorale="0" nextbattle="Final Scene" defeatScene="" saveable="true" procgen="false" campaign="Secret Jam" lastEdited="9/17/2025 8:41:16 PM">
 
 	<Army num="0" AI="false" aiProfile="Balanced" name="Army 1" color="Blue" alliedWith="" assignRoster="0"></Army>
 	<Army num="1" AI="true" aiProfile="Balanced" name="Army 2" color="Red" alliedWith="" assignRoster="-1"></Army>
@@ -8,43 +8,102 @@
 	<Condition>Deployment,0,0</Condition>
 	
 	<Tileset>01,Grass</Tileset>
+	<Tileset>02,Dirt</Tileset>
+	<Tileset>03,Street</Tileset>
+	<Tileset>04,Water</Tileset>
+	<Tileset>05,Cave</Tileset>
 	
-	<Row>01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01</Row>
-	<Row>01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01</Row>
-	<Row>01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01</Row>
-	<Row>01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01</Row>
-	<Row>01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01</Row>
-	<Row>01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01</Row>
-	<Row>01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01</Row>
-	<Row>01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01</Row>
+	<Row>01.01,02.0b,02.0c,01.01,01.01,01.01,01.01,01.01,01.01,02.0b,02.0c,01.01,01.01,01.01,01.01,01.01,01.01,01.01</Row>
+	<Row>01.01,02.0b,02.0c,01.01,01.01,01.01,01.01,01.01,01.01,02.0b,02.0c,01.01,01.01,01.01,01.01,01.01,01.01,01.01</Row>
+	<Row>01.01,02.0b,02.0c,01.01,01.01,01.01,01.01,01.01,01.01,02.0b,02.0c,01.01,01.01,01.01,01.01,01.01,01.01,01.01</Row>
+	<Row>01.01,02.0b,02.0c,01.01,01.0T,01.0K,01.0K,01.0K,01.0K,03.1h,03.1i,01.0K,01.0K,01.0K,01.0K,01.0S,01.01,01.01</Row>
+	<Row>01.01,02.0b,02.0c,01.01,01.0M,04.01,04.01,04.01,04.01,03.1a,03.1b,04.01,04.01,04.01,04.01,01.0L,01.01,01.01</Row>
+	<Row>01.01,02.0b,02.0c,01.01,01.0M,04.01,01.0Q,01.0N,01.0N,03.1j,03.1k,01.0N,01.0N,01.0R,04.01,01.0L,01.01,01.01</Row>
+	<Row>01.01,02.0b,02.0c,01.01,01.0M,04.01,01.0L,01.01,01.01,01.01,01.01,01.01,01.01,01.0M,04.01,01.0L,01.01,01.01</Row>
+	<Row>01.01,02.0b,02.0c,01.01,01.0M,04.01,01.0L,05.0g,05.0d,05.0d,05.0d,05.0h,01.01,01.0M,04.01,01.0L,01.01,01.01</Row>
+	<Row>01.01,02.0b,02.0c,01.01,01.0M,04.01,01.0L,05.0b,05.01,05.01,05.01,05.0c,01.01,01.0M,04.01,01.0O,01.0S,01.01</Row>
+	<Row>01.01,02.0b,02.0c,01.01,01.0M,04.01,01.0L,05.0b,05.01,05.01,05.01,05.0c,01.01,01.0M,04.01,04.01,01.0O,01.0K</Row>
+	<Row>01.0K,03.1h,03.1i,01.0K,01.0P,04.01,01.0L,05.0b,05.01,05.01,05.01,05.0c,01.01,01.0V,01.0R,04.01,04.01,04.01</Row>
+	<Row>04.01,03.1a,03.1b,04.01,04.01,04.01,01.0L,05.0e,05.0a,05.0a,05.0a,05.0f,01.01,01.01,01.0M,04.01,04.01,04.01</Row>
+	<Row>01.0N,03.1j,03.1k,01.0N,01.0N,01.0N,01.0U,01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.0M,04.01,04.01,04.01</Row>
+	<Row>02.0d,02.01,02.01,02.0d,02.0d,02.0d,02.0d,02.0d,02.0d,02.0d,02.0d,02.0d,02.0d,02.0h,01.0M,04.01,04.01,04.01</Row>
+	<Row>02.0a,02.0a,02.0a,02.0a,02.0a,02.0a,02.0a,02.0a,02.0a,02.0a,02.0a,02.0a,02.0i,02.0c,01.0M,04.01,04.01,04.01</Row>
+	<Row>01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01,02.0b,02.0c,01.0M,04.01,04.01,04.01</Row>
 	
-	<RowElev>1,1,1,1,1,1,1,1,1,1,1,1</RowElev>
-	<RowElev>1,1,1,1,1,1,1,1,1,1,1,1</RowElev>
-	<RowElev>1,1,1,1,1,1,1,1,1,1,1,1</RowElev>
-	<RowElev>1,1,1,1,1,1,1,1,1,1,1,1</RowElev>
-	<RowElev>1,1,1,1,1,1,1,1,1,1,1,1</RowElev>
-	<RowElev>1,1,1,1,1,1,1,1,1,1,1,1</RowElev>
-	<RowElev>1,1,1,1,1,1,1,1,1,1,1,1</RowElev>
-	<RowElev>1,1,1,1,1,1,1,1,1,1,1,1</RowElev>
+	<RowElev>1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1</RowElev>
+	<RowElev>1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1</RowElev>
+	<RowElev>1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1</RowElev>
+	<RowElev>1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1</RowElev>
+	<RowElev>1,1,1,1,1,0,0,0,0,1,1,0,0,0,0,1,1,1</RowElev>
+	<RowElev>1,1,1,1,1,0,1,1,1,1,1,1,1,1,0,1,1,1</RowElev>
+	<RowElev>1,1,1,1,1,0,1,1,1,1,1,1,1,1,0,1,1,1</RowElev>
+	<RowElev>1,1,1,1,1,0,1,1,1,1,1,1,1,1,0,1,1,1</RowElev>
+	<RowElev>1,1,1,1,1,0,1,1,1,1,1,1,1,1,0,1,1,1</RowElev>
+	<RowElev>1,1,1,1,1,0,1,1,1,1,1,1,1,1,0,0,1,1</RowElev>
+	<RowElev>1,1,1,1,1,0,1,1,1,1,1,1,1,1,1,0,0,0</RowElev>
+	<RowElev>0,1,1,0,0,0,1,1,1,1,1,1,1,1,1,0,0,0</RowElev>
+	<RowElev>1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0</RowElev>
+	<RowElev>1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0</RowElev>
+	<RowElev>1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0</RowElev>
+	<RowElev>1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0</RowElev>
 	
-	<Unit>0,0,FromPlayerRoster,7,3,Down,None</Unit>
-	<Unit>0,0,FromPlayerRoster,7,4,Down,None</Unit>
-	<Unit>0,0,FromPlayerRoster,7,5,Down,None</Unit>
-	<Unit>0,0,FromPlayerRoster,7,6,Down,None</Unit>
-	<Unit>0,0,FromPlayerRoster,7,7,Down,None</Unit>
-	<Unit>0,0,FromPlayerRoster,7,8,Down,None</Unit>
-	<Unit>0,1,Generate:Swordsman/Enemy////1/true/0/0,0,3,Down,None</Unit>
-	<Unit>0,1,Generate:Swordsman/Enemy////1/true/0/0,0,4,Down,None</Unit>
-	<Unit>0,1,Generate:Swordsman/Enemy////1/true/0/0,0,5,Down,None</Unit>
-	<Unit>0,1,Generate:Swordsman/Enemy////1/true/0/0,0,6,Down,None</Unit>
+	<Unit>0,99,BridgeStone,3,9,None,None</Unit>
+	<Unit>0,99,BridgeStone,3,10,None,None</Unit>
+	<Unit>0,99,BridgeStone,4,9,None,None</Unit>
+	<Unit>0,99,BridgeStone,4,10,None,None</Unit>
+	<Unit>0,99,BridgeStone,4,11,None,None</Unit>
+	<Unit>0,99,CastleSandstoneWallNW,7,7,None,None</Unit>
+	<Unit>0,99,CastleSandstoneWallHorizontal,7,8,None,None</Unit>
+	<Unit tag="Locked">0,99,DoorBarredHorizontal,7,9,None,None</Unit>
+	<Unit>0,99,CastleSandstoneWallHorizontal,7,10,None,None</Unit>
+	<Unit>0,99,CastleSandstoneWallNE,7,11,None,None</Unit>
+	<Unit>0,99,CastleSandstoneWallVertical,8,7,None,None</Unit>
+	<Unit>0,99,RocksSandstone,8,11,None,None</Unit>
+	<Unit>0,99,CastleSandstoneWallVertical,9,7,None,None</Unit>
+	<Unit>0,99,Altar,9,9,None,None</Unit>
+	<Unit>0,99,LanternLightingAltar,9,9,None,None</Unit>
+	<Unit>0,99,CastleSandstoneWallVertical,9,11,None,None</Unit>
+	<Unit>0,99,CastleSandstoneWallVertical,10,7,None,None</Unit>
+	<Unit>0,99,CastleSandstoneWallVertical,10,11,None,None</Unit>
+	<Unit>0,99,BoulderSandstone,10,12,None,None</Unit>
+	<Unit>0,99,CastleSandstoneWallSW,11,7,None,None</Unit>
+	<Unit>0,99,RocksSandstone,11,8,None,None</Unit>
+	<Unit>0,99,CastleSandstoneWallHorizontal,11,9,None,None</Unit>
+	<Unit>0,99,CastleSandstoneWallHorizontal,11,10,None,None</Unit>
+	<Unit>0,99,CastleSandstoneWallSE,11,11,None,None</Unit>
+	<Unit>0,99,BushSnow,11,13,None,None</Unit>
+	<Unit>0,99,BushSnow,12,6,None,None</Unit>
+	<Unit>0,99,LampLit,15,10,None,None</Unit>
+	<Unit>0,99,BoulderSandstone,15,11,None,None</Unit>
+	<Unit>0,0,FromPlayerRoster,6,7,Up,None</Unit>
+	<Unit>0,0,FromPlayerRoster,6,8,Up,None</Unit>
+	<Unit>0,0,FromPlayerRoster,6,9,Up,None</Unit>
+	<Unit>0,0,FromPlayerRoster,6,10,Up,None</Unit>
+	<Unit>0,0,FromPlayerRoster,6,11,Up,None</Unit>
+	<Unit>0,0,FromPlayerRoster,7,6,Up,None</Unit>
+	<Unit>0,0,FromPlayerRoster,7,12,Right,None</Unit>
+	<Unit>0,0,FromPlayerRoster,8,6,Up,None</Unit>
 	<Unit>0,1,Generate:Swordsman/Enemy////1/true/0/0,0,7,Down,None</Unit>
 	<Unit>0,1,Generate:Swordsman/Enemy////1/true/0/0,0,8,Down,None</Unit>
+	<Unit>0,1,Generate:Swordsman/Enemy////1/true/0/0,0,11,Down,None</Unit>
+	<Unit>0,1,Generate:Swordsman/Enemy////1/true/0/0,0,12,Down,None</Unit>
+	<Unit>0,1,Generate:Swordsman/Enemy////1/true/0/0,5,17,Left,None</Unit>
+	<Unit>0,1,Generate:Swordsman/Enemy////1/true/0/0,6,17,Left,None</Unit>
+	<Unit>0,1,Mook Two/,13,2,Right,None</Unit>
+	<Unit>0,1,Mook Two/,14,2,Right,None</Unit>
 
 	<Dialogue trigger="OnLoaded/" convID="Initialize" r="false">
 		<Branch num="0" name="">/
 			<Action>Run/Initialize_Try</Action>
+			<Action>SetArea/Lantern Zone,8,10,6,8</Action>
 			<Action>EndConvImmediately/</Action>
 			<Reply>Continue./NextBranch</Reply>
+		</Branch>
+	</Dialogue>
+
+	<Dialogue trigger="OnReachingArea/Lantern Zone,-ANY-,1" convID="Enemy Reached Lantern" r="false">
+		<Branch num="0" name="">Game Over/Uh-oh, that's how you lose. Oh well!
+			<Reply>Game over!/LoseBattle</Reply>
 		</Branch>
 	</Dialogue>
 
