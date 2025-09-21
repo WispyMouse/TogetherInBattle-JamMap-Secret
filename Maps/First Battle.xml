@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Level mapname="First Battle" maptype="Single Player" maxplayers="3" battleBG="" musictrack="Against the Cult" winAura="0" winMorale="0" lossMorale="0" nextbattle="Between" defeatScene="" saveable="true" procgen="false" campaign="Secret Jam" lastEdited="9/21/2025 3:13:42 PM">
+<Level mapname="First Battle" maptype="Single Player" maxplayers="3" battleBG="" musictrack="Against the Cult" winAura="0" winMorale="0" lossMorale="0" nextbattle="Between" defeatScene="" saveable="true" procgen="false" campaign="Secret Jam" lastEdited="9/21/2025 3:25:40 PM">
 
 	<Army num="0" AI="false" aiProfile="Balanced" name="Seekers of Frost" color="Blue" alliedWith="" assignRoster="-1"></Army>
 	<Army num="1" AI="true" aiProfile="Balanced" name="Hoarders of Valuable Secrets" color="Red" alliedWith="2" assignRoster="-1"></Army>
@@ -31,12 +31,14 @@
 	<Row>01.0C,01.0C,01.0C,01.0C,01.0C,02.0y,03.0X,03.0Y,02.0y,02.0y,02.0y,02.0y,01.0P,01.01,01.01,01.01,01.01,01.01</Row>
 	<Row>04.01,04.01,04.01,04.01,04.01,04.01,03.0L,03.0M,04.01,04.01,04.01,04.01,01.0D,01.01,01.01,01.01,01.01,01.01</Row>
 	<Row>04.01,04.01,04.01,04.01,04.01,04.01,03.0L,03.0M,04.01,04.01,04.01,04.01,01.0G,01.0C,01.0C,01.0C,01.0C,01.0C</Row>
-	<Row>04.2O,04.2O,04.2O,04.2O,04.05,04.01,03.0L,03.0V,03.0N,03.0R,04.01,04.01,04.01,04.01,04.01,04.01,04.01,04.01</Row>
-	<Row>04.01,04.01,04.01,04.01,04.2P,04.01,03.0O,03.0K,03.0S,03.0M,04.01,04.01,04.01,04.01,04.01,04.01,04.01,04.01</Row>
-	<Row>04.01,04.01,04.01,04.01,04.2P,04.01,04.01,04.01,03.0L,03.0M,04.01,04.01,04.01,04.04,04.2O,04.2O,04.2O,04.2O</Row>
-	<Row>04.01,04.01,04.01,04.01,04.09,04.2O,04.2O,04.2O,03.1J,03.1J,04.2O,04.2O,04.2O,04.3D,04.01,04.01,04.01,04.01</Row>
-	<Row>04.01,04.01,04.01,04.01,04.01,04.01,04.01,04.01,03.0L,03.0M,04.01,04.01,04.01,04.01,04.01,04.01,04.01,04.01</Row>
-	<Row>04.01,04.01,04.01,04.01,04.01,04.01,04.01,04.01,03.0L,03.0M,04.01,04.01,04.01,04.01,04.01,04.01,04.01,04.01</Row>
+	<Row>04.01,04.01,04.01,04.01,04.01,04.01,03.0L,03.0M,04.01,04.01,04.01,04.01,04.01,04.01,04.01,04.01,04.01,04.01</Row>
+	<Row>04.01,04.01,04.01,04.01,04.01,04.01,03.0L,03.0M,04.01,04.01,04.01,04.01,04.01,04.01,04.01,04.01,04.01,04.01</Row>
+	<Row>04.01,04.01,04.01,04.01,04.01,04.01,03.0L,03.0M,04.01,04.01,04.01,04.01,04.01,04.01,04.01,04.01,04.01,04.01</Row>
+	<Row>04.01,04.04,04.2O,04.2O,04.05,04.01,03.0L,03.0M,04.01,04.01,04.01,04.01,04.01,04.01,04.01,04.01,04.01,04.01</Row>
+	<Row>04.2O,04.08,04.01,04.01,04.2P,04.01,03.0L,03.0M,04.01,04.01,04.01,04.01,04.01,04.04,04.2O,04.2O,04.2O,04.2O</Row>
+	<Row>04.01,04.01,04.01,04.01,04.09,04.2O,03.1J,03.1J,04.2O,04.2O,04.2O,04.2O,04.2O,04.08,04.01,04.01,04.01,04.01</Row>
+	<Row>04.01,04.01,04.01,04.01,04.01,04.01,03.0L,03.0M,04.01,04.01,04.01,04.01,04.01,04.01,04.01,04.01,04.01,04.01</Row>
+	<Row>04.01,04.01,04.01,04.01,04.01,04.01,03.0L,03.0M,04.01,04.01,04.01,04.01,04.01,04.01,04.01,04.01,04.01,04.01</Row>
 	
 	<RowElev>2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2</RowElev>
 	<RowElev>2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2</RowElev>
@@ -54,9 +56,11 @@
 	<RowElev>2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2</RowElev>
 	<RowElev>2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2</RowElev>
 	<RowElev>2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2</RowElev>
-	<RowElev>1,1,1,1,2,2,2,2,2,2,2,2,2,2,2,2,2,2</RowElev>
-	<RowElev>1,1,1,1,2,2,2,2,2,2,2,2,2,2,2,2,2,2</RowElev>
-	<RowElev>1,1,1,1,2,2,2,2,2,2,2,2,2,3,1,1,1,1</RowElev>
+	<RowElev>2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2</RowElev>
+	<RowElev>2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2</RowElev>
+	<RowElev>2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2</RowElev>
+	<RowElev>2,2,1,1,2,2,2,2,2,2,2,2,2,2,2,2,2,2</RowElev>
+	<RowElev>1,1,1,1,2,2,2,2,2,2,2,2,2,2,1,1,1,1</RowElev>
 	<RowElev>1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1</RowElev>
 	<RowElev>1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1</RowElev>
 	
@@ -187,47 +191,47 @@
 	<Unit>0,99,BushSnow,13,5,None,None</Unit>
 	<Unit>0,99,CastleWallVertical,13,12,None,None</Unit>
 	<Unit>0,99,TrainingDummy,13,13,None,None</Unit>
-	<Unit>0,99,TreeSnow,14,8,None,None</Unit>
-	<Unit>0,99,SaplingSnow,14,10,None,None</Unit>
+	<Unit>0,99,SaplingSnow,14,11,None,None</Unit>
 	<Unit>0,99,CastleWallSW,14,12,None,None</Unit>
 	<Unit>0,99,CastleWallHorizontal,14,13,None,None</Unit>
 	<Unit>0,99,CastleWallHorizontal,14,14,None,None</Unit>
 	<Unit tag="Locked">0,99,DoorWood,14,15,None,None</Unit>
 	<Unit>0,99,CastleWallHorizontal,14,16,None,None</Unit>
 	<Unit>0,99,CastleWallHorizontal,14,17,None,None</Unit>
-	<Unit>0,99,FenceStoneHorizontal,15,0,None,None</Unit>
-	<Unit>0,99,FenceStoneHorizontal,15,1,None,None</Unit>
-	<Unit>0,99,RubbleCastle,15,2,None,None</Unit>
-	<Unit>0,99,FenceStoneHorizontal,15,3,None,None</Unit>
-	<Unit>0,99,FenceStoneNE,15,4,None,None</Unit>
-	<Unit>0,99,TreeDead,15,12,None,None</Unit>
-	<Unit>0,99,FenceStoneVertical,16,4,None,None</Unit>
-	<Unit>0,99,TreeSnow,17,1,None,None</Unit>
-	<Unit>0,99,FenceStoneVertical,17,4,None,None</Unit>
-	<Unit>0,99,LampLitAlt,17,7,None,None</Unit>
-	<Unit>0,99,TreeSnow,17,12,None,None</Unit>
-	<Unit>0,99,FenceStoneNW,17,13,None,None</Unit>
-	<Unit>0,99,FenceStoneHorizontal,17,14,None,None</Unit>
-	<Unit>0,99,FenceStoneHorizontal,17,15,None,None</Unit>
-	<Unit>0,99,FenceStoneHorizontal,17,16,None,None</Unit>
-	<Unit>0,99,FenceStoneHorizontal,17,17,None,None</Unit>
-	<Unit>0,99,FenceStoneSW,18,4,None,None</Unit>
-	<Unit>0,99,FenceStoneHorizontal,18,5,None,None</Unit>
-	<Unit>0,99,FenceStoneHorizontal,18,6,None,None</Unit>
-	<Unit>0,99,FenceStoneHorizontal,18,7,None,None</Unit>
-	<Unit>0,99,GateWoodLeft,18,8,None,None</Unit>
-	<Unit>0,99,GateWoodRight,18,9,None,None</Unit>
-	<Unit>0,99,FenceStoneHorizontal,18,10,None,None</Unit>
-	<Unit>0,99,FenceStoneHorizontal,18,11,None,None</Unit>
-	<Unit>0,99,FenceStoneHorizontal,18,12,None,None</Unit>
-	<Unit>0,99,FenceStoneSE,18,13,None,None</Unit>
-	<Unit>0,99,BoulderSnow,19,11,None,None</Unit>
-	<Unit>0,0,FromPlayerRoster,19,7,Up,None</Unit>
-	<Unit>0,0,FromPlayerRoster,19,8,Up,None</Unit>
-	<Unit>0,0,FromPlayerRoster,19,9,Up,None</Unit>
-	<Unit>0,0,FromPlayerRoster,20,7,Up,None</Unit>
-	<Unit>0,0,FromPlayerRoster,20,8,Up,None</Unit>
-	<Unit>0,0,FromPlayerRoster,20,9,Up,None</Unit>
+	<Unit>0,99,TreeSnow,15,9,None,None</Unit>
+	<Unit>0,99,FenceStoneHorizontal,17,0,None,None</Unit>
+	<Unit>0,99,FenceStoneHorizontal,17,1,None,None</Unit>
+	<Unit>0,99,RubbleCastle,17,2,None,None</Unit>
+	<Unit>0,99,FenceStoneHorizontal,17,3,None,None</Unit>
+	<Unit>0,99,FenceStoneNE,17,4,None,None</Unit>
+	<Unit>0,99,TreeDead,17,12,None,None</Unit>
+	<Unit>0,99,FenceStoneVertical,18,4,None,None</Unit>
+	<Unit>0,99,TreeSnow,19,1,None,None</Unit>
+	<Unit>0,99,FenceStoneVertical,19,4,None,None</Unit>
+	<Unit>0,99,LampLitAlt,19,5,None,None</Unit>
+	<Unit>0,99,TreeSnow,19,12,None,None</Unit>
+	<Unit>0,99,FenceStoneNW,19,13,None,None</Unit>
+	<Unit>0,99,FenceStoneHorizontal,19,14,None,None</Unit>
+	<Unit>0,99,FenceStoneHorizontal,19,15,None,None</Unit>
+	<Unit>0,99,FenceStoneHorizontal,19,16,None,None</Unit>
+	<Unit>0,99,FenceStoneHorizontal,19,17,None,None</Unit>
+	<Unit>0,99,FenceStoneSW,20,4,None,None</Unit>
+	<Unit>0,99,FenceStoneHorizontal,20,5,None,None</Unit>
+	<Unit tag="Open">0,99,GateWoodLeft,20,6,None,None</Unit>
+	<Unit tag="Open">0,99,GateWoodRight,20,7,None,None</Unit>
+	<Unit>0,99,FenceStoneHorizontal,20,8,None,None</Unit>
+	<Unit>0,99,FenceStoneHorizontal,20,9,None,None</Unit>
+	<Unit>0,99,FenceStoneHorizontal,20,10,None,None</Unit>
+	<Unit>0,99,FenceStoneHorizontal,20,11,None,None</Unit>
+	<Unit>0,99,FenceStoneHorizontal,20,12,None,None</Unit>
+	<Unit>0,99,FenceStoneSE,20,13,None,None</Unit>
+	<Unit>0,99,BoulderSnow,21,11,None,None</Unit>
+	<Unit>0,0,FromPlayerRoster,21,7,Up,None</Unit>
+	<Unit>0,0,FromPlayerRoster,21,8,Right,None</Unit>
+	<Unit>0,0,FromPlayerRoster,21,9,Up,None</Unit>
+	<Unit>0,0,FromPlayerRoster,22,7,Up,None</Unit>
+	<Unit>0,0,FromPlayerRoster,22,8,Up,None</Unit>
+	<Unit>0,0,FromPlayerRoster,22,9,Up,None</Unit>
 	<Unit tag="AggroGroup,2">0,1,Boss/,2,14,Left,None</Unit>
 	<Unit tag="AggroGroup,2">0,1,Mook Two/,2,16,Down,None</Unit>
 	<Unit tag="AggroGroup,4">0,1,Mook Three/,7,8,Down,None</Unit>
@@ -236,8 +240,8 @@
 	<Unit tag="AggroGroup,4">0,1,Mook/Four,10,10,Right,None</Unit>
 	<Unit tag="AggroGroup,1">0,1,Mook One/,12,14,Right,None</Unit>
 	<Unit tag="AggroGroup,3">0,1,Mook One/,13,10,Left,None</Unit>
-	<Unit tag="AggroGroup,3">0,1,Mook One/,15,6,Right,None</Unit>
-	<Unit tag="AggroGroup,3">0,1,Mook Three/,16,10,Right,None</Unit>
+	<Unit tag="AggroGroup,3">0,1,Mook One/,17,6,Right,None</Unit>
+	<Unit tag="AggroGroup,3">0,1,Mook Three/,18,10,Down,None</Unit>
 	<Unit tag="Inactive">0,2,Our/Frost Golem,7,1,Down,None</Unit>
 
 	<Script>Grab Lantern
