@@ -1,10 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Level mapname="Between" maptype="Cut Scene: Static" maxplayers="1" musictrack="" winAura="0" nextbattle="Second Battle" saveable="true" saveCheck="true" campaign="Secret Jam" lastEdited="8/24/2025 1:56:52 PM">
+<Level mapname="Between" maptype="Cut Scene: Static" maxplayers="1" musictrack="" winAura="0" nextbattle="Second Battle" saveable="true" saveCheck="true" campaign="Secret Jam" lastEdited="9/18/2025 11:58:52 PM">
 
 	<Narration> -DIA:Between Start-</Narration>
 
 	<Dialogue trigger="None/" convID="Between Start" r="false">
-		<Branch num="0" name="">/This is the dialogue that plays between scenes!
+		<Branch num="0" name="">/Wow, we have the lantern. This is special and cool!
+			<Reply>Continue/NextBranch</Reply>
+		</Branch>
+		<Branch num="2" name="">/We could give this back to the people and they'd no longer fear the false gods.
+			<Reply>Continue/NextBranch</Reply>
+		</Branch>
+		<Branch num="2" name="">/Okay hey wait, crazy idea... what if we're the gods now?
+			<Reply>Continue/NextBranch</Reply>
+		</Branch>
+		<Branch num="3" name="">/Okay bet. This couldn't possibly go wrong.
 			<Reply>Continue/NextScene</Reply>
 		</Branch>
 	</Dialogue>

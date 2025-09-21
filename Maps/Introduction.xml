@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Level mapname="Introduction" maptype="Cut Scene: Static" maxplayers="1" musictrack="" winAura="0" nextbattle="First Battle" saveable="true" saveCheck="false" campaign="Secret Jam" lastEdited="9/14/2025 5:50:17 PM">
+<Level mapname="Introduction" maptype="Cut Scene: Static" maxplayers="1" musictrack="" winAura="0" nextbattle="First Battle" saveable="true" saveCheck="false" campaign="Secret Jam" lastEdited="9/18/2025 10:30:53 PM">
 
 	<Narration> -DIA:Introduction-</Narration>
 	
@@ -35,14 +35,29 @@
 	<Dialogue trigger="None/" convID="Introduction" r="false">
 		<Branch num="0" name="">/This is the dialogue that happens at the start of the campaign. Would you like to add your custom characters to your roster?
 			<Action>Run/Initialize_Try</Action>
-			<Reply>No, play with only the premade campaign characters./NextScene</Reply>
+			<Reply>No, play with only the premade campaign characters./LoadConv/Frost Keepers Arrive</Reply>
 			<Reply>Yes, add my custom characters to the roster./NextBranch</Reply>
 		</Branch>
 		<Branch num="1" name="">/
 			<Action>CustomCharsToRoster/0,true</Action>
-			<Action>NextScene/</Action>
+			<Action>LoadConv/Frost Keepers Arrive</Action>
 			<Action>EndConvImmediately/</Action>
 			<Reply>.../NextBranch</Reply>
+		</Branch>
+	</Dialogue>
+
+	<Dialogue trigger="None/" convID="Frost Keepers Arive" r="false">
+		<Branch num="0" name="">/Preface, a shot over a scorched land. Establishing the origin of the setting.
+			<Reply>Continue./NextBranch</Reply>
+		</Branch>
+		<Branch num="1" name="">/Mysterious travelers bring the power of frost, and it makes a large difference in the lives of the people. All they asked was for submission.
+			<Reply>Continue./NextBranch</Reply>
+		</Branch>
+		<Branch num="2" name="">/By all appearances, these new gods were just mortals. Whatever gave them this power, it could be taken. Curious minds crave power and crave the answer to secrets.
+			<Reply>Continue./NextBranch</Reply>
+		</Branch>
+		<Branch num="3" name="">/As the night falls, that curiosity turns to action.
+			<Reply>Continue./NextScene</Reply>
 		</Branch>
 	</Dialogue>
 
