@@ -1,167 +1,244 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Level mapname="First Battle" maptype="Single Player" maxplayers="3" battleBG="" musictrack="Against the Cult" winAura="0" winMorale="0" lossMorale="0" nextbattle="Between" defeatScene="" saveable="true" procgen="false" campaign="Secret Jam" lastEdited="9/20/2025 7:37:56 PM">
+<Level mapname="First Battle" maptype="Single Player" maxplayers="3" battleBG="" musictrack="Against the Cult" winAura="0" winMorale="0" lossMorale="0" nextbattle="Between" defeatScene="" saveable="true" procgen="false" campaign="Secret Jam" lastEdited="9/21/2025 3:13:42 PM">
 
-	<Army num="0" AI="false" aiProfile="Balanced" name="Seekers of Ice" color="Blue" alliedWith="" assignRoster="0"></Army>
-	<Army num="1" AI="true" aiProfile="Balanced" name="Deities of Frost" color="Red" alliedWith="2" assignRoster="-1"></Army>
-	<Army num="2" AI="true" aiProfile="Balanced" name="Deactivated Trash" color="Black" alliedWith="1" assignRoster="-1"></Army>
+	<Army num="0" AI="false" aiProfile="Balanced" name="Seekers of Frost" color="Blue" alliedWith="" assignRoster="-1"></Army>
+	<Army num="1" AI="true" aiProfile="Balanced" name="Hoarders of Valuable Secrets" color="Red" alliedWith="2" assignRoster="-1"></Army>
+	<Army num="2" AI="true" aiProfile="Balanced" name="Inactive Golem" color="White" alliedWith="1" assignRoster="-1"></Army>
 	
+	<Condition>Global Lighting,.9,.9,.8,.6,.6</Condition>
 	<Condition>Defeat Army,0,1</Condition>
-	<Condition>Deployment,0,0</Condition>
-	<Condition>Global Lighting,Sunset</Condition>
+	<Condition>Deployment,0,0,Battle Prep,6</Condition>
+	<Condition>Weather,Snow</Condition>
+	<Condition>Death Rules,Back at Full</Condition>
 	
-	<Objective>Learn the secret of ice!</Objective>
-	<Objective>Leave with the secret!</Objective>
-	
-	<Tileset>01,Castle</Tileset>
+	<Tileset>01,Wood</Tileset>
 	<Tileset>02,Cave</Tileset>
-	<Tileset>03,Water</Tileset>
+	<Tileset>03,Street</Tileset>
 	<Tileset>04,Snow</Tileset>
-	<Tileset>05,Street</Tileset>
 	
-	<Row>01.01,01.01,01.01,01.01,01.01,01.0Q,02.01,02.3J,02.0M,03.01,01.01,01.01,01.01,01.01,01.01,01.01</Row>
-	<Row>01.01,01.01,01.01,01.01,01.01,01.0Q,02.01,02.3E,02.0M,03.01,01.01,01.01,01.01,01.01,01.01,01.01</Row>
-	<Row>01.01,01.01,01.01,01.01,01.01,01.0Q,02.01,02.01,02.0M,03.01,03.01,01.01,01.01,01.01,01.01,01.01</Row>
-	<Row>01.01,01.01,01.01,01.01,01.01,01.0Z,01.0R,01.0R,01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01</Row>
-	<Row>01.0C,01.0C,01.0K,01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01</Row>
-	<Row>04.01,04.01,01.0D,01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01</Row>
-	<Row>04.01,04.01,01.0G,01.0C,01.0C,01.0K,01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01</Row>
-	<Row>04.01,04.01,04.01,04.01,04.01,01.0D,01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01</Row>
-	<Row>04.01,04.01,04.01,04.01,04.01,01.0D,01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01</Row>
-	<Row>04.2R,04.06,04.01,04.01,04.01,01.0G,01.0C,01.0C,01.0C,01.01,01.01,01.01,01.01,01.01,01.01,01.01</Row>
-	<Row>04.01,04.02,04.06,04.01,04.01,04.01,04.01,04.01,04.01,05.0L,05.01,01.01,01.01,01.01,01.01,01.01</Row>
-	<Row>04.01,04.01,04.02,04.06,04.01,04.01,04.01,04.01,04.01,05.0L,05.01,05.01,01.0C,01.0C,05.01,01.0C</Row>
-	<Row>04.01,04.01,04.01,04.02,04.2R,04.06,04.01,04.01,04.01,05.0O,05.0S,05.0M,04.01,04.01,05.01,04.01</Row>
-	<Row>04.01,04.01,04.01,04.01,04.01,04.02,04.2R,04.06,04.01,04.01,05.0L,05.0V,05.0N,05.0N,05.01,05.0N</Row>
+	<Row>01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01</Row>
+	<Row>01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01</Row>
+	<Row>01.01,01.01,01.01,01.01,01.01,01.0X,01.0O,01.0O,01.0O,01.0W,01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01</Row>
+	<Row>01.01,01.01,01.01,01.01,01.01,01.0Q,02.01,02.01,02.01,01.0P,01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01</Row>
+	<Row>01.01,01.01,01.01,01.01,01.01,01.0Q,02.01,02.01,02.01,01.0P,01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01</Row>
+	<Row>01.01,01.01,01.01,01.01,01.0X,01.0T,02.01,02.01,02.01,01.0P,01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01</Row>
+	<Row>01.01,01.01,01.01,01.01,01.0Q,02.01,03.13,03.14,02.01,01.0P,01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01</Row>
+	<Row>01.01,01.01,01.01,01.01,01.0Q,02.01,03.0X,03.0Y,02.01,01.0S,01.0O,01.0O,01.0W,01.01,01.01,01.01,01.01,01.01</Row>
+	<Row>01.01,01.01,01.01,01.01,01.0Q,02.01,03.0X,03.0Y,02.01,02.01,02.01,02.01,01.0P,01.01,01.01,01.01,01.01,01.01</Row>
+	<Row>01.01,01.01,01.01,01.01,01.0Q,02.01,03.0X,03.0Y,02.01,02.01,02.01,02.01,01.0P,01.01,01.01,01.01,01.01,01.01</Row>
+	<Row>01.01,01.01,01.01,01.01,01.0Q,02.01,03.0X,03.0Y,02.01,02.01,02.01,02.01,01.0P,01.01,01.01,01.01,01.01,01.01</Row>
+	<Row>01.01,01.01,01.01,01.01,01.0Q,02.01,03.0X,03.0Y,02.01,02.01,02.01,02.01,01.0P,01.01,01.01,01.01,01.01,01.01</Row>
+	<Row>01.0C,01.0C,01.0C,01.0C,01.0C,02.0y,03.0X,03.0Y,02.0y,02.0y,02.0y,02.0y,01.0P,01.01,01.01,01.01,01.01,01.01</Row>
+	<Row>04.01,04.01,04.01,04.01,04.01,04.01,03.0L,03.0M,04.01,04.01,04.01,04.01,01.0D,01.01,01.01,01.01,01.01,01.01</Row>
+	<Row>04.01,04.01,04.01,04.01,04.01,04.01,03.0L,03.0M,04.01,04.01,04.01,04.01,01.0G,01.0C,01.0C,01.0C,01.0C,01.0C</Row>
+	<Row>04.2O,04.2O,04.2O,04.2O,04.05,04.01,03.0L,03.0V,03.0N,03.0R,04.01,04.01,04.01,04.01,04.01,04.01,04.01,04.01</Row>
+	<Row>04.01,04.01,04.01,04.01,04.2P,04.01,03.0O,03.0K,03.0S,03.0M,04.01,04.01,04.01,04.01,04.01,04.01,04.01,04.01</Row>
+	<Row>04.01,04.01,04.01,04.01,04.2P,04.01,04.01,04.01,03.0L,03.0M,04.01,04.01,04.01,04.04,04.2O,04.2O,04.2O,04.2O</Row>
+	<Row>04.01,04.01,04.01,04.01,04.09,04.2O,04.2O,04.2O,03.1J,03.1J,04.2O,04.2O,04.2O,04.3D,04.01,04.01,04.01,04.01</Row>
+	<Row>04.01,04.01,04.01,04.01,04.01,04.01,04.01,04.01,03.0L,03.0M,04.01,04.01,04.01,04.01,04.01,04.01,04.01,04.01</Row>
+	<Row>04.01,04.01,04.01,04.01,04.01,04.01,04.01,04.01,03.0L,03.0M,04.01,04.01,04.01,04.01,04.01,04.01,04.01,04.01</Row>
 	
-	<RowElev>2,2,2,2,2,2,2,3,2,1,2,2,2,2,2,4</RowElev>
-	<RowElev>2,2,2,2,2,2,2,3,2,1,2,2,2,2,2,4</RowElev>
-	<RowElev>2,2,2,2,2,2,2,2,2,1,1,2,2,2,2,4</RowElev>
-	<RowElev>2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,4</RowElev>
-	<RowElev>2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,6</RowElev>
-	<RowElev>2,2,2,2,2,2,2,2,2,2,2,2,2,4,4,6</RowElev>
-	<RowElev>2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,4</RowElev>
-	<RowElev>2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,4</RowElev>
-	<RowElev>2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2</RowElev>
-	<RowElev>3,3,2,2,2,2,2,2,2,2,2,2,2,2,2,2</RowElev>
-	<RowElev>3,3,3,2,2,2,2,2,2,2,2,2,2,2,2,2</RowElev>
-	<RowElev>3,3,3,3,2,2,2,2,2,2,2,2,2,2,2,2</RowElev>
-	<RowElev>3,3,3,3,3,3,2,2,2,2,2,2,2,2,2,2</RowElev>
-	<RowElev>3,3,3,3,3,3,3,3,2,2,2,2,2,2,2,2</RowElev>
+	<RowElev>2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2</RowElev>
+	<RowElev>2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2</RowElev>
+	<RowElev>2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2</RowElev>
+	<RowElev>2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2</RowElev>
+	<RowElev>2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2</RowElev>
+	<RowElev>2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2</RowElev>
+	<RowElev>2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2</RowElev>
+	<RowElev>2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2</RowElev>
+	<RowElev>2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2</RowElev>
+	<RowElev>2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2</RowElev>
+	<RowElev>2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2</RowElev>
+	<RowElev>2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2</RowElev>
+	<RowElev>2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2</RowElev>
+	<RowElev>2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2</RowElev>
+	<RowElev>2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2</RowElev>
+	<RowElev>2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2</RowElev>
+	<RowElev>1,1,1,1,2,2,2,2,2,2,2,2,2,2,2,2,2,2</RowElev>
+	<RowElev>1,1,1,1,2,2,2,2,2,2,2,2,2,2,2,2,2,2</RowElev>
+	<RowElev>1,1,1,1,2,2,2,2,2,2,2,2,2,3,1,1,1,1</RowElev>
+	<RowElev>1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1</RowElev>
+	<RowElev>1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1</RowElev>
 	
-	<Unit>0,99,RackSparse,0,0,None,None</Unit>
-	<Unit>0,99,Chest,0,3,None,Kite Shield/Steel Sword/Intermediate Battle Primer</Unit>
-	<Unit>0,99,RackSparse,0,4,None,None</Unit>
-	<Unit>0,99,CastleWallVertical,0,5,None,None</Unit>
-	<Unit>0,99,Altar,0,7,None,None</Unit>
-	<Unit trigger="Use Once,Grab Lantern">0,99,LanternLightingAltar,0,7,None,None</Unit>
-	<Unit>0,99,Chair,0,12,None,None</Unit>
-	<Unit>0,99,CandelabraLit,0,14,None,None</Unit>
-	<Unit>0,99,StairsCastle_N,0,15,None,None</Unit>
-	<Unit>0,99,ItemSack,1,0,None,Medicated Bandages/Focus Pills/Key Ring</Unit>
-	<Unit trigger="UseOnce,Armory Switch">0,99,Switch,1,4,None,None</Unit>
-	<Unit>0,99,CastleWallVertical,1,5,None,None</Unit>
-	<Unit>0,99,TableBeer,1,12,None,None</Unit>
-	<Unit>0,99,ChestRoyalAlt,2,0,None,Partial Plate/Javelins/Steel Spear/Winged Helm/Plated Boots</Unit>
-	<Unit>0,99,CastleWallNW,2,2,None,None</Unit>
-	<Unit tag="Locked">0,99,DoorWood,2,3,None,None</Unit>
-	<Unit>0,99,CastleWallHorizontal,2,4,None,None</Unit>
-	<Unit>0,99,CastleWallT_E,2,5,None,None</Unit>
-	<Unit>0,99,StairsCastle_E,2,14,None,None</Unit>
-	<Unit>0,99,CandelabraLit,3,0,None,None</Unit>
-	<Unit>0,99,CastleWallVertical,3,2,None,None</Unit>
-	<Unit>0,99,CastleWallSW,3,5,None,None</Unit>
-	<Unit>0,99,CastleWallHorizontal,3,6,None,None</Unit>
-	<Unit tag="Locked">0,99,DoorSteelHorizontal,3,7,None,None</Unit>
-	<Unit>0,99,RugVT,3,7,None,None</Unit>
-	<Unit>0,99,CastleWallHorizontal,3,8,None,None</Unit>
-	<Unit>0,99,CastleWallHorizontal,3,9,None,None</Unit>
-	<Unit>0,99,CastleWallHorizontal,3,10,None,None</Unit>
-	<Unit>0,99,CastleWallNE,3,11,None,None</Unit>
-	<Unit>0,99,StairsCastle_S,3,15,None,None</Unit>
-	<Unit>0,99,CastleWallHorizontal,4,0,None,None</Unit>
-	<Unit tag="Locked">0,99,DoorWood,4,1,None,None</Unit>
-	<Unit>0,99,CastleWallT_E,4,2,None,None</Unit>
-	<Unit>0,99,RugVC,4,7,None,None</Unit>
-	<Unit>0,99,CandelabraLit,4,8,None,None</Unit>
-	<Unit>0,99,BookcaseSparse,4,9,None,None</Unit>
-	<Unit>0,99,BookcaseFull,4,10,None,None</Unit>
-	<Unit>0,99,CastleWallSW,4,11,None,None</Unit>
-	<Unit>0,99,DoorWood,4,12,None,None</Unit>
-	<Unit>0,99,RugVT,4,12,None,None</Unit>
+	<Unit>0,99,DoorWoodVertical,0,3,None,None</Unit>
+	<Unit>0,99,CastleWallVertical,0,12,None,None</Unit>
+	<Unit>0,99,CandelabraLit,0,13,None,None</Unit>
+	<Unit>0,99,ChestAlt,0,15,None,None</Unit>
+	<Unit>0,99,BookcaseFull,0,16,None,None</Unit>
+	<Unit>0,99,BookcaseSparse,0,17,None,None</Unit>
+	<Unit>0,99,DoorWoodVertical,1,3,None,None</Unit>
+	<Unit>0,99,CastleWallVertical,1,12,None,None</Unit>
+	<Unit>0,99,Chair,1,13,None,None</Unit>
+	<Unit>0,99,DoorWoodVertical,2,3,None,None</Unit>
+	<Unit>0,99,CastleWallNW,2,5,None,None</Unit>
+	<Unit tag="Locked">0,99,DoorSteelHorizontal,2,6,None,None</Unit>
+	<Unit>0,99,CastleWallHorizontal,2,7,None,None</Unit>
+	<Unit>0,99,CastleWallHorizontal,2,8,None,None</Unit>
+	<Unit>0,99,CastleWallNE,2,9,None,None</Unit>
+	<Unit>0,99,CastleWallVertical,2,12,None,None</Unit>
+	<Unit>0,99,TablePapers,2,13,None,None</Unit>
+	<Unit>0,99,DoorWood,3,2,None,None</Unit>
+	<Unit>0,99,DoorWoodVertical,3,3,None,None</Unit>
+	<Unit>0,99,CastleWallVertical,3,5,None,None</Unit>
+	<Unit>0,99,IcePatch,3,7,None,None</Unit>
+	<Unit>0,99,CastleWallVertical,3,9,None,None</Unit>
+	<Unit>0,99,CastleWallVertical,3,12,None,None</Unit>
+	<Unit>0,99,TableMap,3,16,None,None</Unit>
+	<Unit>0,99,Chair,3,17,None,None</Unit>
+	<Unit>0,99,DoorWoodVertical,4,0,None,None</Unit>
+	<Unit>0,99,DoorWoodVertical,4,1,None,None</Unit>
+	<Unit>0,99,DoorWoodVertical,4,2,None,None</Unit>
+	<Unit>0,99,CastleWallVertical,4,5,None,None</Unit>
+	<Unit>0,99,IceSpikes,4,6,None,None</Unit>
+	<Unit>0,99,IcePatch,4,7,None,None</Unit>
+	<Unit>0,99,Altar,4,8,None,None</Unit>
+	<Unit>0,99,LanternLightingAltar,4,8,None,None</Unit>
+	<Unit>0,99,CastleWallVertical,4,9,None,None</Unit>
+	<Unit>0,99,CastleWallSW,4,12,None,None</Unit>
 	<Unit>0,99,CastleWallHorizontal,4,13,None,None</Unit>
-	<Unit>0,99,CastleWallHorizontal,4,14,None,None</Unit>
-	<Unit>0,99,CastleWallVertical,5,2,None,None</Unit>
-	<Unit>0,99,Chair,5,3,None,None</Unit>
-	<Unit>0,99,TableBeer,5,4,None,None</Unit>
-	<Unit>0,99,Rug9BL,5,7,None,None</Unit>
-	<Unit>0,99,RugHC,5,8,None,None</Unit>
-	<Unit>0,99,RugHC,5,9,None,None</Unit>
-	<Unit>0,99,RugHC,5,10,None,None</Unit>
-	<Unit>0,99,RugHC,5,11,None,None</Unit>
-	<Unit>0,99,Rug9BR,5,12,None,None</Unit>
-	<Unit>0,99,StairsCastle_E,5,14,None,None</Unit>
-	<Unit>0,99,RubbleCastle,6,1,None,None</Unit>
-	<Unit>0,99,CastleWallSW,6,2,None,None</Unit>
-	<Unit>0,99,CastleWallHorizontal,6,3,None,None</Unit>
-	<Unit>0,99,CastleWallHorizontal,6,4,None,None</Unit>
-	<Unit>0,99,CastleWallNE,6,5,None,None</Unit>
-	<Unit>0,99,TableBooks,6,10,None,None</Unit>
-	<Unit>0,99,CastleWallNW,6,11,None,None</Unit>
-	<Unit>0,99,CastleWallHorizontal,6,12,None,None</Unit>
-	<Unit>0,99,CastleWallHorizontal,6,13,None,None</Unit>
-	<Unit>0,99,CastleWallHorizontal,6,14,None,None</Unit>
-	<Unit>0,99,StairsCastle_N,6,15,None,None</Unit>
-	<Unit>0,99,DoorWoodVertical,7,5,None,None</Unit>
-	<Unit>0,99,Chair,7,10,None,None</Unit>
-	<Unit>0,99,CastleWallVertical,7,11,None,None</Unit>
-	<Unit>0,99,BedHorizontal,7,12,None,None</Unit>
-	<Unit>0,99,ChestAlt,7,13,None,Medicated Bandages/Focus Pills/Intermediate Battle Primer/Fur-Lined Cloak</Unit>
-	<Unit>0,99,BedHorizontalAlt,7,14,None,None</Unit>
-	<Unit>0,99,BushSnow,8,0,None,None</Unit>
-	<Unit>0,99,BushSnow,8,3,None,None</Unit>
-	<Unit>0,99,DoorWoodVertical,8,5,None,None</Unit>
-	<Unit>0,99,DoorWoodVertical,8,11,None,None</Unit>
-	<Unit>0,99,StairsCastle_N,8,15,None,None</Unit>
-	<Unit>0,99,CastleWallSW,9,5,None,None</Unit>
-	<Unit>0,99,CastleWallHorizontal,9,6,None,None</Unit>
-	<Unit>0,99,CastleWallHorizontal,9,7,None,None</Unit>
-	<Unit>0,99,CastleWallHorizontal,9,8,None,None</Unit>
-	<Unit>0,99,DoorWood,9,9,None,None</Unit>
-	<Unit>0,99,DoorWood,9,10,None,None</Unit>
-	<Unit>0,99,CastleWallT_E,9,11,None,None</Unit>
-	<Unit>0,99,CastleWallVertical,10,11,None,None</Unit>
-	<Unit>0,99,BedHorizontal,10,12,None,None</Unit>
-	<Unit>0,99,CandelabraLit,10,13,None,None</Unit>
-	<Unit>0,99,TreeSnow,11,0,None,None</Unit>
-	<Unit>0,99,BoulderSnow,11,6,None,None</Unit>
-	<Unit>0,99,CastleWallSW,11,11,None,None</Unit>
-	<Unit>0,99,CastleWallHorizontal,11,12,None,None</Unit>
-	<Unit>0,99,CastleWallHorizontal,11,13,None,None</Unit>
-	<Unit>0,99,DoorWood,11,14,None,None</Unit>
-	<Unit>0,99,CastleWallHorizontal,11,15,None,None</Unit>
-	<Unit>0,99,TableDice,12,12,None,None</Unit>
-	<Unit>0,99,EvergreenSnow,13,8,None,None</Unit>
-	<Unit>0,0,FromPlayerRoster,12,2,Up,None</Unit>
-	<Unit>0,0,FromPlayerRoster,12,3,Up,None</Unit>
-	<Unit>0,0,FromPlayerRoster,12,4,Up,None</Unit>
-	<Unit>0,0,FromPlayerRoster,13,2,Up,None</Unit>
-	<Unit>0,0,FromPlayerRoster,13,3,Up,None</Unit>
-	<Unit>0,0,FromPlayerRoster,13,4,Up,None</Unit>
-	<Unit tag="Add,AggroGroup,4/Add,Passive">0,1,Mook Two/,0,13,Down,None</Unit>
-	<Unit tag="Add,AggroGroup,4/Add,Passive">0,1,Boss/,1,11,Right,None</Unit>
-	<Unit tag="Add,AggroGroup,4/Add,Passive">0,1,Mook Three/,2,13,Up,None</Unit>
-	<Unit tag="Add,AggroGroup,2/Add,Passive">0,1,Mook Two/,5,0,Down,None</Unit>
-	<Unit tag="Add,AggroGroup,3/Add,Passive">0,1,Mook Three/,7,6,Down,None</Unit>
-	<Unit tag="Add,AggroGroup,2/Add,Passive">0,1,Mook Two/,8,1,Down,None</Unit>
-	<Unit tag="Add,AggroGroup,2/Add,Passive">0,1,Mook Two/,8,4,Down,None</Unit>
-	<Unit tag="Add,AggroGroup,3/Add,Passive">0,1,Mook Three/,8,8,Up,None</Unit>
-	<Unit tag="Add,AggroGroup,1/Add,Passive">0,1,Their/Frost Golem,9,15,Left,None</Unit>
-	<Unit tag="Add,AggroGroup,2/Add,Passive">0,1,Mook Two/,10,6,Up,None</Unit>
-	<Unit tag="Add,AggroGroup,1/Add,Passive">0,1,Their/Frost Golem,10,15,Left,None</Unit>
-	<Unit tag="Add,AggroGroup,1/Add,Passive">0,1,Mook One/,12,11,Right,None</Unit>
-	<Unit tag="Add,AggroGroup,1/Add,Passive">0,1,Mook One/,12,13,Left,None</Unit>
-	<Unit tag="Add,AggroGroup,1/Add,Passive">0,1,Mook One/,13,12,Up,None</Unit>
-	<Unit tag="Inactive">0,2,Our/Frost Golem,0,1,Down,None</Unit>
+	<Unit>0,99,DoorWood,4,14,None,None</Unit>
+	<Unit>0,99,CastleWallHorizontal,4,15,None,None</Unit>
+	<Unit>0,99,CastleWallHorizontal,4,16,None,None</Unit>
+	<Unit>0,99,CastleWallHorizontal,4,17,None,None</Unit>
+	<Unit>0,99,CastleWallNW,5,4,None,None</Unit>
+	<Unit>0,99,CastleWallT_S,5,5,None,None</Unit>
+	<Unit>0,99,CastleWallWindowHorizontal,5,6,None,None</Unit>
+	<Unit>0,99,CastleWallHorizontal,5,7,None,None</Unit>
+	<Unit>0,99,CastleWallHorizontal,5,8,None,None</Unit>
+	<Unit>0,99,CastleWallT_E,5,9,None,None</Unit>
+	<Unit>0,99,CandelabraLit,5,10,None,None</Unit>
+	<Unit>0,99,CastleWallHorizontal,6,0,None,None</Unit>
+	<Unit>0,99,CastleWallHorizontal,6,1,None,None</Unit>
+	<Unit>0,99,CastleWallHorizontal,6,2,None,None</Unit>
+	<Unit>0,99,DoorWood,6,3,None,None</Unit>
+	<Unit>0,99,CastleWallT_E,6,4,None,None</Unit>
+	<Unit>0,99,ChestSturdyAlt,6,5,None,None</Unit>
+	<Unit>0,99,RugTurq9L,6,6,None,None</Unit>
+	<Unit>0,99,RugTurq9R,6,7,None,None</Unit>
+	<Unit>0,99,Statue,6,8,None,None</Unit>
+	<Unit>0,99,CastleWallVertical,6,9,None,None</Unit>
+	<Unit>0,99,Barrel,6,10,None,None</Unit>
+	<Unit>0,99,Barrel,6,11,None,None</Unit>
+	<Unit>0,99,ChestAlt,7,0,None,None</Unit>
+	<Unit>0,99,BookcaseSparse,7,2,None,None</Unit>
+	<Unit>0,99,CastleWallVertical,7,4,None,None</Unit>
+	<Unit>0,99,RugTurq9L,7,6,None,None</Unit>
+	<Unit>0,99,RugTurq9R,7,7,None,None</Unit>
+	<Unit>0,99,Rug,7,8,None,None</Unit>
+	<Unit>0,99,CastleWallSW,7,9,None,None</Unit>
+	<Unit>0,99,CastleWallHorizontal,7,10,None,None</Unit>
+	<Unit>0,99,CastleWallHorizontal,7,11,None,None</Unit>
+	<Unit>0,99,CastleWallT_N,7,12,None,None</Unit>
+	<Unit>0,99,CastleWallHorizontal,7,13,None,None</Unit>
+	<Unit>0,99,CastleWallHorizontal,7,14,None,None</Unit>
+	<Unit>0,99,DoorWood,7,15,None,None</Unit>
+	<Unit>0,99,CastleWallHorizontal,7,16,None,None</Unit>
+	<Unit>0,99,CastleWallHorizontal,7,17,None,None</Unit>
+	<Unit>0,99,CastleWallVertical,8,4,None,None</Unit>
+	<Unit>0,99,RugTurq9L,8,6,None,None</Unit>
+	<Unit>0,99,RugTurq9R,8,7,None,None</Unit>
+	<Unit>0,99,Altar,8,8,None,None</Unit>
+	<Unit>0,99,Bartop_L,8,9,None,None</Unit>
+	<Unit>0,99,Bartop_CAlt,8,10,None,None</Unit>
+	<Unit>0,99,Bartop_R,8,11,None,None</Unit>
+	<Unit>0,99,CastleWallVertical,8,12,None,None</Unit>
+	<Unit>0,99,Switch,8,13,None,None</Unit>
+	<Unit>0,99,CandelabraLit,8,14,None,None</Unit>
+	<Unit>0,99,ChestAlt,8,16,None,None</Unit>
+	<Unit>0,99,BedHorizontal,8,17,None,None</Unit>
+	<Unit>0,99,TablePapers,9,0,None,None</Unit>
+	<Unit>0,99,Chair,9,1,None,None</Unit>
+	<Unit>0,99,CastleWallVertical,9,4,None,None</Unit>
+	<Unit>0,99,RugTurq9L,9,6,None,None</Unit>
+	<Unit>0,99,RugTurq9R,9,7,None,None</Unit>
+	<Unit>0,99,Chair,9,11,None,None</Unit>
+	<Unit>0,99,CastleWallVertical,9,12,None,None</Unit>
+	<Unit>0,99,BedHorizontal,9,17,None,None</Unit>
+	<Unit>0,99,Candelabra,10,0,None,None</Unit>
+	<Unit tag="Locked">0,99,DoorSteelVertical,10,4,None,None</Unit>
+	<Unit>0,99,RugTurq9L,10,6,None,None</Unit>
+	<Unit>0,99,RugTurq9R,10,7,None,None</Unit>
+	<Unit>0,99,DoorWoodVertical,10,12,None,None</Unit>
+	<Unit>0,99,Barrel,10,15,None,None</Unit>
+	<Unit>0,99,RackSparse,10,17,None,None</Unit>
+	<Unit>0,99,RackFull,11,0,None,None</Unit>
+	<Unit>0,99,Chest,11,3,None,None</Unit>
+	<Unit>0,99,CastleWallVertical,11,4,None,None</Unit>
+	<Unit>0,99,TableFood,11,5,None,None</Unit>
+	<Unit>0,99,RugTurq9L,11,6,None,None</Unit>
+	<Unit>0,99,RugTurq9R,11,7,None,None</Unit>
+	<Unit>0,99,Chair,11,11,None,None</Unit>
+	<Unit>0,99,CastleWallVertical,11,12,None,None</Unit>
+	<Unit>0,99,BedHorizontal,11,17,None,None</Unit>
+	<Unit>0,99,CastleWallHorizontal,12,0,None,None</Unit>
+	<Unit>0,99,RubbleCastle,12,1,None,None</Unit>
+	<Unit>0,99,CastleWallHorizontal,12,2,None,None</Unit>
+	<Unit>0,99,CastleWallHorizontal,12,3,None,None</Unit>
+	<Unit>0,99,CastleWallT_S,12,4,None,None</Unit>
+	<Unit>0,99,FenceStoneHorizontal,12,5,None,None</Unit>
+	<Unit tag="Locked">0,99,GateIronLeft,12,6,None,None</Unit>
+	<Unit tag="Locked">0,99,GateIronRight,12,7,None,None</Unit>
+	<Unit>0,99,FenceStoneHorizontal,12,8,None,None</Unit>
+	<Unit>0,99,FenceStoneHorizontal,12,9,None,None</Unit>
+	<Unit>0,99,FenceStoneHorizontal,12,10,None,None</Unit>
+	<Unit>0,99,CastleWallHorizontal,12,11,None,None</Unit>
+	<Unit>0,99,CastleWallT_E,12,12,None,None</Unit>
+	<Unit>0,99,BedHorizontal,12,17,None,None</Unit>
+	<Unit>0,99,BushSnow,13,5,None,None</Unit>
+	<Unit>0,99,CastleWallVertical,13,12,None,None</Unit>
+	<Unit>0,99,TrainingDummy,13,13,None,None</Unit>
+	<Unit>0,99,TreeSnow,14,8,None,None</Unit>
+	<Unit>0,99,SaplingSnow,14,10,None,None</Unit>
+	<Unit>0,99,CastleWallSW,14,12,None,None</Unit>
+	<Unit>0,99,CastleWallHorizontal,14,13,None,None</Unit>
+	<Unit>0,99,CastleWallHorizontal,14,14,None,None</Unit>
+	<Unit tag="Locked">0,99,DoorWood,14,15,None,None</Unit>
+	<Unit>0,99,CastleWallHorizontal,14,16,None,None</Unit>
+	<Unit>0,99,CastleWallHorizontal,14,17,None,None</Unit>
+	<Unit>0,99,FenceStoneHorizontal,15,0,None,None</Unit>
+	<Unit>0,99,FenceStoneHorizontal,15,1,None,None</Unit>
+	<Unit>0,99,RubbleCastle,15,2,None,None</Unit>
+	<Unit>0,99,FenceStoneHorizontal,15,3,None,None</Unit>
+	<Unit>0,99,FenceStoneNE,15,4,None,None</Unit>
+	<Unit>0,99,TreeDead,15,12,None,None</Unit>
+	<Unit>0,99,FenceStoneVertical,16,4,None,None</Unit>
+	<Unit>0,99,TreeSnow,17,1,None,None</Unit>
+	<Unit>0,99,FenceStoneVertical,17,4,None,None</Unit>
+	<Unit>0,99,LampLitAlt,17,7,None,None</Unit>
+	<Unit>0,99,TreeSnow,17,12,None,None</Unit>
+	<Unit>0,99,FenceStoneNW,17,13,None,None</Unit>
+	<Unit>0,99,FenceStoneHorizontal,17,14,None,None</Unit>
+	<Unit>0,99,FenceStoneHorizontal,17,15,None,None</Unit>
+	<Unit>0,99,FenceStoneHorizontal,17,16,None,None</Unit>
+	<Unit>0,99,FenceStoneHorizontal,17,17,None,None</Unit>
+	<Unit>0,99,FenceStoneSW,18,4,None,None</Unit>
+	<Unit>0,99,FenceStoneHorizontal,18,5,None,None</Unit>
+	<Unit>0,99,FenceStoneHorizontal,18,6,None,None</Unit>
+	<Unit>0,99,FenceStoneHorizontal,18,7,None,None</Unit>
+	<Unit>0,99,GateWoodLeft,18,8,None,None</Unit>
+	<Unit>0,99,GateWoodRight,18,9,None,None</Unit>
+	<Unit>0,99,FenceStoneHorizontal,18,10,None,None</Unit>
+	<Unit>0,99,FenceStoneHorizontal,18,11,None,None</Unit>
+	<Unit>0,99,FenceStoneHorizontal,18,12,None,None</Unit>
+	<Unit>0,99,FenceStoneSE,18,13,None,None</Unit>
+	<Unit>0,99,BoulderSnow,19,11,None,None</Unit>
+	<Unit>0,0,FromPlayerRoster,19,7,Up,None</Unit>
+	<Unit>0,0,FromPlayerRoster,19,8,Up,None</Unit>
+	<Unit>0,0,FromPlayerRoster,19,9,Up,None</Unit>
+	<Unit>0,0,FromPlayerRoster,20,7,Up,None</Unit>
+	<Unit>0,0,FromPlayerRoster,20,8,Up,None</Unit>
+	<Unit>0,0,FromPlayerRoster,20,9,Up,None</Unit>
+	<Unit tag="AggroGroup,2">0,1,Boss/,2,14,Left,None</Unit>
+	<Unit tag="AggroGroup,2">0,1,Mook Two/,2,16,Down,None</Unit>
+	<Unit tag="AggroGroup,4">0,1,Mook Three/,7,8,Down,None</Unit>
+	<Unit tag="AggroGroup,1">0,1,Mook One/,9,16,Down,None</Unit>
+	<Unit tag="AggroGroup,4">0,1,Mook One/,10,8,Up,None</Unit>
+	<Unit tag="AggroGroup,4">0,1,Mook/Four,10,10,Right,None</Unit>
+	<Unit tag="AggroGroup,1">0,1,Mook One/,12,14,Right,None</Unit>
+	<Unit tag="AggroGroup,3">0,1,Mook One/,13,10,Left,None</Unit>
+	<Unit tag="AggroGroup,3">0,1,Mook One/,15,6,Right,None</Unit>
+	<Unit tag="AggroGroup,3">0,1,Mook Three/,16,10,Right,None</Unit>
+	<Unit tag="Inactive">0,2,Our/Frost Golem,7,1,Down,None</Unit>
 
 	<Script>Grab Lantern
 		<Action>Log/Running Grab Lantern Dialogue</Action>
