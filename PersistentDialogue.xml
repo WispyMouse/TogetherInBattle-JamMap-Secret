@@ -9,12 +9,12 @@
 	<Script>Initialize_Do
 		<Action>SetVal/Initialized,=:1</Action>
 		<Action>SwitchRoster/0</Action>
-		<Action>Recruit/Cowardly:Knight,0</Action>
-		<Action>Recruit/Jokes:Alot,0</Action>
-		<Action>Recruit/Large:Ncharge,0</Action>
-		<Action>Recruit/Ride:Enjoyer,0</Action>
-		<Action>Recruit/Noit:All,0</Action>
-		<Action>Recruit/Shouty:Seraphic,0</Action>
+		<Action>Recruit/Laina:Bigspook,0</Action>
+		<Action>Recruit/Tillie:Starwright,0</Action>
+		<Action>Recruit/Bront:the Unbelievable,0</Action>
+		<Action>Recruit/Sooth:,0</Action>
+		<Action>Recruit/Jerald:Swiftrig,0</Action>
+		<Action>Recruit/Rustler:,0</Action>
 		<Action>Run/LevelRoster</Action>
 		<Action>Log/Recruited default units.</Action>
 	</Script>
