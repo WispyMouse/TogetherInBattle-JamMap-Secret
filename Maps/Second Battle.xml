@@ -1,47 +1,51 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Level mapname="Second Battle" maptype="Single Player" maxplayers="2" battleBG="" musictrack="" winAura="0" winMorale="0" lossMorale="0" nextbattle="Final Scene" defeatScene="" saveable="true" procgen="false" campaign="Secret Jam" lastEdited="9/17/2025 8:41:16 PM">
+<Level mapname="Second Battle" maptype="Single Player" maxplayers="2" battleBG="" musictrack="Form Up!" winAura="0" winMorale="0" lossMorale="0" nextbattle="Final Scene" defeatScene="" saveable="true" procgen="false" campaign="Secret Jam" lastEdited="9/25/2025 7:59:08 PM">
 
-	<Army num="0" AI="false" aiProfile="Balanced" name="Army 1" color="Blue" alliedWith="" assignRoster="0"></Army>
-	<Army num="1" AI="true" aiProfile="Balanced" name="Army 2" color="Red" alliedWith="" assignRoster="-1"></Army>
+	<Army num="0" AI="false" aiProfile="Balanced" name="Coldfront" color="Blue" alliedWith="" assignRoster="0"></Army>
+	<Army num="1" AI="true" aiProfile="Aggressive" name="Disrespectful Upstarts" color="Red" alliedWith="" assignRoster="-1"></Army>
+	<Army num="2" AI="true" aiProfile="Balanced" name="Frostborn Charity" color="Green" alliedWith="" assignRoster="-1"></Army>
+	<Army num="3" AI="true" aiProfile="Cautious" name="Ungrateful Villagers" color="Yellow" alliedWith="" assignRoster="-1"></Army>
 	
 	<Condition>Defeat Army,0,1</Condition>
 	<Condition>Deployment,0,0</Condition>
 	
+	<Objective>Protect the secret of frost from these scoundrels!</Objective>
+	
 	<Tileset>01,Grass</Tileset>
-	<Tileset>02,Dirt</Tileset>
-	<Tileset>03,Street</Tileset>
-	<Tileset>04,Water</Tileset>
+	<Tileset>02,Street</Tileset>
+	<Tileset>03,Water</Tileset>
+	<Tileset>04,Dirt</Tileset>
 	<Tileset>05,Cave</Tileset>
 	
-	<Row>01.01,02.0b,02.0c,01.01,01.01,01.01,01.01,01.01,01.01,02.0b,02.0c,01.01,01.01,01.01,01.01,01.01,01.01,01.01</Row>
-	<Row>01.01,02.0b,02.0c,01.01,01.01,01.01,01.01,01.01,01.01,02.0b,02.0c,01.01,01.01,01.01,01.01,01.01,01.01,01.01</Row>
-	<Row>01.01,02.0b,02.0c,01.01,01.01,01.01,01.01,01.01,01.01,02.0b,02.0c,01.01,01.01,01.01,01.01,01.01,01.01,01.01</Row>
-	<Row>01.01,02.0b,02.0c,01.01,01.0T,01.0K,01.0K,01.0K,01.0K,03.1h,03.1i,01.0K,01.0K,01.0K,01.0K,01.0S,01.01,01.01</Row>
-	<Row>01.01,02.0b,02.0c,01.01,01.0M,04.01,04.01,04.01,04.01,03.1a,03.1b,04.01,04.01,04.01,04.01,01.0L,01.01,01.01</Row>
-	<Row>01.01,02.0b,02.0c,01.01,01.0M,04.01,01.0Q,01.0N,01.0N,03.1j,03.1k,01.0N,01.0N,01.0R,04.01,01.0L,01.01,01.01</Row>
-	<Row>01.01,02.0b,02.0c,01.01,01.0M,04.01,01.0L,01.01,01.01,01.01,01.01,01.01,01.01,01.0M,04.01,01.0L,01.01,01.01</Row>
-	<Row>01.01,02.0b,02.0c,01.01,01.0M,04.01,01.0L,05.0g,05.0d,05.0d,05.0d,05.0h,01.01,01.0M,04.01,01.0L,01.01,01.01</Row>
-	<Row>01.01,02.0b,02.0c,01.01,01.0M,04.01,01.0L,05.0b,05.01,05.01,05.01,05.0c,01.01,01.0M,04.01,01.0O,01.0S,01.01</Row>
-	<Row>01.01,02.0b,02.0c,01.01,01.0M,04.01,01.0L,05.0b,05.01,05.01,05.01,05.0c,01.01,01.0M,04.01,04.01,01.0O,01.0K</Row>
-	<Row>01.0K,03.1h,03.1i,01.0K,01.0P,04.01,01.0L,05.0b,05.01,05.01,05.01,05.0c,01.01,01.0V,01.0R,04.01,04.01,04.01</Row>
-	<Row>04.01,03.1a,03.1b,04.01,04.01,04.01,01.0L,05.0e,05.0a,05.0a,05.0a,05.0f,01.01,01.01,01.0M,04.01,04.01,04.01</Row>
-	<Row>01.0N,03.1j,03.1k,01.0N,01.0N,01.0N,01.0U,01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.0M,04.01,04.01,04.01</Row>
-	<Row>02.0d,02.01,02.01,02.0d,02.0d,02.0d,02.0d,02.0d,02.0d,02.0d,02.0d,02.0d,02.0d,02.0h,01.0M,04.01,04.01,04.01</Row>
-	<Row>02.0a,02.0a,02.0a,02.0a,02.0a,02.0a,02.0a,02.0a,02.0a,02.0a,02.0a,02.0a,02.0i,02.0c,01.0M,04.01,04.01,04.01</Row>
-	<Row>01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01,02.0b,02.0c,01.0M,04.01,04.01,04.01</Row>
+	<Row>01.01,02.0n,02.0o,01.01,01.01,01.01,01.01,01.01,01.01,02.0n,02.0o,01.01,01.01,01.01,01.01,01.01,01.01,01.01</Row>
+	<Row>01.01,02.0n,02.0o,01.01,01.01,01.01,01.01,01.01,01.01,02.0n,02.0o,01.01,01.01,01.01,01.01,01.01,01.01,01.01</Row>
+	<Row>01.01,02.0n,02.0o,01.01,01.01,01.01,01.01,01.01,01.01,02.0n,02.0o,01.01,01.01,01.01,01.01,01.01,01.01,01.01</Row>
+	<Row>01.01,02.0n,02.0o,01.01,01.0T,01.0K,01.0K,01.0K,01.0K,02.19,02.19,01.0K,01.0K,01.0K,01.0K,01.0S,01.01,01.01</Row>
+	<Row>01.01,02.0n,02.0o,01.01,01.0M,03.01,03.01,03.01,03.01,03.01,03.01,03.01,03.01,03.01,03.01,01.0L,01.01,01.01</Row>
+	<Row>01.01,02.0n,02.0o,01.01,01.0M,03.01,01.0Q,01.0N,01.0N,01.0N,01.0N,01.0N,01.0N,01.0R,03.01,01.0L,01.01,01.01</Row>
+	<Row>01.01,02.0n,02.0o,01.01,01.0M,03.01,01.0L,01.01,01.01,04.0g,04.0h,01.01,01.01,01.0M,03.01,01.0L,01.01,01.01</Row>
+	<Row>01.01,02.0n,02.0o,01.01,01.0M,03.01,01.0L,05.0g,05.0d,05.2R,05.2R,05.0h,01.01,01.0M,03.01,01.0L,01.01,01.01</Row>
+	<Row>01.01,02.0n,02.0o,01.01,01.0M,03.01,01.0L,05.0b,05.01,05.01,05.01,05.0c,01.01,01.0M,03.01,01.0O,01.0S,01.01</Row>
+	<Row>01.01,02.0n,02.0o,01.01,01.0M,03.01,01.0L,05.0b,05.01,05.01,05.01,05.0c,01.01,01.0M,03.01,03.01,01.0O,01.0K</Row>
+	<Row>01.0K,02.19,02.19,01.0K,01.0P,03.01,01.0L,05.0b,05.01,05.01,05.01,05.0c,01.01,01.0V,01.0R,03.01,03.01,03.01</Row>
+	<Row>03.01,03.01,03.01,03.01,03.01,03.01,01.0L,05.0e,05.0a,05.0a,05.0a,05.0f,01.01,01.01,01.0M,03.01,03.01,03.01</Row>
+	<Row>01.0N,02.1c,02.1c,01.0N,01.0N,01.0N,01.0U,01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.0M,03.01,03.01,03.01</Row>
+	<Row>02.0p,02.0w,02.0x,02.0p,02.0p,02.0p,02.0p,02.0p,02.0p,02.0p,02.0p,02.0p,02.0p,02.0t,01.0M,03.01,03.01,03.01</Row>
+	<Row>02.0m,02.0m,02.0m,02.0m,02.0m,02.0m,02.0m,02.0m,02.0m,02.0m,02.0m,02.0m,02.0u,02.0o,01.0M,03.01,03.01,03.01</Row>
+	<Row>01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01,02.0n,02.0o,01.0M,03.01,03.01,03.01</Row>
 	
 	<RowElev>1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1</RowElev>
 	<RowElev>1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1</RowElev>
 	<RowElev>1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1</RowElev>
 	<RowElev>1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1</RowElev>
-	<RowElev>1,1,1,1,1,0,0,0,0,1,1,0,0,0,0,1,1,1</RowElev>
+	<RowElev>1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,1,1,1</RowElev>
 	<RowElev>1,1,1,1,1,0,1,1,1,1,1,1,1,1,0,1,1,1</RowElev>
 	<RowElev>1,1,1,1,1,0,1,1,1,1,1,1,1,1,0,1,1,1</RowElev>
 	<RowElev>1,1,1,1,1,0,1,1,1,1,1,1,1,1,0,1,1,1</RowElev>
 	<RowElev>1,1,1,1,1,0,1,1,1,1,1,1,1,1,0,1,1,1</RowElev>
 	<RowElev>1,1,1,1,1,0,1,1,1,1,1,1,1,1,0,0,1,1</RowElev>
 	<RowElev>1,1,1,1,1,0,1,1,1,1,1,1,1,1,1,0,0,0</RowElev>
-	<RowElev>0,1,1,0,0,0,1,1,1,1,1,1,1,1,1,0,0,0</RowElev>
+	<RowElev>0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,0,0,0</RowElev>
 	<RowElev>1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0</RowElev>
 	<RowElev>1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0</RowElev>
 	<RowElev>1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0</RowElev>
@@ -49,9 +53,10 @@
 	
 	<Unit>0,99,BridgeStone,3,9,None,None</Unit>
 	<Unit>0,99,BridgeStone,3,10,None,None</Unit>
-	<Unit>0,99,BridgeStone,4,9,None,None</Unit>
-	<Unit>0,99,BridgeStone,4,10,None,None</Unit>
-	<Unit>0,99,BridgeStone,4,11,None,None</Unit>
+	<Unit tag="Elev,=:1">0,99,BridgeStone,4,9,None,None</Unit>
+	<Unit tag="Elev,=:1">0,99,BridgeStone,4,10,None,None</Unit>
+	<Unit>0,99,BridgeStone,5,9,None,None</Unit>
+	<Unit>0,99,BridgeStone,5,10,None,None</Unit>
 	<Unit>0,99,CastleSandstoneWallNW,7,7,None,None</Unit>
 	<Unit>0,99,CastleSandstoneWallHorizontal,7,8,None,None</Unit>
 	<Unit tag="Locked">0,99,DoorBarredHorizontal,7,9,None,None</Unit>
@@ -63,15 +68,23 @@
 	<Unit>0,99,Altar,9,9,None,None</Unit>
 	<Unit>0,99,LanternLightingAltar,9,9,None,None</Unit>
 	<Unit>0,99,CastleSandstoneWallVertical,9,11,None,None</Unit>
+	<Unit>0,99,BridgeStone,10,1,None,None</Unit>
+	<Unit>0,99,BridgeStone,10,2,None,None</Unit>
 	<Unit>0,99,CastleSandstoneWallVertical,10,7,None,None</Unit>
 	<Unit>0,99,CastleSandstoneWallVertical,10,11,None,None</Unit>
 	<Unit>0,99,BoulderSandstone,10,12,None,None</Unit>
+	<Unit>0,99,BridgeStone,11,1,None,None</Unit>
+	<Unit tag="Elev,=:1">0,99,BridgeStone,11,1,None,None</Unit>
+	<Unit>0,99,BridgeStone,11,2,None,None</Unit>
+	<Unit tag="Elev,=:1">0,99,BridgeStone,11,2,None,None</Unit>
 	<Unit>0,99,CastleSandstoneWallSW,11,7,None,None</Unit>
 	<Unit>0,99,RocksSandstone,11,8,None,None</Unit>
 	<Unit>0,99,CastleSandstoneWallHorizontal,11,9,None,None</Unit>
 	<Unit>0,99,CastleSandstoneWallHorizontal,11,10,None,None</Unit>
 	<Unit>0,99,CastleSandstoneWallSE,11,11,None,None</Unit>
 	<Unit>0,99,BushSnow,11,13,None,None</Unit>
+	<Unit>0,99,BridgeStone,12,1,None,None</Unit>
+	<Unit>0,99,BridgeStone,12,2,None,None</Unit>
 	<Unit>0,99,BushSnow,12,6,None,None</Unit>
 	<Unit>0,99,LampLit,15,10,None,None</Unit>
 	<Unit>0,99,BoulderSandstone,15,11,None,None</Unit>
@@ -101,9 +114,93 @@
 		</Branch>
 	</Dialogue>
 
-	<Dialogue trigger="OnReachingArea/Lantern Zone,-ANY-,1" convID="Enemy Reached Lantern" r="false">
+	<Dialogue trigger="OnReachingArea/Lantern Zone,-ANY-,1" convID="Upstarts Reached Lantern" r="false">
 		<Branch num="0" name="">Game Over/Uh-oh, that's how you lose. Oh well!
 			<Reply>Game over!/LoseBattle</Reply>
+		</Branch>
+	</Dialogue>
+
+	<Dialogue trigger="BeforeTurn/0" convID="Intro" r="false">
+		<Branch num="0" name="">/This is the post deployment dialogue.
+			<Reply>Thanks/NextBranch</Reply>
+		</Branch>
+	</Dialogue>
+
+	<Dialogue trigger="OnVictory/0" convID="Victory" r="false">
+		<Branch num="0" name="">/This is the victory dialogue, you did it.
+			<Reply>I Sure Did!/NextBranch</Reply>
+		</Branch>
+	</Dialogue>
+
+	<Dialogue trigger="OnCharAttacked/1" convID="Upstarts Engaged" r="false">
+		<Branch num="0" name="">/This is the dialogue for when the upstarts are engaged on.
+			<Action>RemoveConv/Upstarts Engages</Action>
+			<Reply>Continue./NextBranch</Reply>
+		</Branch>
+	</Dialogue>
+
+	<Dialogue trigger="OnCharAttacked/2" convID="Frostborn Charity Engaged" r="false">
+		<Branch num="0" name="">/This is the dialogue for when the frostborn charity is engaged on.
+			<Action>RemoveConv/Frostborn Charity Engages</Action>
+			<Reply>Continue./NextBranch</Reply>
+		</Branch>
+	</Dialogue>
+
+	<Dialogue trigger="OnCharAttacked/3" convID="Ungrateful Villagers Engaged" r="false">
+		<Branch num="0" name="">/This is the dialogue for the villagers getting engaged on.
+			<Action>RemoveConv/Ungrateful Villagers Engages</Action>
+			<Reply>Continue./NextBranch</Reply>
+		</Branch>
+	</Dialogue>
+
+	<Dialogue trigger="OnCharAttacked/-ANY-,-ANY-,-ANY-,1" convID="Upstarts Engages" r="false">
+		<Branch num="0" name="">/
+			<Action>LoadConv/Upstarts Engaged</Action>
+			<Action>EndConvImmediately/</Action>
+		</Branch>
+	</Dialogue>
+
+	<Dialogue trigger="OnCharAttacked/-ANY-,-ANY-,-ANY-,2" convID="Frostborn Charity Engages" r="false">
+		<Branch num="0" name="">/
+			<Action>LoadConv/Frostborn Charity Engaged</Action>
+			<Action>EndConvImmediately/</Action>
+		</Branch>
+	</Dialogue>
+
+	<Dialogue trigger="OnCharAttacked/-ANY-,-ANY-,-ANY-,3" convID="Ungrateful Villagers Engages" r="false">
+		<Branch num="0" name="">/
+			<Action>LoadConv/Ungrateful Villagers Engaged</Action>
+			<Action>EndConvImmediately/</Action>
+		</Branch>
+	</Dialogue>
+
+	<Dialogue trigger="None/" convID="Upstarts Boss Defeat" r="false">
+		<Branch num="0" name="">/This will be the dialogue shown when the upstarts boss is defeated
+			<Reply>Continue./NextBranch</Reply>
+		</Branch>
+	</Dialogue>
+
+	<Dialogue trigger="None/" convID="Frostborn Charity Boss Defeat" r="false">
+		<Branch num="0" name="">/This will be the dialogue that shows when the frostborn charity boss is defeated
+			<Reply>Continue./NextBranch</Reply>
+		</Branch>
+	</Dialogue>
+
+	<Dialogue trigger="None/" convID="Ungrateful Villagers Defeated" r="false">
+		<Branch num="0" name="">/This is the dialogue shown when the ungrateful village boss is defeated
+			<Reply>Continue./NextBranch</Reply>
+		</Branch>
+	</Dialogue>
+
+	<Dialogue trigger="OnReachingArea/Lantern Zone,-ANY-,2" convID="Frostborn Charity Reached Lantern" r="false">
+		<Branch num="0" name="">/This is the dialogue that plays when the frostborn charity reach the lantern.
+			<Reply>Oh no!/LoseBattle</Reply>
+		</Branch>
+	</Dialogue>
+
+	<Dialogue trigger="OnReachingArea/Lantern Zone,-ANY-,3" convID="Ungrateful Villagers Reach Lantern" r="false">
+		<Branch num="0" name="">/This is the dialogue that plays when the ungrateful villagers reach the lantern.
+			<Reply>Darn!/LoseBattle</Reply>
 		</Branch>
 	</Dialogue>
 

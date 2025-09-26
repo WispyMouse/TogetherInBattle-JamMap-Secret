@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Level mapname="First Battle" maptype="Single Player" maxplayers="3" battleBG="" musictrack="Against the Cult" winAura="0" winMorale="0" lossMorale="0" nextbattle="Between" defeatScene="" saveable="true" procgen="false" campaign="Secret Jam" lastEdited="9/21/2025 4:50:14 PM">
+<Level mapname="First Battle" maptype="Single Player" maxplayers="2" battleBG="" musictrack="Against the Cult" winAura="0" winMorale="0" lossMorale="0" nextbattle="Between" defeatScene="" saveable="true" procgen="false" campaign="Secret Jam" lastEdited="9/25/2025 7:04:55 PM">
 
 	<Army num="0" AI="false" aiProfile="Balanced" name="Seekers of Frost" color="Blue" alliedWith="" assignRoster="-1"></Army>
 	<Army num="1" AI="true" aiProfile="Balanced" name="Hoarders of Valuable Secrets" color="Red" alliedWith="2" assignRoster="-1"></Army>
@@ -9,6 +9,8 @@
 	<Condition>Defeat Army,0,1</Condition>
 	<Condition>Deployment,0,0,Battle Prep,6</Condition>
 	<Condition>Death Rules,Back at Full</Condition>
+	
+	<Objective>Seize the secret of frost from these scoundrels</Objective>
 	
 	<Tileset>01,Wood</Tileset>
 	<Tileset>02,Cave</Tileset>
@@ -280,7 +282,6 @@
 	<Unit tag="AggroGroup,3">0,1,Mook One/,14,11,Left,None</Unit>
 	<Unit tag="AggroGroup,3">0,1,Mook One/,16,7,Right,None</Unit>
 	<Unit tag="AggroGroup,3">0,1,Mook Three/,17,11,Down,None</Unit>
-	<Unit tag="Inactive">0,2,Our/Frost Golem,8,2,Down,None</Unit>
 
 	<Script>Grab Lantern
 		<Action>Log/Running Grab Lantern Dialogue</Action>
@@ -360,6 +361,18 @@
 			<Action>AggroGroup/3</Action>
 			<Action>AggroGroup/4</Action>
 			<Reply>Continue./NextBranch</Reply>
+		</Branch>
+	</Dialogue>
+
+	<Dialogue trigger="BeforeTurn/0" convID="Post Deployment" r="false">
+		<Branch num="0" name="">/This is the post-deployment dialogue.
+			<Reply>Yay!/NextBranch</Reply>
+		</Branch>
+	</Dialogue>
+
+	<Dialogue trigger="OnVictory/0" convID="Victory" r="false">
+		<Branch num="0" name="">/This is the dialogue that shows upon victory.
+			<Reply>I love winning!/NextBranch</Reply>
 		</Branch>
 	</Dialogue>
 
