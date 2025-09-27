@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Level mapname="Second Battle" maptype="Single Player" maxplayers="2" battleBG="" musictrack="Form Up!" winAura="0" winMorale="0" lossMorale="0" nextbattle="Final Scene" defeatScene="" saveable="true" procgen="false" campaign="Secret Jam" lastEdited="9/25/2025 7:59:08 PM">
+<Level mapname="Second Battle" maptype="Single Player" maxplayers="4" battleBG="" musictrack="Form Up!" winAura="0" winMorale="0" lossMorale="0" nextbattle="Final Scene" defeatScene="" saveable="true" procgen="false" campaign="Secret Jam" lastEdited="9/27/2025 1:26:39 AM">
 
 	<Army num="0" AI="false" aiProfile="Balanced" name="Coldfront" color="Blue" alliedWith="" assignRoster="0"></Army>
 	<Army num="1" AI="true" aiProfile="Aggressive" name="Disrespectful Upstarts" color="Red" alliedWith="" assignRoster="-1"></Army>
@@ -96,14 +96,19 @@
 	<Unit>0,0,FromPlayerRoster,7,6,Up,None</Unit>
 	<Unit>0,0,FromPlayerRoster,7,12,Right,None</Unit>
 	<Unit>0,0,FromPlayerRoster,8,6,Up,None</Unit>
-	<Unit>0,1,Generate:Swordsman/Enemy////1/true/0/0,0,7,Down,None</Unit>
-	<Unit>0,1,Generate:Swordsman/Enemy////1/true/0/0,0,8,Down,None</Unit>
-	<Unit>0,1,Generate:Swordsman/Enemy////1/true/0/0,0,11,Down,None</Unit>
-	<Unit>0,1,Generate:Swordsman/Enemy////1/true/0/0,0,12,Down,None</Unit>
-	<Unit>0,1,Generate:Swordsman/Enemy////1/true/0/0,5,17,Left,None</Unit>
-	<Unit>0,1,Generate:Swordsman/Enemy////1/true/0/0,6,17,Left,None</Unit>
-	<Unit>0,1,Mook Two/,13,2,Right,None</Unit>
-	<Unit>0,1,Mook Two/,14,2,Right,None</Unit>
+	<Unit>0,1,Mook One/,6,15,Left,None</Unit>
+	<Unit>4,1,Upstart/Leader,7,15,Left,None</Unit>
+	<Unit>0,1,Mook/Four,7,16,Left,None</Unit>
+	<Unit>0,1,Mook Three/,8,15,Left,None</Unit>
+	<Unit>0,2,Mook One/,0,8,Down,None</Unit>
+	<Unit>0,2,Charatass/,0,9,Down,None</Unit>
+	<Unit>0,2,Apostacratus/,0,10,Down,None</Unit>
+	<Unit>0,2,Boss/,0,11,Down,None</Unit>
+	<Unit>0,2,Their/Frost Golem,1,9,Down,None</Unit>
+	<Unit>0,2,Their/Frost Golem,1,10,Down,None</Unit>
+	<Unit>0,3,Mook Two/,13,2,Right,None</Unit>
+	<Unit>0,3,Grumbly/Leader,13,3,Right,None</Unit>
+	<Unit>0,3,Mook Two/,14,2,Right,None</Unit>
 
 	<Dialogue trigger="OnLoaded/" convID="Initialize" r="false">
 		<Branch num="0" name="">/
