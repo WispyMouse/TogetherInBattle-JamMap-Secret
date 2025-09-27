@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Level mapname="First Battle" maptype="Single Player" maxplayers="3" battleBG="" musictrack="Against the Cult" winAura="0" winMorale="0" lossMorale="0" nextbattle="Between" defeatScene="" saveable="true" procgen="false" campaign="Secret Jam" lastEdited="9/27/2025 2:34:54 AM">
+<Level mapname="First Battle" maptype="Single Player" maxplayers="3" battleBG="" musictrack="Against the Cult" winAura="0" winMorale="0" lossMorale="0" nextbattle="Between" defeatScene="" saveable="true" procgen="false" campaign="Secret Jam" lastEdited="9/27/2025 4:29:03 PM">
 
 	<Army num="0" AI="false" aiProfile="Balanced" name="The New Coldfront" color="Black" alliedWith="" assignRoster="-1"></Army>
 	<Army num="1" AI="true" aiProfile="Balanced" name="Hoarders of Valuable Truth" color="Blue" alliedWith="2" assignRoster="-1"></Army>
@@ -39,6 +39,7 @@
 	<Row>03.2O,03.2O,03.2O,03.08,03.01,03.04,03.2O,03.2O,04.1J,04.1J,03.2O,03.2O,03.2O,03.2O,03.08,05.01,05.01,05.01,05.01,05.01</Row>
 	<Row>03.01,03.01,03.01,03.01,03.01,03.2Q,03.01,03.01,04.0L,04.0M,03.01,03.01,03.01,03.01,03.0V,03.0N,03.0R,05.01,05.01,05.01</Row>
 	<Row>03.01,03.01,03.01,03.01,03.01,03.2Q,03.01,03.01,04.0L,04.0M,03.01,03.01,03.01,03.01,03.01,03.01,03.0M,05.01,05.01,05.01</Row>
+	<Row>03.01,03.01,03.01,03.01,03.01,03.2Q,03.01,03.01,04.0L,04.0M,03.01,03.01,03.01,03.01,03.01,03.01,03.0M,05.01,05.01,05.01</Row>
 	
 	<RowElev>2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2</RowElev>
 	<RowElev>2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2</RowElev>
@@ -59,6 +60,7 @@
 	<RowElev>3,3,3,3,3,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2</RowElev>
 	<RowElev>3,3,3,3,3,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2</RowElev>
 	<RowElev>3,3,3,3,2,2,2,2,2,2,2,2,2,2,2,0,0,0,0,0</RowElev>
+	<RowElev>2,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,1,0,0,0</RowElev>
 	<RowElev>2,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,1,0,0,0</RowElev>
 	<RowElev>2,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,1,0,0,0</RowElev>
 	
@@ -124,8 +126,8 @@
 	<Unit>0,99,CastleWallVertical,5,7,None,None</Unit>
 	<Unit>0,99,IceSpikes,5,8,None,None</Unit>
 	<Unit>0,99,IcePatch,5,9,None,None</Unit>
+	<Unit trigger="Use Once,Grab Lantern">0,99,LanternLightingAltar,5,10,None,None</Unit>
 	<Unit>0,99,Altar,5,10,None,None</Unit>
-	<Unit>0,99,LanternLightingAltar,5,10,None,None</Unit>
 	<Unit>0,99,CastleWallVertical,5,11,None,None</Unit>
 	<Unit>0,99,CastleWallSW,5,14,None,None</Unit>
 	<Unit>0,99,CastleWallHorizontal,5,15,None,None</Unit>
@@ -268,12 +270,12 @@
 	<Unit>0,99,FenceStoneHorizontal,18,13,None,None</Unit>
 	<Unit>0,99,FenceStoneHorizontal,18,14,None,None</Unit>
 	<Unit>0,99,BoulderSnow,19,13,None,None</Unit>
-	<Unit>0,0,FromPlayerRoster,19,5,Up,None</Unit>
+	<Unit>0,0,FromPlayerRoster,19,6,Up,None</Unit>
 	<Unit>0,0,FromPlayerRoster,19,7,Up,None</Unit>
 	<Unit>0,0,FromPlayerRoster,19,8,Up,None</Unit>
-	<Unit>0,0,FromPlayerRoster,19,9,Right,None</Unit>
 	<Unit>0,0,FromPlayerRoster,20,5,Up,None</Unit>
 	<Unit>0,0,FromPlayerRoster,20,6,Up,None</Unit>
+	<Unit>0,0,FromPlayerRoster,20,7,Right,None</Unit>
 	<Unit tag="AggroGroup,4/Passive">0,1,Mook One/,1,6,Down,None</Unit>
 	<Unit tag="AggroGroup,4/Passive">0,1,Mook One/,1,13,Down,None</Unit>
 	<Unit tag="AggroGroup,4/Passive">0,1,Boss/,3,16,Left,None</Unit>
@@ -291,11 +293,12 @@
 	<Unit tag="AggroGroup,1">0,1,Their/Frost Golem,14,10,Down,None</Unit>
 	<Unit tag="AggroGroup,1">0,1,Their/Frost Golem,15,7,Right,None</Unit>
 	<Unit tag="AggroGroup,1">0,1,Their/Frost Golem,17,11,Left,None</Unit>
-	<Unit tag="Inactive">0,2,Coolio/Frost Golem,8,3,Down,None</Unit>
+	<Unit tag="Inactive">0,2,Deactivated Frost Golem/,8,3,Down,None</Unit>
 
 	<Script>Grab Lantern
 		<Action>Log/Running Grab Lantern Dialogue</Action>
 		<Action>LoadConv/Grab Lantern Dialogue</Action>
+		<Action></Action>
 	</Script>
 
 	<Script>Armory Switch
@@ -322,6 +325,13 @@
 		<Action>AddTextOverlay/The northern door behind the altar has been unlocked</Action>
 	</Script>
 
+	<Script>Recruit Coolio Frostybones
+		<Action>Recruit/Deactivated Frost Golem:,0</Action>
+		<Action>SetStat/Deactivated Frost Golem/,Army,=:0</Action>
+		<Action>RemoveStatus/Deactivated Frost Golem,Talkable</Action>
+		<Action>SetStat/Deactivated Frost Golem,Name,Coolio:Frostybones</Action>
+	</Script>
+
 	<Dialogue trigger="OnLoaded/" convID="Initialize" r="false">
 		<Branch num="0" name="">/
 			<Action>Run/Initialize_Try</Action>
@@ -329,7 +339,7 @@
 			<Action>SetVal/Lantern Grabbed,=:0</Action>
 			<Action>SetArea/Escape,11,12,13,15</Action>
 			<Action>SetArea/Inside,9,12,5,15</Action>
-			<Action>AddStatus/Our Frost Golem,Talkable</Action>
+			<Action>AddStatus/Deactivated Frost Golem,Talkable</Action>
 			<Action>EndConvImmediately/</Action>
 			<Reply>Continue./...</Reply>
 		</Branch>
@@ -345,12 +355,18 @@
 		</Branch>
 	</Dialogue>
 
-	<Dialogue trigger="OnTalk/-ANY-,Our Frost Golem" convID="Activate Our Golem" r="false">
-		<Branch num="0" name="">/Oh, this is a golem. Ours now!
-			<Action>SetStat/Our Frost Golem,Army,=:0</Action>
-			<Action>RemoveStatus/Our Frost Golem,Talkable</Action>
-			<Action>Recruit/Our Frost Golem,0</Action>
-			<Reply>Continue./NextBranch</Reply>
+	<Dialogue trigger="OnTalk/-ANY-,Deactivated Frost Golem" convID="Activate Golem" r="true">
+		<Branch num="2" name="">/The player should not see this dialogue
+			<Action>IfValGoTo/Lantern Grabbed,=,0,1</Action>
+			<Action>IfValGoTo/Lantern Grabbed,=,1,2</Action>
+			<Action>EndConvImmediately/</Action>
+		</Branch>
+		<Branch num="1" name="No Lantern">/Oh, weird. An inactive golem. Maybe it was defective?
+			<Reply>How Strange/EndConv</Reply>
+		</Branch>
+		<Branch num="0" name="Has Lantern">/Oh, this is a golem. Ours now!
+			<Action>Run/Recruit Coolio Frostybones</Action>
+			<Reply>Great!/EndConv</Reply>
 		</Branch>
 	</Dialogue>
 
