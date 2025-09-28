@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Level mapname="First Battle" maptype="Single Player" maxplayers="3" battleBG="" musictrack="Against the Cult" winAura="0" winMorale="0" lossMorale="0" nextbattle="Between" defeatScene="" saveable="true" procgen="false" campaign="Secret Jam" lastEdited="9/27/2025 6:12:59 PM">
+<Level mapname="First Battle" maptype="Single Player" maxplayers="3" battleBG="" musictrack="Against the Cult" winAura="0" winMorale="0" lossMorale="0" nextbattle="Between" defeatScene="" saveable="true" procgen="false" campaign="Secret Jam" lastEdited="9/27/2025 8:45:39 PM">
 
 	<Army num="0" AI="false" aiProfile="Balanced" name="The New Coldfront" color="Black" alliedWith="" assignRoster="-1"></Army>
 	<Army num="1" AI="true" aiProfile="Balanced" name="Hoarders of Valuable Truth" color="Blue" alliedWith="2" assignRoster="-1"></Army>
@@ -271,29 +271,28 @@
 	<Unit>0,99,FenceStoneHorizontal,18,13,None,None</Unit>
 	<Unit>0,99,FenceStoneHorizontal,18,14,None,None</Unit>
 	<Unit>0,99,BoulderSnow,19,13,None,None</Unit>
+	<Unit tag="AggroGroup,3/Passive">0,0,Hired Mercenary Guard/,2,19,Down,None</Unit>
 	<Unit tag="ID,102">0,0,FromPlayerRoster,19,6,Up,None</Unit>
 	<Unit tag="ID,101">0,0,FromPlayerRoster,19,7,Up,None</Unit>
 	<Unit tag="ID,100">0,0,FromPlayerRoster,19,8,Up,None</Unit>
 	<Unit tag="ID,105">0,0,FromPlayerRoster,20,5,Up,None</Unit>
 	<Unit tag="ID,104">0,0,FromPlayerRoster,20,6,Up,None</Unit>
 	<Unit tag="ID,103">0,0,FromPlayerRoster,20,7,Right,None</Unit>
-	<Unit tag="AggroGroup,4/Passive">0,1,Mook One/,1,6,Down,None</Unit>
-	<Unit tag="AggroGroup,4/Passive">0,1,Mook One/,1,13,Down,None</Unit>
-	<Unit tag="AggroGroup,4/Passive">0,1,Boss/,3,16,Left,None</Unit>
-	<Unit tag="AggroGroup,4/Passive">0,1,Mook Two/,3,18,Down,None</Unit>
-	<Unit tag="AggroGroup,4/Passive">0,1,Mook Three/,4,5,Right,None</Unit>
+	<Unit tag="AggroGroup,3/Passive">0,1,Frostborne Charity Enthusiast/,1,6,Down,None</Unit>
+	<Unit tag="AggroGroup,3/Passive">0,1,Boss/,3,16,Left,None</Unit>
 	<Unit tag="AggroGroup,4/Passive">0,1,Charatass/,5,1,Right,None</Unit>
-	<Unit tag="AggroGroup,4/Passive">0,1,Mook Two/,7,13,Up,None</Unit>
-	<Unit tag="AggroGroup,4/Passive">0,1,Mook Three/,8,10,Down,None</Unit>
-	<Unit tag="AggroGroup,4/Passive">0,1,Mook Two/,10,15,Right,None</Unit>
-	<Unit tag="AggroGroup,4/Passive">0,1,Mook One/,10,18,Down,None</Unit>
-	<Unit tag="AggroGroup,4/Passive">0,1,Mook One/,11,10,Down,None</Unit>
-	<Unit tag="AggroGroup,4/Passive">0,1,Mook/Four,11,12,Right,None</Unit>
-	<Unit>0,1,Mook Three/,12,3,Right,None</Unit>
-	<Unit tag="AggroGroup,4/Passive">0,1,Mook One/,13,16,Right,None</Unit>
-	<Unit tag="AggroGroup,1">0,1,Their/Frost Golem,14,10,Down,None</Unit>
-	<Unit tag="AggroGroup,1">0,1,Their/Frost Golem,15,7,Right,None</Unit>
-	<Unit tag="AggroGroup,1">0,1,Their/Frost Golem,17,11,Left,None</Unit>
+	<Unit tag="AggroGroup,3/Passive">0,1,Frost Golem/,6,19,Down,None</Unit>
+	<Unit tag="AggroGroup,2/Passive">0,1,Frostborne Charity Enforcer/,8,10,Down,None</Unit>
+	<Unit tag="AggroGroup,2/Passive">0,1,Frostborne Charity Enthusiast/,10,8,Right,None</Unit>
+	<Unit tag="AggroGroup,2/Passive">0,1,Hired Townie/,10,18,Down,None</Unit>
+	<Unit tag="AggroGroup,2/Passive">0,1,Frostborne Charity Enthusiast/,11,11,Up,None</Unit>
+	<Unit tag="AggroGroup,2/Passive">0,1,Hired Mercenary Guard/,11,13,Left,None</Unit>
+	<Unit tag="AggroGroup,2/Passive">0,1,Frostborne Charity Enforcer/,12,3,Right,None</Unit>
+	<Unit tag="AggroGroup,2/Passive">0,1,Hired Townie/,12,8,Left,None</Unit>
+	<Unit tag="AggroGroup,2/Passive">0,1,Hired Mercenary Guard/,13,16,Right,None</Unit>
+	<Unit tag="AggroGroup,1">0,1,Frost Golem/,14,10,Down,None</Unit>
+	<Unit tag="AggroGroup,1">0,1,Frost Golem/,15,7,Down,None</Unit>
+	<Unit tag="AggroGroup,1">0,1,Frost Golem/,17,10,Left,None</Unit>
 	<Unit tag="Inactive">0,2,Deactivated Frost Golem/,8,3,Down,None</Unit>
 
 	<Script>Grab Lantern
