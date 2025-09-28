@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Level mapname="First Battle" maptype="Single Player" maxplayers="3" battleBG="" musictrack="Against the Cult" winAura="0" winMorale="0" lossMorale="0" nextbattle="Between" defeatScene="" saveable="true" procgen="false" campaign="Secret Jam" lastEdited="9/27/2025 4:29:03 PM">
+<Level mapname="First Battle" maptype="Single Player" maxplayers="3" battleBG="" musictrack="Against the Cult" winAura="0" winMorale="0" lossMorale="0" nextbattle="Between" defeatScene="" saveable="true" procgen="false" campaign="Secret Jam" lastEdited="9/27/2025 6:12:59 PM">
 
 	<Army num="0" AI="false" aiProfile="Balanced" name="The New Coldfront" color="Black" alliedWith="" assignRoster="-1"></Army>
 	<Army num="1" AI="true" aiProfile="Balanced" name="Hoarders of Valuable Truth" color="Blue" alliedWith="2" assignRoster="-1"></Army>
@@ -11,6 +11,7 @@
 	<Condition>Death Rules,Back at Full</Condition>
 	
 	<Objective>Seize the secret of frost from these scoundrels</Objective>
+	<Objective>Teach their leadership a lesson for deceiving us</Objective>
 	
 	<Tileset>01,Wood</Tileset>
 	<Tileset>02,Cave</Tileset>
@@ -270,12 +271,12 @@
 	<Unit>0,99,FenceStoneHorizontal,18,13,None,None</Unit>
 	<Unit>0,99,FenceStoneHorizontal,18,14,None,None</Unit>
 	<Unit>0,99,BoulderSnow,19,13,None,None</Unit>
-	<Unit>0,0,FromPlayerRoster,19,6,Up,None</Unit>
-	<Unit>0,0,FromPlayerRoster,19,7,Up,None</Unit>
-	<Unit>0,0,FromPlayerRoster,19,8,Up,None</Unit>
-	<Unit>0,0,FromPlayerRoster,20,5,Up,None</Unit>
-	<Unit>0,0,FromPlayerRoster,20,6,Up,None</Unit>
-	<Unit>0,0,FromPlayerRoster,20,7,Right,None</Unit>
+	<Unit tag="ID,102">0,0,FromPlayerRoster,19,6,Up,None</Unit>
+	<Unit tag="ID,101">0,0,FromPlayerRoster,19,7,Up,None</Unit>
+	<Unit tag="ID,100">0,0,FromPlayerRoster,19,8,Up,None</Unit>
+	<Unit tag="ID,105">0,0,FromPlayerRoster,20,5,Up,None</Unit>
+	<Unit tag="ID,104">0,0,FromPlayerRoster,20,6,Up,None</Unit>
+	<Unit tag="ID,103">0,0,FromPlayerRoster,20,7,Right,None</Unit>
 	<Unit tag="AggroGroup,4/Passive">0,1,Mook One/,1,6,Down,None</Unit>
 	<Unit tag="AggroGroup,4/Passive">0,1,Mook One/,1,13,Down,None</Unit>
 	<Unit tag="AggroGroup,4/Passive">0,1,Boss/,3,16,Left,None</Unit>
@@ -298,7 +299,7 @@
 	<Script>Grab Lantern
 		<Action>Log/Running Grab Lantern Dialogue</Action>
 		<Action>LoadConv/Grab Lantern Dialogue</Action>
-		<Action></Action>
+		<Action>/</Action>
 	</Script>
 
 	<Script>Armory Switch
@@ -340,6 +341,9 @@
 			<Action>SetArea/Escape,11,12,13,15</Action>
 			<Action>SetArea/Inside,9,12,5,15</Action>
 			<Action>AddStatus/Deactivated Frost Golem,Talkable</Action>
+			<Action>SetStat/Boss,Damage,=:20</Action>
+			<Action>SetStat/Charatass,Damage,=:20</Action>
+			<Action>SetVal/Bosses Alive,=:2</Action>
 			<Action>EndConvImmediately/</Action>
 			<Reply>Continue./...</Reply>
 		</Branch>
@@ -351,7 +355,7 @@
 			<Action>GiveItem/-FNAME-,Lantern of Frost,,,true</Action>
 			<Action>AddSpeakerPortrait/left,Quizzical</Action>
 			<Action>Run/Give Everyone Blessing of Frost</Action>
-			<Reply>Continue./NextBranch</Reply>
+			<Reply>Continue./LoadConv/Check Victory</Reply>
 		</Branch>
 	</Dialogue>
 
@@ -399,6 +403,43 @@
 	<Dialogue trigger="OnVictory/0" convID="Victory" r="false">
 		<Branch num="0" name="">/This is the dialogue that shows upon victory.
 			<Reply>I love winning!/NextBranch</Reply>
+		</Branch>
+	</Dialogue>
+
+	<Dialogue trigger="OnCharDeath/1,Boss" convID="Boss One Defeated" r="false">
+		<Branch num="0" name="">Boss/Ach! I've been defeated!
+			<Action>SetVal/Bosses Alive,-:1</Action>
+			<Reply>Got 'Em/LoadConv/Check Victory</Reply>
+		</Branch>
+	</Dialogue>
+
+	<Dialogue trigger="OnCharDeath/1,Charatass" convID="Charatass Defeated" r="false">
+		<Branch num="0" name="">Charatass/Oops, I've been defeated.
+			<Action>SetVal/Bosses Alive,-:1</Action>
+			<Reply>Hah!/LoadConv/Check Victory</Reply>
+		</Branch>
+	</Dialogue>
+
+	<Dialogue trigger="None/" convID="Check Victory" r="true">
+		<Branch num="0" name="">/Players shouldn't see this.
+			<Action>IfValGoTo/Lantern Grabbed,=,0,1</Action>
+			<Action>IfValGoTo/Bosses Alive,g=,1,2</Action>
+			<Action>WinBattle/</Action>
+		</Branch>
+		<Branch num="1" name="">/But we still need to know how they did all this!
+			<Reply>Continue./EndConv</Reply>
+		</Branch>
+		<Branch num="2" name="">/Should not see this
+			<Action>IfValGoTo/Bosses Alive,=,2,3</Action>
+			<Action>IfValGoTo/Bosses Alive,=,1,4</Action>
+			<Action>WinBattle/</Action>
+			<Action>EndConvImmediately/</Action>
+		</Branch>
+		<Branch num="3" name="">/Now to take on the head of these liars!
+			<Reply>Go Get 'em/EndConv</Reply>
+		</Branch>
+		<Branch num="4" name="">/Now for the other one!
+			<Reply>Yea Get That Guy/EndConv</Reply>
 		</Branch>
 	</Dialogue>
 
