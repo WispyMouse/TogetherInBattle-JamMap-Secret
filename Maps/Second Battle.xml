@@ -1,13 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Level mapname="Second Battle" maptype="Single Player" maxplayers="4" battleBG="" musictrack="Form Up!" winAura="0" winMorale="0" lossMorale="0" nextbattle="Final Scene" defeatScene="" saveable="true" procgen="false" campaign="Secret Jam" lastEdited="9/27/2025 8:46:21 PM">
+<Level mapname="Second Battle" maptype="Single Player" maxplayers="4" battleBG="" musictrack="Form Up!" winAura="0" winMorale="0" lossMorale="0" nextbattle="Final Scene" defeatScene="" saveable="true" procgen="false" campaign="Secret Jam" lastEdited="9/28/2025 11:14:13 PM">
 
 	<Army num="0" AI="false" aiProfile="Balanced" name="Coldfront" color="Black" alliedWith="" assignRoster="0"></Army>
 	<Army num="1" AI="true" aiProfile="Aggressive" name="Disrespectful Upstarts" color="Red" alliedWith="" assignRoster="-1"></Army>
 	<Army num="2" AI="true" aiProfile="Balanced" name="Spiteful Liars" color="Blue" alliedWith="" assignRoster="-1"></Army>
 	<Army num="3" AI="true" aiProfile="Cautious" name="Ungrateful Villagers" color="Orange" alliedWith="" assignRoster="-1"></Army>
 	
-	<Condition>Defeat Army,0,1</Condition>
+	<Condition>Defeat Army,1,0</Condition>
 	<Condition>Deployment,0,0</Condition>
+	<Condition>Kill-All Victory,0,true</Condition>
+	<Condition>Defeat Army,2,0</Condition>
+	<Condition>Defeat Army,3,0</Condition>
+	<Condition>Recover,0,1,1</Condition>
 	
 	<Objective>Protect the secret of frost from these scoundrels!</Objective>
 	
@@ -118,39 +122,39 @@
 	</Dialogue>
 
 	<Dialogue trigger="OnReachingArea/Lantern Zone,-ANY-,1" convID="Upstarts Reached Lantern" r="false">
-		<Branch num="0" name="">Game Over/Uh-oh, that's how you lose. Oh well!
+		<Branch num="0" name="">Game Over/STUB: Uh-oh, that's how you lose. Oh well!
 			<Reply>Game over!/LoseBattle</Reply>
 		</Branch>
 	</Dialogue>
 
 	<Dialogue trigger="BeforeTurn/0" convID="Intro" r="false">
-		<Branch num="0" name="">/This is the post deployment dialogue.
+		<Branch num="0" name="">/STUB: This is the post deployment dialogue.
 			<Reply>Thanks/NextBranch</Reply>
 		</Branch>
 	</Dialogue>
 
 	<Dialogue trigger="OnVictory/0" convID="Victory" r="false">
-		<Branch num="0" name="">/This is the victory dialogue, you did it.
+		<Branch num="0" name="">/STUB: This is the victory dialogue, you did it.
 			<Reply>I Sure Did!/NextBranch</Reply>
 		</Branch>
 	</Dialogue>
 
 	<Dialogue trigger="OnCharAttacked/1" convID="Upstarts Engaged" r="false">
-		<Branch num="0" name="">/This is the dialogue for when the upstarts are engaged on.
+		<Branch num="0" name="">/STUB: This is the dialogue for when the upstarts are engaged on.
 			<Action>RemoveConv/Upstarts Engages</Action>
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
 	</Dialogue>
 
 	<Dialogue trigger="OnCharAttacked/2" convID="Frostborn Charity Engaged" r="false">
-		<Branch num="0" name="">/This is the dialogue for when the frostborn charity is engaged on.
+		<Branch num="0" name="">/STUB: This is the dialogue for when the frostborn charity is engaged on.
 			<Action>RemoveConv/Frostborn Charity Engages</Action>
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
 	</Dialogue>
 
 	<Dialogue trigger="OnCharAttacked/3" convID="Ungrateful Villagers Engaged" r="false">
-		<Branch num="0" name="">/This is the dialogue for the villagers getting engaged on.
+		<Branch num="0" name="">/STUB: This is the dialogue for the villagers getting engaged on.
 			<Action>RemoveConv/Ungrateful Villagers Engages</Action>
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
@@ -178,31 +182,31 @@
 	</Dialogue>
 
 	<Dialogue trigger="None/" convID="Upstarts Boss Defeat" r="false">
-		<Branch num="0" name="">/This will be the dialogue shown when the upstarts boss is defeated
+		<Branch num="0" name="">/STUB: This will be the dialogue shown when the upstarts boss is defeated
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
 	</Dialogue>
 
 	<Dialogue trigger="None/" convID="Frostborn Charity Boss Defeat" r="false">
-		<Branch num="0" name="">/This will be the dialogue that shows when the frostborn charity boss is defeated
+		<Branch num="0" name="">/STUB: This will be the dialogue that shows when the frostborn charity boss is defeated
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
 	</Dialogue>
 
 	<Dialogue trigger="None/" convID="Ungrateful Villagers Defeated" r="false">
-		<Branch num="0" name="">/This is the dialogue shown when the ungrateful village boss is defeated
+		<Branch num="0" name="">/STUB: This is the dialogue shown when the ungrateful village boss is defeated
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
 	</Dialogue>
 
 	<Dialogue trigger="OnReachingArea/Lantern Zone,-ANY-,2" convID="Frostborn Charity Reached Lantern" r="false">
-		<Branch num="0" name="">/This is the dialogue that plays when the frostborn charity reach the lantern.
+		<Branch num="0" name="">/STUB: This is the dialogue that plays when the frostborn charity reach the lantern.
 			<Reply>Oh no!/LoseBattle</Reply>
 		</Branch>
 	</Dialogue>
 
 	<Dialogue trigger="OnReachingArea/Lantern Zone,-ANY-,3" convID="Ungrateful Villagers Reach Lantern" r="false">
-		<Branch num="0" name="">/This is the dialogue that plays when the ungrateful villagers reach the lantern.
+		<Branch num="0" name="">/STUB: This is the dialogue that plays when the ungrateful villagers reach the lantern.
 			<Reply>Darn!/LoseBattle</Reply>
 		</Branch>
 	</Dialogue>

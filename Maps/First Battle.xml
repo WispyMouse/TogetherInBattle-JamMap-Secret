@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Level mapname="First Battle" maptype="Single Player" maxplayers="3" battleBG="" musictrack="Against the Cult" winAura="0" winMorale="0" lossMorale="0" nextbattle="Between" defeatScene="" saveable="true" procgen="false" campaign="Secret Jam" lastEdited="9/27/2025 8:45:39 PM">
+<Level mapname="First Battle" maptype="Single Player" maxplayers="3" battleBG="" musictrack="Against the Cult" winAura="0" winMorale="0" lossMorale="0" nextbattle="Between" defeatScene="" saveable="true" procgen="false" campaign="Secret Jam" lastEdited="9/28/2025 11:14:06 PM">
 
 	<Army num="0" AI="false" aiProfile="Balanced" name="The New Coldfront" color="Black" alliedWith="" assignRoster="-1"></Army>
 	<Army num="1" AI="true" aiProfile="Balanced" name="Hoarders of Valuable Truth" color="Blue" alliedWith="2" assignRoster="-1"></Army>
@@ -9,6 +9,7 @@
 	<Condition>Defeat Army,0,1</Condition>
 	<Condition>Deployment,0,0,Battle Prep,6</Condition>
 	<Condition>Death Rules,Back at Full</Condition>
+	<Condition>Recover,0,1,1</Condition>
 	
 	<Objective>Seize the secret of frost from these scoundrels</Objective>
 	<Objective>Teach their leadership a lesson for deceiving us</Objective>
@@ -271,7 +272,6 @@
 	<Unit>0,99,FenceStoneHorizontal,18,13,None,None</Unit>
 	<Unit>0,99,FenceStoneHorizontal,18,14,None,None</Unit>
 	<Unit>0,99,BoulderSnow,19,13,None,None</Unit>
-	<Unit tag="AggroGroup,3/Passive">0,0,Hired Mercenary Guard/,2,19,Down,None</Unit>
 	<Unit tag="ID,102">0,0,FromPlayerRoster,19,6,Up,None</Unit>
 	<Unit tag="ID,101">0,0,FromPlayerRoster,19,7,Up,None</Unit>
 	<Unit tag="ID,100">0,0,FromPlayerRoster,19,8,Up,None</Unit>
@@ -279,8 +279,9 @@
 	<Unit tag="ID,104">0,0,FromPlayerRoster,20,6,Up,None</Unit>
 	<Unit tag="ID,103">0,0,FromPlayerRoster,20,7,Right,None</Unit>
 	<Unit tag="AggroGroup,3/Passive">0,1,Frostborne Charity Enthusiast/,1,6,Down,None</Unit>
-	<Unit tag="AggroGroup,3/Passive">0,1,Boss/,3,16,Left,None</Unit>
-	<Unit tag="AggroGroup,4/Passive">0,1,Charatass/,5,1,Right,None</Unit>
+	<Unit tag="AggroGroup,3/Passive">0,1,Hired Mercenary Guard/,2,19,Down,None</Unit>
+	<Unit tag="AggroGroup,3/Passive">0,1,Boss/,3,16,Left,Blessing of Frost[E]</Unit>
+	<Unit tag="AggroGroup,4/Passive">0,1,Charatass/,5,1,Right,Blessing of Frost[E]</Unit>
 	<Unit tag="AggroGroup,3/Passive">0,1,Frost Golem/,6,19,Down,None</Unit>
 	<Unit tag="AggroGroup,2/Passive">0,1,Frostborne Charity Enforcer/,8,10,Down,None</Unit>
 	<Unit tag="AggroGroup,2/Passive">0,1,Frostborne Charity Enthusiast/,10,8,Right,None</Unit>
@@ -332,6 +333,11 @@
 		<Action>SetStat/Deactivated Frost Golem,Name,Coolio:Frostybones</Action>
 	</Script>
 
+	<Script>Remove Enemy Blessing
+		<Action>RemoveItem/Boss,Blessing of Frost</Action>
+		<Action>RemoveItem/Charatass,Blessing of Frost</Action>
+	</Script>
+
 	<Dialogue trigger="OnLoaded/" convID="Initialize" r="false">
 		<Branch num="0" name="">/
 			<Action>Run/Initialize_Try</Action>
@@ -340,8 +346,6 @@
 			<Action>SetArea/Escape,11,12,13,15</Action>
 			<Action>SetArea/Inside,9,12,5,15</Action>
 			<Action>AddStatus/Deactivated Frost Golem,Talkable</Action>
-			<Action>SetStat/Boss,Damage,=:20</Action>
-			<Action>SetStat/Charatass,Damage,=:20</Action>
 			<Action>SetVal/Bosses Alive,=:2</Action>
 			<Action>EndConvImmediately/</Action>
 			<Reply>Continue./...</Reply>
@@ -349,11 +353,28 @@
 	</Dialogue>
 
 	<Dialogue trigger="None/" convID="Grab Lantern Dialogue" r="false">
-		<Branch num="0" name="">-FNAME-/Wow, a lantern? How fancy.
+		<Branch num="0" name="">-FNAME-/STUB: Wow, a lantern? How fancy.
 			<Action>SetVal/Lantern Grabbed,=:1</Action>
 			<Action>GiveItem/-FNAME-,Lantern of Frost,,,true</Action>
 			<Action>AddSpeakerPortrait/left,Quizzical</Action>
 			<Action>Run/Give Everyone Blessing of Frost</Action>
+			<Reply>Continue./NextBranch</Reply>
+		</Branch>
+		<Branch num="1" name="">/You see nothing
+			<Action>IfPresentGoTo/Charatass,2</Action>
+			<Action>IfPresentGoTo/Boss,4</Action>
+			<Action>LoadConv/Check Victory</Action>
+			<Action>EndConvImmediately/</Action>
+		</Branch>
+		<Branch num="2" name="">Charatass/STUB: ...! [b]My[/b] powers! S-someone must have found...!
+			<Reply>Continue./NextBranch</Reply>
+		</Branch>
+		<Branch num="3" name="">/You see nothing
+			<Action>IfPresentGoTo/Boss,4</Action>
+			<Action>LoadConv/Check Victory</Action>
+			<Action>EndConvImmediately/</Action>
+		</Branch>
+		<Branch num="4" name="">Boss/STUB: [Heshe whispers] Someone has the Lantern! Agh, guards! Seize the intruders!
 			<Reply>Continue./LoadConv/Check Victory</Reply>
 		</Branch>
 	</Dialogue>
@@ -364,10 +385,10 @@
 			<Action>IfValGoTo/Lantern Grabbed,=,1,2</Action>
 			<Action>EndConvImmediately/</Action>
 		</Branch>
-		<Branch num="1" name="No Lantern">/Oh, weird. An inactive golem. Maybe it was defective?
+		<Branch num="1" name="No Lantern">/STUB: Oh, weird. An inactive golem. Maybe it was defective?
 			<Reply>How Strange/EndConv</Reply>
 		</Branch>
-		<Branch num="0" name="Has Lantern">/Oh, this is a golem. Ours now!
+		<Branch num="0" name="Has Lantern">/STUB: Oh, this is a golem. Ours now!
 			<Action>Run/Recruit Coolio Frostybones</Action>
 			<Reply>Great!/EndConv</Reply>
 		</Branch>
@@ -383,7 +404,7 @@
 	</Dialogue>
 
 	<Dialogue trigger="None/" convID="Alert Inside Enemies" r="false">
-		<Branch num="0" name="">Enemies/Oh hey we noticed you. Let's fight!
+		<Branch num="0" name="">Enemies/STUB: Oh hey we noticed you. Let's fight!
 			<Action>RemoveConv/Alert Inside Enemies Attacked</Action>
 			<Action>AggroGroup/1</Action>
 			<Action>AggroGroup/2</Action>
@@ -394,26 +415,26 @@
 	</Dialogue>
 
 	<Dialogue trigger="BeforeTurn/0" convID="Post Deployment" r="false">
-		<Branch num="0" name="">/This is the post-deployment dialogue.
+		<Branch num="0" name="">/STUB: This is the post-deployment dialogue.
 			<Reply>Yay!/NextBranch</Reply>
 		</Branch>
 	</Dialogue>
 
 	<Dialogue trigger="OnVictory/0" convID="Victory" r="false">
-		<Branch num="0" name="">/This is the dialogue that shows upon victory.
+		<Branch num="0" name="">/STUB: This is the dialogue that shows upon victory.
 			<Reply>I love winning!/NextBranch</Reply>
 		</Branch>
 	</Dialogue>
 
 	<Dialogue trigger="OnCharDeath/1,Boss" convID="Boss One Defeated" r="false">
-		<Branch num="0" name="">Boss/Ach! I've been defeated!
+		<Branch num="0" name="">Boss/STUB: Ach! I've been defeated!
 			<Action>SetVal/Bosses Alive,-:1</Action>
 			<Reply>Got 'Em/LoadConv/Check Victory</Reply>
 		</Branch>
 	</Dialogue>
 
 	<Dialogue trigger="OnCharDeath/1,Charatass" convID="Charatass Defeated" r="false">
-		<Branch num="0" name="">Charatass/Oops, I've been defeated.
+		<Branch num="0" name="">Charatass/STUB: Oops, I've been defeated.
 			<Action>SetVal/Bosses Alive,-:1</Action>
 			<Reply>Hah!/LoadConv/Check Victory</Reply>
 		</Branch>
@@ -425,7 +446,7 @@
 			<Action>IfValGoTo/Bosses Alive,g=,1,2</Action>
 			<Action>WinBattle/</Action>
 		</Branch>
-		<Branch num="1" name="">/But we still need to know how they did all this!
+		<Branch num="1" name="">/STUB: But we still need to know how they did all this!
 			<Reply>Continue./EndConv</Reply>
 		</Branch>
 		<Branch num="2" name="">/Should not see this
@@ -434,10 +455,10 @@
 			<Action>WinBattle/</Action>
 			<Action>EndConvImmediately/</Action>
 		</Branch>
-		<Branch num="3" name="">/Now to take on the head of these liars!
+		<Branch num="3" name="">/STUB: Now to take on the head of these liars!
 			<Reply>Go Get 'em/EndConv</Reply>
 		</Branch>
-		<Branch num="4" name="">/Now for the other one!
+		<Branch num="4" name="">/STUB: Now for the other one!
 			<Reply>Yea Get That Guy/EndConv</Reply>
 		</Branch>
 	</Dialogue>

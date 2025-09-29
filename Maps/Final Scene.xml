@@ -1,11 +1,66 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Level mapname="Final Scene" maptype="Cut Scene: Static" maxplayers="1" musictrack="" winAura="0" nextbattle="" saveable="true" saveCheck="true" campaign="Secret Jam" lastEdited="9/25/2025 7:07:37 PM">
+<Level mapname="Final Scene" maptype="Cut Scene: Static" maxplayers="1" musictrack="" winAura="0" nextbattle="" saveable="true" saveCheck="true" campaign="Secret Jam" lastEdited="9/28/2025 11:08:41 PM">
 
-	<Narration> -DIA:Finish-</Narration>
+	<Narration>  -DIA:Finish- -PIC:Psy_Academy_Night-| -DIA:The Truth- -PIC:Psy_Academy-| -DIA:Easy Come-| -DIA:Final Slide- -PIC:None-</Narration>
 
 	<Dialogue trigger="None/" convID="Finish" r="false">
-		<Branch num="0" name="">/This is the dialogue that shows at the end of the campaign.
-			<Reply>Finish/NextScene</Reply>
+		<Branch num="0" name="">Narration/STUB: Having fought off all of the attackers, we came to the conclusion that... this was really more trouble than it was worth.
+			<Reply>Finish/NextFrame</Reply>
+		</Branch>
+	</Dialogue>
+
+	<Dialogue trigger="None/" convID="The Truth" r="false">
+		<Branch num="0" name="">Narration/STUB: The truth of the lantern was shared freely with the people. And of course they quickly left our status as "saviors" behind, exalting just the lantern itself.
+			<Reply>Continue./NextFrame</Reply>
+		</Branch>
+	</Dialogue>
+
+	<Dialogue trigger="None/" convID="Easy Come" r="false">
+		<Branch num="0" name="">Narration/STUB: Sooth...
+			<Action>ClearPortraits/</Action>
+			<Action>AddPortrait/Sooth/,Sooth/,left,Grey,Happy</Action>
+			<Reply>Continue./NextBranch</Reply>
+		</Branch>
+		<Branch num="1" name="">Narration/STUB: Tillie Starwright...
+			<Action>ClearPortraits/</Action>
+			<Action>AddPortrait/Tillie/Starwright,Tillie/Starwright,left,Grey,Happy</Action>
+			<Reply>Continue./NextBranch</Reply>
+		</Branch>
+		<Branch num="2" name="">Narration/STUB: Bront the Unbelievable...
+			<Action>ClearPortraits/</Action>
+			<Action>AddPortrait/Bront/the Unbelievable,Bront/the Unbelievable,left,Grey,Happy</Action>
+			<Reply>Continue./NextBranch</Reply>
+		</Branch>
+		<Branch num="3" name="">Narration/STUB: Jerald Swiftrig...
+			<Action>ClearPortraits/</Action>
+			<Action>AddPortrait/Jerald/Swiftrig,Jerald/Swiftrig,left,Grey,Happy</Action>
+			<Reply>Continue./NextBranch</Reply>
+		</Branch>
+		<Branch num="4" name="">Narration/STUB: Rustler...
+			<Action>ClearPortraits/</Action>
+			<Action>AddPortrait/Rustler/,Rustler/,left,Grey,Happy</Action>
+			<Reply>Continue./NextBranch</Reply>
+		</Branch>
+		<Branch num="5" name="">Narration/STUB: Laina Bigspook...
+			<Action>ClearPortraits/</Action>
+			<Action>AddPortrait/Laina/Bigspook,Laina/Bigspook,left,Grey,Happy</Action>
+			<Reply>Continue./NextBranch</Reply>
+		</Branch>
+		<Branch num="6" name="">Narration/STUB: Coolio Frostybones... Should only play if character owned.
+			<Action>ClearPortraits/</Action>
+			<Action>RosterToList/Playable Roster,0,true</Action>
+			<Action>IfListHasGoTo/Playable Roster,Coolio Frostybones,7,true</Action>
+			<Action>AddPortrait/Deactivated Frost Golem/,Deactivated Frost Golem/,left,Grey,Happy</Action>
+			<Reply>Continue./NextBranch</Reply>
+		</Branch>
+		<Branch num="7" name="">/
+			<Action>NextFrame/</Action>
+		</Branch>
+	</Dialogue>
+
+	<Dialogue trigger="None/" convID="Final Slide" r="false">
+		<Branch num="0" name="">/STUB: Thank you for playing!
+			<Reply>Game Over!/NextScene</Reply>
 		</Branch>
 	</Dialogue>
 
