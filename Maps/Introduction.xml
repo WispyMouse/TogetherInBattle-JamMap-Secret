@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Level mapname="Introduction" maptype="Cut Scene: Static" maxplayers="1" musictrack="" winAura="0" nextbattle="First Battle" saveable="true" saveCheck="false" campaign="Secret Jam" lastEdited="9/25/2025 6:44:57 PM">
+<Level mapname="Introduction" maptype="Cut Scene: Static" maxplayers="1" musictrack="" winAura="0" nextbattle="First Battle" saveable="true" saveCheck="false" campaign="Secret Jam" lastEdited="9/28/2025 8:48:49 PM">
 
-	<Narration> -DIA:Introduction-</Narration>
+	<Narration> -DIA:Introduction-| -PIC:Cave_Sandstone- -DIA:Setting Establishing-| -DIA:Visitors Arrive- -PIC:Cave-| -DIA:Effect of Visitors-   -PIC:Cave_Entrance_Snow-|   -DIA:Infiltration-     -PIC:Throne_Room_Dese_Night-</Narration>
 	
 	<NewRoster num="0">Laina/Bigspook,Tillie/Starwright,Bront/the Unbelievable,Sooth/,Rustler/,Jerald/Swiftrig</NewRoster>
 
@@ -35,29 +35,53 @@
 	<Dialogue trigger="None/" convID="Introduction" r="false">
 		<Branch num="0" name="">/This is the dialogue that happens at the start of the campaign. Would you like to add your custom characters to your roster?
 			<Action>Run/Initialize_Try</Action>
-			<Reply>No, play with only the premade campaign characters./LoadConv/Frost Keepers Arrive</Reply>
+			<Reply>No, play with only the premade campaign characters./NextFrame</Reply>
 			<Reply>Yes, add my custom characters to the roster./NextBranch</Reply>
 		</Branch>
 		<Branch num="1" name="">/
 			<Action>CustomCharsToRoster/0,true</Action>
-			<Action>LoadConv/Frost Keepers Arrive</Action>
+			<Action>NextFrame/</Action>
 			<Action>EndConvImmediately/</Action>
-			<Reply>.../NextBranch</Reply>
 		</Branch>
 	</Dialogue>
 
-	<Dialogue trigger="None/" convID="Frost Keepers Arive" r="false">
-		<Branch num="0" name="">/Preface, a shot over a scorched land. Establishing the origin of the setting.
+	<Dialogue trigger="None/" convID="Setting Establishing" r="false">
+		<Branch num="0" name="">Narration/STUB: The sun beats down harshly and without remorse. In a town of horrible summers, the people languish under the brutal sky.
+			<Reply>Continue./NextFrame</Reply>
+		</Branch>
+	</Dialogue>
+
+	<Dialogue trigger="None/" convID="Effect of Visitors" r="false">
+		<Branch num="0" name="">Narration/STUB: With a longer season of cold and less intense seasons of heat, the people thrived. And with their gain, came the increase of demanded tribute.
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
-		<Branch num="1" name="">/Mysterious travelers bring the power of frost, and it makes a large difference in the lives of the people. All they asked was for submission.
+		<Branch num="1" name="">Narration/STUB: The Frostborne Charity refused to ever reveal their own hand, yet demanded so much from us.
+			<Action>ClearPortraits/</Action>
+			<Reply>Continue./NextFrame</Reply>
+		</Branch>
+	</Dialogue>
+
+	<Dialogue trigger="None/" convID="Infiltration" r="false">
+		<Branch num="0" name="">Narration/STUB: Those liars are taking advantage of us. But what gives them the right to be special?
+			<Action>AddPortrait/Bront/the Unbelievable,Bront the Unbelievable,right,Grey,Mad,-4,0</Action>
+			<Action>AddPortrait/Jerald/Swiftrig,Jerald Swiftrig,right,Grey,Mad,1,1</Action>
+			<Action>AddPortrait/Rustler/,Rustler/,right,Grey,Mad,6,0</Action>
+			<Action>AddPortrait/Laina/Bigspook,Laina Bigspook,left,Grey,Nervous,24,0</Action>
+			<Action>AddPortrait/Sooth/,Sooth/,left,Grey,Amused,19,0</Action>
+			<Action>AddPortrait/Tillie/Starwright,Tillie Starwright,left,Grey,Mean,15,1</Action>
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
-		<Branch num="2" name="">/By all appearances, these new gods were just mortals. Whatever gave them this power, it could be taken. Curious minds crave power and crave the answer to secrets.
+		<Branch num="1" name="">Narration/STUB: That power should belong to us.
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
-		<Branch num="3" name="">/As the night falls, that curiosity turns to action.
-			<Reply>Continue./NextScene</Reply>
+	</Dialogue>
+
+	<Dialogue trigger="None/" convID="Visitors Arrive" r="false">
+		<Branch num="0" name="">Narration/STUB: When relief was offered to them, the people welcomed the gift. Mysterious travelers cast strange powers over the sky, and gave the people shade and snow.
+			<Action>AddPortrait/Boss/,Boss/,right,Blue,Happy,10,0</Action>
+			<Action>AddPortrait/Charatass/,Charatass/,right,Blue,Happy,5,0</Action>
+			<Action>AddPortrait/Apostacratus/,Apostacratus/,right,Blue,Happy,0,0</Action>
+			<Reply>Continue./NextFrame</Reply>
 		</Branch>
 	</Dialogue>
 
