@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Level mapname="Between" maptype="Cut Scene: Static" maxplayers="1" musictrack="" winAura="0" nextbattle="Second Battle" saveable="true" saveCheck="true" campaign="Secret Jam" lastEdited="9/28/2025 10:51:29 PM">
+<Level mapname="Between" maptype="Cut Scene: Static" maxplayers="1" musictrack="" winAura="0" nextbattle="Second Battle" saveable="true" saveCheck="true" campaign="Secret Jam" lastEdited="9/29/2025 6:37:47 PM">
 
 	<Narration>  -DIA:Between Start- -PIC:Castle_Night-| -DIA:We Have It- -PIC:Cave-| -DIA:Giving To The People-  -PIC:Town_Night-| -DIA:But One Day- -PIC:Psy_Academy_Night-</Narration>
 	
@@ -7,7 +7,7 @@
 
 	<Dialogue trigger="None/" convID="Between Start" r="false">
 		<Branch num="0" name="">/STUB: Oh, so their ice power came from this lantern.
-			<Reply>Continue/NextBranch</Reply>
+			<Reply>Continue/NextScene</Reply>
 		</Branch>
 		<Branch num="1" name="">/STUB: And now, we have those powers.
 			<Reply>Continue./NextFrame</Reply>

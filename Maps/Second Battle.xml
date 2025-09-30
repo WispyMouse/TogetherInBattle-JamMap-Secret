@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Level mapname="Second Battle" maptype="Single Player" maxplayers="4" battleBG="" musictrack="Form Up!" winAura="0" winMorale="0" lossMorale="0" nextbattle="Final Scene" defeatScene="" saveable="true" procgen="false" campaign="Secret Jam" lastEdited="9/28/2025 11:14:13 PM">
+<Level mapname="Second Battle" maptype="Single Player" maxplayers="4" battleBG="" musictrack="Form Up!" winAura="0" winMorale="0" lossMorale="0" nextbattle="Final Scene" defeatScene="" saveable="true" procgen="false" campaign="Secret Jam" lastEdited="9/29/2025 6:39:05 PM">
 
 	<Army num="0" AI="false" aiProfile="Balanced" name="Coldfront" color="Black" alliedWith="" assignRoster="0"></Army>
-	<Army num="1" AI="true" aiProfile="Aggressive" name="Disrespectful Upstarts" color="Red" alliedWith="" assignRoster="-1"></Army>
-	<Army num="2" AI="true" aiProfile="Balanced" name="Spiteful Liars" color="Blue" alliedWith="" assignRoster="-1"></Army>
-	<Army num="3" AI="true" aiProfile="Cautious" name="Ungrateful Villagers" color="Orange" alliedWith="" assignRoster="-1"></Army>
+	<Army num="1" AI="true" aiProfile="Aggressive" name="Disrespectful Upstarts" color="Red" alliedWith="2,3" assignRoster="-1"></Army>
+	<Army num="2" AI="true" aiProfile="Balanced" name="Spiteful Liars" color="Blue" alliedWith="1,3" assignRoster="-1"></Army>
+	<Army num="3" AI="true" aiProfile="Cautious" name="Ungrateful Villagers" color="Orange" alliedWith="1,2" assignRoster="-1"></Army>
 	
 	<Condition>Defeat Army,1,0</Condition>
 	<Condition>Deployment,0,0</Condition>
@@ -63,11 +63,11 @@
 	<Unit>0,99,BridgeStone,5,10,None,None</Unit>
 	<Unit>0,99,CastleSandstoneWallNW,7,7,None,None</Unit>
 	<Unit>0,99,CastleSandstoneWallHorizontal,7,8,None,None</Unit>
-	<Unit tag="Locked">0,99,DoorBarredHorizontal,7,9,None,None</Unit>
+	<Unit tag="Locked/TargetValue,=:2">0,99,DoorBarredHorizontal,7,9,None,None</Unit>
 	<Unit>0,99,CastleSandstoneWallHorizontal,7,10,None,None</Unit>
 	<Unit>0,99,CastleSandstoneWallNE,7,11,None,None</Unit>
 	<Unit>0,99,CastleSandstoneWallVertical,8,7,None,None</Unit>
-	<Unit>0,99,RocksSandstone,8,11,None,None</Unit>
+	<Unit tag="TargetValue,=:2">0,99,RocksSandstone,8,11,None,None</Unit>
 	<Unit>0,99,CastleSandstoneWallVertical,9,7,None,None</Unit>
 	<Unit>0,99,Altar,9,9,None,None</Unit>
 	<Unit>0,99,LanternLightingAltar,9,9,None,None</Unit>
@@ -82,7 +82,7 @@
 	<Unit>0,99,BridgeStone,11,2,None,None</Unit>
 	<Unit tag="Elev,=:1">0,99,BridgeStone,11,2,None,None</Unit>
 	<Unit>0,99,CastleSandstoneWallSW,11,7,None,None</Unit>
-	<Unit>0,99,RocksSandstone,11,8,None,None</Unit>
+	<Unit tag="TargetValue,=:2">0,99,RocksSandstone,11,8,None,None</Unit>
 	<Unit>0,99,CastleSandstoneWallHorizontal,11,9,None,None</Unit>
 	<Unit>0,99,CastleSandstoneWallHorizontal,11,10,None,None</Unit>
 	<Unit>0,99,CastleSandstoneWallSE,11,11,None,None</Unit>
@@ -100,22 +100,25 @@
 	<Unit>0,0,FromPlayerRoster,7,6,Up,None</Unit>
 	<Unit>0,0,FromPlayerRoster,7,12,Right,None</Unit>
 	<Unit>0,0,FromPlayerRoster,8,6,Up,None</Unit>
-	<Unit>0,1,Suave/Upstart,6,15,Left,None</Unit>
-	<Unit>0,1,Upstart/Leader,7,15,Left,None</Unit>
-	<Unit>0,1,Meek/Upstart,7,16,Left,None</Unit>
-	<Unit>0,2,Hired Mercenary Guard/,0,8,Down,None</Unit>
-	<Unit>0,2,Charatass/,0,9,Down,None</Unit>
-	<Unit>0,2,Apostacratus/,0,10,Down,None</Unit>
-	<Unit>0,2,Boss/,0,11,Down,None</Unit>
-	<Unit>0,2,Frostborne Charity Enforcer/,1,9,Down,None</Unit>
-	<Unit>0,3,Upset/Villager,13,1,Right,None</Unit>
-	<Unit>0,3,Grumbly/Leader,13,3,Right,None</Unit>
+	<Unit tag="Inactive">0,1,Suave/Upstart,6,15,Left,None</Unit>
+	<Unit tag="Inactive">0,1,Upstart/Leader,7,15,Left,None</Unit>
+	<Unit tag="Inactive">0,1,Meek/Upstart,7,16,Left,None</Unit>
+	<Unit tag="Inactive">0,2,Hired Mercenary Guard/,0,8,Down,None</Unit>
+	<Unit tag="Inactive">0,2,Charatass/,0,9,Down,None</Unit>
+	<Unit tag="Inactive">0,2,Apostacratus/,0,10,Down,None</Unit>
+	<Unit tag="Inactive">0,2,Boss/,0,11,Down,None</Unit>
+	<Unit tag="Inactive">0,2,Frostborne Charity Enforcer/,1,9,Down,None</Unit>
+	<Unit>0,3,Upset/Villager,12,9,Right,None</Unit>
+	<Unit>0,3,Grumbly/Leader,13,8,Right,None</Unit>
 	<Unit>0,3,Peeved/Villager,14,2,Right,None</Unit>
 
 	<Dialogue trigger="OnLoaded/" convID="Initialize" r="false">
 		<Branch num="0" name="">/
 			<Action>Run/Initialize_Try</Action>
 			<Action>SetArea/Lantern Zone,8,10,6,8</Action>
+			<Action>AddTagToArmy/1,Patrol,Lantern Zone,=:99</Action>
+			<Action>AddTagToArmy/2,Patrol,Lantern Zone,=:99</Action>
+			<Action>AddTagToArmy/3,Patrol,Lantern Zone,=:99</Action>
 			<Action>EndConvImmediately/</Action>
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
