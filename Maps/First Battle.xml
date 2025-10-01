@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Level mapname="First Battle" maptype="Single Player" maxplayers="3" battleBG="" musictrack="Against the Cult" winAura="0" winMorale="0" lossMorale="0" nextbattle="Between" defeatScene="" saveable="true" procgen="false" campaign="Secret Jam" lastEdited="9/29/2025 8:16:26 PM">
+<Level mapname="First Battle" maptype="Single Player" maxplayers="3" battleBG="" musictrack="Against the Cult" winAura="0" winMorale="0" lossMorale="0" nextbattle="Between" defeatScene="" saveable="true" procgen="false" campaign="Secret Jam" lastEdited="9/30/2025 6:37:56 PM">
 
 	<Army num="0" AI="false" aiProfile="Balanced" name="The New Coldfront" color="Black" alliedWith="" assignRoster="-1"></Army>
 	<Army num="1" AI="true" aiProfile="Balanced" name="Hoarders of Valuable Truth" color="Blue" alliedWith="2" assignRoster="-1"></Army>
@@ -278,22 +278,23 @@
 	<Unit tag="ID,105">0,0,FromPlayerRoster,20,5,Up,None</Unit>
 	<Unit tag="ID,104">0,0,FromPlayerRoster,20,6,Up,None</Unit>
 	<Unit tag="ID,103">0,0,FromPlayerRoster,20,7,Right,None</Unit>
-	<Unit tag="AggroGroup,3/Passive">0,1,Frostborne Charity Enthusiast/,1,6,Down,None</Unit>
-	<Unit tag="AggroGroup,3/Passive">0,1,Hired Mercenary Guard/,2,19,Down,None</Unit>
-	<Unit tag="AggroGroup,3/Passive">0,1,Boss/,3,16,Left,Blessing of Frost[E]</Unit>
-	<Unit tag="AggroGroup,4/Passive">0,1,Charatass/,5,1,Right,Blessing of Frost[E]</Unit>
-	<Unit tag="AggroGroup,3/Passive">0,1,Frost Golem/,6,19,Down,None</Unit>
-	<Unit tag="AggroGroup,2/Passive">0,1,Frostborne Charity Enforcer/,8,10,Down,None</Unit>
-	<Unit tag="AggroGroup,2/Passive">0,1,Frostborne Charity Enthusiast/,10,8,Right,None</Unit>
+	<Unit tag="AggroGroup,3/Passive">0,1,Frost Golem/,1,0,Down,None</Unit>
+	<Unit tag="AggroGroup,4/Passive">0,1,Frostborne Charity Enthusiast/,1,6,Down,None</Unit>
+	<Unit tag="AggroGroup,2/Passive">0,1,Hired Mercenary Guard/,2,19,Down,None</Unit>
+	<Unit tag="AggroGroup,2/Passive">0,1,Boss/,3,16,Left,Blessing of Frost[E]</Unit>
+	<Unit tag="AggroGroup,3/Passive">0,1,Charatass/,5,1,Right,Blessing of Frost[E]</Unit>
+	<Unit tag="AggroGroup,4/Passive">0,1,Frost Golem/,6,19,Down,None</Unit>
+	<Unit tag="AggroGroup,1/Passive">0,1,Frostborne Charity Enforcer/,8,10,Down,None</Unit>
+	<Unit tag="AggroGroup,1/Passive">0,1,Frostborne Charity Enforcer/,10,9,Down,None</Unit>
 	<Unit tag="AggroGroup,2/Passive">0,1,Hired Townie/,10,18,Down,None</Unit>
-	<Unit tag="AggroGroup,2/Passive">0,1,Frostborne Charity Enthusiast/,11,11,Up,None</Unit>
-	<Unit tag="AggroGroup,2/Passive">0,1,Hired Mercenary Guard/,11,13,Left,None</Unit>
-	<Unit tag="AggroGroup,2/Passive">0,1,Frostborne Charity Enforcer/,12,3,Right,None</Unit>
-	<Unit tag="AggroGroup,2/Passive">0,1,Hired Townie/,12,8,Left,None</Unit>
+	<Unit tag="AggroGroup,1/Passive">0,1,Frostborne Charity Enthusiast/,11,11,Up,None</Unit>
+	<Unit tag="AggroGroup,1/Passive">0,1,Hired Mercenary Guard/,11,13,Left,None</Unit>
+	<Unit tag="AggroGroup,2/Passive">0,1,Frostborne Charity Enthusiast/,12,3,Right,None</Unit>
+	<Unit tag="AggroGroup,1/Passive">0,1,Hired Townie/,12,8,Left,None</Unit>
 	<Unit tag="AggroGroup,2/Passive">0,1,Hired Mercenary Guard/,13,16,Down,None</Unit>
-	<Unit tag="AggroGroup,1">0,1,Frost Golem/,14,10,Down,None</Unit>
-	<Unit tag="AggroGroup,1">0,1,Frost Golem/,15,7,Down,None</Unit>
-	<Unit tag="AggroGroup,1">0,1,Frost Golem/,17,10,Left,None</Unit>
+	<Unit tag="AggroGroup,0">0,1,Frost Golem/,14,10,Down,None</Unit>
+	<Unit tag="AggroGroup,0">0,1,Frost Golem/,15,7,Down,None</Unit>
+	<Unit tag="AggroGroup,0">0,1,Frost Golem/,17,10,Left,None</Unit>
 	<Unit tag="Inactive">0,2,Deactivated Frost Golem/,8,3,Down,None</Unit>
 
 	<Script>Grab Lantern
@@ -347,6 +348,7 @@
 			<Action>SetArea/Inside,9,12,5,15</Action>
 			<Action>AddStatus/Deactivated Frost Golem,Talkable</Action>
 			<Action>SetVal/Bosses Alive,=:2</Action>
+			<Action>SetArea/Indoor Trigger,7,13,1,19</Action>
 			<Action>EndConvImmediately/</Action>
 			<Reply>Continue./...</Reply>
 		</Branch>
@@ -396,8 +398,8 @@
 
 	<Dialogue trigger="OnCharAttacked/-ANY-,-ANY-,-ANY-,-ANY-" convID="Alert Inside Enemies Attacked" r="true">
 		<Branch num="0" name="">Nothing/You see nothing!
-			<Action>IfTagRun/-FNAME-,AggroGroup,_AlertInside,4</Action>
-			<Action>IfTagRun/-FNAME2-,AggroGroup,_AlertInside,4</Action>
+			<Action>IfTagRun/-FNAME-,AggroGroup,_AlertInside,1</Action>
+			<Action>IfTagRun/-FNAME2-,AggroGroup,_AlertInside,1</Action>
 			<Action>EndConvImmediately/</Action>
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
@@ -406,17 +408,18 @@
 	<Dialogue trigger="None/" convID="Alert Inside Enemies" r="false">
 		<Branch num="0" name="">Enemies/STUB: Oh hey we noticed you. Let's fight!
 			<Action>RemoveConv/Alert Inside Enemies Attacked</Action>
+			<Action>AggroGroup/0</Action>
 			<Action>AggroGroup/1</Action>
 			<Action>AggroGroup/2</Action>
 			<Action>AggroGroup/3</Action>
-			<Action>AggroGroup/4</Action>
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
 	</Dialogue>
 
 	<Dialogue trigger="BeforeTurn/0" convID="Post Deployment" r="false">
-		<Branch num="0" name="">/STUB: This is the post-deployment dialogue.
-			<Reply>Yay!/NextBranch</Reply>
+		<Branch num="0" name="">/STUB: These fiends are keeping the source of their powers a secret. Surely if we poke around, we'll find some answers...
+			<Action>MoveCam/13,9</Action>
+			<Reply>Continue./NextBranch</Reply>
 		</Branch>
 	</Dialogue>
 
@@ -460,6 +463,14 @@
 		</Branch>
 		<Branch num="4" name="">/STUB: Now for the other one!
 			<Reply>Yea Get That Guy/EndConv</Reply>
+		</Branch>
+	</Dialogue>
+
+	<Dialogue trigger="OnReachingArea/Indoor Trigger,-ANY-,0" convID="Indoor Trigger" r="false">
+		<Branch num="0" name="">/STUB: This is the conversation that appears when the team gets inside. Oh hey look, it's that cold wall of theirs... I wonder what's behind it?
+			<Action>MoveCam/6,9</Action>
+			<Action>AddObjectiveReticle/5,10</Action>
+			<Reply>Continue./NextBranch</Reply>
 		</Branch>
 	</Dialogue>
 
