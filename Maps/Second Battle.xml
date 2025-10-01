@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Level mapname="Second Battle" maptype="Single Player" maxplayers="4" battleBG="" musictrack="Form Up!" winAura="0" winMorale="0" lossMorale="0" nextbattle="Final Scene" defeatScene="" saveable="true" procgen="false" campaign="Secret Jam" lastEdited="9/29/2025 7:00:40 PM">
+<Level mapname="Second Battle" maptype="Single Player" maxplayers="4" battleBG="" musictrack="Form Up!" winAura="0" winMorale="0" lossMorale="0" nextbattle="Final Scene" defeatScene="" saveable="true" procgen="false" campaign="Secret Jam" lastEdited="9/30/2025 6:18:25 PM">
 
 	<Army num="0" AI="false" aiProfile="Balanced" name="Coldfront" color="Black" alliedWith="" assignRoster="0"></Army>
 	<Army num="1" AI="true" aiProfile="Aggressive" name="Disrespectful Upstarts" color="Red" alliedWith="2,3" assignRoster="-1"></Army>
@@ -130,8 +130,17 @@
 	</Dialogue>
 
 	<Dialogue trigger="BeforeTurn/0" convID="Intro" r="false">
-		<Branch num="0" name="">/STUB: This is the post deployment dialogue.
-			<Reply>Thanks/NextBranch</Reply>
+		<Branch num="0" name="">Upstart Leader/STUB: False idols! We have seen through your lies, and know that the power is not your own. You're unworthy - we'll take it!
+			<Action>MoveCam/,,Upstart Leader</Action>
+			<Reply>Continue./NextBranch</Reply>
+		</Branch>
+		<Branch num="1" name="">Apostacratus/There's those thieving cowards. Let's take the lantern back, and restore ourselves as rightful rulers!
+			<Action>MoveCam/,,Apostacratus</Action>
+			<Reply>Continue./NextBranch</Reply>
+		</Branch>
+		<Branch num="2" name="">Grumbly Leader/These dunderheads have pushed us around long enough! It's time to take matters in to our own hands, away from these jerks.
+			<Action>MoveCam/,,Grumbly Leader</Action>
+			<Reply>Continue./NextBranch</Reply>
 		</Branch>
 	</Dialogue>
 
@@ -183,20 +192,21 @@
 		</Branch>
 	</Dialogue>
 
-	<Dialogue trigger="None/" convID="Upstarts Boss Defeat" r="false">
-		<Branch num="0" name="">/STUB: This will be the dialogue shown when the upstarts boss is defeated
+	<Dialogue trigger="OnCharDeath/-ANY-,Upstart Leader" convID="Upstarts Boss Defeat" r="false">
+		<Branch num="0" name="">/STUB: Ach! Okay nevermind, let's take a less painful path towards divinity. 
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
 	</Dialogue>
 
-	<Dialogue trigger="None/" convID="Frostborn Charity Boss Defeat" r="false">
-		<Branch num="0" name="">/STUB: This will be the dialogue that shows when the frostborn charity boss is defeated
+	<Dialogue trigger="OnCharDeath/-ANY-,Apostacratus" convID="Frostborn Charity Boss Defeat" r="false">
+		<Branch num="0" name="">/STUB: I think it's time we explore new avenues of control. Let them have the blasted lantern, there's more magic in this world. 
+
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
 	</Dialogue>
 
-	<Dialogue trigger="None/" convID="Ungrateful Villagers Defeated" r="false">
-		<Branch num="0" name="">/STUB: This is the dialogue shown when the ungrateful village boss is defeated
+	<Dialogue trigger="OnCharDeath/-ANY-,Grumbly Leader" convID="Ungrateful Villagers Defeated" r="false">
+		<Branch num="0" name="">/STUB: Y'know, nevermind. You aren't all so bad if you can throw down like this.
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
 	</Dialogue>

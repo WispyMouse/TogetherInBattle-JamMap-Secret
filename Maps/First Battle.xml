@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Level mapname="First Battle" maptype="Single Player" maxplayers="3" battleBG="" musictrack="Against the Cult" winAura="0" winMorale="0" lossMorale="0" nextbattle="Between" defeatScene="" saveable="true" procgen="false" campaign="Secret Jam" lastEdited="9/28/2025 11:14:06 PM">
+<Level mapname="First Battle" maptype="Single Player" maxplayers="3" battleBG="" musictrack="Against the Cult" winAura="0" winMorale="0" lossMorale="0" nextbattle="Between" defeatScene="" saveable="true" procgen="false" campaign="Secret Jam" lastEdited="9/29/2025 8:16:26 PM">
 
 	<Army num="0" AI="false" aiProfile="Balanced" name="The New Coldfront" color="Black" alliedWith="" assignRoster="-1"></Army>
 	<Army num="1" AI="true" aiProfile="Balanced" name="Hoarders of Valuable Truth" color="Blue" alliedWith="2" assignRoster="-1"></Army>
@@ -290,7 +290,7 @@
 	<Unit tag="AggroGroup,2/Passive">0,1,Hired Mercenary Guard/,11,13,Left,None</Unit>
 	<Unit tag="AggroGroup,2/Passive">0,1,Frostborne Charity Enforcer/,12,3,Right,None</Unit>
 	<Unit tag="AggroGroup,2/Passive">0,1,Hired Townie/,12,8,Left,None</Unit>
-	<Unit tag="AggroGroup,2/Passive">0,1,Hired Mercenary Guard/,13,16,Right,None</Unit>
+	<Unit tag="AggroGroup,2/Passive">0,1,Hired Mercenary Guard/,13,16,Down,None</Unit>
 	<Unit tag="AggroGroup,1">0,1,Frost Golem/,14,10,Down,None</Unit>
 	<Unit tag="AggroGroup,1">0,1,Frost Golem/,15,7,Down,None</Unit>
 	<Unit tag="AggroGroup,1">0,1,Frost Golem/,17,10,Left,None</Unit>
