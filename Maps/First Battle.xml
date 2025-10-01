@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Level mapname="First Battle" maptype="Single Player" maxplayers="3" battleBG="" musictrack="Against the Cult" winAura="0" winMorale="0" lossMorale="0" nextbattle="Between" defeatScene="" saveable="true" procgen="false" campaign="Secret Jam" lastEdited="9/30/2025 6:37:56 PM">
+<Level mapname="First Battle" maptype="Single Player" maxplayers="3" battleBG="" musictrack="Against the Cult" winAura="0" winMorale="0" lossMorale="0" nextbattle="Between" defeatScene="" saveable="true" procgen="false" campaign="Secret Jam" lastEdited="9/30/2025 6:42:02 PM">
 
 	<Army num="0" AI="false" aiProfile="Balanced" name="The New Coldfront" color="Black" alliedWith="" assignRoster="-1"></Army>
 	<Army num="1" AI="true" aiProfile="Balanced" name="Hoarders of Valuable Truth" color="Blue" alliedWith="2" assignRoster="-1"></Army>
@@ -118,6 +118,7 @@
 	<Unit>0,99,IcePatch,4,9,None,None</Unit>
 	<Unit>0,99,CastleWallVertical,4,11,None,None</Unit>
 	<Unit>0,99,CastleWallVertical,4,14,None,None</Unit>
+	<Unit trigger="UseOnce,OpenLanternRoom">0,99,Switch,4,15,None,None</Unit>
 	<Unit>0,99,TableMap,4,18,None,None</Unit>
 	<Unit>0,99,Chair,4,19,None,None</Unit>
 	<Unit>0,99,Rug9L,5,0,None,None</Unit>
@@ -142,7 +143,7 @@
 	<Unit>0,99,Rug9B,6,1,None,None</Unit>
 	<Unit>0,99,Rug9B,6,2,None,None</Unit>
 	<Unit>0,99,Chair,6,2,None,None</Unit>
-	<Unit>0,99,Switch,6,3,None,None</Unit>
+	<Unit trigger="UseOnce,Private Room Switch">0,99,Switch,6,3,None,None</Unit>
 	<Unit trigger="UseOnce,OpenLanternRoom">0,99,Rug9BR,6,3,None,None</Unit>
 	<Unit>0,99,CastleWallVertical,6,4,None,None</Unit>
 	<Unit>0,99,CastleWallT_W,6,7,None,None</Unit>
@@ -182,7 +183,7 @@
 	<Unit>0,99,CastleWallHorizontal,8,18,None,None</Unit>
 	<Unit>0,99,CastleWallHorizontal,8,19,None,None</Unit>
 	<Unit>0,99,CastleWallVertical,9,1,None,None</Unit>
-	<Unit trigger="UseOnce,OpenArmory">0,99,Switch,9,2,None,None</Unit>
+	<Unit trigger="UseOnce,Armory Switch">0,99,Switch,9,2,None,None</Unit>
 	<Unit>0,99,BookcaseSparse,9,4,None,None</Unit>
 	<Unit>0,99,CastleWallVertical,9,6,None,None</Unit>
 	<Unit>0,99,ChestSturdyAlt,9,7,None,None</Unit>
@@ -194,7 +195,6 @@
 	<Unit>0,99,Bartop_CAlt,9,12,None,None</Unit>
 	<Unit>0,99,Bartop_R,9,13,None,None</Unit>
 	<Unit>0,99,CastleWallVertical,9,14,None,None</Unit>
-	<Unit trigger="UseOnce,OpenArmory">0,99,Switch,9,15,None,None</Unit>
 	<Unit>0,99,CandelabraLit,9,16,None,None</Unit>
 	<Unit>0,99,ChestAlt,9,18,None,None</Unit>
 	<Unit>0,99,BedHorizontalAlt,9,19,None,None</Unit>
@@ -303,10 +303,6 @@
 		<Action>/</Action>
 	</Script>
 
-	<Script>Armory Switch
-		<Action>Unlock/3,2</Action>
-	</Script>
-
 	<Script>Give Everyone Blessing of Frost
 		<Action>RosterToList/Everyone,0,true</Action>
 		<Action>ForLoop/-ii-,0-LASTINLIST[Everyone],1,GiveItem,LIST{Everyone,-ii-},Blessing of Frost,,,true</Action>
@@ -318,12 +314,12 @@
 	</Script>
 
 	<Script>OpenArmory
-		<Action>Unlock/11,5</Action>
+		<Action>Unlock/11,6</Action>
 		<Action>AddTextOverlay/The western door to the armory has been unlocked</Action>
 	</Script>
 
 	<Script>OpenLanternRoom
-		<Action>Unlock/3,7</Action>
+		<Action>Unlock/3,8</Action>
 		<Action>AddTextOverlay/The northern door behind the altar has been unlocked</Action>
 	</Script>
 
