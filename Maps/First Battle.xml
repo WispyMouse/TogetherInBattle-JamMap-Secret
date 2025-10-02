@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Level mapname="First Battle" maptype="Single Player" maxplayers="3" battleBG="" musictrack="Against the Cult" winAura="0" winMorale="0" lossMorale="0" nextbattle="Between" defeatScene="" saveable="true" procgen="false" campaign="Secret Jam" lastEdited="9/30/2025 6:57:59 PM">
+<Level mapname="First Battle" maptype="Single Player" maxplayers="3" battleBG="" musictrack="Against the Cult" winAura="0" winMorale="0" lossMorale="0" nextbattle="Between" defeatScene="" saveable="true" procgen="false" campaign="Secret Jam" lastEdited="10/1/2025 5:41:02 PM">
 
 	<Army num="0" AI="false" aiProfile="Balanced" name="The New Coldfront" color="Black" alliedWith="" assignRoster="-1"></Army>
 	<Army num="1" AI="true" aiProfile="Balanced" name="Hoarders of Valuable Truth" color="Blue" alliedWith="2" assignRoster="-1"></Army>
@@ -392,23 +392,16 @@
 		</Branch>
 	</Dialogue>
 
-	<Dialogue trigger="OnCharAttacked/-ANY-,-ANY-,-ANY-,-ANY-" convID="Alert Inside Enemies Attacked" r="true">
+	<Dialogue trigger="OnCharAttacked/-ANY-,-ANY-,-ANY-,-ANY-" convID="Alert Golems" r="true">
 		<Branch num="0" name="">Nothing/You see nothing!
-			<Action>IfTagRun/-FNAME-,AggroGroup,_AlertInside,1</Action>
-			<Action>IfTagRun/-FNAME2-,AggroGroup,_AlertInside,1</Action>
+			<Action>IfTagGoTo/-FNAME-,AggroGroup,1,0</Action>
+			<Action>IfTagGoTo/-FNAME2-,AggroGroup,1,0</Action>
 			<Action>EndConvImmediately/</Action>
-			<Reply>Continue./NextBranch</Reply>
 		</Branch>
-	</Dialogue>
-
-	<Dialogue trigger="None/" convID="Alert Inside Enemies" r="false">
-		<Branch num="0" name="">Enemies/STUB: Oh hey we noticed you. Let's fight!
-			<Action>RemoveConv/Alert Inside Enemies Attacked</Action>
-			<Action>AggroGroup/0</Action>
-			<Action>AggroGroup/1</Action>
-			<Action>AggroGroup/2</Action>
-			<Action>AggroGroup/3</Action>
-			<Reply>Continue./NextBranch</Reply>
+		<Branch num="1" name="">Frost Golem/UNWELCOME GUEST DETECTED. PLEASE LEAVE TRIBUTE AND PROCEED TO MAKE YOURSELF MORE WELCOME, OR LEAVE IMMEDIATELY. 
+			<Action>AddPortrait/Frost Golem:,Frost Golem:left,Blue</Action>
+			<Action>RemoveConv/Alert Golems</Action>
+			<Reply>Continue./EndConv</Reply>
 		</Branch>
 	</Dialogue>
 
@@ -467,6 +460,24 @@
 			<Action>MoveCam/6,9</Action>
 			<Action>AddObjectiveReticle/5,10</Action>
 			<Reply>Continue./NextBranch</Reply>
+		</Branch>
+	</Dialogue>
+
+	<Dialogue trigger="OnCharAttacked/-ANY-,-ANY-,-ANY-,-ANY-" convID="Alert Inside Enemies" r="true">
+		<Branch num="0" name="">/You see nothing
+			<Action>IfTagGoTo/-FNAME-,AggroGroup,1,1</Action>
+			<Action>IfTagGoTo/-FNAME2-,AggroGroup,1,1</Action>
+			<Action>EndConvImmediately/</Action>
+		</Branch>
+		<Branch num="2" name="">Frost Charity Enforcer/Eh? Intruders? Get out of here, you aren't worth the time. Actually, hand us those weapons. That'll be your tribute.
+			<Action>AddPortrait/Frost Charity Enforcer/,Frost Charity Enforcer/,right,Blue,Mad</Action>
+			<Reply>Continue./NextBranch</Reply>
+		</Branch>
+		<Branch num="1" name="">Frost Charity Enthusiast/Defend our saviorssss! If they leave, sssso too does our way of life!
+			<Action>ClearPortraits/</Action>
+			<Action>AddPortrait/Frost Charity Enthusiast,Frost Charity Enthusiast,left,Blue,Mad</Action>
+			<Action>RemoveConv/Alert Inside Enemies</Action>
+			<Reply>Continue./EndConv</Reply>
 		</Branch>
 	</Dialogue>
 
