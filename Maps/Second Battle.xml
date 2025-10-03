@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Level mapname="Second Battle" maptype="Single Player" maxplayers="4" battleBG="" musictrack="Form Up!" winAura="0" winMorale="0" lossMorale="0" nextbattle="Final Scene" defeatScene="" saveable="true" procgen="false" campaign="Secret Jam" lastEdited="10/2/2025 6:17:28 PM">
+<Level mapname="Second Battle" maptype="Single Player" maxplayers="4" battleBG="" musictrack="Form Up!" winAura="0" winMorale="0" lossMorale="0" nextbattle="Final Scene" defeatScene="" saveable="true" procgen="false" campaign="Secret Jam" lastEdited="10/2/2025 10:06:14 PM">
 
 	<Army num="0" AI="false" aiProfile="Balanced" name="Coldfront" color="Black" alliedWith="" assignRoster="0"></Army>
 	<Army num="1" AI="true" aiProfile="Aggressive" name="Disrespectful Upstarts" color="Red" alliedWith="2,3" assignRoster="-1"></Army>
@@ -111,20 +111,21 @@
 	<Unit tag="LevelTo,3">0,3,Grumbly/Leader,15,3,Right,None</Unit>
 
 	<Dialogue trigger="OnLoaded/" convID="Initialize" r="false">
-		<Branch num="0" name="">/
+		<Branch num="0" name="">/End player turn
 			<Action>Run/Initialize_Try</Action>
 			<Action>SetArea/Lantern Zone,8,10,6,8</Action>
 			<Action>AddTagToArmy/1,Patrol,Lantern Zone,=:99</Action>
 			<Action>AddTagToArmy/2,Patrol,Lantern Zone,=:99</Action>
 			<Action>AddTagToArmy/3,Patrol,Lantern Zone,=:99</Action>
+			<Action>SetVal/EndOfPlayerTurn,=:1</Action>
 			<Action>EndConvImmediately/</Action>
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
 	</Dialogue>
 
 	<Dialogue trigger="OnReachingArea/Lantern Zone,-ANY-,1" convID="Upstarts Reached Lantern" r="false">
-		<Branch num="0" name="">Game Over/STUB: Uh-oh, that's how you lose. Oh well!
-			<Reply>Game over!/LoseBattle</Reply>
+		<Branch num="0" name="">Game Over/STUB: Uh-oh, that's how you lose. You will lose if an enemy remains in the lantern area!
+			<Reply>Continue./EndConv</Reply>
 		</Branch>
 	</Dialogue>
 
@@ -210,14 +211,27 @@
 	</Dialogue>
 
 	<Dialogue trigger="OnReachingArea/Lantern Zone,-ANY-,2" convID="Frostborn Charity Reached Lantern" r="false">
-		<Branch num="0" name="">/STUB: This is the dialogue that plays when the frostborn charity reach the lantern.
-			<Reply>Oh no!/LoseBattle</Reply>
+		<Branch num="0" name="">/STUB: This is the dialogue that plays when the frostborn charity reach the lantern. You will lose if an enemy remains in the lantern area!
+			<Reply>Continue./EndConv</Reply>
 		</Branch>
 	</Dialogue>
 
 	<Dialogue trigger="OnReachingArea/Lantern Zone,-ANY-,3" convID="Ungrateful Villagers Reach Lantern" r="false">
-		<Branch num="0" name="">/STUB: This is the dialogue that plays when the ungrateful villagers reach the lantern.
-			<Reply>Darn!/LoseBattle</Reply>
+		<Branch num="0" name="">/STUB: This is the dialogue that plays when the ungrateful villagers reach the lantern. You will lose if an enemy remains in the lantern area!
+			<Reply>Continue./EndConv</Reply>
+		</Branch>
+	</Dialogue>
+
+	<Dialogue trigger="OnTurn/-VAL:EndOfPlayerTurn-" convID="Check Lantern Area End Of Turn" r="true">
+		<Branch num="0" name="">/You see nothing
+			<Action>SetVal/EndOfPlayerTurn,+:4</Action>
+			<Action>IfInAreaGoTo/Lantern Area,Army 1,1</Action>
+			<Action>IfInAreaGoTo/Lantern Area,Army 2,1</Action>
+			<Action>IfInAreaGoTo/Lantern Area,Army 3,1</Action>
+			<Action>EndConvImmediately/</Action>
+		</Branch>
+		<Branch num="1" name="">/An enemy was able to stay in the lantern area long enough to grab the lantern! Game over!
+			<Reply>Oh Darn/LoseBattle</Reply>
 		</Branch>
 	</Dialogue>
 
