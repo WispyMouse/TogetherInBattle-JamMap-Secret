@@ -78,7 +78,7 @@
 
 	<Dialogue trigger="None/" convID="Visitors Arrive" r="false">
 		<Branch num="0" name="">Narration/STUB: When relief was offered to them, the people welcomed the gift. Mysterious travelers cast strange powers over the sky, and gave the people shade and snow.
-			<Action>AddPortrait/Boss/,Boss/,right,Blue,Happy,10,0</Action>
+			<Action>AddPortrait/Jules/Acepocket,1,Jules/Acepocket,right,Blue,Happy,10,0</Action>
 			<Action>AddPortrait/Charatass/,Charatass/,right,Blue,Happy,5,0</Action>
 			<Action>AddPortrait/Apostacratus/,Apostacratus/,right,Blue,Happy,0,0</Action>
 			<Reply>Continue./NextFrame</Reply>
