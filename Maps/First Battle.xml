@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Level mapname="First Battle" maptype="Single Player" maxplayers="3" battleBG="" musictrack="Against the Cult" winAura="0" winMorale="0" lossMorale="0" nextbattle="Between" defeatScene="" saveable="true" procgen="false" campaign="Secret Jam" lastEdited="10/1/2025 10:45:26 PM">
+<Level mapname="First Battle" maptype="Single Player" maxplayers="3" battleBG="" musictrack="Against the Cult" winAura="0" winMorale="0" lossMorale="0" nextbattle="Between" defeatScene="" saveable="true" procgen="false" campaign="Secret Jam" lastEdited="10/2/2025 6:04:18 PM">
 
 	<Army num="0" AI="false" aiProfile="Balanced" name="The New Coldfront" color="Black" alliedWith="" assignRoster="-1"></Army>
 	<Army num="1" AI="true" aiProfile="Balanced" name="Hoarders of Valuable Truth" color="Blue" alliedWith="2" assignRoster="-1"></Army>
@@ -91,7 +91,7 @@
 	<Unit>0,99,CastleWallVertical,1,5,None,None</Unit>
 	<Unit>0,99,CastleWallVertical,1,14,None,None</Unit>
 	<Unit>0,99,CandelabraLit,1,15,None,None</Unit>
-	<Unit>0,99,ChestAlt,1,17,None,None</Unit>
+	<Unit>0,99,ChestAlt,1,17,None,700 Coins/Steel Sword/Winged Helm</Unit>
 	<Unit>0,99,BookcaseFull,1,18,None,None</Unit>
 	<Unit>0,99,BookcaseSparse,1,19,None,None</Unit>
 	<Unit>0,99,DoorWoodVertical,2,5,None,None</Unit>
@@ -165,7 +165,7 @@
 	<Unit>0,99,CastleWallVertical,7,11,None,None</Unit>
 	<Unit>0,99,Barrel,7,12,None,None</Unit>
 	<Unit>0,99,CastleWallVertical,8,1,None,None</Unit>
-	<Unit>0,99,ChestAlt,8,2,None,None</Unit>
+	<Unit>0,99,ChestAlt,8,2,None,Medicated Bandages/Focus Pills/Turbocharger</Unit>
 	<Unit>0,99,CastleWallSW,8,4,None,None</Unit>
 	<Unit>0,99,DoorWood,8,5,None,None</Unit>
 	<Unit>0,99,CastleWallT_N,8,6,None,None</Unit>
@@ -186,7 +186,7 @@
 	<Unit trigger="Use Once,OpenArmory">0,99,Switch,9,2,None,None</Unit>
 	<Unit>0,99,BookcaseSparse,9,4,None,None</Unit>
 	<Unit>0,99,CastleWallVertical,9,6,None,None</Unit>
-	<Unit>0,99,ChestSturdyAlt,9,7,None,None</Unit>
+	<Unit>0,99,ChestSturdyAlt,9,7,None,25 Coins/50 Coins/25 Coins/25 Coins/25 Coins/50 Coins/25 Coins/Drawing/Figurine</Unit>
 	<Unit>0,99,RugTurq9L,9,8,None,None</Unit>
 	<Unit>0,99,RugTurq9R,9,9,None,None</Unit>
 	<Unit>0,99,Altar,9,10,None,None</Unit>
@@ -196,7 +196,7 @@
 	<Unit>0,99,Bartop_R,9,13,None,None</Unit>
 	<Unit>0,99,CastleWallVertical,9,14,None,None</Unit>
 	<Unit>0,99,CandelabraLit,9,16,None,None</Unit>
-	<Unit>0,99,ChestAlt,9,18,None,None</Unit>
+	<Unit>0,99,ChestAlt,9,18,None,Kite Shield/Bandages/Focus Pills</Unit>
 	<Unit>0,99,BedHorizontalAlt,9,19,None,None</Unit>
 	<Unit>0,99,CastleWallVertical,10,1,None,None</Unit>
 	<Unit>0,99,TablePapers,10,2,None,None</Unit>
@@ -215,7 +215,7 @@
 	<Unit>0,99,Barrel,11,17,None,None</Unit>
 	<Unit>0,99,RackSparse,11,19,None,None</Unit>
 	<Unit>0,99,CastleWallVertical,12,1,None,None</Unit>
-	<Unit>0,99,Chest,12,5,None,None</Unit>
+	<Unit>0,99,Chest,12,5,None,Steel Claw/Blue Orb</Unit>
 	<Unit>0,99,CastleWallVertical,12,6,None,None</Unit>
 	<Unit>0,99,TableFood,12,7,None,None</Unit>
 	<Unit>0,99,RugTurq9L,12,8,None,None</Unit>
@@ -390,15 +390,11 @@
 		</Branch>
 	</Dialogue>
 
-	<Dialogue trigger="OnCharAttacked/-ANY-,-ANY-,-ANY-,-ANY-" convID="Alert Golems" r="true">
-		<Branch num="0" name="">Nothing/You see nothing!
-			<Action>IfTagGoTo/-FNAME-,AggroGroup,1,0</Action>
-			<Action>IfTagGoTo/-FNAME2-,AggroGroup,1,0</Action>
-			<Action>EndConvImmediately/</Action>
-		</Branch>
+	<Dialogue trigger="OnCharAttacked/-ANY-,GROUP[0]" convID="Alert Golems Attacked" r="false">
 		<Branch num="1" name="">Frost Golem/UNWELCOME GUEST DETECTED. PLEASE LEAVE TRIBUTE AND PROCEED TO MAKE YOURSELF MORE WELCOME, OR LEAVE IMMEDIATELY. 
 			<Action>AddPortrait/Frost Golem:,Frost Golem:,left,Blue</Action>
 			<Action>RemoveConv/Alert Golems</Action>
+			<Action>RemoveConv/Alert Golems Attacker</Action>
 			<Reply>Continue./EndConv</Reply>
 		</Branch>
 	</Dialogue>
@@ -476,6 +472,13 @@
 			<Action>AddPortrait/Frost Charity Enthusiast/,Frost Charity Enthusiast/,left,Blue,Mad</Action>
 			<Action>RemoveConv/Alert Inside Enemies</Action>
 			<Reply>Continue./EndConv</Reply>
+		</Branch>
+	</Dialogue>
+
+	<Dialogue trigger="OnCharAttacked/-ANY-,-ANY-,-ANY-,GROUP[0]" convID="Alert Golems Attacker" r="false">
+		<Branch num="0" name="">/You see nothing!
+			<Action>LoadConv/Alert Golems Attacked</Action>
+			<Action>EndConvImmediately/</Action>
 		</Branch>
 	</Dialogue>
 
