@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<PersistentDialogue desc="Dialogue and scripts that are universally available in every scene in the campaign (e.g. death monologues or scripts used in items and skills)." campaign="Secret Jam" lastEdited="10/1/2025 6:53:57 PM">
+<PersistentDialogue desc="Dialogue and scripts that are universally available in every scene in the campaign (e.g. death monologues or scripts used in items and skills)." campaign="Secret Jam" lastEdited="10/3/2025 7:04:13 PM">
 
 	<Script>Initialize_Try
 		<Action>Log/Running Initialize_Try. Have we already initialized? (-VAL:Initialized-)</Action>
@@ -10,11 +10,7 @@
 		<Action>SetVal/Initialized,=:1</Action>
 		<Action>SwitchRoster/0</Action>
 		<Action>Run/Recruit If Not Recruited,Recruit Name,Laina Bigspook,Recruit Load ID,Laina:Bigspook</Action>
-		<Action>Run/Recruit If Not Recruited,Recruit Name,Tillie Starwright,Recruit Load ID,Tillie:Startwright
-
-
-
-</Action>
+		<Action>Run/Recruit If Not Recruited,Recruit Name,Tillie Starwright,Recruit Load ID,Tillie:Starwright</Action>
 		<Action>Run/Recruit If Not Recruited,Recruit Name,Bront the Unbelievable,Recruit Load ID,Bront:the Unbelievable</Action>
 		<Action>Run/Recruit If Not Recruited,Recruit Name,Sooth,Recruit Load ID,Sooth:</Action>
 		<Action>Run/Recruit If Not Recruited,Recruit Name,Jerald Swiftrig,Recruit Load ID,Jerald:Swiftrig</Action>
