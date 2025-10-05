@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Level mapname="Second Battle" maptype="Single Player" maxplayers="4" battleBG="" musictrack="Form Up!" winAura="0" winMorale="0" lossMorale="0" nextbattle="Final Scene" defeatScene="" saveable="true" procgen="false" campaign="Secret Jam" lastEdited="10/2/2025 10:06:14 PM">
+<Level mapname="Second Battle" maptype="Single Player" maxplayers="4" battleBG="" musictrack="Form Up!" winAura="0" winMorale="0" lossMorale="0" nextbattle="Final Scene" defeatScene="" saveable="true" procgen="false" campaign="Secret Jam" lastEdited="10/5/2025 3:07:37 PM">
 
 	<Army num="0" AI="false" aiProfile="Balanced" name="Coldfront" color="Black" alliedWith="" assignRoster="0"></Army>
 	<Army num="1" AI="true" aiProfile="Aggressive" name="Disrespectful Upstarts" color="Red" alliedWith="2,3" assignRoster="-1"></Army>
@@ -14,6 +14,8 @@
 	<Condition>Recover,0,1,1</Condition>
 	
 	<Objective>Protect the secret of frost from these scoundrels!</Objective>
+	<Objective>If an enemy is in the Lantern room at the end of your turn, then game over!</Objective>
+	<Objective>Defeat all enemies</Objective>
 	
 	<Tileset>01,Grass</Tileset>
 	<Tileset>02,Street</Tileset>
@@ -76,7 +78,7 @@
 	<Unit>0,99,BridgeStone,10,2,None,None</Unit>
 	<Unit>0,99,CastleSandstoneWallVertical,10,7,None,None</Unit>
 	<Unit>0,99,CastleSandstoneWallVertical,10,11,None,None</Unit>
-	<Unit>0,99,BoulderSandstone,10,12,None,None</Unit>
+	<Unit>0,99,BoulderSandstone,10,13,None,None</Unit>
 	<Unit>0,99,BridgeStone,11,1,None,None</Unit>
 	<Unit tag="Elev,=:1">0,99,BridgeStone,11,1,None,None</Unit>
 	<Unit>0,99,BridgeStone,11,2,None,None</Unit>
@@ -86,19 +88,19 @@
 	<Unit>0,99,CastleSandstoneWallHorizontal,11,9,None,None</Unit>
 	<Unit>0,99,CastleSandstoneWallHorizontal,11,10,None,None</Unit>
 	<Unit>0,99,CastleSandstoneWallSE,11,11,None,None</Unit>
-	<Unit>0,99,BushSnow,11,13,None,None</Unit>
 	<Unit>0,99,BridgeStone,12,1,None,None</Unit>
 	<Unit>0,99,BridgeStone,12,2,None,None</Unit>
-	<Unit>0,99,BushSnow,12,6,None,None</Unit>
+	<Unit>0,99,BushSnow,12,5,None,None</Unit>
+	<Unit>0,99,BushSnow,12,13,None,None</Unit>
 	<Unit>0,99,LampLit,15,10,None,None</Unit>
 	<Unit>0,99,BoulderSandstone,15,11,None,None</Unit>
 	<Unit>0,0,FromPlayerRoster,6,7,Up,None</Unit>
 	<Unit>0,0,FromPlayerRoster,6,8,Up,None</Unit>
 	<Unit>0,0,FromPlayerRoster,6,9,Up,None</Unit>
 	<Unit>0,0,FromPlayerRoster,6,10,Up,None</Unit>
-	<Unit>0,0,FromPlayerRoster,6,11,Up,None</Unit>
 	<Unit>0,0,FromPlayerRoster,7,6,Up,None</Unit>
-	<Unit>0,0,FromPlayerRoster,7,12,Right,None</Unit>
+	<Unit>0,0,FromPlayerRoster,10,12,Right,None</Unit>
+	<Unit>0,0,FromPlayerRoster,11,12,Up,None</Unit>
 	<Unit tag="LevelTo,5">0,1,Suave/Upstart,6,15,Left,None</Unit>
 	<Unit tag="LevelTo,6">0,1,Upstart/Leader,7,15,Left,None</Unit>
 	<Unit tag="LevelTo,5">0,1,Meek/Upstart,7,16,Left,None</Unit>
@@ -125,21 +127,27 @@
 
 	<Dialogue trigger="OnReachingArea/Lantern Zone,-ANY-,1" convID="Upstarts Reached Lantern" r="false">
 		<Branch num="0" name="">Game Over/STUB: Uh-oh, that's how you lose. You will lose if an enemy remains in the lantern area!
+			<Action>AddTextOverlay/If you end your turn with an enemy in the lantern room, it will be a game over!</Action>
 			<Reply>Continue./EndConv</Reply>
 		</Branch>
 	</Dialogue>
 
 	<Dialogue trigger="BeforeTurn/0" convID="Intro" r="false">
-		<Branch num="0" name="">Upstart Leader/STUB: False idols! We have seen through your lies, and know that the power is not your own. You're unworthy - we'll take it!
+		<Branch num="0" name="">Upstart Leader/BOXED: Ah-hah! We have seen past your lies, fiends! You are unworthy of the power you're hoarding - only I can handle it! We'll be liberating this power from you, now!
 			<Action>MoveCam/,,Upstart Leader</Action>
+			<Action>AddPortrait/Upstart/Leader,Upstart Leader,left,Red,Mean</Action>
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
-		<Branch num="1" name="">Jules Acepocket/There's those thieving cowards. Let's take the lantern back, and restore ourselves as rightful rulers!
-			<Action>MoveCam/,,Apostacratus</Action>
+		<Branch num="1" name="">Jules Acepocket/BOXED: There's those thieving ingrates! It's not your place to question us - just give us that thing back, and we'll [i]forgive[/i] you. Quickly now, before anyone else learns about this!
+			<Action>MoveCam/,,Jules Acepocket</Action>
+			<Action>ClearPortraits/</Action>
+			<Action>AddPortrait/Jules/Acepocket,Jules Acepocket,left,Blue,Mad</Action>
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
-		<Branch num="2" name="">Grumbly Leader/These dunderheads have pushed us around long enough! It's time to take matters in to our own hands, away from these jerks.
+		<Branch num="2" name="">Grumbly Leader/BOXED: Grah, these dunderheads are worse than the previous few lots. Let's just run them out this time, then figure out what to do about the sun.
 			<Action>MoveCam/,,Grumbly Leader</Action>
+			<Action>ClearPortraits/</Action>
+			<Action>AddPortrait/Grumbly/Leader,Grumbly Leader,left,Orange,Headache</Action>
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
 	</Dialogue>
@@ -151,22 +159,25 @@
 	</Dialogue>
 
 	<Dialogue trigger="OnCharAttacked/1" convID="Upstarts Engaged" r="false">
-		<Branch num="0" name="">/STUB: This is the dialogue for when the upstarts are engaged on.
+		<Branch num="0" name="">Upstart Leader/BOXED: It's our turn with the hatever-it-is! I said so!
 			<Action>RemoveConv/Upstarts Engages</Action>
+			<Action>AddPortrait/Upstart/Leader,Upstart Leader,left,Red,Mean</Action>
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
 	</Dialogue>
 
 	<Dialogue trigger="OnCharAttacked/2" convID="Frostborn Charity Engaged" r="false">
-		<Branch num="0" name="">/STUB: This is the dialogue for when the frostborn charity is engaged on.
+		<Branch num="0" name="">Charatass/BOXED: Give us back what you stole! Stealing is wrong when people do it to me!
 			<Action>RemoveConv/Frostborn Charity Engages</Action>
+			<Action>AddPortrait/Charatass/,Charatass/,left,Blue,Mad</Action>
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
 	</Dialogue>
 
 	<Dialogue trigger="OnCharAttacked/3" convID="Ungrateful Villagers Engaged" r="false">
-		<Branch num="0" name="">/STUB: This is the dialogue for the villagers getting engaged on.
+		<Branch num="0" name="">Grumbly Leader/BOXED: I've had enough of you frost-weirdos. Tribute this, coldwads!
 			<Action>RemoveConv/Ungrateful Villagers Engages</Action>
+			<Action>AddPortrait/Grumbly/Leader,Grumbly Leader,left,Orange,Headache</Action>
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
 	</Dialogue>
@@ -192,33 +203,17 @@
 		</Branch>
 	</Dialogue>
 
-	<Dialogue trigger="OnCharDeath/-ANY-,Upstart Leader" convID="Upstarts Boss Defeat" r="false">
-		<Branch num="0" name="">/STUB: Ach! Okay nevermind, let's take a less painful path towards divinity. 
-			<Reply>Continue./NextBranch</Reply>
-		</Branch>
-	</Dialogue>
-
-	<Dialogue trigger="OnCharDeath/-ANY-,Apostacratus" convID="Frostborn Charity Boss Defeat" r="false">
-		<Branch num="0" name="">/STUB: I think it's time we explore new avenues of control. Let them have the blasted lantern, there's more magic in this world. 
-			<Reply>Continue./NextBranch</Reply>
-		</Branch>
-	</Dialogue>
-
-	<Dialogue trigger="OnCharDeath/-ANY-,Grumbly Leader" convID="Ungrateful Villagers Defeated" r="false">
-		<Branch num="0" name="">/STUB: Y'know, nevermind. You aren't all so bad if you can throw down like this.
-			<Reply>Continue./NextBranch</Reply>
-		</Branch>
-	</Dialogue>
-
 	<Dialogue trigger="OnReachingArea/Lantern Zone,-ANY-,2" convID="Frostborn Charity Reached Lantern" r="false">
-		<Branch num="0" name="">/STUB: This is the dialogue that plays when the frostborn charity reach the lantern. You will lose if an enemy remains in the lantern area!
-			<Reply>Continue./EndConv</Reply>
+		<Branch num="0" name="">/You see nothing!
+			<Action>LoadConv/Upstarts Reached Lantern</Action>
+			<Action>EndConvImmediately/</Action>
 		</Branch>
 	</Dialogue>
 
 	<Dialogue trigger="OnReachingArea/Lantern Zone,-ANY-,3" convID="Ungrateful Villagers Reach Lantern" r="false">
-		<Branch num="0" name="">/STUB: This is the dialogue that plays when the ungrateful villagers reach the lantern. You will lose if an enemy remains in the lantern area!
-			<Reply>Continue./EndConv</Reply>
+		<Branch num="0" name="">/You see nothing!
+			<Action>LoadConv/Upstarts Reached Lantern</Action>
+			<Action>EndConvImmediately/</Action>
 		</Branch>
 	</Dialogue>
 
