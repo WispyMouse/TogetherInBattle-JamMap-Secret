@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Level mapname="First Battle" maptype="Single Player" maxplayers="3" battleBG="" musictrack="Against the Cult" winAura="0" winMorale="0" lossMorale="0" nextbattle="Between" defeatScene="" saveable="true" procgen="false" campaign="Secret Jam" lastEdited="10/3/2025 6:44:47 PM">
+<Level mapname="First Battle" maptype="Single Player" maxplayers="3" battleBG="" musictrack="Against the Cult" winAura="0" winMorale="0" lossMorale="0" nextbattle="Between" defeatScene="" saveable="true" procgen="false" campaign="Secret Jam" lastEdited="10/5/2025 1:34:02 PM">
 
 	<Army num="0" AI="false" aiProfile="Balanced" name="The New Coldfront" color="Black" alliedWith="" assignRoster="-1"></Army>
 	<Army num="1" AI="true" aiProfile="Balanced" name="Hoarders of Valuable Truth" color="Blue" alliedWith="2" assignRoster="-1"></Army>
@@ -303,6 +303,7 @@
 
 	<Script>Give Everyone Blessing of Frost
 		<Action>RosterToList/Everyone,0,true</Action>
+		<Action>RemoveFromList/Everyone,Coolio Frostybones</Action>
 		<Action>ForLoop/-ii-,0-LASTINLIST[Everyone],1,GiveItem,LIST{Everyone,-ii-},Blessing of Frost,,,true</Action>
 	</Script>
 
@@ -350,49 +351,119 @@
 	</Dialogue>
 
 	<Dialogue trigger="None/" convID="Grab Lantern Dialogue" r="false">
-		<Branch num="0" name="">-FNAME-/STUB: Wow, a lantern? How fancy.
+		<Branch num="0" name="">Laina Bigspook/BOXED: H-ahhh this room is cold. [She shivers] What's this thing? A... lantern?
 			<Action>SetVal/Lantern Grabbed,=:1</Action>
-			<Action>AddSpeakerPortrait/left,Quizzical</Action>
+			<Action>AddPortrait/Laina/Bigspook,Laina Bigspook,left,Black,Quizzical</Action>
 			<Action>Run/Give Everyone Blessing of Frost</Action>
 			<Action>Run/Remove Enemy Blessing</Action>
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
+		<Branch num="5" name="">/BOXED: [As the lantern is touched, the group feels a shiver of cold, followed by a shiver of refreshing warmth]
+			<Action>ClearPortraits/</Action>
+			<Action>AddPortrait/Bront/the Unbelievable,Bront the Unbelievable,right,Black,Headache,-2,0</Action>
+			<Action>AddPortrait/Jerald/Swiftrig,Jerald Swiftrig,right,Black,Headache,3,1</Action>
+			<Action>AddPortrait/Tillie/Starwright,Tillie Starwright,right,Black,Headache,8,0</Action>
+			<Action>AddPortrait/Rustler/,Rustler/,left,Black,Headache,12</Action>
+			<Action>AddPortrait/Laina/Bigspook,Laina bigspook,left,Black,Headache,17,0</Action>
+			<Action>AddPortrait/Sooth/,Sooth/left,Black,Headache,22,0</Action>
+			<Action>PortraitParticles/Bront/the Unbelievable,SparkleBurst,1</Action>
+			<Action>PortraitParticles/Jerald/Swiftrig,SparkleBurst,2</Action>
+			<Action>PortraitParticles/Tillie/Starwright,SparkleBurst,3</Action>
+			<Action>PortraitParticles/Rustler/,SparkleBurst,4</Action>
+			<Action>PortraitParticles/Laina/Bigspook,SparkleBurst,5</Action>
+			<Action>PortraitParticles/Sooth/,SparkleBurst,6</Action>
+			<Action>Wait/6</Action>
+			<Action>ChangeExpression/Bront/the Unbelievable,Happy</Action>
+			<Action>ChangeExpression/Jerald/Swiftrig,Happy</Action>
+			<Action>ChangeExpression/Tillie/Starwright,Happy</Action>
+			<Action>ChangeExpression/Rustler/,Happy</Action>
+			<Action>ChangeExpression/Laina/Bigspook,Happy</Action>
+			<Action>ChangeExpression/Sooth/,Happy</Action>
+			<Reply>Continue./NextBranch</Reply>
+		</Branch>
 		<Branch num="1" name="">/You see nothing
-			<Action>IfPresentGoTo/Charatass,2</Action>
-			<Action>IfPresentGoTo/Boss,4</Action>
-			<Action>LoadConv/Check Victory</Action>
+			<Action>IfPresentGoTo/Charatass,3</Action>
+			<Action>IfPresentGoTo/Jules Acepocket,5</Action>
+			<Action>GoTo/6</Action>
 			<Action>EndConvImmediately/</Action>
 		</Branch>
-		<Branch num="2" name="">Charatass/STUB: ...! [b]My[/b] powers! S-someone must have found...!
+		<Branch num="2" name="">Charatass/BOXED: ...! [b]My[/b] powers! S-someone must have found the lantern!
+			<Action>ClearPortraits/</Action>
+			<Action>AddPortrait/Charatass/,Charatass/,right,Blue,Concerned</Action>
+			<Action>PortraitParticles/Charatass/,DarkSmoke</Action>
+			<Action>RemoveTag/Charatass,Passive</Action>
+			<Action>MoveCam/,,Charatass</Action>
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
 		<Branch num="3" name="">/You see nothing
-			<Action>IfPresentGoTo/Boss,4</Action>
-			<Action>LoadConv/Check Victory</Action>
+			<Action>IfPresentGoTo/Boss,5</Action>
+			<Action>GoTo/6</Action>
 			<Action>EndConvImmediately/</Action>
 		</Branch>
-		<Branch num="4" name="">Boss/STUB: [Heshe whispers] Someone has the Lantern! Agh, guards! Seize the intruders!
+		<Branch num="4" name="">Jules Acepocket/BOXED: [He speaks in a hurried, hush tone] Someone has the Lantern! [He frantically moves in to action] Guards! Take the - the thing they're holding! Now!
+			<Action>ClearPortraits/</Action>
+			<Action>AddPortrait/Jules/Acepocket,Jules Acepocket,left,Blue,Concerned</Action>
+			<Action>PortraitParticles/Jules/Acepocket,DarkSmoke</Action>
+			<Action>RemoveTag/Jules/Acepocket,Passive</Action>
+			<Action>MoveCam/,,Jules Acepocket</Action>
 			<Reply>Continue./LoadConv/Check Victory</Reply>
+		</Branch>
+		<Branch num="6" name="">Rustler/BOXED: I feel incredible! I feel [i]divine[/i]! The power of frossssst isssss mine!
+			<Action>ClearPortraits/</Action>
+			<Action>AddPortrait/Rustler/,Rustler/,right,Black,Happy</Action>
+			<Reply>Continue./NextBranch</Reply>
+		</Branch>
+		<Branch num="7" name="">Rustler/BOXED: ...I mean ourssss!
+			<Action>ChangeExpression/Rustler/,Concerned</Action>
+			<Action>AddPortrait/Bront/the Unbelievable,Bront the Unbelievable,left,Black,Quizzical,20,0</Action>
+			<Reply>Continue./Run/Check Victory</Reply>
 		</Branch>
 	</Dialogue>
 
 	<Dialogue trigger="OnTalk/-ANY-,Deactivated Frost Golem" convID="Activate Golem" r="true">
 		<Branch num="2" name="">/The player should not see this dialogue
 			<Action>IfValGoTo/Lantern Grabbed,=,0,1</Action>
-			<Action>IfValGoTo/Lantern Grabbed,=,1,2</Action>
+			<Action>IfValGoTo/Lantern Grabbed,=,1,3</Action>
 			<Action>EndConvImmediately/</Action>
 		</Branch>
-		<Branch num="1" name="No Lantern">/STUB: Oh, weird. An inactive golem. Maybe it was defective?
-			<Reply>How Strange/EndConv</Reply>
+		<Branch num="1" name="No Lantern">Jerald Swiftrig/BOXED: Oho, what is this? My intuition and superior knowledge have caused me to form the hypothesis that this Frost Golem.. [He pauses, then dramatically announces] ...is turned off!
+			<Action>MoveCam/,,Deactivated Frost Golem</Action>
+			<Action>AddPortrait/Jerald/Swiftrig,Jerald Swiftrig,left,Black,Quizzical</Action>
+			<Action>AddPortrait/Coolio/Frostybones,Coolio Frostybones,right,Blue</Action>
+			<Reply>Continue./NextBranch</Reply>
 		</Branch>
-		<Branch num="0" name="Has Lantern">/STUB: Oh, this is a golem. Ours now!
+		<Branch num="3" name="">Rustler/BOXED: Ussselesss to ussss now... Unlesssss we can turn it back on, somehow?
+			<Action>AddPortrait/Rustler/,Rustler/,right,Black,Quizzical</Action>
+			<Reply>Continue./EndConv</Reply>
+		</Branch>
+		<Branch num="0" name="Has Lantern">Deactivated Frost Golem/BOXED: [The golem responds to the lantern, slowly rising with the sound of shifting ice] WHAT AM I?
 			<Action>Run/Recruit Coolio Frostybones</Action>
-			<Reply>Great!/EndConv</Reply>
+			<Action>MoveCam/,,Coolio Frostybones</Action>
+			<Action>AddPortrait/Coolio/Frostybones,Coolio Frostybones,right,Black</Action>
+			<Action>PortraitParticles/Coolio/Frostybones,Dark Smoke</Action>
+			<Reply>Continue./NextBranch</Reply>
+		</Branch>
+		<Branch num="4" name="">Jerald Swiftrig/BOXED: Ah, a question with infinite depth. We could pontificate the gregarious detailing of the tapestry that identity w---
+			<Action>AddPortrait/Jerald/Swiftrig,Jerald Swiftrig,left,Black,Quizzical</Action>
+			<Reply>Continue./NextBranch</Reply>
+		</Branch>
+		<Branch num="5" name="">Bront the Unbelievable/BOXED: You are [b]Coolio Frostybones[/b], my personal golem. Your job is to tell everyone just how cool I am!
+			<Action>MovePortrait/Jerry/Swiftrig,20,0</Action>
+			<Action>AddPortrait/Bront/the Unbelievable,Bront the Unbelievable,left,Black,Happy,20,0</Action>
+			<Action>MovePortrait/Bront/the Unbelievable,15,0,150</Action>
+			<Reply>Continue./NextBranch</Reply>
+		</Branch>
+		<Branch num="6" name="">Coolio Frostybones/BOXED: AFFIRMATIVE. I WILL BE SUFFICIENTLY ACCURATE IN MY ASSESSMENTS. [It pauses, then chirps a crackly assessment] YOUR INTERNAL BODY TEMPERATURE IS LOWER THAN HEALTHY ADOLESCENT FROST SPRIGGAT VALUES.
+			<Reply>Continue./NextBranch</Reply>
+		</Branch>
+		<Branch num="8" name="">Bront the Unbelievable/BOXED: Uh... Okay uh, how about, just tell everyone I'm great. Can you do that?
+			<Action>ChangeExpression/Bront/the Unbelievable,Mad</Action>
+			<Reply>Continue./EndConv</Reply>
 		</Branch>
 	</Dialogue>
 
 	<Dialogue trigger="OnCharAttacked/-ANY-,GROUP[0]" convID="Alert Golems Attacked" r="false">
-		<Branch num="1" name="">Frost Golem/UNWELCOME GUEST DETECTED. PLEASE LEAVE TRIBUTE AND PROCEED TO MAKE YOURSELF MORE WELCOME, OR LEAVE IMMEDIATELY. 
+		<Branch num="1" name="">Frost Golem/BOXED: UNWELCOME GUEST DETECTED. PLEASE LEAVE TRIBUTE AND PROCEED TO MAKE YOURSELF MORE WELCOME, OR LEAVE IMMEDIATELY. 
 			<Action>AddPortrait/Frost Golem:,Frost Golem:,left,Blue</Action>
 			<Action>RemoveConv/Alert Golems</Action>
 			<Action>RemoveConv/Alert Golems Attacker</Action>
@@ -414,16 +485,24 @@
 	</Dialogue>
 
 	<Dialogue trigger="OnCharDeath/1,Jules Acepocket" convID="Boss One Defeated" r="false">
-		<Branch num="0" name="">Jules Acepocket/STUB: Ach! I've been defeated!
+		<Branch num="0" name="">Jules Acepocket/BOXED: This was just getting [i]profitable enough[/i]! I loathe sowing what others will reap. It was... my hard work! [he flees]
 			<Action>SetVal/Bosses Alive,-:1</Action>
-			<Reply>Got 'Em/LoadConv/Check Victory</Reply>
+			<Action>AddPortrait/Jules/Acepocket,Jules Acepocket,left,Blue,Headache</Action>
+			<Action>Wait/1</Action>
+			<Action>FlipPortrait/Jules/Acepocket</Action>
+			<Action>MovePortrait/Jules/Acepocket,30,0,80</Action>
+			<Reply>Continue./LoadConv/Check Victory</Reply>
 		</Branch>
 	</Dialogue>
 
 	<Dialogue trigger="OnCharDeath/1,Charatass" convID="Charatass Defeated" r="false">
-		<Branch num="0" name="">Charatass/STUB: Oops, I've been defeated.
+		<Branch num="0" name="">Charatass/BOXED: My powers! It is my right - I am divine! I-I'll get you back for this! [she flees]
 			<Action>SetVal/Bosses Alive,-:1</Action>
-			<Reply>Hah!/LoadConv/Check Victory</Reply>
+			<Action>AddPortrait/Charatass/,Charatass/,left,Blue,Headache</Action>
+			<Action>Wait/1</Action>
+			<Action>FlipPortrait/Charatass/</Action>
+			<Action>MovePortrait/Charatass/,30,0,80</Action>
+			<Reply>Continue./LoadConv/Check Victory</Reply>
 		</Branch>
 	</Dialogue>
 
@@ -433,7 +512,9 @@
 			<Action>IfValGoTo/Bosses Alive,g=,1,2</Action>
 			<Action>WinBattle/</Action>
 		</Branch>
-		<Branch num="1" name="">/STUB: But we still need to know how they did all this!
+		<Branch num="1" name="">Tillie Starwright/BOXED: That's one of their leaders down. But what is the source of their power?
+			<Action>AddPortrait/Tillie/Starwright,Tillie Starwright,right,Black,Quizzical</Action>
+			<Action>MoveCam/5,10</Action>
 			<Reply>Continue./EndConv</Reply>
 		</Branch>
 		<Branch num="2" name="">/Should not see this
@@ -442,10 +523,12 @@
 			<Action>WinBattle/</Action>
 			<Action>EndConvImmediately/</Action>
 		</Branch>
-		<Branch num="3" name="">/STUB: Now to take on the head of these liars!
-			<Reply>Go Get 'em/EndConv</Reply>
+		<Branch num="3" name="">Bront the Unbelievable/BOXED: If this is the source of their power, then they're no chosen saviors after all! Let's teach their bosses a lesson!
+			<Action>AddPortrait/Bront/the Unbelievable,Bront the Unbelievable,left,Black,Mad</Action>
+			<Reply>Continue./EndConv</Reply>
 		</Branch>
-		<Branch num="4" name="">/STUB: Now for the other one!
+		<Branch num="4" name="">Bront the Unbelievable/BOXED: Hah! A mighty foe down and a [i]clearly ancient mystical artifact[/i] in hand... Now to wrap things up! Get that other boss!
+			<Action>AddPortrait/Bront/the Unbelievable,Bront the Unbelievable,right,Black,Mean</Action>
 			<Reply>Yea Get That Guy/EndConv</Reply>
 		</Branch>
 	</Dialogue>
