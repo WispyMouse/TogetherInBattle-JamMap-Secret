@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<PersistentDialogue desc="Dialogue and scripts that are universally available in every scene in the campaign (e.g. death monologues or scripts used in items and skills)." campaign="Secret Jam" lastEdited="10/3/2025 7:04:13 PM">
+<PersistentDialogue desc="Dialogue and scripts that are universally available in every scene in the campaign (e.g. death monologues or scripts used in items and skills)." campaign="Secret Jam" lastEdited="10/4/2025 5:04:30 PM">
 
 	<Script>Initialize_Try
 		<Action>Log/Running Initialize_Try. Have we already initialized? (-VAL:Initialized-)</Action>

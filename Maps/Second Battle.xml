@@ -105,7 +105,7 @@
 	<Unit tag="LevelTo,4">0,2,Hired Mercenary Guard/,0,8,Down,None</Unit>
 	<Unit tag="LevelTo,5">0,2,Charatass/,0,9,Down,None</Unit>
 	<Unit tag="LevelTo,5">0,2,Jules/Acepocket,0,10,Down,None</Unit>
-	<Unit>0,2,Frostborne Charity Enforcer/,1,9,Down,None</Unit>
+	<Unit tag="LevelTo,4">0,2,Frostborne Charity Enforcer/,1,9,Down,None</Unit>
 	<Unit tag="LevelTo,3">0,3,Upset/Villager,13,1,Right,None</Unit>
 	<Unit tag="LevelTo,3">0,3,Peeved/Villager,14,2,Right,None</Unit>
 	<Unit tag="LevelTo,3">0,3,Grumbly/Leader,15,3,Right,None</Unit>

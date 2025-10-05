@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Level mapname="Introduction" maptype="Cut Scene: Static" maxplayers="1" musictrack="" winAura="0" nextbattle="First Battle" saveable="true" saveCheck="false" campaign="Secret Jam" lastEdited="10/3/2025 7:00:26 PM">
+<Level mapname="Introduction" maptype="Cut Scene: Static" maxplayers="1" musictrack="" winAura="0" nextbattle="First Battle" saveable="true" saveCheck="false" campaign="Secret Jam" lastEdited="10/4/2025 5:25:29 PM">
 
 	<Narration> -DIA:Introduction-| -PIC:Cave_Sandstone- -DIA:Setting Establishing-| -DIA:Visitors Arrive- -PIC:Cave-| -DIA:Effect of Visitors-    -PIC:Town_Night-|   -DIA:Infiltration-      -PIC:Castle_Night-</Narration>
 	
@@ -46,41 +46,66 @@
 	</Dialogue>
 
 	<Dialogue trigger="None/" convID="Setting Establishing" r="false">
-		<Branch num="0" name="">Narration/STUB: The sun beats down harshly and without remorse. In a town of horrible summers, the people languish under the brutal sky.
+		<Branch num="0" name="">Tillie Starwright/BOXED: Our story takes place in the small town of Glaer. Every summer, the unbearable sun finds a perfect and horrible place in the sky. Our people wilt, our crops wither, and our joy dries out.
+			<Action>AddPortrait/Tillie/Starwright,Tillie Starwright,right,Black,Sad,-2,1</Action>
 			<Reply>Continue./NextFrame</Reply>
 		</Branch>
 	</Dialogue>
 
 	<Dialogue trigger="None/" convID="Effect of Visitors" r="false">
-		<Branch num="0" name="">Narration/STUB: With a longer season of cold and less intense seasons of heat, the people thrived. And with their gain, came the increase of demanded tribute.
+		<Branch num="0" name="">Tillie Starwright/BOXED: It's never quite clear how they do these things. It's often different people with some different accord. It's almost as if it isn't a matter of divinity that gives people this gift...
+			<Action>AddPortrait/Tillie/Starwright,Tillie Starwright,right,Black,Concerned,-2,1</Action>
+			<Action>AddPortrait/Jules/Acepocket,Jules Acepocket,left,Blue,Happy,16,0</Action>
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
-		<Branch num="1" name="">Narration/STUB: The Frostborne Charity refused to ever reveal their own hand, yet demanded so much from us.
-			<Action>ClearPortraits/</Action>
+		<Branch num="1" name="">Tillie Starwright/BOXED: That instead, there's some [i]secret[/i] to the frost. That anyone could hold that secret, and become divine.
+			<Action>ChangeExpression/Jules/Acepocket,Quizzical</Action>
+			<Action>FlipPortrait/Jules/Acepocket</Action>
+			<Action>MovePortrait/Jules/Acepocket,30,0,100</Action>
+			<Action>MovePortrait/Tillie/Starwright,3,1,60</Action>
 			<Reply>Continue./NextFrame</Reply>
 		</Branch>
 	</Dialogue>
 
 	<Dialogue trigger="None/" convID="Infiltration" r="false">
-		<Branch num="0" name="">Narration/STUB: Those liars are taking advantage of us. But what gives them the right to be special?
-			<Action>AddPortrait/Bront/the Unbelievable,Bront the Unbelievable,right,Grey,Mad,-4,0</Action>
-			<Action>AddPortrait/Jerald/Swiftrig,Jerald Swiftrig,right,Grey,Mad,1,1</Action>
-			<Action>AddPortrait/Rustler/,Rustler/,right,Grey,Mad,6,0</Action>
-			<Action>AddPortrait/Laina/Bigspook,Laina Bigspook,left,Grey,Nervous,24,0</Action>
-			<Action>AddPortrait/Sooth/,Sooth/,left,Grey,Amused,19,0</Action>
-			<Action>AddPortrait/Tillie/Starwright,Tillie Starwright,left,Grey,Mean,15,1</Action>
+		<Branch num="0" name="">Narration/BOXED: Those liars are taking advantage of us. But what gives them the right to be special?
+			<Action>AddPortrait/Bront/the Unbelievable,Bront the Unbelievable,right,Black,Mad,-2,0</Action>
+			<Action>AddPortrait/Jerald/Swiftrig,Jerald Swiftrig,right,Black,Mad,3,1</Action>
+			<Action>AddPortrait/Tillie/Starwright,Tillie Starwright,right,Black,Concerned,8,0</Action>
+			<Action>AddPortrait/Rustler/,Rustler/,left,Black,Mad,12,0</Action>
+			<Action>AddPortrait/Laina/Bigspook,Laina Bigspook,left,Black,Concerned,17,0</Action>
+			<Action>AddPortrait/Sooth/,Sooth/,left,Black,Amused,22,0</Action>
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
-		<Branch num="1" name="">Narration/STUB: That power should belong to us.
+		<Branch num="1" name="">Narration/BOXED: That power should belong to us.
+			<Action>ChangeExpression/Bront/the Unbelievable,Mean</Action>
+			<Action>ChangeExpression/Rustler/,Mean</Action>
+			<Action>ChangeExpression/Sooth/,Mean</Action>
+			<Action>ChangeExpression/Tillie/Starwright,Mean</Action>
+			<Action>ChangeExpression/Jerald/Swiftrig,Mean</Action>
+			<Action>ChangeExpression/Laina/Bigspook,Shocked</Action>
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
 	</Dialogue>
 
 	<Dialogue trigger="None/" convID="Visitors Arrive" r="false">
-		<Branch num="0" name="">Narration/STUB: When relief was offered to them, the people welcomed the gift. Mysterious travelers cast strange powers over the sky, and gave the people shade and snow.
-			<Action>AddPortrait/Jules/Acepocket,1,Jules/Acepocket,right,Blue,Happy,10,0</Action>
-			<Action>AddPortrait/Charatass/,Charatass/,right,Blue,Happy,5,0</Action>
-			<Action>AddPortrait/Apostacratus/,Apostacratus/,right,Blue,Happy,0,0</Action>
+		<Branch num="0" name="">Tillie Starwright/BOXED: In recent history, we've been [i]blessed[/i] by the [i]generocity[/i] of strangers. Each summer some new group of people will appear, and offer to provide for us a precious gift: Cold.
+			<Action>AddPortrait/Jules/Acepocket,Jules Acepocket,left,Blue,Happy,26,0</Action>
+			<Action>AddPortrait/Charatass/,Charatass/,left,Blue,Happy,30,1</Action>
+			<Action>AddPortrait/Apostacratus/,Apostacratus/,left,Blue,Happy,34,0</Action>
+			<Action>AddPortrait/Tillie/Starwright,Tillie Starwright,right,Black,Concerned,-2,1</Action>
+			<Action>MovePortrait/Jules/Acepocket,16,0,100</Action>
+			<Action>MovePortrait/Charatass/,20,1,120</Action>
+			<Action>MovePortrait/Apostacratus/,24,0,100</Action>
+			<Action>AddPortrait/Grumbly/Leader,Grumbly Leader,left,Orange,Sad,9,1</Action>
+			<Action>AddPortrait/Upset/Villager,Upset Villager,right,Orange,Sad,4,1</Action>
+			<Reply>Continue./NextBranch</Reply>
+		</Branch>
+		<Branch num="1" name="">Tillie Starwright/BOXED: It plays out similarly each year; magnificent people would promise the gift of frost in exchange for tribute. And the people of Glaer would happily give anything for respite from the sun.
+			<Action>FlipPortrait/Grumbly/Leader</Action>
+			<Action>ChangeExpression/Upset/Villager,Happy</Action>
+			<Action>ChangeExpression/Grumbly/Leader,Happy</Action>
+			<Action>PortraitParticles/Grumbly/Leader,Sparkles</Action>
 			<Reply>Continue./NextFrame</Reply>
 		</Branch>
 	</Dialogue>
