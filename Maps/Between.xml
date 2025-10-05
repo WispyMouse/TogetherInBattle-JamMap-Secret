@@ -1,41 +1,58 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Level mapname="Between" maptype="Cut Scene: Static" maxplayers="1" musictrack="" winAura="0" nextbattle="Second Battle" saveable="true" saveCheck="true" campaign="Secret Jam" lastEdited="10/3/2025 6:49:22 PM">
+<Level mapname="Between" maptype="Cut Scene: Static" maxplayers="1" musictrack="" winAura="0" nextbattle="Second Battle" saveable="true" saveCheck="true" campaign="Secret Jam" lastEdited="10/4/2025 6:52:56 PM">
 
 	<Narration>  -DIA:Between Start- -PIC:Castle_Night-| -DIA:We Have It- -PIC:Cave-| -DIA:Giving To The People-  -PIC:Town_Night-| -DIA:But One Day- -PIC:Psy_Academy_Night-</Narration>
 	
 	<NewRoster num="0"></NewRoster>
 
 	<Dialogue trigger="None/" convID="Between Start" r="false">
-		<Branch num="0" name="">/STUB: Oh, so their ice power came from this lantern.
+		<Branch num="0" name="">Bront the Unbelievable/BOXED: Ahah! So all this time, it was this lantern that gave them the fancy ice powers? I knew they were just some shmucks this year!
 			<Action>Run/Initialize_Try</Action>
+			<Action>AddPortrait/Bront/the Unbelievable,Bront the Unbelievable,right,Black,Quizzical</Action>
 			<Reply>Continue/NextBranch</Reply>
 		</Branch>
-		<Branch num="1" name="">/STUB: And now, we have those powers.
+		<Branch num="1" name="">Jerald Swiftrig/BOXED: Mm, yes. By my calculations (and by the frostbite forming around my finger tips) this does seem sort of... information removing device. It allows an [i]attuned[/i] user to [i]remove heat[/i], in to this lantern. Fascinating. It must work off of uh... [Heshe looks carefully at the lantern] Weird science magic. Yes.
+			<Action>AddPortrait/Jerald/Swiftrig,Jerald Swiftrig,left,Black,Quizzical</Action>
 			<Reply>Continue./NextFrame</Reply>
 		</Branch>
 	</Dialogue>
 
 	<Dialogue trigger="None/" convID="We Have It" r="false">
-		<Branch num="0" name="">/STUB: You know... We could be the new gods. We'd be kinder, better, more benevolent. We just have to not tell people how [i]we[/i] have those powers now.
+		<Branch num="0" name="">Tillie Starwright/BOXED: Now that [i]we[/i] have it... there's a unique opportunity, isn't there? It's almost the hot season - [i]we[/i] could bring the frost this year! Wouldn't that be grand?
+			<Action>AddPortrait/Tillie/Starwright,Tillie Starwright,left,Black,Happy</Action>
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
-		<Branch num="1" name="">/STUB: That's hilarious and great. Let's do it. What could go wrong?
+		<Branch num="2" name="">Laina Bigspook/BOXED: Aww, really y'all? Can't we just give the lantern to the town?
+			<Action>AddPortrait/Laina/Bigspook,Laina Bigspook,right,Black,Concerned</Action>
+			<Reply>Continue./NextBranch</Reply>
+		</Branch>
+		<Branch num="1" name="">Rustler/BOXED: And passsss up the chance to reach [i]divine[/i] sssstatusss?! No, we do assss Tillie ssssayss. Now [i]we[/i] can be in charge!
+			<Action>RemovePortrait/Tillie/Starwright</Action>
+			<Action>AddPortrait/Rustler/,Rustler/,left,Black,Mad</Action>
+			<Action>MovePortrait/Rustler/,12,0,100</Action>
+			<Action>ChangeExpression/Laina/Bigspook,Nervous</Action>
+			<Reply>Continue./NextBranch</Reply>
+		</Branch>
+		<Branch num="3" name="">Sooth/BOXED: [Heshe smirks] Seems like a good plan to me.
+			<Action>RemovePortrait/Laina/Bigspook</Action>
+			<Action>AddPortrait/Sooth/,Sooth/,right,Black,Amused</Action>
 			<Reply>Continue./NextFrame</Reply>
 		</Branch>
 	</Dialogue>
 
 	<Dialogue trigger="None/" convID="Giving To The People" r="false">
-		<Branch num="0" name="">/STUB: And so we returned to the town, and became the new source of frost powers in the community. It went great!
+		<Branch num="0" name="">Tillie Starwright/BOXED: And so we returned to the town, and became the new source of frost powers in the community. We made up some glamorous lie about our emergent power. A simple, familiar narrative; we generously give out our wondrous frost, and keep the details to ourselves.
+			<Action>AddPortrait/Tillie/Starwright,Tillie Starwright,right,Black,-2,1</Action>
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
-		<Branch num="1" name="">/STUB: And hey, it's only fair to ask for tribute.
-			<Reply>Continue./NextFrame</Reply>
-		</Branch>
-	</Dialogue>
-
-	<Dialogue trigger="None/" convID="But One Day" r="false">
-		<Branch num="0" name="">/STUB: And so we did this for a while. Until, some ungrateful people showed up at our door...
-			<Reply>Continue./NextBranch</Reply>
+		<Branch num="1" name="">Tillie Starwright/BOXED: And hey, it's only fair to ask for tribute. So we did this, for a while. Until, some ungrateful people showed up at our door...
+			<Action>AddPortrait/Upstart/Leader,Upstart Leader,left,Red,Mad,30,0</Action>
+			<Action>MovePortrait/Upstart Leader,15,0,100</Action>
+			<Action>AddPortrait/Grumbly/Leader,Grumbly Leader,left,Orange,Mad,35,0</Action>
+			<Action>MovePortrait/Grumbly Leader,20,0,100</Action>
+			<Action>AddPortrait/Charatass/,Charatass/,left,Blue,Mad,40,0</Action>
+			<Action>MovePortrait/Charatass/,25,0,100</Action>
+			<Reply>Continue./NextScene</Reply>
 		</Branch>
 	</Dialogue>
 

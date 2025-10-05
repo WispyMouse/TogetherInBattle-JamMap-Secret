@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Level mapname="Introduction" maptype="Cut Scene: Static" maxplayers="1" musictrack="" winAura="0" nextbattle="First Battle" saveable="true" saveCheck="false" campaign="Secret Jam" lastEdited="10/4/2025 5:25:29 PM">
+<Level mapname="Introduction" maptype="Cut Scene: Static" maxplayers="1" musictrack="" winAura="0" nextbattle="First Battle" saveable="true" saveCheck="false" campaign="Secret Jam" lastEdited="10/4/2025 6:32:25 PM">
 
 	<Narration> -DIA:Introduction-| -PIC:Cave_Sandstone- -DIA:Setting Establishing-| -DIA:Visitors Arrive- -PIC:Cave-| -DIA:Effect of Visitors-    -PIC:Town_Night-|   -DIA:Infiltration-      -PIC:Castle_Night-</Narration>
 	
@@ -53,7 +53,7 @@
 	</Dialogue>
 
 	<Dialogue trigger="None/" convID="Effect of Visitors" r="false">
-		<Branch num="0" name="">Tillie Starwright/BOXED: It's never quite clear how they do these things. It's often different people with some different accord. It's almost as if it isn't a matter of divinity that gives people this gift...
+		<Branch num="0" name="">Tillie Starwright/BOXED: I've been watching them. Each year, some new set of esoteric hand motions. Some new chant and rhyme that makes the cold happen. It's as if they're making it up - that they don't even understand their own powers.
 			<Action>AddPortrait/Tillie/Starwright,Tillie Starwright,right,Black,Concerned,-2,1</Action>
 			<Action>AddPortrait/Jules/Acepocket,Jules Acepocket,left,Blue,Happy,16,0</Action>
 			<Reply>Continue./NextBranch</Reply>
@@ -68,7 +68,7 @@
 	</Dialogue>
 
 	<Dialogue trigger="None/" convID="Infiltration" r="false">
-		<Branch num="0" name="">Narration/BOXED: Those liars are taking advantage of us. But what gives them the right to be special?
+		<Branch num="0" name="">Narration/BOXED: Those liars are hoarding powerful secrets from us. What gives [i]them[/i] the right to be special?
 			<Action>AddPortrait/Bront/the Unbelievable,Bront the Unbelievable,right,Black,Mad,-2,0</Action>
 			<Action>AddPortrait/Jerald/Swiftrig,Jerald Swiftrig,right,Black,Mad,3,1</Action>
 			<Action>AddPortrait/Tillie/Starwright,Tillie Starwright,right,Black,Concerned,8,0</Action>
@@ -89,7 +89,7 @@
 	</Dialogue>
 
 	<Dialogue trigger="None/" convID="Visitors Arrive" r="false">
-		<Branch num="0" name="">Tillie Starwright/BOXED: In recent history, we've been [i]blessed[/i] by the [i]generocity[/i] of strangers. Each summer some new group of people will appear, and offer to provide for us a precious gift: Cold.
+		<Branch num="0" name="">Tillie Starwright/BOXED: In recent history, we've been [i]blessed[/i] by the [i]generocity[/i] of strangers. Each summer, some new group of people will appear, and offer to provide for us a precious gift: Cold.
 			<Action>AddPortrait/Jules/Acepocket,Jules Acepocket,left,Blue,Happy,26,0</Action>
 			<Action>AddPortrait/Charatass/,Charatass/,left,Blue,Happy,30,1</Action>
 			<Action>AddPortrait/Apostacratus/,Apostacratus/,left,Blue,Happy,34,0</Action>

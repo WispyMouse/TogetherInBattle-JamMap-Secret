@@ -1,65 +1,96 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Level mapname="Final Scene" maptype="Cut Scene: Static" maxplayers="1" musictrack="" winAura="0" nextbattle="" saveable="true" saveCheck="true" campaign="Secret Jam" lastEdited="9/28/2025 11:08:41 PM">
+<Level mapname="Final Scene" maptype="Cut Scene: Static" maxplayers="1" musictrack="" winAura="0" nextbattle="" saveable="true" saveCheck="true" campaign="Secret Jam" lastEdited="10/4/2025 7:24:19 PM">
 
 	<Narration>  -DIA:Finish- -PIC:Psy_Academy_Night-| -DIA:The Truth- -PIC:Psy_Academy-| -DIA:Easy Come-| -DIA:Final Slide- -PIC:None-</Narration>
 
 	<Dialogue trigger="None/" convID="Finish" r="false">
-		<Branch num="0" name="">Narration/STUB: Having fought off all of the attackers, we came to the conclusion that... this was really more trouble than it was worth.
-			<Reply>Finish/NextFrame</Reply>
+		<Branch num="0" name="">Tillie Starwright/BOXED: We had successfully defended our secret. The lantern stayed in our hands, and we had struck down naysayers. But...
+			<Action>AddPortrait/Tillie/Starwright,Tillie Starwright,right,Black,Happy</Action>
+			<Reply>Continue./NextBranch</Reply>
+		</Branch>
+		<Branch num="1" name="">Tillie Starwright/BOXED: ...was this really worth the effort? The cycle of the keeper of the frost could only end one way: the secret getting out.
+			<Action>RemovePortrait/Tillie/Starwright</Action>
+			<Action>AddPortrait/Bront/the Unbelievable,Bront the Unbelievable,right,Black,Sad,-2,0</Action>
+			<Action>AddPortrait/Jerald/Swiftrig,Jerald Swiftrig,right,Black,Sad,3,1</Action>
+			<Action>AddPortrait/Tillie/Starwright,Tillie Starwright,right,Black,Sad,8,1</Action>
+			<Action>AddPortrait/Rustler/,Rustler/,left,Black,Sad,12,0</Action>
+			<Action>AddPortrait/Laina/Bigspook,Laina Bigspook,left,Black,Sad,17,1</Action>
+			<Action>AddPortrait/Sooth/,Sooth/,left,Black,Sad,22,0</Action>
+			<Reply>Continue./NextFrame</Reply>
 		</Branch>
 	</Dialogue>
 
 	<Dialogue trigger="None/" convID="The Truth" r="false">
-		<Branch num="0" name="">Narration/STUB: The truth of the lantern was shared freely with the people. And of course they quickly left our status as "saviors" behind, exalting just the lantern itself.
+		<Branch num="0" name="">Tillie Starwright/BOXED: And so, we revealed the truth. We showed everyone the lantern, and how it worked.
+			<Action>AddPortrait/Tillie/Starwright,Tillie Starwright,right,Black,Happy,-2,1</Action>
+			<Action>AddPortrait/Grumbly/Leader,Grumbly Leader,left,Orange,Mad</Action>
+			<Reply>Continue./NextBranch</Reply>
+		</Branch>
+		<Branch num="1" name="">Tillie Starwright/BOXED: There wouldn't be any sacred keepers of the frost moving forward. With the "secret" becoming common knowledge, everyone in the village could benefit - not just the most selfish amongst us.
+			<Action>ChangeExpression/Tillie/Starwright,Sad</Action>
+			<Action>FlipPortrait/Grumbly/Leader</Action>
+			<Action>MovePortrait/Grumbly/Leader,30,0,100</Action>
+			<Reply>Continue./NextBranch</Reply>
+		</Branch>
+		<Branch num="2" name="">Tillie Starwright/BOXED: And hey, we all got to feel special for a little bit.
+			<Action>ChangeExpression/Tillie/Starwright,Winking</Action>
 			<Reply>Continue./NextFrame</Reply>
 		</Branch>
 	</Dialogue>
 
 	<Dialogue trigger="None/" convID="Easy Come" r="false">
-		<Branch num="0" name="">Narration/STUB: Sooth...
+		<Branch num="0" name="">Tillie Starwright/BOXED: Sooth had a pretty good time of it. Got through a saga of lying without telling a single truth. That's pretty impressive, I think. I asked how he was doing, and he said "I could be better". I wonder how to interpret that coming from the mouth of a casual liar?
 			<Action>ClearPortraits/</Action>
-			<Action>AddPortrait/Sooth/,Sooth/,left,Grey,Happy</Action>
+			<Action>AddPortrait/Sooth/,Sooth/,left,Black,Mean</Action>
+			<Action>AddPortrait/Tillie/Starwright,Tillie Starwright,right,Black,Happy,-2,1</Action>
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
-		<Branch num="1" name="">Narration/STUB: Tillie Starwright...
-			<Action>ClearPortraits/</Action>
-			<Action>AddPortrait/Tillie/Starwright,Tillie/Starwright,left,Grey,Happy</Action>
+		<Branch num="2" name="">Tillie Starwright/BOXED: Depending on Bront's mood, we either fought an ice dragon or a vile cult, and we [i]rescued[/i] the lantern from evil. Oh, and there are usually giants and ghouls involved. If people believe in a fraction of his stories, he'll be a figure of folk tales in the future.
+			<Action>ClearPortraits/Tillie/Starwright</Action>
+			<Action>AddPortrait/Bront/the Unbelievable,Bront/the Unbelievable,left,Black,Happy</Action>
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
-		<Branch num="2" name="">Narration/STUB: Bront the Unbelievable...
-			<Action>ClearPortraits/</Action>
-			<Action>AddPortrait/Bront/the Unbelievable,Bront/the Unbelievable,left,Grey,Happy</Action>
+		<Branch num="3" name="">Tillie Starwright/BOXED: Jerald submitted some detailed research papers about the lantern for publication in the colleges. Most of them came back with criticism that they were "incomprehensible" and "mostly made up words". Now he won't stop bragging about how he got a [i]response[/i] from top colleges... leaving out unnecessary details about the contents of those responses.
+			<Action>ClearPortraits/Tillie/Starwright</Action>
+			<Action>AddPortrait/Jerald/Swiftrig,Jerald/Swiftrig,left,Black,Happy</Action>
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
-		<Branch num="3" name="">Narration/STUB: Jerald Swiftrig...
-			<Action>ClearPortraits/</Action>
-			<Action>AddPortrait/Jerald/Swiftrig,Jerald/Swiftrig,left,Grey,Happy</Action>
+		<Branch num="4" name="">Tillie Starwright/BOXED: Rustler still argues she's special. Sure [i]anyone[/i] could easily use frost powers with the lantern, but she was able to use it [i]especially easily[/i]. The town lets her hold the lantern sometimes when she asks. People around here care about her more than she reckons, you know?
+			<Action>ClearPortraits/Tillie/Starwright</Action>
+			<Action>AddPortrait/Rustler/,Rustler/,left,Black,Happy</Action>
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
-		<Branch num="4" name="">Narration/STUB: Rustler...
-			<Action>ClearPortraits/</Action>
-			<Action>AddPortrait/Rustler/,Rustler/,left,Grey,Happy</Action>
-			<Reply>Continue./NextBranch</Reply>
-		</Branch>
-		<Branch num="5" name="">Narration/STUB: Laina Bigspook...
-			<Action>ClearPortraits/</Action>
+		<Branch num="5" name="">Tillie Starwright/BOXED: Laina was really relieved when we stopped lying about our powers. I think she went on to immediately worry about "not telling the truth soon enough", like there's some kind of limitation on how long a good lie is allowed to last. She self-imposed a year of community service.
+			<Action>ClearPortraits/Tillie/Starwright</Action>
 			<Action>AddPortrait/Laina/Bigspook,Laina/Bigspook,left,Grey,Happy</Action>
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
-		<Branch num="6" name="">Narration/STUB: Coolio Frostybones... Should only play if character owned.
-			<Action>ClearPortraits/</Action>
+		<Branch num="6" name="">Tillie Starwright/BOXED: "Coolio Frostybones" went on to have an illustrious career as street crier. They told the news with... a mostly faithful degree of accuracy.
+			<Action>ClearPortraits/Tillie/Starwright</Action>
 			<Action>RosterToList/Playable Roster,0,true</Action>
-			<Action>IfListHasGoTo/Playable Roster,Coolio Frostybones,7,true</Action>
-			<Action>AddPortrait/Deactivated Frost Golem/,Deactivated Frost Golem/,left,Grey,Happy</Action>
+			<Action>IfListHasGoTo/Playable Roster,Coolio Frostybones,6,true</Action>
+			<Action>AddPortrait/Deactivated Frost Golem/,Deactivated Frost Golem/,left,Black,Happy</Action>
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
-		<Branch num="7" name="">/
-			<Action>NextFrame/</Action>
+		<Branch num="1" name="">Tillie Starwright/BOXED: I went on to sell our story as a play. The cyclical nature of lies and deception. I thought it was pretty good... buuuuuut...
+			<Action>ClearPortraits/Tillie/Starwright</Action>
+			<Action>AddPortrait/Grumbly/Leader,Grumbly Leader,left,Orange,Mad,25,0</Action>
+			<Action>MovePortrait/Grumbly/Leader,15,0,100</Action>
+			<Action>AddPortrait/Upstart/Leader,Upstart Leader,left,Red,Mad,30,0</Action>
+			<Action>MovePortrait/Upstart/Leader,20,0,100</Action>
+			<Reply>Continue./NextBranch</Reply>
+		</Branch>
+		<Branch num="7" name="">Tillie Starwright/BOXED: Well, some of my critics didn't love it.
+			<Action>FlipPortrait/Tillie/Starwright</Action>
+			<Action>MovePortrait/Tillie/Starwright,-20,0,150</Action>
+			<Action>MovePortrait/Grumbly/Leader,-20,0,100</Action>
+			<Action>MovePortrait/Upstart/Leader,-20,0,100</Action>
+			<Reply>Fin!/NextFrame</Reply>
 		</Branch>
 	</Dialogue>
 
 	<Dialogue trigger="None/" convID="Final Slide" r="false">
-		<Branch num="0" name="">/STUB: Thank you for playing!
+		<Branch num="0" name="">/BOXED: Thank you for playing!
 			<Reply>Game Over!/NextScene</Reply>
 		</Branch>
 	</Dialogue>
