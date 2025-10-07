@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Level mapname="Between" maptype="Cut Scene: Static" maxplayers="1" musictrack="" winAura="0" nextbattle="Second Battle" saveable="true" saveCheck="true" campaign="Secret Jam" lastEdited="10/4/2025 6:52:56 PM">
+<Level mapname="Between" maptype="Cut Scene: Static" maxplayers="1" musictrack="" winAura="0" nextbattle="Second Battle" saveable="true" saveCheck="true" campaign="Secret Jam" lastEdited="10/6/2025 6:39:10 PM">
 
 	<Narration>  -DIA:Between Start- -PIC:Castle_Night-| -DIA:We Have It- -PIC:Cave-| -DIA:Giving To The People-  -PIC:Town_Night-| -DIA:But One Day- -PIC:Psy_Academy_Night-</Narration>
 	
@@ -11,7 +11,7 @@
 			<Action>AddPortrait/Bront/the Unbelievable,Bront the Unbelievable,right,Black,Quizzical</Action>
 			<Reply>Continue/NextBranch</Reply>
 		</Branch>
-		<Branch num="1" name="">Jerald Swiftrig/BOXED: Mm, yes. By my calculations (and by the frostbite forming around my finger tips) this does seem sort of... information removing device. It allows an [i]attuned[/i] user to [i]remove heat[/i], in to this lantern. Fascinating. It must work off of uh... [Heshe looks carefully at the lantern] Weird science magic. Yes.
+		<Branch num="1" name="">Jerald Swiftrig/BOXED: Mm, yes. By my calculations (and by the frostbite forming around my finger tips) this does seem sort of... information removing device. It allows an [i]attuned[/i] user to [i]remove heat[/i], in to this lantern. Fascinating. It must work off of uh... [Heshe looks carefully at the lantern] Difficult to explain magic science, just trust me.
 			<Action>AddPortrait/Jerald/Swiftrig,Jerald Swiftrig,left,Black,Quizzical</Action>
 			<Reply>Continue./NextFrame</Reply>
 		</Branch>
@@ -41,11 +41,11 @@
 	</Dialogue>
 
 	<Dialogue trigger="None/" convID="Giving To The People" r="false">
-		<Branch num="0" name="">Tillie Starwright/BOXED: And so we returned to the town, and became the new source of frost powers in the community. We made up some glamorous lie about our emergent power. A simple, familiar narrative; we generously give out our wondrous frost, and keep the details to ourselves.
+		<Branch num="0" name="">Tillie Starwright/BOXED: And so we returned to the town, and became the new source of frost powers in the community. We made up some glamorous lie about our emergent power. A simple, familiar narrative; we generously give out our wondrous frost, gain tribute for it, and keep the details to ourselves.
 			<Action>AddPortrait/Tillie/Starwright,Tillie Starwright,right,Black,-2,1</Action>
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
-		<Branch num="1" name="">Tillie Starwright/BOXED: And hey, it's only fair to ask for tribute. So we did this, for a while. Until, some ungrateful people showed up at our door...
+		<Branch num="1" name="">Tillie Starwright/BOXED: Things went fabulously for us. Until, some ungrateful people showed up at our door...
 			<Action>AddPortrait/Upstart/Leader,Upstart Leader,left,Red,Mad,30,0</Action>
 			<Action>MovePortrait/Upstart Leader,15,0,100</Action>
 			<Action>AddPortrait/Grumbly/Leader,Grumbly Leader,left,Orange,Mad,35,0</Action>
