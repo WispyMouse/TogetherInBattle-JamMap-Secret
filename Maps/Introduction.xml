@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Level mapname="Introduction" maptype="Cut Scene: Static" maxplayers="1" musictrack="" winAura="0" nextbattle="First Battle" saveable="true" saveCheck="false" campaign="Secret Jam" lastEdited="10/9/2025 6:34:16 PM">
+<Level mapname="Introduction" maptype="Cut Scene: Static" maxplayers="1" musictrack="" winAura="0" nextbattle="First Battle" saveable="true" saveCheck="false" campaign="Secret Jam" lastEdited="10/9/2025 7:52:48 PM">
 
 	<Narration> -DIA:Introduction-| -PIC:Cave_Sandstone- -DIA:Setting Establishing-| -DIA:Visitors Arrive- -PIC:Cave-| -DIA:Effect of Visitors-    -PIC:Town_Night-|   -DIA:Infiltration-      -PIC:Castle_Night-</Narration>
 	
@@ -33,7 +33,8 @@
 	</Menu>
 
 	<Dialogue trigger="None/" convID="Introduction" r="false">
-		<Branch num="0" name="">/This is the dialogue that happens at the start of the campaign. Would you like to add your custom characters to your roster?
+		<Branch num="0" name="">/Welcome to our jam entry for the October 2025 map making contest for the theme of "Secret"!-NL-
+Would you like to add your custom characters to the playable roster?
 			<Action>Run/Initialize_Try</Action>
 			<Reply>No, play with only the premade campaign characters./NextFrame</Reply>
 			<Reply>Yes, add my custom characters to the roster./NextBranch</Reply>
@@ -45,19 +46,20 @@
 	</Dialogue>
 
 	<Dialogue trigger="None/" convID="Setting Establishing" r="false">
-		<Branch num="0" name="">Tillie Starwright/BOXED: Our story takes place in the small town of Glaer. Every summer, the unbearable sun finds a perfect and horrible place in the sky. Without intervention, our people wilt, our crops wither, and our joy dries out.
-			<Action>AddPortrait/Tillie/Starwright,Tillie Starwright,right,Black,Sad,-2,1</Action>
+		<Branch num="0" name="">Tillie Starwright/Our story takes place in the small town of Glaer. Every summer, the unbearable sun finds a perfect and horrible place in the sky. Without intervention, our people wilt, our crops wither, and our joy dries out.
+			<Action>AddPortrait/Tillie/Starwright,Tillie Starwright,right,Black,Sad,-4,1</Action>
+			<Action>MovePortrait/Tillie/Starwright,-2,1,60</Action>
 			<Reply>Continue./NextFrame</Reply>
 		</Branch>
 	</Dialogue>
 
 	<Dialogue trigger="None/" convID="Effect of Visitors" r="false">
-		<Branch num="0" name="">Tillie Starwright/BOXED: I've been watching them. Each year, some new set of esoteric hand motions. Some new chant and rhyme that makes the cold happen. It's as if they're making it up - that they don't even understand their own powers.
+		<Branch num="0" name="">Tillie Starwright/I've been paying close attention. Each year, some new set of esoteric hand motions. Some new chant and rhyme that makes the cold happen. Then they leave as quickly as they came. It's as if they're making it up - that they don't even understand their own powers.
 			<Action>AddPortrait/Tillie/Starwright,Tillie Starwright,right,Black,Concerned,-2,1</Action>
 			<Action>AddPortrait/Jules/Acepocket,Jules Acepocket,left,Blue,Happy,16,0</Action>
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
-		<Branch num="1" name="">Tillie Starwright/BOXED: That instead, there's some [i]secret[/i] to the frost. That anyone could hold that secret, and become divine.
+		<Branch num="1" name="">Tillie Starwright/That instead, there's some [i]secret[/i] to the frost. That anyone could hold that secret, and become divine.
 			<Action>ChangeExpression/Jules/Acepocket,Quizzical</Action>
 			<Action>FlipPortrait/Jules/Acepocket</Action>
 			<Action>MovePortrait/Jules/Acepocket,30,0,100</Action>
@@ -67,7 +69,7 @@
 	</Dialogue>
 
 	<Dialogue trigger="None/" convID="Infiltration" r="false">
-		<Branch num="0" name="">Narration/BOXED: Those liars are hoarding powerful secrets from us. What gives [i]them[/i] the right to be special?
+		<Branch num="0" name="">Narration/Those liars are hoarding powerful secrets from us. What gives [i]them[/i] the right to be special?
 			<Action>AddPortrait/Bront/the Unbelievable,Bront the Unbelievable,right,Black,Mad,-2,0</Action>
 			<Action>AddPortrait/Jerald/Swiftrig,Jerald Swiftrig,right,Black,Mad,3,1</Action>
 			<Action>AddPortrait/Tillie/Starwright,Tillie Starwright,right,Black,Concerned,8,0</Action>
@@ -76,7 +78,7 @@
 			<Action>AddPortrait/Sooth/,Sooth/,left,Black,Amused,22,0</Action>
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
-		<Branch num="1" name="">Narration/BOXED: That power should belong to us.
+		<Branch num="1" name="">Narration/That power should belong to us.
 			<Action>ChangeExpression/Bront/the Unbelievable,Mean</Action>
 			<Action>ChangeExpression/Rustler/,Mean</Action>
 			<Action>ChangeExpression/Sooth/,Mean</Action>
@@ -88,7 +90,7 @@
 	</Dialogue>
 
 	<Dialogue trigger="None/" convID="Visitors Arrive" r="false">
-		<Branch num="0" name="">Tillie Starwright/BOXED: But [i]luckily[/i] each summer finds some new group of [i]saviors[/i] that offer protection. As long as I can remember, every season has had some variation of "give us gold and we'll give you cold". How [i]generous[/i].
+		<Branch num="0" name="">Tillie Starwright/But [i]luckily[/i] each summer finds some new group of [i]saviors[/i], oferring protection from the sun. As long as I can remember, every season has had some variation of "give us gold and we'll give you cold". How [i]generous[/i].
 			<Action>AddPortrait/Jules/Acepocket,Jules Acepocket,left,Blue,Happy,26,0</Action>
 			<Action>AddPortrait/Charatass/,Charatass/,left,Blue,Happy,30,1</Action>
 			<Action>AddPortrait/Tillie/Starwright,Tillie Starwright,right,Black,Concerned,-2,1</Action>
@@ -98,7 +100,7 @@
 			<Action>AddPortrait/Grumbly/Leader,Grumbly Leader,left,Orange,Sad,10,1</Action>
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
-		<Branch num="1" name="">Tillie Starwright/BOXED: The people of Glaer would happily give anything for respite from the sun. If someone offers frost in exchange for tribute, then they will receive their payment, no matter what name they go by.
+		<Branch num="1" name="">Tillie Starwright/The people of Glaer would happily give anything for respite from the sun. When offered a less intense hot-season in exchange for some tribute, the town happily buys in.
 			<Action>FlipPortrait/Grumbly/Leader</Action>
 			<Action>ChangeExpression/Upset/Villager,Happy</Action>
 			<Action>ChangeExpression/Grumbly/Leader,Happy</Action>
