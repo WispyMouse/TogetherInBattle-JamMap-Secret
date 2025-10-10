@@ -11,7 +11,7 @@
 			<Action>AddPortrait/Bront/the Unbelievable,Bront the Unbelievable,right,Black,Quizzical</Action>
 			<Reply>Continue/NextBranch</Reply>
 		</Branch>
-		<Branch num="1" name="">Jerald Swiftrig/BOXED: Mm, yes. By my calculations (and by the frostbite forming around my finger tips) this does seem sort of... information removing device. It allows an [i]attuned[/i] user to [i]remove heat[/i], in to this lantern. Fascinating. It must work off of uh... [Heshe looks carefully at the lantern] Difficult to explain magic science, just trust me.
+		<Branch num="1" name="">Jerald Swiftrig/BOXED: Mm, yes. By my calculations (and by the frostbite forming around my finger tips) this does seem sort of... information removing device. It allows an [i]attuned[/i] user to [i]remove heat[/i], in to this lantern. Fascinating. It must work off of uh... [He looks carefully at the lantern] Difficult to explain magic science, just trust me.
 			<Action>AddPortrait/Jerald/Swiftrig,Jerald Swiftrig,left,Black,Quizzical</Action>
 			<Reply>Continue./NextFrame</Reply>
 		</Branch>
@@ -33,7 +33,7 @@
 			<Action>ChangeExpression/Laina/Bigspook,Nervous</Action>
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
-		<Branch num="3" name="">Sooth/BOXED: [Heshe smirks] Seems like a good plan to me.
+		<Branch num="3" name="">Sooth/BOXED: [He smirks] Seems like a good plan to me.
 			<Action>RemovePortrait/Laina/Bigspook</Action>
 			<Action>AddPortrait/Sooth/,Sooth/,right,Black,Amused</Action>
 			<Reply>Continue./NextFrame</Reply>
