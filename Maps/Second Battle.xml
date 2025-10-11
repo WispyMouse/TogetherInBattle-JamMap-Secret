@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Level mapname="Second Battle" maptype="Single Player" maxplayers="4" battleBG="" musictrack="Form Up!" winAura="0" winMorale="0" lossMorale="0" nextbattle="Final Scene" defeatScene="" saveable="true" procgen="false" campaign="Secret Jam" lastEdited="10/7/2025 9:45:01 PM">
+<Level mapname="Second Battle" maptype="Single Player" maxplayers="4" battleBG="" musictrack="Form Up!" winAura="0" winMorale="0" lossMorale="0" nextbattle="Final Scene" defeatScene="" saveable="true" procgen="false" campaign="Secret Jam" lastEdited="10/10/2025 8:42:14 PM">
 
 	<Army num="0" AI="false" aiProfile="Balanced" name="Coldfront" color="Black" alliedWith="" assignRoster="0"></Army>
 	<Army num="1" AI="true" aiProfile="Aggressive" name="Disrespectful Upstarts" color="Red" alliedWith="2,3" assignRoster="-1"></Army>
@@ -122,7 +122,7 @@
 	<Unit tag="LevelTo,3">4,3,Peeved/Villager,12,9,Up,None</Unit>
 
 	<Dialogue trigger="OnLoaded/" convID="Initialize" r="false">
-		<Branch num="0" name="">/End player turn
+		<Branch num="0" name="">/You see nothing
 			<Action>Run/Initialize_Try</Action>
 			<Action>SetArea/Lantern Zone,5,7,13,15</Action>
 			<Action>AddTagToArmy/1,Patrol,Lantern Zone,=:99</Action>
@@ -135,28 +135,26 @@
 	</Dialogue>
 
 	<Dialogue trigger="OnReachingArea/Lantern Zone,-ANY-,1" convID="Upstarts Reached Lantern" r="false">
-		<Branch num="0" name="">Game Over/STUB: Uh-oh, that's how you lose. You will lose if an enemy remains in the lantern area!
-			<Action>AddTextOverlay/If you end your turn with an enemy in the lantern room, it will be a game over!</Action>
-			<Reply>Continue./EndConv</Reply>
+		<Branch num="0" name="">/You see nothing
+			<Action>AddTextOverlay/If the player's turn ends with an enemy near the lantern, it will be a game over!</Action>
+			<Action>EndConvImmediately/</Action>
 		</Branch>
 	</Dialogue>
 
 	<Dialogue trigger="BeforeTurn/0" convID="Intro" r="false">
-		<Branch num="0" name="">Upstart Leader/BOXED: Ah-hah! We have seen past your lies, fiends! You are unworthy of the power you're hoarding - only I can handle it! We'll be liberating this power from you, now!
+		<Branch num="0" name="">Upstart Leader/Ah-hah! We  have seen past your charade, fiends! You are unworthy of the power you're hoarding - only I can handle it! We'll be liberating this power from you, now!
 			<Action>MoveCam/,,Upstart Leader</Action>
-			<Action>AddPortrait/Upstart/Leader,Upstart Leader,left,Red,Mean</Action>
+			<Action>AddPortrait/Upstart/Leader,Upstart Leader,right,Red,Mean</Action>
+			<Reply>Continue./NextBranch</Reply>
+		</Branch>
+		<Branch num="1" name="">Bront the Unbelievable/Not worthy!? I am [i]unbelievably[/i] worthy! Sit down and let us bask in our strength, chump!
+			<Action>AddPortrait/Bront/the Unbelievable,Bront the Unbelievable,left,Black,Mad</Action>
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
 	</Dialogue>
 
-	<Dialogue trigger="OnVictory/0" convID="Victory" r="false">
-		<Branch num="0" name="">/STUB: This is the victory dialogue, you did it.
-			<Reply>I Sure Did!/NextBranch</Reply>
-		</Branch>
-	</Dialogue>
-
 	<Dialogue trigger="OnCharAttacked/1" convID="Upstarts Engaged" r="false">
-		<Branch num="0" name="">Upstart Leader/BOXED: It's our turn with the hatever-it-is! I said so!
+		<Branch num="0" name="">Upstart Leader/It's our turn with the whatever-it-is! I said so!
 			<Action>RemoveConv/Upstarts Engages</Action>
 			<Action>AddPortrait/Upstart/Leader,Upstart Leader,left,Red,Mean</Action>
 			<Reply>Continue./NextBranch</Reply>
@@ -164,7 +162,7 @@
 	</Dialogue>
 
 	<Dialogue trigger="OnCharAttacked/2" convID="Frostborn Charity Engaged" r="false">
-		<Branch num="0" name="">Charatass/BOXED: Give us back what you stole! Stealing is wrong when people do it to me!
+		<Branch num="0" name="">Charatass/Give us back what you stole! Stealing is wrong, when people do it to me!
 			<Action>RemoveConv/Frostborn Charity Engages</Action>
 			<Action>AddPortrait/Charatass/,Charatass/,left,Blue,Mad</Action>
 			<Reply>Continue./NextBranch</Reply>
@@ -172,7 +170,7 @@
 	</Dialogue>
 
 	<Dialogue trigger="OnCharAttacked/3" convID="Ungrateful Villagers Engaged" r="false">
-		<Branch num="0" name="">Grumbly Leader/BOXED: I've had enough of you frost-weirdos. Tribute this, coldwads!
+		<Branch num="0" name="">Grumbly Leader/I've had enough of you frost-weirdos. Tribute this, coldwads!
 			<Action>RemoveConv/Ungrateful Villagers Engages</Action>
 			<Action>AddPortrait/Grumbly/Leader,Grumbly Leader,left,Orange,Headache</Action>
 			<Reply>Continue./NextBranch</Reply>
@@ -228,17 +226,26 @@
 	</Dialogue>
 
 	<Dialogue trigger="OnTurn/4" convID="Disgruntled Villagers" r="false">
-		<Branch num="0" name="">Grumbly Leader/BOXED: Grah, these dunderheads are worse than the previous few lots. Let's just run them out this time, then figure out what to do about the sun.
+		<Branch num="0" name="">Grumbly Leader/Grah, these dunderheads are worse than the previous few lots. Let's just run them out this time, then figure out what to do about the sun.
 			<Action>AddPortrait/Grumbly/Leader,Grumbly Leader,left,Orange,Mad</Action>
 			<Action>MoveCam/,,Grumbly Leader</Action>
+			<Reply>Continue./NextBranch</Reply>
+		</Branch>
+		<Branch num="1" name="">Sooth/[He smirks] We deserve the tribute.
+			<Action>AddPortrait/Sooth/,Sooth/,right,Black,Happy</Action>
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
 	</Dialogue>
 
 	<Dialogue trigger="OnTurn/8" convID="Revenge" r="false">
-		<Branch num="0" name="">Jules Acepocket/BOXED: There's those thieving ingrates! It's not your place to question us - just give us that thing back, and we'll [i]forgive[/i] you. Quickly now, before anyone else learns about this!
+		<Branch num="0" name="">Jules Acepocket/There's those thieving ingrates! It's not your place to question us - just give us that thing back, and we'll [i]forgive[/i] you. Quickly now, before anyone else learns about this!
 			<Action>AddPortrait/Jules/Acepocket,Jules Acepocket,left,Blue,Mad</Action>
 			<Action>AddPortrait/Charatass/,Charatass/,right,Blue,Mad</Action>
+			<Reply>Continue./NextBranch</Reply>
+		</Branch>
+		<Branch num="1" name="">Rustler/We took it, now it'sss oursss! Give it up!
+			<Action>ClearPortraits/</Action>
+			<Action>AddPortrait/Rustler/,Rustler/,left,Black,Mean</Action>
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
 	</Dialogue>
