@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Level mapname="Introduction" maptype="Cut Scene: Static" maxplayers="1" musictrack="" winAura="0" nextbattle="First Battle" saveable="true" saveCheck="false" campaign="Secret Jam" lastEdited="10/9/2025 7:52:48 PM">
+<Level mapname="Introduction" maptype="Cut Scene: Static" maxplayers="1" musictrack="" winAura="0" nextbattle="First Battle" saveable="true" saveCheck="false" campaign="Secret Jam" lastEdited="10/10/2025 7:13:37 PM">
 
 	<Narration> -DIA:Introduction-| -PIC:Cave_Sandstone- -DIA:Setting Establishing-| -DIA:Visitors Arrive- -PIC:Cave-| -DIA:Effect of Visitors-    -PIC:Town_Night-|   -DIA:Infiltration-      -PIC:Castle_Night-</Narration>
 	
@@ -33,8 +33,7 @@
 	</Menu>
 
 	<Dialogue trigger="None/" convID="Introduction" r="false">
-		<Branch num="0" name="">/Welcome to our jam entry for the October 2025 map making contest for the theme of "Secret"!-NL-
-Would you like to add your custom characters to the playable roster?
+		<Branch num="0" name="">/Welcome to our jam entry for the October 2025 map making contest for the theme of "Secret"! This is a two map campaign.-NL-Your roster will heal between maps.-NL-Would you like to add your custom characters to the playable roster?
 			<Action>Run/Initialize_Try</Action>
 			<Reply>No, play with only the premade campaign characters./NextFrame</Reply>
 			<Reply>Yes, add my custom characters to the roster./NextBranch</Reply>

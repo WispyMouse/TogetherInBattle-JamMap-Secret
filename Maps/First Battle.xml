@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Level mapname="First Battle" maptype="Single Player" maxplayers="3" battleBG="" musictrack="Against the Cult" winAura="0" winMorale="0" lossMorale="0" nextbattle="Between" defeatScene="" saveable="true" procgen="false" campaign="Secret Jam" lastEdited="10/9/2025 7:00:32 PM">
+<Level mapname="First Battle" maptype="Single Player" maxplayers="3" battleBG="" musictrack="Against the Cult" winAura="0" winMorale="0" lossMorale="0" nextbattle="Between" defeatScene="" saveable="true" procgen="false" campaign="Secret Jam" lastEdited="10/9/2025 8:03:48 PM">
 
 	<Army num="0" AI="false" aiProfile="Balanced" name="The New Coldfront" color="Black" alliedWith="" assignRoster="-1"></Army>
 	<Army num="1" AI="true" aiProfile="Balanced" name="Hoarders of Valuable Truth" color="Blue" alliedWith="2" assignRoster="-1"></Army>
@@ -38,8 +38,8 @@
 	<Row>03.2R,03.06,03.2R,03.2R,03.06,03.0K,03.0K,03.0K,04.1L,04.1M,03.0K,03.0K,03.0K,03.0S,01.0G,01.0C,01.0C,01.0C,01.0C,01.0C</Row>
 	<Row>03.01,03.02,03.2R,03.2R,03.06,05.01,05.01,05.01,04.1L,04.1M,05.01,05.01,05.01,03.0O,03.0K,03.0K,03.0S,03.01,03.01,03.01</Row>
 	<Row>03.01,03.01,03.01,03.01,03.2Q,04.1K,04.1K,04.1K,04.03,04.02,03.2R,03.2R,03.06,05.01,05.01,05.01,03.3F,03.3I,03.3I,03.3I</Row>
-	<Row>03.2O,03.2O,03.2O,03.2O,03.08,04.0S,04.0T,04.04,04.1J,04.1J,03.2O,03.05,03.02,03.06,05.01,05.01,05.01,05.01,05.01,05.01</Row>
-	<Row>03.2O,03.2O,03.2O,03.2O,03.2O,04.1J,04.1J,03.08,03.01,03.01,03.01,03.09,03.2O,03.4b,03.2R,03.2R,03.06,05.01,05.01,05.01</Row>
+	<Row>03.2O,03.2O,03.2O,03.2O,03.08,04.0S,04.0T,04.0K,04.0K,04.0P,03.01,03.01,03.02,03.06,05.01,05.01,05.01,05.01,05.01,05.01</Row>
+	<Row>03.2O,03.2O,03.2O,03.2O,03.2O,04.1J,04.1J,03.2O,03.2O,03.2O,03.2O,03.2O,03.2O,03.4b,03.2R,03.2R,03.06,05.01,05.01,05.01</Row>
 	<Row>04.01,04.01,04.01,04.01,04.01,04.01,04.0M,03.01,03.01,03.01,03.01,03.01,03.01,03.09,03.05,03.01,03.2Q,05.01,05.01,05.01</Row>
 	<Row>04.01,04.01,04.01,04.01,04.01,04.01,04.0M,03.01,03.01,03.01,03.01,03.01,03.01,03.01,03.2P,03.01,03.2Q,05.01,05.01,05.01</Row>
 	
@@ -62,7 +62,7 @@
 	<RowElev>3,3,3,3,3,0,0,0,2,2,0,0,0,1,1,1,1,1,1,1</RowElev>
 	<RowElev>3,3,3,3,3,2,2,2,2,2,2,2,2,0,0,0,2,2,2,2</RowElev>
 	<RowElev>3,3,3,3,3,2,2,2,2,2,2,2,2,2,0,0,0,0,0,0</RowElev>
-	<RowElev>2,2,2,2,2,2,2,2,1,1,1,2,2,2,2,2,2,0,0,0</RowElev>
+	<RowElev>2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,0,0,0</RowElev>
 	<RowElev>1,1,1,1,1,1,1,1,1,1,1,1,1,2,2,2,2,0,0,0</RowElev>
 	<RowElev>1,1,1,1,1,1,1,1,1,1,1,1,1,1,2,2,2,0,0,0</RowElev>
 	
@@ -88,6 +88,7 @@
 	<Unit>0,99,CastleWallHorizontal,0,19,None,None</Unit>
 	<Unit>0,99,BookcaseFull,1,1,None,None</Unit>
 	<Unit>0,99,BookcaseFull,1,2,None,None</Unit>
+	<Unit trigger="UseOnce,OpenLanternRoom">0,99,Switch,1,4,None,None</Unit>
 	<Unit>0,99,CastleWallVertical,1,5,None,None</Unit>
 	<Unit>0,99,CastleWallVertical,1,14,None,None</Unit>
 	<Unit>0,99,CandelabraLit,1,15,None,None</Unit>
@@ -144,7 +145,6 @@
 	<Unit>0,99,Rug9B,6,2,None,None</Unit>
 	<Unit>0,99,Chair,6,2,None,None</Unit>
 	<Unit trigger="Use Once,OpenLanternRoom">0,99,Rug9BR,6,3,None,None</Unit>
-	<Unit trigger="UseOnce,OpenLanternRoom">0,99,Switch,6,3,None,None</Unit>
 	<Unit>0,99,CastleWallVertical,6,4,None,None</Unit>
 	<Unit>0,99,CastleWallT_W,6,7,None,None</Unit>
 	<Unit>0,99,CastleWallWindowHorizontal,6,8,None,None</Unit>
@@ -255,32 +255,30 @@
 	<Unit>0,99,FenceStoneNE,16,4,None,None</Unit>
 	<Unit>0,99,TreeDead,16,19,None,None</Unit>
 	<Unit>0,99,RubbleCastle,17,4,None,None</Unit>
+	<Unit>0,99,FenceStoneCap_S,17,10,None,None</Unit>
 	<Unit tag="Elev,=:2">0,99,BridgeStone,17,14,None,None</Unit>
 	<Unit tag="Elev,=:2">0,99,BridgeStone,17,15,None,None</Unit>
 	<Unit>0,99,TreeSnow,17,18,None,None</Unit>
 	<Unit>0,99,TreeSnow,18,1,None,None</Unit>
 	<Unit>0,99,FenceStoneVertical,18,4,None,None</Unit>
-	<Unit>0,99,FenceStoneNW,18,7,None,None</Unit>
-	<Unit>0,99,FenceStoneHorizontal,18,8,None,None</Unit>
-	<Unit>0,99,FenceStoneHorizontal,18,9,None,None</Unit>
-	<Unit>0,99,FenceStoneHorizontal,18,10,None,None</Unit>
-	<Unit>0,99,FenceStoneHorizontal,18,11,None,None</Unit>
-	<Unit>0,99,FenceStoneHorizontal,18,12,None,None</Unit>
-	<Unit>0,99,FenceStoneCap_W,18,13,None,None</Unit>
+	<Unit>0,99,FenceStoneVertical,18,10,None,None</Unit>
 	<Unit tag="Elev,=:2">0,99,BridgeStone,18,14,None,None</Unit>
 	<Unit tag="Elev,=:2">0,99,BridgeStone,18,15,None,None</Unit>
 	<Unit>0,99,FenceStoneSW,19,4,None,None</Unit>
 	<Unit tag="Open">0,99,GateWoodLeft,19,5,None,None</Unit>
 	<Unit tag="Open">0,99,GateWoodRight,19,6,None,None</Unit>
-	<Unit>0,99,FenceStoneSE,19,7,None,None</Unit>
+	<Unit>0,99,FenceStoneHorizontal,19,7,None,None</Unit>
+	<Unit>0,99,FenceStoneHorizontal,19,8,None,None</Unit>
+	<Unit>0,99,FenceStoneHorizontal,19,9,None,None</Unit>
+	<Unit>0,99,FenceStoneSE,19,10,None,None</Unit>
 	<Unit>0,99,BoulderSnow,19,12,None,None</Unit>
 	<Unit tag="Elev,=:2">0,99,BridgeStone,19,14,None,None</Unit>
 	<Unit>0,99,BridgeStone,19,15,None,None</Unit>
-	<Unit tag="ID,105">0,0,FromPlayerRoster,18,2,Up,None</Unit>
-	<Unit tag="ID,102">0,0,FromPlayerRoster,18,3,Up,None</Unit>
-	<Unit tag="ID,100">0,0,FromPlayerRoster,19,2,Up,None</Unit>
-	<Unit tag="ID,101">0,0,FromPlayerRoster,19,3,Up,None</Unit>
-	<Unit tag="ID,104">0,0,FromPlayerRoster,20,2,Up,None</Unit>
+	<Unit tag="ID,100">0,0,FromPlayerRoster,19,1,Up,None</Unit>
+	<Unit tag="ID,105">0,0,FromPlayerRoster,19,2,Up,None</Unit>
+	<Unit tag="ID,102">0,0,FromPlayerRoster,19,3,Up,None</Unit>
+	<Unit tag="ID,104">0,0,FromPlayerRoster,20,1,Up,None</Unit>
+	<Unit tag="ID,101">0,0,FromPlayerRoster,20,2,Up,None</Unit>
 	<Unit tag="ID,103">0,0,FromPlayerRoster,20,3,Up,None</Unit>
 	<Unit tag="AggroGroup,6/Passive/Pursue/LevelTo,3">0,1,Frost Golem/,1,0,Down,None</Unit>
 	<Unit tag="AggroGroup,6/Passive/Pursue/LevelTo,3">0,1,Frostborne Charity Enthusiast/,1,6,Down,None</Unit>
