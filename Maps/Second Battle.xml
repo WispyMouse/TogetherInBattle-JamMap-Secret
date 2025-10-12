@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Level mapname="Second Battle" maptype="Single Player" maxplayers="4" battleBG="" musictrack="Form Up!" winAura="0" winMorale="0" lossMorale="0" nextbattle="Final Scene" defeatScene="" saveable="true" procgen="false" campaign="Secret Jam" lastEdited="10/11/2025 4:06:09 PM">
+<Level mapname="Second Battle" maptype="Single Player" maxplayers="4" battleBG="" musictrack="Form Up!" winAura="0" winMorale="0" lossMorale="0" nextbattle="Final Scene" defeatScene="" saveable="true" procgen="false" campaign="Secret Jam" lastEdited="10/12/2025 1:54:47 PM">
 
 	<Army num="0" AI="false" aiProfile="Balanced" name="Coldfront" color="Black" alliedWith="" assignRoster="0"></Army>
 	<Army num="1" AI="true" aiProfile="Aggressive" name="Disrespectful Upstarts" color="Red" alliedWith="2,3" assignRoster="-1"></Army>
@@ -17,109 +17,113 @@
 	<Objective>If an enemy is in the Lantern room at the end of your turn, then game over!</Objective>
 	<Objective>Defeat all enemies</Objective>
 	
-	<Tileset>01,Street</Tileset>
-	<Tileset>02,Snow</Tileset>
-	<Tileset>03,CastleSandstone</Tileset>
-	<Tileset>04,Water</Tileset>
+	<Tileset>01,Water</Tileset>
+	<Tileset>02,Street</Tileset>
+	<Tileset>03,Snow</Tileset>
+	<Tileset>04,CastleSandstone</Tileset>
 	<Tileset>05,Castle</Tileset>
 	
-	<Row>01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01</Row>
-	<Row>01.01,01.0T,01.0K,01.0K,01.0S,01.01,01.0T,01.0K,01.0K,01.0K,01.0K,01.0K,01.0K,01.0K</Row>
-	<Row>01.01,01.0M,02.01,02.01,01.0L,01.01,01.0M,02.01,02.01,02.01,02.01,02.01,02.01,02.01</Row>
-	<Row>01.01,01.0M,02.01,03.01,03.01,03.01,03.01,03.01,03.01,03.01,03.01,03.01,03.01,03.01</Row>
-	<Row>01.01,01.0M,02.01,03.01,03.01,03.01,04.01,03.01,03.01,03.01,03.01,03.01,03.01,03.01</Row>
-	<Row>01.01,01.0M,02.01,03.01,03.01,03.01,04.01,03.01,03.01,03.01,03.01,05.01,05.01,05.01</Row>
-	<Row>01.01,01.0M,02.01,03.01,04.01,04.01,04.01,03.01,03.01,03.01,03.01,05.01,05.01,05.01</Row>
-	<Row>01.01,01.0M,02.01,03.01,03.01,03.01,04.01,03.01,03.01,03.01,03.01,05.01,05.01,05.01</Row>
-	<Row>01.01,01.0M,02.01,03.01,03.01,03.01,03.01,03.01,03.01,03.01,03.01,03.01,03.01,03.01</Row>
-	<Row>01.01,01.0M,02.01,03.01,03.01,03.01,03.01,03.01,03.01,03.01,03.01,03.01,03.01,03.01</Row>
-	<Row>01.01,01.0M,02.01,02.01,01.0L,01.01,01.0M,02.01,02.2P,02.09,02.2O,02.2O,02.2O,02.2O</Row>
-	<Row>01.01,01.0V,01.0N,01.0N,01.0U,01.01,01.0V,01.0N,01.1L,01.0U,01.01,01.01,01.01,01.01</Row>
-	<Row>01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.1L,01.01,01.01,01.01,01.01,01.01</Row>
+	<Row>01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01,02.1a,02.0M,03.01</Row>
+	<Row>01.01,02.1f,02.1c,02.1c,02.1c,02.1c,02.1c,02.1c,02.1c,02.1c,02.1c,02.1c,02.1j,02.0V,02.0N</Row>
+	<Row>03.0N,02.1j,02.0T,02.0K,02.0K,02.0K,02.0S,02.0T,02.0K,02.0K,02.0K,02.0K,02.0K,02.0K,02.0K</Row>
+	<Row>03.01,02.0L,02.0M,03.01,03.01,03.01,02.0L,02.0M,03.01,03.01,03.01,03.01,03.01,03.01,03.01</Row>
+	<Row>03.01,02.0L,02.0M,03.01,04.01,04.01,04.01,04.01,04.01,04.01,04.01,04.01,04.01,04.01,04.01</Row>
+	<Row>03.01,02.0L,02.0M,03.01,04.01,04.01,04.01,01.01,04.01,04.01,04.01,04.01,04.01,04.01,04.01</Row>
+	<Row>03.01,02.0L,02.0M,03.01,04.01,04.01,04.01,01.01,04.01,04.01,04.01,04.01,05.01,05.01,05.01</Row>
+	<Row>03.01,02.0L,02.0M,03.01,04.01,01.01,01.01,01.01,04.01,04.01,04.01,04.01,05.01,05.01,05.01</Row>
+	<Row>03.01,02.0L,02.0M,03.01,04.01,04.01,04.01,01.01,04.01,04.01,04.01,04.01,05.01,05.01,05.01</Row>
+	<Row>03.01,02.0L,02.0M,03.01,04.01,04.01,04.01,04.01,04.01,04.01,04.01,04.01,04.01,04.01,04.01</Row>
+	<Row>03.01,02.0L,02.0M,03.01,04.01,04.01,04.01,04.01,04.01,04.01,04.01,04.01,04.01,04.01,04.01</Row>
+	<Row>03.01,02.0L,02.0M,03.01,03.01,03.01,02.0L,02.0M,03.01,03.2P,03.09,03.2O,03.2O,03.2O,03.2O</Row>
+	<Row>02.0N,02.0U,02.0V,02.0N,02.0N,02.0N,02.0U,02.0V,02.0N,02.1L,02.0U,02.01,02.01,02.01,02.01</Row>
+	<Row>02.0K,02.0K,02.0K,02.0K,02.0K,02.0K,02.0S,02.0T,02.0K,02.1L,02.0K,02.0K,02.0K,02.0K,02.0K</Row>
+	<Row>03.01,03.01,03.01,03.01,03.01,03.01,02.0L,02.0M,03.01,03.2P,03.01,03.01,03.01,03.01,03.01</Row>
 	
-	<RowElev>1,1,1,1,1,1,1,1,1,1,1,1,1,1</RowElev>
-	<RowElev>1,1,1,1,1,1,1,1,1,1,1,1,1,1</RowElev>
-	<RowElev>1,1,1,1,1,1,1,1,1,1,1,1,1,1</RowElev>
-	<RowElev>1,1,1,2,2,2,2,2,2,2,4,4,4,4</RowElev>
-	<RowElev>1,1,1,2,2,2,1,2,3,3,5,5,5,5</RowElev>
-	<RowElev>1,1,1,2,2,2,1,2,3,3,5,4,4,4</RowElev>
-	<RowElev>1,1,1,2,1,1,1,2,3,3,4,4,4,4</RowElev>
-	<RowElev>1,1,1,2,2,2,1,2,3,3,5,4,4,4</RowElev>
-	<RowElev>1,1,1,2,2,2,2,2,3,3,5,5,5,5</RowElev>
-	<RowElev>1,1,1,2,2,2,2,2,2,4,4,4,4,4</RowElev>
-	<RowElev>1,1,1,1,1,1,1,1,2,3,3,3,3,3</RowElev>
-	<RowElev>1,1,1,1,1,1,1,1,2,2,2,2,2,2</RowElev>
-	<RowElev>1,1,1,1,1,1,1,1,2,2,2,2,2,2</RowElev>
+	<RowElev>0,0,0,0,0,0,0,0,0,0,0,0,1,1,1</RowElev>
+	<RowElev>0,1,1,1,1,1,1,1,1,1,1,1,1,1,1</RowElev>
+	<RowElev>1,1,1,1,1,1,1,1,1,1,1,1,1,1,1</RowElev>
+	<RowElev>1,1,1,1,1,1,1,1,1,1,1,1,1,1,1</RowElev>
+	<RowElev>1,1,1,1,2,2,2,2,2,2,2,4,4,4,4</RowElev>
+	<RowElev>1,1,1,1,2,2,2,1,2,3,3,5,5,5,5</RowElev>
+	<RowElev>1,1,1,1,2,2,2,1,2,3,3,5,4,4,4</RowElev>
+	<RowElev>1,1,1,1,2,1,1,1,2,3,3,4,4,4,4</RowElev>
+	<RowElev>1,1,1,1,2,2,2,1,2,3,3,5,4,4,4</RowElev>
+	<RowElev>1,1,1,1,2,2,2,2,2,3,3,5,5,5,5</RowElev>
+	<RowElev>1,1,1,1,2,2,2,2,2,2,4,4,4,4,4</RowElev>
+	<RowElev>1,1,1,1,1,1,1,1,1,2,3,3,3,3,3</RowElev>
+	<RowElev>1,1,1,1,1,1,1,1,1,2,2,2,2,2,2</RowElev>
+	<RowElev>1,1,1,1,1,1,1,1,1,2,2,2,2,2,2</RowElev>
+	<RowElev>1,1,1,1,1,1,1,1,1,2,2,2,2,2,2</RowElev>
 	
-	<Unit>0,99,CastleSandstoneWallNW,3,3,None,None</Unit>
-	<Unit>0,99,CastleSandstoneWallHorizontal,3,4,None,None</Unit>
-	<Unit>0,99,DoorWood,3,5,None,None</Unit>
-	<Unit>0,99,CastleSandstoneWallWindowHorizontal,3,6,None,None</Unit>
-	<Unit>0,99,CastleSandstoneWallHorizontal,3,7,None,None</Unit>
-	<Unit>0,99,CastleSandstoneWallHorizontal,3,8,None,None</Unit>
-	<Unit>0,99,CastleSandstoneWallHorizontal,3,9,None,None</Unit>
-	<Unit>0,99,CastleSandstoneWallHorizontal,3,10,None,None</Unit>
-	<Unit>0,99,CastleSandstoneWallHorizontal,3,11,None,None</Unit>
-	<Unit>0,99,CastleSandstoneWallHorizontal,3,12,None,None</Unit>
-	<Unit>0,99,CastleSandstoneWallHorizontal,3,13,None,None</Unit>
-	<Unit>0,99,CastleSandstoneWallVertical,4,3,None,None</Unit>
-	<Unit tag="Elev,=:2">0,99,BridgeIce,4,6,None,None</Unit>
-	<Unit>0,99,IcePatch,4,8,None,None</Unit>
-	<Unit>0,99,StairsSandstone_E,4,9,None,None</Unit>
-	<Unit>0,99,CastleSandstoneWallVertical,5,3,None,None</Unit>
-	<Unit tag="Elev,=:2">0,99,BridgeIce,5,6,None,None</Unit>
-	<Unit>0,99,StairsSandstone_E,5,9,None,None</Unit>
-	<Unit tag="TargetValue,=:10">0,0,RocksSandstone,6,3,None,None</Unit>
-	<Unit>0,99,BridgeIce,6,4,None,None</Unit>
-	<Unit tag="Elev,=:2">0,99,BridgeIce,6,4,None,None</Unit>
-	<Unit>0,99,BridgeIce,6,5,None,None</Unit>
-	<Unit tag="Elev,=:2">0,99,BridgeIce,6,5,None,None</Unit>
-	<Unit tag="Elev,=:2">0,99,BridgeIce,6,6,None,None</Unit>
-	<Unit>0,99,ChestAlt,6,8,None,25 Coins/25 Coins/25 Coins/25 Coins/25 Coins/25 Coins/25 Coins</Unit>
-	<Unit>0,99,Statue,6,9,None,None</Unit>
-	<Unit>0,99,Altar,6,12,None,None</Unit>
-	<Unit>0,99,LanternLightingAltar,6,12,None,None</Unit>
-	<Unit>0,99,CastleSandstoneWallVertical,7,3,None,None</Unit>
+	<Unit>0,99,CastleSandstoneWallNW,4,4,None,None</Unit>
+	<Unit>0,99,CastleSandstoneWallHorizontal,4,5,None,None</Unit>
+	<Unit>0,99,DoorWood,4,6,None,None</Unit>
+	<Unit>0,99,CastleSandstoneWallWindowHorizontal,4,7,None,None</Unit>
+	<Unit>0,99,CastleSandstoneWallHorizontal,4,8,None,None</Unit>
+	<Unit>0,99,CastleSandstoneWallHorizontal,4,9,None,None</Unit>
+	<Unit>0,99,CastleSandstoneWallHorizontal,4,10,None,None</Unit>
+	<Unit>0,99,CastleSandstoneWallHorizontal,4,11,None,None</Unit>
+	<Unit>0,99,CastleSandstoneWallWindowHorizontal,4,12,None,None</Unit>
+	<Unit>0,99,CastleSandstoneWallHorizontal,4,13,None,None</Unit>
+	<Unit>0,99,CastleSandstoneWallHorizontal,4,14,None,None</Unit>
+	<Unit>0,99,CastleSandstoneWallVertical,5,4,None,None</Unit>
+	<Unit tag="Elev,=:2">0,99,BridgeIce,5,7,None,None</Unit>
+	<Unit>0,99,IcePatch,5,9,None,None</Unit>
+	<Unit>0,99,StairsSandstone_E,5,10,None,None</Unit>
+	<Unit>0,99,CastleSandstoneWallVertical,6,4,None,None</Unit>
+	<Unit tag="Elev,=:2">0,99,BridgeIce,6,7,None,None</Unit>
+	<Unit>0,99,StairsSandstone_E,6,10,None,None</Unit>
+	<Unit tag="TargetValue,=:10">0,0,RocksSandstone,7,4,None,None</Unit>
+	<Unit>0,99,BridgeIce,7,5,None,None</Unit>
+	<Unit tag="Elev,=:2">0,99,BridgeIce,7,5,None,None</Unit>
+	<Unit>0,99,BridgeIce,7,6,None,None</Unit>
 	<Unit tag="Elev,=:2">0,99,BridgeIce,7,6,None,None</Unit>
-	<Unit>0,99,StairsSandstone_E,7,9,None,None</Unit>
-	<Unit>0,99,CastleSandstoneWallVertical,8,3,None,None</Unit>
-	<Unit>0,99,IcePatch,8,6,None,None</Unit>
-	<Unit>0,99,StairsSandstone_E,8,9,None,None</Unit>
-	<Unit>0,99,BridgeStone,9,0,None,None</Unit>
-	<Unit>0,99,CastleSandstoneWallSW,9,3,None,None</Unit>
-	<Unit>0,99,CastleSandstoneWallHorizontal,9,4,None,None</Unit>
-	<Unit>0,99,DoorWood,9,5,None,None</Unit>
-	<Unit>0,99,CastleSandstoneWallWindowHorizontal,9,6,None,None</Unit>
-	<Unit>0,99,CastleSandstoneWallHorizontal,9,7,None,None</Unit>
-	<Unit>0,99,CastleSandstoneWallHorizontal,9,8,None,None</Unit>
-	<Unit>0,99,CastleSandstoneWallHorizontal,9,9,None,None</Unit>
-	<Unit>0,99,CastleSandstoneWallHorizontal,9,10,None,None</Unit>
-	<Unit tag="TargetValue,=:10">0,0,RocksSandstone,9,11,None,None</Unit>
-	<Unit>0,99,CastleSandstoneWallHorizontal,9,12,None,None</Unit>
-	<Unit>0,99,CastleSandstoneWallHorizontal,9,13,None,None</Unit>
-	<Unit>0,99,BridgeStone,10,0,None,None</Unit>
-	<Unit tag="Elev,=:1">0,99,BridgeStone,10,0,None,None</Unit>
-	<Unit>0,99,BushSnow,10,2,None,None</Unit>
-	<Unit>0,99,LampLit,10,7,None,None</Unit>
-	<Unit>0,99,BushSnow,10,12,None,None</Unit>
-	<Unit>0,99,BridgeStone,11,0,None,None</Unit>
-	<Unit>0,0,FromPlayerRoster,4,7,Right,None</Unit>
-	<Unit>0,0,FromPlayerRoster,5,7,Up,None</Unit>
-	<Unit>0,0,FromPlayerRoster,5,8,Up,None</Unit>
-	<Unit>0,0,FromPlayerRoster,6,7,Down,None</Unit>
-	<Unit>0,0,FromPlayerRoster,7,7,Up,None</Unit>
-	<Unit>0,0,FromPlayerRoster,7,8,Up,None</Unit>
-	<Unit>0,0,FromPlayerRoster,8,7,Up,None</Unit>
-	<Unit tag="LevelTo,5">0,1,Suave/Upstart,5,1,Right,None</Unit>
-	<Unit tag="LevelTo,6">0,1,Upstart/Leader,6,0,Right,None</Unit>
-	<Unit tag="LevelTo,5">0,1,Meek/Upstart,7,1,Right,None</Unit>
-	<Unit tag="LevelTo,4">8,2,Hired Mercenary Guard/,0,8,Left,None</Unit>
-	<Unit tag="LevelTo,5">8,2,Charatass/,0,9,Left,None</Unit>
-	<Unit tag="LevelTo,5">8,2,Jules/Acepocket,1,10,Left,None</Unit>
-	<Unit tag="LevelTo,4">8,2,Frostborne Charity Enforcer/,2,8,Left,None</Unit>
-	<Unit tag="LevelTo,3">4,3,Upset/Villager,11,8,Up,None</Unit>
-	<Unit tag="LevelTo,3">4,3,Grumbly/Leader,12,7,Left,None</Unit>
-	<Unit tag="LevelTo,3">4,3,Peeved/Villager,12,9,Up,None</Unit>
+	<Unit tag="Elev,=:2">0,99,BridgeIce,7,7,None,None</Unit>
+	<Unit>0,99,ChestAlt,7,9,None,25 Coins/25 Coins/25 Coins/25 Coins/25 Coins/25 Coins/25 Coins</Unit>
+	<Unit>0,99,Statue,7,10,None,None</Unit>
+	<Unit>0,99,Altar,7,13,None,None</Unit>
+	<Unit>0,99,LanternLightingAltar,7,13,None,None</Unit>
+	<Unit>0,99,CastleSandstoneWallVertical,8,4,None,None</Unit>
+	<Unit tag="Elev,=:2">0,99,BridgeIce,8,7,None,None</Unit>
+	<Unit>0,99,StairsSandstone_E,8,10,None,None</Unit>
+	<Unit>0,99,CastleSandstoneWallVertical,9,4,None,None</Unit>
+	<Unit>0,99,IcePatch,9,7,None,None</Unit>
+	<Unit>0,99,StairsSandstone_E,9,10,None,None</Unit>
+	<Unit>0,99,BridgeStone,10,1,None,None</Unit>
+	<Unit>0,99,CastleSandstoneWallSW,10,4,None,None</Unit>
+	<Unit>0,99,CastleSandstoneWallHorizontal,10,5,None,None</Unit>
+	<Unit>0,99,DoorWood,10,6,None,None</Unit>
+	<Unit>0,99,CastleSandstoneWallWindowHorizontal,10,7,None,None</Unit>
+	<Unit>0,99,CastleSandstoneWallHorizontal,10,8,None,None</Unit>
+	<Unit>0,99,CastleSandstoneWallHorizontal,10,9,None,None</Unit>
+	<Unit>0,99,CastleSandstoneWallHorizontal,10,10,None,None</Unit>
+	<Unit>0,99,CastleSandstoneWallHorizontal,10,11,None,None</Unit>
+	<Unit tag="TargetValue,=:10">0,0,RocksSandstone,10,12,None,None</Unit>
+	<Unit>0,99,CastleSandstoneWallHorizontal,10,13,None,None</Unit>
+	<Unit>0,99,CastleSandstoneWallHorizontal,10,14,None,None</Unit>
+	<Unit>0,99,BridgeStone,11,1,None,None</Unit>
+	<Unit tag="Elev,=:1">0,99,BridgeStone,11,1,None,None</Unit>
+	<Unit>0,99,BushSnow,11,3,None,None</Unit>
+	<Unit>0,99,LampLit,11,8,None,None</Unit>
+	<Unit>0,99,BushSnow,11,13,None,None</Unit>
+	<Unit>0,99,BridgeStone,12,1,None,None</Unit>
+	<Unit>0,0,FromPlayerRoster,5,8,Right,None</Unit>
+	<Unit>0,0,FromPlayerRoster,6,8,Up,None</Unit>
+	<Unit>0,0,FromPlayerRoster,6,9,Up,None</Unit>
+	<Unit>0,0,FromPlayerRoster,7,8,Down,None</Unit>
+	<Unit>0,0,FromPlayerRoster,8,8,Up,None</Unit>
+	<Unit>0,0,FromPlayerRoster,8,9,Up,None</Unit>
+	<Unit>0,0,FromPlayerRoster,9,8,Up,None</Unit>
+	<Unit tag="LevelTo,6">0,1,Upstart/Leader,14,6,Up,None</Unit>
+	<Unit tag="LevelTo,5">0,1,Suave/Upstart,14,7,Up,None</Unit>
+	<Unit tag="LevelTo,5">0,1,Meek/Upstart,14,8,Up,None</Unit>
+	<Unit tag="LevelTo,4">8,2,Hired Mercenary Guard/,0,12,Left,None</Unit>
+	<Unit tag="LevelTo,5">8,2,Charatass/,0,13,Left,None</Unit>
+	<Unit tag="LevelTo,4">8,2,Frostborne Charity Enforcer/,1,12,Left,None</Unit>
+	<Unit tag="LevelTo,5">8,2,Jules/Acepocket,1,13,Left,None</Unit>
+	<Unit tag="LevelTo,3">4,3,Peeved/Villager,11,0,Right,None</Unit>
+	<Unit tag="LevelTo,3">4,3,Grumbly/Leader,12,0,Right,None</Unit>
+	<Unit tag="LevelTo,3">4,3,Upset/Villager,13,0,Right,None</Unit>
 
 	<Dialogue trigger="OnLoaded/" convID="Initialize" r="false">
 		<Branch num="0" name="">/You see nothing
