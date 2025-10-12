@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Level mapname="First Battle" maptype="Single Player" maxplayers="3" battleBG="" musictrack="Against the Cult" winAura="0" winMorale="0" lossMorale="0" nextbattle="Between" defeatScene="" saveable="true" procgen="false" campaign="Secret Jam" lastEdited="10/10/2025 8:47:01 PM">
+<Level mapname="First Battle" maptype="Single Player" maxplayers="3" battleBG="" musictrack="Against the Cult" winAura="0" winMorale="0" lossMorale="0" nextbattle="Between" defeatScene="" saveable="true" procgen="false" campaign="Secret Jam" lastEdited="10/11/2025 7:43:51 PM">
 
 	<Army num="0" AI="false" aiProfile="Balanced" name="The New Coldfront" color="Black" alliedWith="" assignRoster="-1"></Army>
 	<Army num="1" AI="true" aiProfile="Balanced" name="Hoarders of Valuable Truth" color="Blue" alliedWith="2" assignRoster="-1"></Army>
@@ -36,11 +36,13 @@
 	<Row>03.01,01.0G,01.0C,01.0C,01.0C,01.0C,01.0C,02.0y,04.07,04.06,02.0y,02.0y,02.0y,02.0y,01.0P,01.01,01.01,01.01,01.01,01.01</Row>
 	<Row>03.01,03.01,03.01,03.01,03.01,03.01,03.01,03.01,04.1L,04.1M,03.01,03.01,03.01,03.01,01.0D,01.01,01.01,01.01,01.01,01.01</Row>
 	<Row>03.2R,03.06,03.2R,03.2R,03.06,03.0K,03.0K,03.0K,04.1L,04.1M,03.0K,03.0K,03.0K,03.0S,01.0G,01.0C,01.0C,01.0C,01.0C,01.0C</Row>
-	<Row>03.01,03.02,03.2R,03.2R,03.06,05.01,05.01,05.01,04.1L,04.1M,05.01,05.01,05.01,03.0O,03.0K,03.0K,03.0S,03.01,03.01,03.01</Row>
-	<Row>03.01,03.01,03.01,03.01,03.2Q,04.1K,04.1K,04.1K,04.03,04.02,03.2R,03.2R,03.06,05.01,05.01,05.01,03.3F,03.3I,03.3I,03.3I</Row>
-	<Row>03.2O,03.2O,03.2O,03.2O,03.08,04.0S,04.0T,04.0K,04.0K,04.0P,03.01,03.01,03.02,03.06,05.01,05.01,05.01,05.01,05.01,05.01</Row>
-	<Row>03.2O,03.2O,03.2O,03.2O,03.2O,04.1J,04.1J,03.2O,03.2O,03.2O,03.2O,03.2O,03.2O,03.4b,03.2R,03.2R,03.06,05.01,05.01,05.01</Row>
-	<Row>04.01,04.01,04.01,04.01,04.01,04.01,04.0M,03.01,03.01,03.01,03.01,03.01,03.01,03.09,03.05,03.01,03.2Q,05.01,05.01,05.01</Row>
+	<Row>03.01,03.02,03.2R,03.2R,03.06,05.01,05.01,05.01,04.1L,04.1M,05.01,05.01,05.01,03.0L,03.01,03.01,03.01,03.01,03.01,03.01</Row>
+	<Row>03.01,03.01,03.01,03.01,03.2Q,05.01,05.01,05.01,04.1L,04.1M,05.01,05.01,05.01,03.0O,03.0K,03.0K,03.0S,03.01,03.01,03.01</Row>
+	<Row>03.01,03.01,03.01,03.01,03.2Q,04.1K,04.1K,04.1K,04.03,04.02,03.2R,03.06,05.01,05.01,05.01,05.01,03.3F,03.3I,03.3I,03.3I</Row>
+	<Row>03.2O,03.2O,03.2O,03.2O,03.08,04.0S,04.0T,04.0K,04.0K,04.0P,03.01,03.02,03.06,05.01,05.01,05.01,05.01,05.01,05.01,05.01</Row>
+	<Row>03.2O,03.2O,03.2O,03.2O,03.2O,04.1J,04.1J,03.2O,03.2O,03.2O,03.2O,03.2O,03.42,03.45,03.2R,03.2R,03.06,05.01,05.01,05.01</Row>
+	<Row>03.01,03.01,03.01,03.01,03.01,04.0L,04.0M,03.01,03.01,03.01,03.01,03.01,03.01,03.2P,03.01,03.01,03.2Q,05.01,05.01,05.01</Row>
+	<Row>04.0N,04.0N,04.0N,04.0N,04.0N,04.0U,04.0M,03.01,03.01,03.01,03.01,03.01,03.01,03.09,03.05,03.01,03.2Q,05.01,05.01,05.01</Row>
 	<Row>04.01,04.01,04.01,04.01,04.01,04.01,04.0M,03.01,03.01,03.01,03.01,03.01,03.01,03.01,03.2P,03.01,03.2Q,05.01,05.01,05.01</Row>
 	
 	<RowElev>1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1</RowElev>
@@ -52,17 +54,19 @@
 	<RowElev>3,3,3,3,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1</RowElev>
 	<RowElev>1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1</RowElev>
 	<RowElev>1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1</RowElev>
-	<RowElev>1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0</RowElev>
-	<RowElev>1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0</RowElev>
+	<RowElev>1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1</RowElev>
+	<RowElev>1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1</RowElev>
 	<RowElev>1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1</RowElev>
 	<RowElev>1,1,1,1,1,1,1,2,1,1,1,1,1,1,1,1,1,1,1,1</RowElev>
 	<RowElev>1,1,1,1,1,1,1,1,2,2,1,1,1,1,1,1,1,1,1,1</RowElev>
 	<RowElev>1,1,1,1,1,1,1,1,2,2,1,1,1,1,1,1,1,1,1,1</RowElev>
 	<RowElev>3,3,2,2,2,1,1,1,2,2,1,1,1,1,1,1,1,1,1,1</RowElev>
 	<RowElev>3,3,3,3,3,0,0,0,2,2,0,0,0,1,1,1,1,1,1,1</RowElev>
-	<RowElev>3,3,3,3,3,2,2,2,2,2,2,2,2,0,0,0,2,2,2,2</RowElev>
-	<RowElev>3,3,3,3,3,2,2,2,2,2,2,2,2,2,0,0,0,0,0,0</RowElev>
+	<RowElev>3,3,3,3,3,0,0,0,2,2,0,0,0,1,1,1,1,1,1,1</RowElev>
+	<RowElev>3,3,3,3,3,2,2,2,2,2,2,2,0,0,0,0,2,2,2,2</RowElev>
+	<RowElev>3,3,3,3,3,2,2,2,2,2,2,2,2,0,0,0,0,0,0,0</RowElev>
 	<RowElev>2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,0,0,0</RowElev>
+	<RowElev>1,1,1,1,1,1,1,1,1,1,1,1,1,2,2,2,2,0,0,0</RowElev>
 	<RowElev>1,1,1,1,1,1,1,1,1,1,1,1,1,2,2,2,2,0,0,0</RowElev>
 	<RowElev>1,1,1,1,1,1,1,1,1,1,1,1,1,1,2,2,2,0,0,0</RowElev>
 	
@@ -248,54 +252,53 @@
 	<Unit>0,99,DoorWood,15,17,None,None</Unit>
 	<Unit>0,99,CastleWallHorizontal,15,18,None,None</Unit>
 	<Unit>0,99,CastleWallHorizontal,15,19,None,None</Unit>
-	<Unit>0,99,FenceStoneHorizontal,16,0,None,None</Unit>
-	<Unit>0,99,FenceStoneHorizontal,16,1,None,None</Unit>
-	<Unit>0,99,RubbleCastle,16,2,None,None</Unit>
-	<Unit>0,99,FenceStoneHorizontal,16,3,None,None</Unit>
-	<Unit>0,99,FenceStoneNE,16,4,None,None</Unit>
-	<Unit>0,99,TreeDead,16,19,None,None</Unit>
-	<Unit>0,99,RubbleCastle,17,4,None,None</Unit>
-	<Unit>0,99,FenceStoneCap_S,17,10,None,None</Unit>
-	<Unit tag="Elev,=:2">0,99,BridgeStone,17,14,None,None</Unit>
-	<Unit tag="Elev,=:2">0,99,BridgeStone,17,15,None,None</Unit>
-	<Unit>0,99,TreeSnow,17,18,None,None</Unit>
-	<Unit>0,99,TreeSnow,18,1,None,None</Unit>
-	<Unit>0,99,FenceStoneVertical,18,4,None,None</Unit>
-	<Unit>0,99,FenceStoneVertical,18,10,None,None</Unit>
+	<Unit>0,99,FenceStoneHorizontal,17,0,None,None</Unit>
+	<Unit>0,99,FenceStoneHorizontal,17,1,None,None</Unit>
+	<Unit>0,99,RubbleCastle,17,2,None,None</Unit>
+	<Unit>0,99,FenceStoneHorizontal,17,3,None,None</Unit>
+	<Unit>0,99,FenceStoneNE,17,4,None,None</Unit>
+	<Unit>0,99,TreeDead,17,19,None,None</Unit>
+	<Unit>0,99,RubbleCastle,18,4,None,None</Unit>
+	<Unit>0,99,FenceStoneCap_S,18,10,None,None</Unit>
 	<Unit tag="Elev,=:2">0,99,BridgeStone,18,14,None,None</Unit>
 	<Unit tag="Elev,=:2">0,99,BridgeStone,18,15,None,None</Unit>
-	<Unit>0,99,FenceStoneSW,19,4,None,None</Unit>
-	<Unit tag="Open">0,99,GateWoodLeft,19,5,None,None</Unit>
-	<Unit tag="Open">0,99,GateWoodRight,19,6,None,None</Unit>
-	<Unit>0,99,FenceStoneHorizontal,19,7,None,None</Unit>
-	<Unit>0,99,FenceStoneHorizontal,19,8,None,None</Unit>
-	<Unit>0,99,FenceStoneHorizontal,19,9,None,None</Unit>
-	<Unit>0,99,FenceStoneSE,19,10,None,None</Unit>
-	<Unit>0,99,BoulderSnow,19,12,None,None</Unit>
+	<Unit>0,99,TreeSnow,18,18,None,None</Unit>
+	<Unit>0,99,TreeSnow,19,1,None,None</Unit>
+	<Unit>0,99,FenceStoneVertical,19,4,None,None</Unit>
+	<Unit>0,99,FenceStoneVertical,19,10,None,None</Unit>
 	<Unit tag="Elev,=:2">0,99,BridgeStone,19,14,None,None</Unit>
-	<Unit>0,99,BridgeStone,19,15,None,None</Unit>
-	<Unit tag="ID,100">0,0,FromPlayerRoster,19,1,Up,None</Unit>
-	<Unit tag="ID,105">0,0,FromPlayerRoster,19,2,Up,None</Unit>
-	<Unit tag="ID,102">0,0,FromPlayerRoster,19,3,Up,None</Unit>
-	<Unit tag="ID,104">0,0,FromPlayerRoster,20,1,Up,None</Unit>
-	<Unit tag="ID,101">0,0,FromPlayerRoster,20,2,Up,None</Unit>
-	<Unit tag="ID,103">0,0,FromPlayerRoster,20,3,Up,None</Unit>
+	<Unit tag="Elev,=:2">0,99,BridgeStone,19,15,None,None</Unit>
+	<Unit>0,99,FenceStoneSW,20,4,None,None</Unit>
+	<Unit tag="Open">0,99,GateWoodLeft,20,5,None,None</Unit>
+	<Unit tag="Open">0,99,GateWoodRight,20,6,None,None</Unit>
+	<Unit>0,99,FenceStoneHorizontal,20,7,None,None</Unit>
+	<Unit>0,99,FenceStoneHorizontal,20,8,None,None</Unit>
+	<Unit>0,99,FenceStoneHorizontal,20,9,None,None</Unit>
+	<Unit>0,99,FenceStoneSE,20,10,None,None</Unit>
+	<Unit>0,99,BoulderSnow,20,12,None,None</Unit>
+	<Unit tag="Elev,=:2">0,99,BridgeStone,20,14,None,None</Unit>
+	<Unit>0,99,BridgeStone,20,15,None,None</Unit>
+	<Unit tag="ID,100">0,0,FromPlayerRoster,21,1,Up,None</Unit>
+	<Unit tag="ID,105">0,0,FromPlayerRoster,21,2,Up,None</Unit>
+	<Unit tag="ID,102">0,0,FromPlayerRoster,21,3,Up,None</Unit>
+	<Unit tag="ID,104">0,0,FromPlayerRoster,22,1,Up,None</Unit>
+	<Unit tag="ID,101">0,0,FromPlayerRoster,22,2,Up,None</Unit>
+	<Unit tag="ID,103">0,0,FromPlayerRoster,22,3,Up,None</Unit>
 	<Unit tag="AggroGroup,6/Passive/Pursue/LevelTo,3">0,1,Frost Golem/,1,0,Down,None</Unit>
 	<Unit tag="AggroGroup,6/Passive/Pursue/LevelTo,3">0,1,Frostborne Charity Enthusiast/,1,6,Down,None</Unit>
+	<Unit tag="AggroGroup,5/Passive/Pursue/LevelTo,4">0,1,Hired Mercenary Guard/,2,13,Down,None</Unit>
 	<Unit tag="AggroGroup,5/Passive/Pursue/LevelTo,3">0,1,Hired Mercenary Guard/,2,19,Down,None</Unit>
 	<Unit tag="AggroGroup,5/Passive/Pursue/LevelTo,5">0,1,Jules/Acepocket,3,16,Left,Blessing of Frost[E]</Unit>
 	<Unit tag="AggroGroup,6/Passive/Pursue/LevelTo,5">0,1,Charatass/,5,1,Right,Blessing of Frost[E]</Unit>
 	<Unit tag="AggroGroup,1/Passive/Pursue/LevelTo,3">0,1,Frostborne Charity Enforcer/,8,10,Down,None</Unit>
-	<Unit tag="AggroGroup,1/Passive/Pursue/LevelTo,3">0,1,Frostborne Charity Enforcer/,10,9,Down,None</Unit>
 	<Unit tag="AggroGroup,2/Passive/Pursue/LevelTo,3">0,1,Hired Townie/,10,18,Down,None</Unit>
 	<Unit tag="AggroGroup,1/Passive/Pursue/LevelTo,3">0,1,Frostborne Charity Enthusiast/,11,11,Right,None</Unit>
 	<Unit tag="AggroGroup,1/Passive/Pursue/LevelTo,3">0,1,Hired Mercenary Guard/,11,13,Left,None</Unit>
-	<Unit tag="AggroGroup,2/Passive/Pursue/LevelTo,3">0,1,Frostborne Charity Enthusiast/,12,3,Right,None</Unit>
-	<Unit tag="AggroGroup,1/Passive/Pursue/LevelTo,3">0,1,Hired Townie/,12,8,Left,None</Unit>
+	<Unit tag="AggroGroup,1/Passive/Pursue/LevelTo,3">0,1,Hired Townie/,12,8,Up,None</Unit>
 	<Unit tag="AggroGroup,2/Passive/Pursue/LevelTo,3">0,1,Hired Mercenary Guard/,13,16,Down,None</Unit>
-	<Unit tag="AggroGroup,0/LevelTo,1">0,1,Frost Golem/,14,10,Down,None</Unit>
-	<Unit tag="AggroGroup,0/LevelTo,1">0,1,Frost Golem/,17,5,Down,None</Unit>
-	<Unit tag="AggroGroup,0/LevelTo,1">0,1,Frost Golem/,17,9,Left,None</Unit>
+	<Unit tag="AggroGroup,0/Passive/Pursue/LevelTo,3">0,1,Frostborne Charity Investor/,15,7,Down,None</Unit>
+	<Unit tag="AggroGroup,0/LevelTo,1">0,1,Frost Golem/,18,5,Down,None</Unit>
+	<Unit tag="AggroGroup,0/LevelTo,1">0,1,Frost Golem/,18,9,Left,None</Unit>
 	<Unit tag="Inactive/LevelTo,5">0,2,Deactivated Frost Golem/,8,3,Down,None</Unit>
 
 	<Script>Grab Lantern
@@ -348,6 +351,7 @@
 			<Action>SetVal/Bosses Alive,=:2</Action>
 			<Action>SetArea/Indoor Trigger,7,13,1,19</Action>
 			<Action>EndConvImmediately/</Action>
+			<Action>/</Action>
 			<Reply>Continue./...</Reply>
 		</Branch>
 	</Dialogue>
@@ -399,7 +403,7 @@
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
 		<Branch num="3" name="">/You see nothing
-			<Action>IfPresentGoTo/Boss,5</Action>
+			<Action>IfPresentGoTo/Jules Acepocket,5</Action>
 			<Action>GoTo/6</Action>
 			<Action>EndConvImmediately/</Action>
 		</Branch>
@@ -434,7 +438,7 @@
 		<Branch num="1" name="No Lantern">Jerald Swiftrig/Oho, what is this? My intuition and superior knowledge have caused me to form the hypothesis that this Frost Golem.. [He pauses, then dramatically announces] ...is turned off!
 			<Action>MoveCam/,,Deactivated Frost Golem</Action>
 			<Action>AddPortrait/Jerald/Swiftrig,Jerald Swiftrig,left,Black,Quizzical</Action>
-			<Action>AddPortrait/Coolio/Frostybones,Coolio Frostybones,right,Blue</Action>
+			<Action>AddPortrait/Deactivated Frost Golem/,Deactivated Frost Golem/,right,Blue</Action>
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
 		<Branch num="3" name="">Rustler/Ussselesss to usss now... Unlesss we can turn it back on, sssomehow?
@@ -455,7 +459,7 @@
 		<Branch num="5" name="">Bront the Unbelievable/You are [b]Coolio Frostybones[/b], the personal golem of the amazing Bront! And your job is to tell everyone exactly how cool me and my buddies are.
 			<Action>MovePortrait/Jerry/Swiftrig,20,0</Action>
 			<Action>AddPortrait/Bront/the Unbelievable,Bront the Unbelievable,left,Black,Happy,20,0</Action>
-			<Action>MovePortrait/Bront/the Unbelievable,15,0,150</Action>
+			<Action>MovePortrait/Bront the Unbelievable,15,0,150</Action>
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
 		<Branch num="6" name="">Coolio Frostybones/AFFIRMATIVE. I WILL BE SUFFICIENTLY ACCURATE IN MY ASSESSMENTS. [It pauses, then chirps a crackly assessment] YOUR INTERNAL BODY TEMPERATURE IS LOWER THAN HEALTHY ADOLESCENT FROST SPRIGGAT VALUES.
@@ -544,14 +548,18 @@
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
 		<Branch num="1" name="">Frostborne Charity Enthusiast/Defend our sssaviorsss! The PICK{Frosty Brosss.|Ice Sssistersss|Arctic Sssiblingsss|Sssnow Allies|Coldssstone Crew} have given usss protection for yearssss!
-			<Action>AddPortrait/Frostborne Charity Enthusiast/,Frostborne Charity Enthusiast/,left,Blue,Mad</Action>
+			<Action>AddPortrait/Frostborne Charity Enthusiast/,Frostborne Charity Enthusiast/,left,Blue,Mad,22,0</Action>
+			<Action>MovePortrait/Frostborne Charity Enthusiast/,20,0</Action>
 			<Action>RemoveConv/Alert Inside Enemies</Action>
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
 		<Branch num="3" name="">Frostborne Charity Enforcer/Yeah! Well I mean, we've only been in operation since last year, but uh, all that protection from before was [i]really[/i] us, if you think about it.
+			<Action>MovePortrait/Frostborne Charity Enforcer/,6,0</Action>
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
 		<Branch num="4" name="">Frostborne Charity Enthusiast/Good enough for me! Get them!
+			<Action>FlipPortrait/Frostborne Charity Enthusiast</Action>
+			<Action>MovePortrait/Frostborne Charity Enthusiast,25,0</Action>
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
 	</Dialogue>
