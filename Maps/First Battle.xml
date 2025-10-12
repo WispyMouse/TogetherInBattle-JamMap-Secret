@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Level mapname="First Battle" maptype="Single Player" maxplayers="3" battleBG="" musictrack="Against the Cult" winAura="0" winMorale="0" lossMorale="0" nextbattle="Between" defeatScene="" saveable="true" procgen="false" campaign="Secret Jam" lastEdited="10/11/2025 7:43:51 PM">
+<Level mapname="First Battle" maptype="Single Player" maxplayers="3" battleBG="" musictrack="Against the Cult" winAura="0" winMorale="0" lossMorale="0" nextbattle="Between" defeatScene="" saveable="true" procgen="false" campaign="Secret Jam" lastEdited="10/11/2025 7:57:45 PM">
 
 	<Army num="0" AI="false" aiProfile="Balanced" name="The New Coldfront" color="Black" alliedWith="" assignRoster="-1"></Army>
 	<Army num="1" AI="true" aiProfile="Balanced" name="Hoarders of Valuable Truth" color="Blue" alliedWith="2" assignRoster="-1"></Army>
@@ -92,7 +92,7 @@
 	<Unit>0,99,CastleWallHorizontal,0,19,None,None</Unit>
 	<Unit>0,99,BookcaseFull,1,1,None,None</Unit>
 	<Unit>0,99,BookcaseFull,1,2,None,None</Unit>
-	<Unit trigger="UseOnce,OpenLanternRoom">0,99,Switch,1,4,None,None</Unit>
+	<Unit trigger="Use Once,OpenLanternRoom">0,99,Switch,1,4,None,None</Unit>
 	<Unit>0,99,CastleWallVertical,1,5,None,None</Unit>
 	<Unit>0,99,CastleWallVertical,1,14,None,None</Unit>
 	<Unit>0,99,CandelabraLit,1,15,None,None</Unit>
@@ -144,8 +144,8 @@
 	<Unit>0,99,CastleWallHorizontal,5,18,None,None</Unit>
 	<Unit>0,99,CastleWallHorizontal,5,19,None,None</Unit>
 	<Unit>0,99,Rug9BL,6,0,None,None</Unit>
-	<Unit>0,99,TablePapers,6,1,None,None</Unit>
 	<Unit>0,99,Rug9B,6,1,None,None</Unit>
+	<Unit>0,99,TablePapers,6,1,None,None</Unit>
 	<Unit>0,99,Rug9B,6,2,None,None</Unit>
 	<Unit>0,99,Chair,6,2,None,None</Unit>
 	<Unit trigger="Use Once,OpenLanternRoom">0,99,Rug9BR,6,3,None,None</Unit>
