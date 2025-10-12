@@ -1,13 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Level mapname="Between" maptype="Cut Scene: Static" maxplayers="1" musictrack="" winAura="0" nextbattle="Second Battle" saveable="true" saveCheck="true" campaign="Secret Jam" lastEdited="10/10/2025 7:23:01 PM">
+<Level mapname="Between" maptype="Cut Scene: Static" maxplayers="1" musictrack="" winAura="0" nextbattle="Second Battle" saveable="true" saveCheck="true" campaign="Secret Jam" lastEdited="10/12/2025 1:38:26 PM">
 
 	<Narration>  -DIA:Between Start- -PIC:Castle_Night-| -DIA:We Have It- -PIC:Cave-| -DIA:Giving To The People-  -PIC:Town_Night-| -DIA:But One Day- -PIC:Psy_Academy_Night-</Narration>
 	
 	<NewRoster num="0"></NewRoster>
 
+	<Script>Replace Map Two Dialogues
+		<Action>RemoveBarks/Bront the Unbelievable,Deployment</Action>
+		<Action>RemoveBarks/Laina Bigspook,Deployment</Action>
+		<Action>RemoveBarks/Tillie Starwright,Deployment</Action>
+		<Action>RemoveBarks/Sooth,Deployment</Action>
+		<Action>RemoveBarks/Rustler,Deployment</Action>
+		<Action>RemoveBarks/Jerald Swiftrig,Deployment</Action>
+		<Action>AddBark/Bront the Unbelievable,Deployment,You're just jealous! Behold my splendor from a more respectful distance;; yeah!</Action>
+		<Action>AddBark/Laina Bigspook,Deployment,Ah;; darnit. Can't we just share?</Action>
+		<Action>AddBark/Sooth,Deployment,[He smirks] We're more qualified to have this.</Action>
+		<Action>AddBark/Rustler,Deployment,[She hisses]</Action>
+		<Action>AddBark/Tillie Starwright,Deployment,Pay no mind to the thing in the altar room. It is a prop;; you see.</Action>
+		<Action>AddBark/Jerald Swiftrig,Deployment,As if you lot could even operate such a complicated device. The documentation on this [i]wondrous power[/i] is lacking;; and so are your mental faculties!</Action>
+		<Action>AddBark/Coolio Frostybones,Deployment,WITHOUT EXCEPTION, NONE HERE ARE MEANT TO WIELD THE LANTERN.</Action>
+	</Script>
+
 	<Dialogue trigger="None/" convID="Between Start" r="false">
 		<Branch num="0" name="">Bront the Unbelievable/So all this time, it's just been a series of chumps using this dinky lantern? Bah.
 			<Action>Run/Initialize_Try</Action>
+			<Action>Run/Replace Map Two Dialogues</Action>
 			<Action>AddPortrait/Bront/the Unbelievable,Bront the Unbelievable,right,Black,Quizzical</Action>
 			<Reply>Continue/NextBranch</Reply>
 		</Branch>
