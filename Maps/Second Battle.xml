@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Level mapname="Second Battle" maptype="Single Player" maxplayers="4" battleBG="" musictrack="Form Up!" winAura="0" winMorale="0" lossMorale="0" nextbattle="Final Scene" defeatScene="" saveable="true" procgen="false" campaign="Secret Jam" lastEdited="10/12/2025 1:54:47 PM">
+<Level mapname="Second Battle" maptype="Single Player" maxplayers="4" battleBG="" musictrack="Form Up!" winAura="0" winMorale="0" lossMorale="0" nextbattle="Final Scene" defeatScene="" saveable="true" procgen="false" campaign="Secret Jam" lastEdited="10/12/2025 7:23:17 PM">
 
 	<Army num="0" AI="false" aiProfile="Balanced" name="Coldfront" color="Black" alliedWith="" assignRoster="0"></Army>
 	<Army num="1" AI="true" aiProfile="Aggressive" name="Disrespectful Upstarts" color="Red" alliedWith="2,3" assignRoster="-1"></Army>
@@ -27,14 +27,14 @@
 	<Row>01.01,02.1f,02.1c,02.1c,02.1c,02.1c,02.1c,02.1c,02.1c,02.1c,02.1c,02.1c,02.1j,02.0V,02.0N</Row>
 	<Row>03.0N,02.1j,02.0T,02.0K,02.0K,02.0K,02.0S,02.0T,02.0K,02.0K,02.0K,02.0K,02.0K,02.0K,02.0K</Row>
 	<Row>03.01,02.0L,02.0M,03.01,03.01,03.01,02.0L,02.0M,03.01,03.01,03.01,03.01,03.01,03.01,03.01</Row>
-	<Row>03.01,02.0L,02.0M,03.01,04.01,04.01,04.01,04.01,04.01,04.01,04.01,04.01,04.01,04.01,04.01</Row>
-	<Row>03.01,02.0L,02.0M,03.01,04.01,04.01,04.01,01.01,04.01,04.01,04.01,04.01,04.01,04.01,04.01</Row>
-	<Row>03.01,02.0L,02.0M,03.01,04.01,04.01,04.01,01.01,04.01,04.01,04.01,04.01,05.01,05.01,05.01</Row>
-	<Row>03.01,02.0L,02.0M,03.01,04.01,01.01,01.01,01.01,04.01,04.01,04.01,04.01,05.01,05.01,05.01</Row>
-	<Row>03.01,02.0L,02.0M,03.01,04.01,04.01,04.01,01.01,04.01,04.01,04.01,04.01,05.01,05.01,05.01</Row>
-	<Row>03.01,02.0L,02.0M,03.01,04.01,04.01,04.01,04.01,04.01,04.01,04.01,04.01,04.01,04.01,04.01</Row>
-	<Row>03.01,02.0L,02.0M,03.01,04.01,04.01,04.01,04.01,04.01,04.01,04.01,04.01,04.01,04.01,04.01</Row>
-	<Row>03.01,02.0L,02.0M,03.01,03.01,03.01,02.0L,02.0M,03.01,03.2P,03.09,03.2O,03.2O,03.2O,03.2O</Row>
+	<Row>03.01,02.0L,02.0M,03.01,04.0I,04.0F,04.01,04.01,04.01,04.0F,04.0F,04.01,04.01,04.01,04.01</Row>
+	<Row>03.01,02.0L,02.0M,03.01,04.0D,04.01,04.01,01.01,04.01,04.01,04.01,04.01,04.01,04.01,04.01</Row>
+	<Row>03.01,02.0L,02.0M,03.01,04.0D,04.01,04.01,01.01,04.01,04.01,04.01,04.01,05.01,05.01,05.01</Row>
+	<Row>03.01,02.0L,02.0M,03.01,04.0D,04.01,01.01,01.01,04.01,04.01,04.01,04.01,05.01,05.01,05.01</Row>
+	<Row>03.01,02.0L,02.0M,03.01,04.0D,04.01,04.01,01.01,04.01,04.01,04.01,04.01,05.01,05.01,05.01</Row>
+	<Row>03.01,02.0L,02.0M,03.01,04.0D,04.01,04.01,04.01,04.01,04.01,04.01,04.01,04.01,04.01,04.01</Row>
+	<Row>03.01,02.0L,02.0M,03.01,04.0G,04.0C,04.01,04.01,04.0C,04.0K,04.01,04.01,04.0C,04.0C,04.0C</Row>
+	<Row>03.01,02.0L,02.0M,03.01,03.01,03.01,02.0L,02.0M,03.01,03.07,03.09,03.2O,03.2O,03.2O,03.2O</Row>
 	<Row>02.0N,02.0U,02.0V,02.0N,02.0N,02.0N,02.0U,02.0V,02.0N,02.1L,02.0U,02.01,02.01,02.01,02.01</Row>
 	<Row>02.0K,02.0K,02.0K,02.0K,02.0K,02.0K,02.0S,02.0T,02.0K,02.1L,02.0K,02.0K,02.0K,02.0K,02.0K</Row>
 	<Row>03.01,03.01,03.01,03.01,03.01,03.01,02.0L,02.0M,03.01,03.2P,03.01,03.01,03.01,03.01,03.01</Row>
@@ -43,13 +43,13 @@
 	<RowElev>0,1,1,1,1,1,1,1,1,1,1,1,1,1,1</RowElev>
 	<RowElev>1,1,1,1,1,1,1,1,1,1,1,1,1,1,1</RowElev>
 	<RowElev>1,1,1,1,1,1,1,1,1,1,1,1,1,1,1</RowElev>
-	<RowElev>1,1,1,1,2,2,2,2,2,2,2,4,4,4,4</RowElev>
-	<RowElev>1,1,1,1,2,2,2,1,2,3,3,5,5,5,5</RowElev>
-	<RowElev>1,1,1,1,2,2,2,1,2,3,3,5,4,4,4</RowElev>
-	<RowElev>1,1,1,1,2,1,1,1,2,3,3,4,4,4,4</RowElev>
-	<RowElev>1,1,1,1,2,2,2,1,2,3,3,5,4,4,4</RowElev>
-	<RowElev>1,1,1,1,2,2,2,2,2,3,3,5,5,5,5</RowElev>
-	<RowElev>1,1,1,1,2,2,2,2,2,2,4,4,4,4,4</RowElev>
+	<RowElev>1,1,1,1,1,1,1,1,1,1,1,3,3,3,3</RowElev>
+	<RowElev>1,1,1,1,1,1,1,0,1,2,2,4,4,4,4</RowElev>
+	<RowElev>1,1,1,1,1,1,1,0,1,2,2,4,3,3,3</RowElev>
+	<RowElev>1,1,1,1,1,1,0,0,1,2,3,4,3,3,3</RowElev>
+	<RowElev>1,1,1,1,1,1,1,0,1,2,2,4,3,3,3</RowElev>
+	<RowElev>1,1,1,1,1,1,1,1,2,2,2,4,4,4,4</RowElev>
+	<RowElev>1,1,1,1,1,1,1,1,1,1,3,3,3,3,3</RowElev>
 	<RowElev>1,1,1,1,1,1,1,1,1,2,3,3,3,3,3</RowElev>
 	<RowElev>1,1,1,1,1,1,1,1,1,2,2,2,2,2,2</RowElev>
 	<RowElev>1,1,1,1,1,1,1,1,1,2,2,2,2,2,2</RowElev>
@@ -74,8 +74,6 @@
 	<Unit tag="Elev,=:2">0,99,BridgeIce,6,7,None,None</Unit>
 	<Unit>0,99,StairsSandstone_E,6,10,None,None</Unit>
 	<Unit tag="TargetValue,=:10">0,0,RocksSandstone,7,4,None,None</Unit>
-	<Unit>0,99,BridgeIce,7,5,None,None</Unit>
-	<Unit tag="Elev,=:2">0,99,BridgeIce,7,5,None,None</Unit>
 	<Unit>0,99,BridgeIce,7,6,None,None</Unit>
 	<Unit tag="Elev,=:2">0,99,BridgeIce,7,6,None,None</Unit>
 	<Unit tag="Elev,=:2">0,99,BridgeIce,7,7,None,None</Unit>
@@ -117,10 +115,12 @@
 	<Unit tag="LevelTo,6">0,1,Upstart/Leader,14,6,Up,None</Unit>
 	<Unit tag="LevelTo,5">0,1,Suave/Upstart,14,7,Up,None</Unit>
 	<Unit tag="LevelTo,5">0,1,Meek/Upstart,14,8,Up,None</Unit>
-	<Unit tag="LevelTo,4">8,2,Hired Mercenary Guard/,0,12,Left,None</Unit>
-	<Unit tag="LevelTo,5">8,2,Charatass/,0,13,Left,None</Unit>
+	<Unit tag="LevelTo,5">8,2,Hired Mercenary Guard/,0,12,Left,None</Unit>
+	<Unit tag="LevelTo,6">8,2,Charatass/,0,13,Left,None</Unit>
 	<Unit tag="LevelTo,4">8,2,Frostborne Charity Enforcer/,1,12,Left,None</Unit>
-	<Unit tag="LevelTo,5">8,2,Jules/Acepocket,1,13,Left,None</Unit>
+	<Unit tag="LevelTo,6">8,2,Jules/Acepocket,1,13,Left,None</Unit>
+	<Unit tag="LevelTo,6">0,2,Apostacratus/,2,12,Left,None</Unit>
+	<Unit tag="LevelTo,4">0,2,Frostborne Charity Investor/,2,13,Left,None</Unit>
 	<Unit tag="LevelTo,3">4,3,Peeved/Villager,11,0,Right,None</Unit>
 	<Unit tag="LevelTo,3">4,3,Grumbly/Leader,12,0,Right,None</Unit>
 	<Unit tag="LevelTo,3">4,3,Upset/Villager,13,0,Right,None</Unit>
@@ -128,7 +128,7 @@
 	<Dialogue trigger="OnLoaded/" convID="Initialize" r="false">
 		<Branch num="0" name="">/You see nothing
 			<Action>Run/Initialize_Try</Action>
-			<Action>SetArea/Lantern Zone,5,7,13,15</Action>
+			<Action>SetArea/Lantern Zone,6,18,12,14</Action>
 			<Action>AddTagToArmy/1,Patrol,Lantern Zone,=:99</Action>
 			<Action>AddTagToArmy/2,Patrol,Lantern Zone,=:99</Action>
 			<Action>AddTagToArmy/3,Patrol,Lantern Zone,=:99</Action>
