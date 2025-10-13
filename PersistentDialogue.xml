@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<PersistentDialogue desc="Dialogue and scripts that are universally available in every scene in the campaign (e.g. death monologues or scripts used in items and skills)." campaign="Secret Jam" lastEdited="10/6/2025 9:32:26 PM">
+<PersistentDialogue desc="Dialogue and scripts that are universally available in every scene in the campaign (e.g. death monologues or scripts used in items and skills)." campaign="Secret Jam" lastEdited="10/12/2025 8:34:54 PM">
 
 	<Script>Initialize_Try
 		<Action>Log/Running Initialize_Try. Have we already initialized? (-VAL:Initialized-)</Action>
@@ -48,6 +48,12 @@
 
 	<Script>Panic Response
 		<Action>AddStatus/Laina Bigspook,Hidden,,1</Action>
+	</Script>
+
+	<Script>Gain1Coins
+		<Action>SetAura/+:1</Action>
+		<Action>SpawnFloatingTextAt/Got 1 aura!,-Y-,-X-,0xFFFF00,15</Action>
+		<Action>PlaySound/Coins Jingle</Action>
 	</Script>
 
 </PersistentDialogue>

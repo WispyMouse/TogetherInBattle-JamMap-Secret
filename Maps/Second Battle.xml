@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Level mapname="Second Battle" maptype="Single Player" maxplayers="4" battleBG="" musictrack="Form Up!" winAura="0" winMorale="0" lossMorale="0" nextbattle="Final Scene" defeatScene="" saveable="true" procgen="false" campaign="Secret Jam" lastEdited="10/12/2025 7:23:17 PM">
+<Level mapname="Second Battle" maptype="Single Player" maxplayers="4" battleBG="" musictrack="Form Up!" winAura="0" winMorale="0" lossMorale="0" nextbattle="Final Scene" defeatScene="" saveable="true" procgen="false" campaign="Secret Jam" lastEdited="10/12/2025 8:32:35 PM">
 
 	<Army num="0" AI="false" aiProfile="Balanced" name="Coldfront" color="Black" alliedWith="" assignRoster="0"></Army>
 	<Army num="1" AI="true" aiProfile="Aggressive" name="Disrespectful Upstarts" color="Red" alliedWith="2,3" assignRoster="-1"></Army>
@@ -67,22 +67,22 @@
 	<Unit>0,99,CastleSandstoneWallHorizontal,4,13,None,None</Unit>
 	<Unit>0,99,CastleSandstoneWallHorizontal,4,14,None,None</Unit>
 	<Unit>0,99,CastleSandstoneWallVertical,5,4,None,None</Unit>
-	<Unit tag="Elev,=:2">0,99,BridgeIce,5,7,None,None</Unit>
+	<Unit tag="Elev,=:1">0,99,BridgeIce,5,7,None,None</Unit>
 	<Unit>0,99,IcePatch,5,9,None,None</Unit>
 	<Unit>0,99,StairsSandstone_E,5,10,None,None</Unit>
 	<Unit>0,99,CastleSandstoneWallVertical,6,4,None,None</Unit>
-	<Unit tag="Elev,=:2">0,99,BridgeIce,6,7,None,None</Unit>
+	<Unit tag="Elev,=:1">0,99,BridgeIce,6,7,None,None</Unit>
 	<Unit>0,99,StairsSandstone_E,6,10,None,None</Unit>
+	<Unit>0,99,ItemSack,6,11,None,Cake/Medicated Bandages/Focus Pills</Unit>
 	<Unit tag="TargetValue,=:10">0,0,RocksSandstone,7,4,None,None</Unit>
-	<Unit>0,99,BridgeIce,7,6,None,None</Unit>
-	<Unit tag="Elev,=:2">0,99,BridgeIce,7,6,None,None</Unit>
-	<Unit tag="Elev,=:2">0,99,BridgeIce,7,7,None,None</Unit>
-	<Unit>0,99,ChestAlt,7,9,None,25 Coins/25 Coins/25 Coins/25 Coins/25 Coins/25 Coins/25 Coins</Unit>
+	<Unit tag="Elev,=:1">0,99,BridgeIce,7,6,None,None</Unit>
+	<Unit tag="Elev,=:1">0,99,BridgeIce,7,7,None,None</Unit>
+	<Unit>0,99,PennyChest,7,9,None,1 Aura,1 Aura,1 Aura,1 Aura,1 Aura,1 Aura,1 Aura,1 Aura,1 Aura,1 Aura,1, Aura,1 Aura,1 Aura,1 Aura,1 Aura,1 Aura,1 Aura,1 Aura,1 Aura,1 Aura,1 Aura,1 Aura,1 Aura,1 Aura,1 Aura,1 Aura,1 Aura,1 Aura,1 Aura,1 Aura,1 Aura,1 Aura,1 Aura,1 Aura,1 Aura,1 Aura,1 Aura,1 Aura,1 Aura,1 Aura,1 Aura,1 Aura,1 Aura,1 Aura,</Unit>
 	<Unit>0,99,Statue,7,10,None,None</Unit>
 	<Unit>0,99,Altar,7,13,None,None</Unit>
 	<Unit>0,99,LanternLightingAltar,7,13,None,None</Unit>
 	<Unit>0,99,CastleSandstoneWallVertical,8,4,None,None</Unit>
-	<Unit tag="Elev,=:2">0,99,BridgeIce,8,7,None,None</Unit>
+	<Unit tag="Elev,=:1">0,99,BridgeIce,8,7,None,None</Unit>
 	<Unit>0,99,StairsSandstone_E,8,10,None,None</Unit>
 	<Unit>0,99,CastleSandstoneWallVertical,9,4,None,None</Unit>
 	<Unit>0,99,IcePatch,9,7,None,None</Unit>

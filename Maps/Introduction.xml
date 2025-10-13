@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Level mapname="Introduction" maptype="Cut Scene: Static" maxplayers="1" musictrack="" winAura="0" nextbattle="First Battle" saveable="true" saveCheck="false" campaign="Secret Jam" lastEdited="10/11/2025 5:35:49 PM">
+<Level mapname="Introduction" maptype="Cut Scene: Static" maxplayers="1" musictrack="" winAura="0" nextbattle="First Battle" saveable="true" saveCheck="false" campaign="Secret Jam" lastEdited="10/12/2025 8:28:47 PM">
 
 	<Narration> -DIA:Introduction-| -PIC:Cave_Sandstone- -DIA:Setting Establishing-| -DIA:Visitors Arrive- -PIC:Cave-| -DIA:Effect of Visitors-    -PIC:Town_Night-|   -DIA:Infiltration-      -PIC:Castle_Night-</Narration>
 	
@@ -67,7 +67,7 @@
 	</Dialogue>
 
 	<Dialogue trigger="None/" convID="Infiltration" r="false">
-		<Branch num="0" name="">Narration/Those liars are hoarding powerful secrets from us. What gives [i]them[/i] the right to be special?
+		<Branch num="0" name="">Tillie Starwright/Those liars are hoarding powerful secrets from us. What gives [i]them[/i] the right to be special?
 			<Action>AddPortrait/Bront/the Unbelievable,Bront the Unbelievable,right,Black,Mad,-2,0</Action>
 			<Action>AddPortrait/Jerald/Swiftrig,Jerald Swiftrig,right,Black,Mad,3,1</Action>
 			<Action>AddPortrait/Tillie/Starwright,Tillie Starwright,right,Black,Concerned,8,0</Action>
@@ -76,7 +76,7 @@
 			<Action>AddPortrait/Sooth/,Sooth/,left,Black,Amused,22,0</Action>
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
-		<Branch num="1" name="">Narration/That power should belong to us.
+		<Branch num="1" name="">Tillie Starwright/That power should belong to us.
 			<Action>ChangeExpression/Bront/the Unbelievable,Mean</Action>
 			<Action>ChangeExpression/Rustler/,Mean</Action>
 			<Action>ChangeExpression/Sooth/,Mean</Action>
@@ -88,7 +88,7 @@
 	</Dialogue>
 
 	<Dialogue trigger="None/" convID="Visitors Arrive" r="false">
-		<Branch num="0" name="">Tillie Starwright/But [i]luckily[/i] each summer finds some new group of [i]saviors[/i], oferring protection from the sun. As long as I can remember, every season has had some variation of "give us gold and we'll give you cold". How [i]generous[/i].
+		<Branch num="0" name="">Tillie Starwright/But [i]luckily[/i] each summer finds some new group of [i]saviors[/i], offerring protection from the sun. As long as I can remember, every season has had some variation of "give us gold and we'll give you cold". How [i]generous[/i].
 			<Action>AddPortrait/Jules/Acepocket,Jules Acepocket,left,Blue,Happy,26,0</Action>
 			<Action>AddPortrait/Charatass/,Charatass/,left,Blue,Happy,30,1</Action>
 			<Action>AddPortrait/Tillie/Starwright,Tillie Starwright,right,Black,Concerned,-2,1</Action>
