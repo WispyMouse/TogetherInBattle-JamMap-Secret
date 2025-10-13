@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Level mapname="Second Battle" maptype="Single Player" maxplayers="4" battleBG="" musictrack="Form Up!" winAura="0" winMorale="0" lossMorale="0" nextbattle="Final Scene" defeatScene="" saveable="true" procgen="false" campaign="Secret Jam" lastEdited="10/12/2025 8:32:35 PM">
+<Level mapname="Second Battle" maptype="Single Player" maxplayers="4" battleBG="" musictrack="Form Up!" winAura="0" winMorale="0" lossMorale="0" nextbattle="Final Scene" defeatScene="" saveable="true" procgen="false" campaign="Secret Jam" lastEdited="10/12/2025 10:59:18 PM">
 
 	<Army num="0" AI="false" aiProfile="Balanced" name="Coldfront" color="Black" alliedWith="" assignRoster="0"></Army>
 	<Army num="1" AI="true" aiProfile="Aggressive" name="Disrespectful Upstarts" color="Red" alliedWith="2,3" assignRoster="-1"></Army>
-	<Army num="2" AI="true" aiProfile="Balanced" name="Spiteful Liars" color="Blue" alliedWith="1,3" assignRoster="-1"></Army>
-	<Army num="3" AI="true" aiProfile="Cautious" name="Ungrateful Villagers" color="Orange" alliedWith="1,2" assignRoster="-1"></Army>
+	<Army num="2" AI="true" aiProfile="Balanced" name="Spiteful Liars" color="Blue" alliedWith="1" assignRoster="-1"></Army>
+	<Army num="3" AI="true" aiProfile="Arena" name="Ungrateful Villagers" color="Orange" alliedWith="1" assignRoster="-1"></Army>
 	
 	<Condition>Defeat Army,1,0</Condition>
 	<Condition>Deployment,0,0</Condition>
@@ -33,9 +33,9 @@
 	<Row>03.01,02.0L,02.0M,03.01,04.0D,04.01,01.01,01.01,04.01,04.01,04.01,04.01,05.01,05.01,05.01</Row>
 	<Row>03.01,02.0L,02.0M,03.01,04.0D,04.01,04.01,01.01,04.01,04.01,04.01,04.01,05.01,05.01,05.01</Row>
 	<Row>03.01,02.0L,02.0M,03.01,04.0D,04.01,04.01,04.01,04.01,04.01,04.01,04.01,04.01,04.01,04.01</Row>
-	<Row>03.01,02.0L,02.0M,03.01,04.0G,04.0C,04.01,04.01,04.0C,04.0K,04.01,04.01,04.0C,04.0C,04.0C</Row>
-	<Row>03.01,02.0L,02.0M,03.01,03.01,03.01,02.0L,02.0M,03.01,03.07,03.09,03.2O,03.2O,03.2O,03.2O</Row>
-	<Row>02.0N,02.0U,02.0V,02.0N,02.0N,02.0N,02.0U,02.0V,02.0N,02.1L,02.0U,02.01,02.01,02.01,02.01</Row>
+	<Row>03.01,02.0L,02.0M,03.01,04.0G,04.0C,04.01,04.01,04.01,04.01,04.01,04.01,04.0C,04.0C,04.0C</Row>
+	<Row>03.01,02.0L,02.0M,03.01,03.01,03.01,02.0L,02.01,02.01,03.2P,03.3F,03.46,03.2O,03.2O,03.2O</Row>
+	<Row>02.0N,02.0U,02.0V,02.0N,02.0N,02.0N,02.0U,02.01,02.01,02.1L,02.0U,02.01,02.01,02.01,02.01</Row>
 	<Row>02.0K,02.0K,02.0K,02.0K,02.0K,02.0K,02.0S,02.0T,02.0K,02.1L,02.0K,02.0K,02.0K,02.0K,02.0K</Row>
 	<Row>03.01,03.01,03.01,03.01,03.01,03.01,02.0L,02.0M,03.01,03.2P,03.01,03.01,03.01,03.01,03.01</Row>
 	
@@ -49,7 +49,7 @@
 	<RowElev>1,1,1,1,1,1,0,0,1,2,3,4,3,3,3</RowElev>
 	<RowElev>1,1,1,1,1,1,1,0,1,2,2,4,3,3,3</RowElev>
 	<RowElev>1,1,1,1,1,1,1,1,2,2,2,4,4,4,4</RowElev>
-	<RowElev>1,1,1,1,1,1,1,1,1,1,3,3,3,3,3</RowElev>
+	<RowElev>1,1,1,1,1,1,1,1,2,2,2,3,3,3,3</RowElev>
 	<RowElev>1,1,1,1,1,1,1,1,1,2,3,3,3,3,3</RowElev>
 	<RowElev>1,1,1,1,1,1,1,1,1,2,2,2,2,2,2</RowElev>
 	<RowElev>1,1,1,1,1,1,1,1,1,2,2,2,2,2,2</RowElev>
@@ -77,14 +77,14 @@
 	<Unit tag="TargetValue,=:10">0,0,RocksSandstone,7,4,None,None</Unit>
 	<Unit tag="Elev,=:1">0,99,BridgeIce,7,6,None,None</Unit>
 	<Unit tag="Elev,=:1">0,99,BridgeIce,7,7,None,None</Unit>
-	<Unit>0,99,PennyChest,7,9,None,1 Aura,1 Aura,1 Aura,1 Aura,1 Aura,1 Aura,1 Aura,1 Aura,1 Aura,1 Aura,1, Aura,1 Aura,1 Aura,1 Aura,1 Aura,1 Aura,1 Aura,1 Aura,1 Aura,1 Aura,1 Aura,1 Aura,1 Aura,1 Aura,1 Aura,1 Aura,1 Aura,1 Aura,1 Aura,1 Aura,1 Aura,1 Aura,1 Aura,1 Aura,1 Aura,1 Aura,1 Aura,1 Aura,1 Aura,1 Aura,1 Aura,1 Aura,1 Aura,1 Aura,</Unit>
+	<Unit>0,99,PennyChest,7,9,None,1 Aura</Unit>
 	<Unit>0,99,Statue,7,10,None,None</Unit>
 	<Unit>0,99,Altar,7,13,None,None</Unit>
 	<Unit>0,99,LanternLightingAltar,7,13,None,None</Unit>
 	<Unit>0,99,CastleSandstoneWallVertical,8,4,None,None</Unit>
 	<Unit tag="Elev,=:1">0,99,BridgeIce,8,7,None,None</Unit>
 	<Unit>0,99,StairsSandstone_E,8,10,None,None</Unit>
-	<Unit>0,99,CastleSandstoneWallVertical,9,4,None,None</Unit>
+	<Unit tag="TargetValue,=:2">0,99,BoulderSandstone,9,4,None,None</Unit>
 	<Unit>0,99,IcePatch,9,7,None,None</Unit>
 	<Unit>0,99,StairsSandstone_E,9,10,None,None</Unit>
 	<Unit>0,99,BridgeStone,10,1,None,None</Unit>
@@ -112,18 +112,23 @@
 	<Unit>0,0,FromPlayerRoster,8,8,Up,None</Unit>
 	<Unit>0,0,FromPlayerRoster,8,9,Up,None</Unit>
 	<Unit>0,0,FromPlayerRoster,9,8,Up,None</Unit>
+	<Unit tag="LevelTo,5">0,1,Laughing Upstart/,14,5,Up,None</Unit>
 	<Unit tag="LevelTo,6">0,1,Upstart/Leader,14,6,Up,None</Unit>
 	<Unit tag="LevelTo,5">0,1,Suave/Upstart,14,7,Up,None</Unit>
 	<Unit tag="LevelTo,5">0,1,Meek/Upstart,14,8,Up,None</Unit>
+	<Unit tag="LevelTo,5">0,1,Credible Upstart/,14,9,Up,None</Unit>
+	<Unit tag="LevelTo,5">0,1,Concerned Upstart/,14,10,Up,None</Unit>
 	<Unit tag="LevelTo,5">8,2,Hired Mercenary Guard/,0,12,Left,None</Unit>
 	<Unit tag="LevelTo,6">8,2,Charatass/,0,13,Left,None</Unit>
 	<Unit tag="LevelTo,4">8,2,Frostborne Charity Enforcer/,1,12,Left,None</Unit>
 	<Unit tag="LevelTo,6">8,2,Jules/Acepocket,1,13,Left,None</Unit>
-	<Unit tag="LevelTo,6">0,2,Apostacratus/,2,12,Left,None</Unit>
-	<Unit tag="LevelTo,4">0,2,Frostborne Charity Investor/,2,13,Left,None</Unit>
-	<Unit tag="LevelTo,3">4,3,Peeved/Villager,11,0,Right,None</Unit>
-	<Unit tag="LevelTo,3">4,3,Grumbly/Leader,12,0,Right,None</Unit>
-	<Unit tag="LevelTo,3">4,3,Upset/Villager,13,0,Right,None</Unit>
+	<Unit tag="LevelTo,6">8,2,Apostacratus/,2,12,Left,None</Unit>
+	<Unit tag="LevelTo,4">8,2,Frostborne Charity Investor/,2,13,Left,None</Unit>
+	<Unit tag="LevelTo,3">4,3,Troublemaking Villager/,11,0,Right,None</Unit>
+	<Unit tag="LevelTo,3">4,3,Peeved/Villager,11,1,Right,None</Unit>
+	<Unit tag="LevelTo,3">4,3,Critical Villager/,12,0,Right,None</Unit>
+	<Unit tag="LevelTo,3">4,3,Grumbly/Leader,12,1,Right,None</Unit>
+	<Unit tag="LevelTo,3">4,3,Upset/Villager,13,1,Right,None</Unit>
 
 	<Dialogue trigger="OnLoaded/" convID="Initialize" r="false">
 		<Branch num="0" name="">/You see nothing
@@ -233,6 +238,7 @@
 		<Branch num="0" name="">Grumbly Leader/Grah, these dunderheads are worse than the previous few lots. Let's just run them out this time, then figure out what to do about the sun.
 			<Action>AddPortrait/Grumbly/Leader,Grumbly Leader,left,Orange,Mad</Action>
 			<Action>MoveCam/,,Grumbly Leader</Action>
+			<Action>AddTagToArmy/2,Patrol,Lantern Zone,=:99</Action>
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
 		<Branch num="1" name="">Sooth/[He smirks] We deserve the tribute.
@@ -245,11 +251,20 @@
 		<Branch num="0" name="">Jules Acepocket/There's those thieving ingrates! It's not your place to question us - just give us that thing back, and we'll [i]forgive[/i] you. Quickly now, before anyone else learns about this!
 			<Action>AddPortrait/Jules/Acepocket,Jules Acepocket,left,Blue,Mad</Action>
 			<Action>AddPortrait/Charatass/,Charatass/,right,Blue,Mad</Action>
+			<Action>AddTagToArmy/3,Patrol,Lantern Zone,=:99</Action>
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
 		<Branch num="1" name="">Rustler/We took it, now it'sss oursss! Give it up!
 			<Action>ClearPortraits/</Action>
 			<Action>AddPortrait/Rustler/,Rustler/,left,Black,Mean</Action>
+			<Reply>Continue./NextBranch</Reply>
+		</Branch>
+	</Dialogue>
+
+	<Dialogue trigger="OnCharAttacked/2,-ANY-,,3" convID="Villagers vs Frost" r="false">
+		<Branch num="0" name="">Grumbly Upstart/And heck on you dunderheads too!
+			<Action>AddPortrait/Grumbly/Upstart,Grumbly Upstart,right,Orange,Yell</Action>
+			<Action>/</Action>
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
 	</Dialogue>
