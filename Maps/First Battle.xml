@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Level mapname="First Battle" maptype="Single Player" maxplayers="3" battleBG="" musictrack="Against the Cult" winAura="0" winMorale="0" lossMorale="0" nextbattle="Between" defeatScene="" saveable="true" procgen="false" campaign="Secret Jam" lastEdited="10/12/2025 9:32:29 PM">
+<Level mapname="First Battle" maptype="Single Player" maxplayers="3" battleBG="" musictrack="Against the Cult" winAura="0" winMorale="0" lossMorale="0" nextbattle="Between" defeatScene="" saveable="true" procgen="false" campaign="Secret Jam" lastEdited="10/14/2025 2:59:14 PM">
 
-	<Army num="0" AI="false" aiProfile="Balanced" name="The New Coldfront" color="Black" alliedWith="" assignRoster="-1"></Army>
-	<Army num="1" AI="true" aiProfile="Balanced" name="Hoarders of Valuable Truth" color="Blue" alliedWith="2" assignRoster="-1"></Army>
+	<Army num="0" AI="false" aiProfile="Balanced" name="Curious Adventurers" color="Black" alliedWith="" assignRoster="-1"></Army>
+	<Army num="1" AI="true" aiProfile="Balanced" name="Pretenders" color="Blue" alliedWith="2,99" assignRoster="-1"></Army>
 	<Army num="2" AI="true" aiProfile="Balanced" name="Inactive Golem" color="White" alliedWith="1" assignRoster="-1"></Army>
 	
 	<Condition>Global Lighting,.9,1,.8,.6,.6</Condition>
-	<Condition>Defeat Army,0,1</Condition>
+	<Condition>Defeat Army,1,0</Condition>
 	<Condition>Deployment,0,0,Battle Prep,6</Condition>
 	<Condition>Death Rules,Back at Full</Condition>
 	<Condition>Recover,0,1,1</Condition>
@@ -18,8 +18,8 @@
 	<Tileset>02,Cave</Tileset>
 	<Tileset>03,Snow</Tileset>
 	<Tileset>04,Street</Tileset>
-	<Tileset>05,Water</Tileset>
-	<Tileset>06,Dirt</Tileset>
+	<Tileset>05,Dirt</Tileset>
+	<Tileset>06,Water</Tileset>
 	
 	<Row>01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01</Row>
 	<Row>01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.01</Row>
@@ -28,23 +28,23 @@
 	<Row>01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.0Q,02.01,02.01,02.01,01.0P,01.01,01.01,01.01,01.01,01.01,01.01,01.01</Row>
 	<Row>01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.0Q,02.01,02.01,02.01,01.0P,01.01,01.01,01.01,01.01,01.01,01.01,01.01</Row>
 	<Row>01.01,01.01,01.01,01.01,01.01,01.01,01.01,01.0Q,02.01,02.01,02.01,01.0P,01.01,01.01,01.01,01.01,01.01,01.01,01.01</Row>
-	<Row>01.0C,01.0O,01.0O,01.0O,01.0W,01.01,01.01,01.0Q,02.01,02.01,02.01,01.0P,01.01,01.01,01.01,01.01,01.01,01.01,01.01</Row>
-	<Row>03.01,02.0z,02.01,02.01,01.0S,01.0O,01.0O,01.0T,02.01,02.01,02.01,01.0S,01.0O,01.0O,01.0W,01.01,01.01,01.01,01.01</Row>
+	<Row>01.0C,01.0O,01.0O,01.0O,01.0W,01.01,01.0X,01.0T,02.01,02.01,02.01,01.0P,01.01,01.01,01.01,01.01,01.01,01.01,01.01</Row>
+	<Row>03.01,02.0z,02.01,02.01,01.0S,01.0O,01.0T,02.01,02.01,02.01,02.01,01.0S,01.0O,01.0O,01.0W,01.01,01.01,01.01,01.01</Row>
 	<Row>03.01,02.0z,02.01,02.01,02.01,02.01,02.01,02.01,02.01,02.01,02.01,02.01,02.01,02.01,01.0P,01.01,01.01,01.01,01.01</Row>
 	<Row>03.01,02.0z,02.01,02.01,02.01,02.01,02.01,02.01,02.01,02.01,02.01,02.01,02.01,02.01,01.0P,01.01,01.01,01.01,01.01</Row>
 	<Row>03.01,02.0z,02.01,02.01,02.01,02.01,02.01,02.01,02.01,02.01,02.01,02.01,02.01,02.01,01.0P,01.01,01.01,01.01,01.01</Row>
 	<Row>03.01,02.0z,02.01,02.01,02.01,02.01,02.01,02.01,02.01,02.01,02.01,02.01,02.01,02.01,01.0P,01.01,01.01,01.01,01.01</Row>
-	<Row>03.01,02.0C,02.0y,02.0y,02.0y,02.0y,02.0y,02.0G,04.07,04.06,02.01,02.01,02.0H,02.0y,01.0P,01.01,01.01,01.01,01.01</Row>
-	<Row>03.01,03.01,03.01,03.01,03.01,03.01,03.01,02.0z,04.1L,04.1M,02.01,03.07,03.06,03.01,01.0D,01.01,01.01,01.01,01.01</Row>
-	<Row>03.2R,03.06,03.2R,03.2R,03.06,03.0K,03.3F,03.3I,04.01,04.01,03.3I,03.46,03.08,03.0S,01.0G,01.0C,01.0C,01.0C,01.0C</Row>
-	<Row>03.01,03.02,03.2R,03.2R,03.06,05.01,06.0O,06.0K,04.1L,04.1M,06.0K,06.0P,05.01,03.0L,03.01,03.01,03.01,03.01,03.01</Row>
-	<Row>03.01,03.01,03.01,03.04,03.08,05.01,05.01,05.01,04.1L,04.1M,05.01,05.01,05.01,03.0O,03.0K,03.0K,03.0S,03.01,03.01</Row>
-	<Row>03.01,03.01,03.01,03.2Q,03.2Q,04.1c,04.1c,04.1c,04.1L,04.02,03.06,03.0R,05.01,05.01,05.01,05.01,03.3F,03.3I,03.3I</Row>
-	<Row>03.2O,03.2O,03.2O,03.42,03.3G,04.1K,04.1K,04.1K,04.03,04.0P,03.2Q,03.0M,05.01,05.01,05.01,05.01,05.01,05.01,05.01</Row>
-	<Row>03.2O,03.2O,03.2O,03.2O,03.2O,04.1J,04.1J,03.05,03.01,03.04,03.08,03.0V,03.07,03.2R,03.06,03.0N,03.0R,05.01,05.01</Row>
-	<Row>03.01,03.01,03.01,03.01,03.01,04.0L,04.0T,03.09,03.05,03.2Q,03.01,03.01,03.09,03.05,03.02,03.06,03.0M,05.01,05.01</Row>
-	<Row>04.0N,04.0N,04.0N,04.0N,04.0N,04.0U,04.0M,03.01,03.2P,03.02,03.06,03.01,03.01,03.09,03.05,03.2Q,03.0P,05.01,05.01</Row>
-	<Row>04.01,04.01,04.01,04.01,04.01,04.01,04.0M,03.01,03.2P,03.01,03.2Q,03.01,03.01,03.01,03.2P,03.2Q,05.01,05.01,05.01</Row>
+	<Row>03.01,02.0C,02.0y,02.0y,02.0y,02.0y,02.0y,02.0G,04.07,04.06,02.01,02.01,02.01,02.01,01.0P,01.01,01.01,01.01,01.01</Row>
+	<Row>03.01,03.01,03.01,03.01,03.01,03.01,03.01,02.0z,04.1L,04.1M,02.01,03.07,03.06,05.01,01.03,01.01,01.01,01.01,01.01</Row>
+	<Row>03.2R,03.06,03.2R,03.2R,03.06,03.0K,03.3F,03.3I,04.01,04.01,03.3I,03.46,03.08,05.0y,01.06,01.02,01.02,01.02,01.02</Row>
+	<Row>03.01,03.02,03.2R,03.2R,03.06,06.01,05.0O,05.0K,04.1L,04.1M,03.0K,03.0K,03.0K,03.0S,05.0C,05.0y,05.0y,05.0y,05.0y</Row>
+	<Row>03.01,03.01,03.01,03.04,03.08,06.01,06.01,06.01,04.1L,04.1M,06.01,06.01,06.01,03.0L,03.01,03.01,03.01,03.01,03.01</Row>
+	<Row>03.01,03.01,03.01,03.2Q,03.2Q,04.1c,04.1c,04.1c,04.1L,04.02,03.06,03.0R,06.01,03.0O,03.0K,03.0K,03.3F,03.3I,03.3I</Row>
+	<Row>03.2O,03.2O,03.2O,03.42,03.3G,04.1K,04.1K,04.1K,04.03,04.0P,03.2Q,03.0M,06.01,06.01,06.01,06.01,06.01,06.01,06.01</Row>
+	<Row>03.2O,03.2O,03.2O,03.2O,03.2O,04.1J,04.1J,03.05,03.01,03.04,03.08,03.0V,03.07,03.2R,03.06,03.0N,03.0R,06.01,06.01</Row>
+	<Row>03.01,03.01,03.01,03.01,03.01,04.0L,04.0T,03.09,03.05,03.2Q,03.01,03.01,03.09,03.05,03.02,03.06,03.0M,06.01,06.01</Row>
+	<Row>04.0N,04.0N,04.0N,04.0N,04.0N,04.0U,04.0M,03.01,03.2P,03.02,03.06,03.01,03.01,03.09,03.05,03.2Q,03.0P,06.01,06.01</Row>
+	<Row>04.01,04.01,04.01,04.01,04.01,04.01,04.0M,03.01,03.2P,03.01,03.2Q,03.01,03.01,03.01,03.2P,03.2Q,06.01,06.01,06.01</Row>
 	
 	<RowElev>1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1</RowElev>
 	<RowElev>3,3,3,3,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1</RowElev>
@@ -55,16 +55,16 @@
 	<RowElev>1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1</RowElev>
 	<RowElev>1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1</RowElev>
 	<RowElev>1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1</RowElev>
-	<RowElev>1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2</RowElev>
 	<RowElev>1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1</RowElev>
 	<RowElev>1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1</RowElev>
-	<RowElev>1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0</RowElev>
+	<RowElev>1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1</RowElev>
+	<RowElev>1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1</RowElev>
 	<RowElev>1,1,1,1,1,1,1,1,2,2,1,1,1,1,1,1,1,1,1</RowElev>
 	<RowElev>1,1,1,1,1,1,1,1,2,2,1,2,2,1,1,1,1,1,1</RowElev>
 	<RowElev>3,3,2,2,2,1,2,2,2,2,2,2,2,1,1,1,1,1,1</RowElev>
-	<RowElev>3,3,3,3,3,0,1,1,2,2,1,1,0,1,1,1,1,1,1</RowElev>
+	<RowElev>3,3,3,3,3,0,1,1,2,2,1,1,1,1,1,1,1,1,1</RowElev>
 	<RowElev>3,3,3,3,3,0,0,0,2,2,0,0,0,1,1,1,1,1,1</RowElev>
-	<RowElev>3,3,3,3,2,1,1,1,2,2,2,1,0,0,0,0,2,2,2</RowElev>
+	<RowElev>3,3,3,3,2,1,1,1,2,2,2,1,0,1,1,1,2,2,2</RowElev>
 	<RowElev>3,3,3,3,3,2,2,2,2,2,2,1,0,0,0,0,0,0,0</RowElev>
 	<RowElev>2,2,2,2,2,2,2,2,2,2,2,1,2,2,2,1,1,0,0</RowElev>
 	<RowElev>1,1,1,1,1,1,1,2,2,2,1,1,2,2,2,2,1,0,0</RowElev>
@@ -146,8 +146,8 @@
 	<Unit>0,99,Altar,4,10,None,None</Unit>
 	<Unit>0,99,CastleWallVertical,4,11,None,None</Unit>
 	<Unit>0,99,CastleWallVertical,4,14,None,None</Unit>
-	<Unit>0,99,Rug,4,15,None,None</Unit>
-	<Unit trigger="Use Once,OpenLanternRoom">0,99,Switch,4,15,None,None</Unit>
+	<Unit>0,99,Switch,4,15,None,None</Unit>
+	<Unit trigger="Use Once,OpenLanternRoom">0,99,Rug,4,15,None,None</Unit>
 	<Unit>0,99,RugTurq9BL,4,16,None,None</Unit>
 	<Unit>0,99,RugTurq9B,4,17,None,None</Unit>
 	<Unit>0,99,TableMap,4,17,None,None</Unit>
@@ -163,8 +163,8 @@
 	<Unit>0,99,DoorWood,5,16,None,None</Unit>
 	<Unit>0,99,CastleWallHorizontal,5,17,None,None</Unit>
 	<Unit>0,99,CastleWallHorizontal,5,18,None,None</Unit>
-	<Unit>0,99,Rug,6,3,None,None</Unit>
 	<Unit trigger="Use Once,OpenLanternRoom">0,99,Switch,6,3,None,None</Unit>
+	<Unit>0,99,Rug,6,3,None,None</Unit>
 	<Unit>0,99,CastleWallVertical,6,4,None,None</Unit>
 	<Unit>0,99,CastleWallT_W,6,7,None,None</Unit>
 	<Unit>0,99,CastleWallWindowHorizontal,6,8,None,None</Unit>
@@ -178,18 +178,17 @@
 	<Unit>0,99,CastleWallHorizontal,7,2,None,None</Unit>
 	<Unit>0,99,CastleWallHorizontal,7,3,None,None</Unit>
 	<Unit>0,99,CastleWallT_E,7,4,None,None</Unit>
-	<Unit>0,99,CastleWallVertical,7,7,None,None</Unit>
+	<Unit>0,99,CastleWallNW,7,6,None,None</Unit>
+	<Unit>0,99,CastleWallSE,7,7,None,None</Unit>
 	<Unit>0,99,RugTurq9L,7,8,None,None</Unit>
+	<Unit>0,99,Statue,7,8,None,None</Unit>
 	<Unit>0,99,RugTurq9R,7,9,None,None</Unit>
-	<Unit>0,99,Statue,7,10,None,None</Unit>
-	<Unit>0,99,CastleWallVertical,7,11,None,None</Unit>
-	<Unit>0,99,Barrel,7,12,None,None</Unit>
+	<Unit>0,99,DoorWoodVertical,7,11,None,None</Unit>
 	<Unit>0,99,CastleWallVertical,8,1,None,None</Unit>
 	<Unit>0,99,ChestAlt,8,3,None,Medicated Bandages/Focus Pills/Turbocharger</Unit>
 	<Unit>0,99,CastleWallSW,8,4,None,None</Unit>
 	<Unit>0,99,DoorWood,8,5,None,None</Unit>
-	<Unit>0,99,CastleWallT_N,8,6,None,None</Unit>
-	<Unit>0,99,CastleWallSE,8,7,None,None</Unit>
+	<Unit>0,99,CastleWallT_E,8,6,None,None</Unit>
 	<Unit>0,99,RugTurq9L,8,8,None,None</Unit>
 	<Unit>0,99,RugTurq9R,8,9,None,None</Unit>
 	<Unit>0,99,Rug,8,10,None,None</Unit>
@@ -198,7 +197,7 @@
 	<Unit>0,99,CastleWallHorizontal,8,13,None,None</Unit>
 	<Unit>0,99,CastleWallT_N,8,14,None,None</Unit>
 	<Unit>0,99,CastleWallHorizontal,8,15,None,None</Unit>
-	<Unit>0,99,CastleWallHorizontal,8,16,None,None</Unit>
+	<Unit>0,99,DoorWood,8,16,None,None</Unit>
 	<Unit>0,99,DoorWood,8,17,None,None</Unit>
 	<Unit>0,99,CastleWallHorizontal,8,18,None,None</Unit>
 	<Unit>0,99,CastleWallVertical,9,1,None,None</Unit>
@@ -213,15 +212,14 @@
 	<Unit>0,99,Bartop_CAlt,9,12,None,None</Unit>
 	<Unit>0,99,Bartop_R,9,13,None,None</Unit>
 	<Unit>0,99,CastleWallVertical,9,14,None,None</Unit>
-	<Unit>0,99,CandelabraLit,9,16,None,None</Unit>
+	<Unit>0,99,CandelabraLit,9,15,None,None</Unit>
 	<Unit>0,99,BedHorizontalAlt,9,18,None,None</Unit>
 	<Unit>0,99,CastleWallVertical,10,1,None,None</Unit>
 	<Unit>0,99,TablePapers,10,2,None,None</Unit>
 	<Unit>0,99,CastleWallVertical,10,6,None,None</Unit>
 	<Unit>0,99,RugTurq9L,10,8,None,None</Unit>
 	<Unit>0,99,RugTurq9R,10,9,None,None</Unit>
-	<Unit>0,99,Chair,10,13,None,None</Unit>
-	<Unit>0,99,CastleWallVertical,10,14,None,None</Unit>
+	<Unit>0,99,DoorWoodVertical,10,14,None,None</Unit>
 	<Unit>0,99,BedHorizontalAlt,10,18,None,None</Unit>
 	<Unit>0,99,CastleWallVertical,11,1,None,None</Unit>
 	<Unit>0,99,RackFull,11,2,None,None</Unit>
@@ -242,7 +240,7 @@
 	<Unit>0,99,CastleWallVertical,12,14,None,None</Unit>
 	<Unit>0,99,BedHorizontalAlt,12,18,None,None</Unit>
 	<Unit>0,99,CastleWallSW,13,1,None,None</Unit>
-	<Unit>0,99,RubbleCastle,13,2,None,None</Unit>
+	<Unit>0,99,BrittleRubbleCastle,13,2,None,None</Unit>
 	<Unit>0,99,CastleWallWindowHorizontal,13,3,None,None</Unit>
 	<Unit>0,99,CastleWallHorizontal,13,4,None,None</Unit>
 	<Unit>0,99,CastleWallHorizontal,13,5,None,None</Unit>
@@ -266,16 +264,18 @@
 	<Unit>0,99,TreeSnow,15,11,None,None</Unit>
 	<Unit>0,99,CastleWallSW,15,14,None,None</Unit>
 	<Unit>0,99,CastleWallHorizontal,15,15,None,None</Unit>
-	<Unit>0,99,CastleWallHorizontal,15,16,None,None</Unit>
+	<Unit>0,99,DoorWood,15,16,None,None</Unit>
 	<Unit>0,99,CastleWallHorizontal,15,17,None,None</Unit>
 	<Unit>0,99,CastleWallHorizontal,15,18,None,None</Unit>
+	<Unit>0,99,TableBeer,16,14,None,None</Unit>
+	<Unit>0,99,Barrel,16,18,None,None</Unit>
 	<Unit>0,99,FenceStoneHorizontal,17,0,None,None</Unit>
 	<Unit>0,99,FenceStoneHorizontal,17,1,None,None</Unit>
-	<Unit>0,99,RubbleCastle,17,2,None,None</Unit>
+	<Unit>0,99,BrittleRubbleCastle,17,2,None,None</Unit>
 	<Unit>0,99,FenceStoneHorizontal,17,3,None,None</Unit>
 	<Unit>0,99,FenceStoneNE,17,4,None,None</Unit>
 	<Unit>0,99,TreeDead,17,18,None,None</Unit>
-	<Unit>0,99,RubbleCastle,18,4,None,None</Unit>
+	<Unit>0,99,BrittleRubbleCastle,18,4,None,None</Unit>
 	<Unit>0,99,FenceStoneCap_S,18,10,None,None</Unit>
 	<Unit>0,99,TreeSnow,18,17,None,None</Unit>
 	<Unit>0,99,TreeSnow,19,1,None,None</Unit>
@@ -300,25 +300,26 @@
 	<Unit tag="AggroGroup,8/Passive/Pursue/LevelTo,3/Patrol,Balkwalk,+:4.0">0,1,Frostborne Charity Enthusiast/,1,6,Down,None</Unit>
 	<Unit tag="AggroGroup,8/LevelTo,1/ID,994">0,1,Frost Golem/,1,12,Down,None</Unit>
 	<Unit tag="AggroGroup,6/Passive/Pursue/LevelTo,5">0,1,Charatass/,2,0,Right,Blessing of Frost[E]</Unit>
-	<Unit tag="AggroGroup,8/Passive/Pursue/LevelTo,3/Patrol,Balkwalk,+:4.0">0,1,Hired Mercenary Guard/,2,13,Down,None</Unit>
-	<Unit tag="AggroGroup,5/Passive/Pursue/LevelTo,3/Guard,Jules Acepocket">0,1,Hired Mercenary Guard/,2,18,Down,None</Unit>
+	<Unit tag="AggroGroup,1/LevelTo,1/ID,993">0,1,Frost Golem/,2,18,Left,None</Unit>
 	<Unit tag="AggroGroup,5/Passive/Pursue/LevelTo,5">0,1,Jules/Acepocket,3,16,Left,Blessing of Frost[E]</Unit>
 	<Unit tag="AggroGroup,6/Passive/Pursue/LevelTo,3/Guard,Charatass/ID,990">0,1,Frost Golem/,5,0,Right,None</Unit>
-	<Unit tag="AggroGroup,8/Passive/Pursue/LevelTo,3/Patrol,Balkwalk,+:4.0">0,1,Hired Mercenary Guard/,7,6,Left,None</Unit>
+	<Unit tag="AggroGroup,8/Passive/Pursue/LevelTo,3/Patrol,Balkwalk,+:4.0">0,1,Hired Mercenary Guard/,6,6,Left,None</Unit>
 	<Unit tag="AggroGroup,1/Passive/Pursue/LevelTo,3/Patrol,Main Room,+:4.0">0,1,Frostborne Charity Enforcer/,8,10,Down,None</Unit>
-	<Unit tag="AggroGroup,1/LevelTo,1/ID,993">0,1,Frost Golem/,10,7,Right,None</Unit>
-	<Unit tag="AggroGroup,2/Passive/Pursue/LevelTo,3">0,1,Hired Townie/,10,17,Down,None</Unit>
+	<Unit tag="AggroGroup,0/LevelTo,1">0,1,Frost Golem/,10,7,Right,None</Unit>
+	<Unit tag="AggroGroup,2/Passive/Pursue/LevelTo,3">0,1,Hired Townie/,10,17,Left,None</Unit>
 	<Unit tag="AggroGroup,1/Passive/Pursue/LevelTo,3/Patrol,Main Room,+:4.0">0,1,Frostborne Charity Enthusiast/,11,11,Down,None</Unit>
 	<Unit tag="AggroGroup,1/Passive/Pursue/LevelTo,3/Patrol,Main Room,+:4.0">0,1,Hired Mercenary Guard/,11,13,Left,None</Unit>
 	<Unit tag="AggroGroup,2/Passive/Pursue/LevelTo,3">0,1,Hired Mercenary Guard/,13,16,Left,None</Unit>
-	<Unit tag="AggroGroup,0/Passive/Pursue/LevelTo,3/Patrol,Main Room,=:1">0,1,Hired Townie/,14,9,Up,None</Unit>
-	<Unit tag="AggroGroup,0/Passive/Pursue/LevelTo,3">0,1,Frostborne Charity Investor/,15,8,Right,None</Unit>
+	<Unit tag="AggroGroup,1/Pursue/LevelTo,2">0,1,Frostborne Charity Investor/,15,8,Right,None</Unit>
+	<Unit tag="AggroGroup,1/Passive/Pursue/LevelTo,3/Patrol,Balkwalk,+:4.0">0,1,Hired Mercenary Guard/,16,13,Right,None</Unit>
+	<Unit tag="AggroGroup,1/Passive/Pursue/LevelTo,3/Patrol,Main Room,+:4.0">0,1,Frostborne Charity Snowmelter/,16,17,Left,None</Unit>
+	<Unit tag="AggroGroup,1/Pursue/LevelTo,2">0,1,Hired Townie/,17,14,Up,None</Unit>
 	<Unit tag="AggroGroup,0/LevelTo,1/ID,992">0,1,Frost Golem/,18,5,Down,None</Unit>
-	<Unit tag="AggroGroup,0/LevelTo,1/ID,991">0,1,Frost Golem/,18,9,Left,None</Unit>
-	<Unit tag="AggroGroup,0/LevelTo,1">0,1,Frost Golem/,22,13,Left,None</Unit>
-	<Unit tag="LevelTo,4/Guard,Apostacratus">21,1,Frostborne Charity Investor/,23,4,Up,None</Unit>
-	<Unit tag="LevelTo,5">21,1,Apostacratus/,23,5,Up,Blessing of Frost[E]</Unit>
-	<Unit tag="LevelTo,4/Guard,Apostacratus">21,1,Frostborne Charity Enforcer/,23,6,Up,None</Unit>
+	<Unit tag="AggroGroup,0/LevelTo,1/ID,991">0,1,Frost Golem/,19,7,Left,None</Unit>
+	<Unit tag="LevelTo,4/Guard,Apostacratus">30,1,Frostborne Charity Investor/,23,4,Up,None</Unit>
+	<Unit tag="LevelTo,5">30,1,Apostacratus/,23,5,Up,Blessing of Frost[E]</Unit>
+	<Unit tag="LevelTo,4/Guard,Apostacratus">30,1,Frostborne Charity Enforcer/,23,6,Up,None</Unit>
+	<Unit tag="LevelTo,4/Guard,Apostacratus">30,1,Frostborne Charity Snowmelter/,23,7,Up,None</Unit>
 	<Unit tag="Inactive/LevelTo,5">0,2,Deactivated Frost Golem/,8,2,Down,None</Unit>
 
 	<Script>Grab Lantern
@@ -398,7 +399,7 @@
 	</Dialogue>
 
 	<Dialogue trigger="None/" convID="Grab Lantern Dialogue" r="false">
-		<Branch num="0" name="">Laina Bigspook/H-ahhh this room is cold. [She shivers] What's this thing? A... lantern? [She reaches out towards the altar]
+		<Branch num="0" name="">Laina Bigspook/H-ahhh this room is cold. [She shivers] What's this thing? A... lantern?
 			<Action>SetVal/Lantern Grabbed,=:1</Action>
 			<Action>RemoveUnit/Mysterious Lantern</Action>
 			<Action>AddPortrait/Laina/Bigspook,Laina Bigspook,left,Black,Quizzical</Action>
@@ -485,7 +486,8 @@
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
 		<Branch num="3" name="">Rustler/Ussselesss to usss now... Unlesss we can turn it back on, sssomehow?
-			<Action>AddPortrait/Rustler/,Rustler/,right,Black,Quizzical</Action>
+			<Action>RemovePortrait/Jerald/Swiftrig</Action>
+			<Action>AddPortrait/Rustler/,Rustler/,left,Black,Quizzical</Action>
 			<Reply>Continue./EndConv</Reply>
 		</Branch>
 		<Branch num="0" name="Has Lantern">Deactivated Frost Golem/[The golem responds to the lantern, slowly rising with the sound of shifting ice] WHAT AM I?
@@ -604,7 +606,7 @@
 		</Branch>
 	</Dialogue>
 
-	<Dialogue trigger="OnTurn/15" convID="Apostacratus Arrives" r="false">
+	<Dialogue trigger="OnTurn/30" convID="Apostacratus Arrives" r="false">
 		<Branch num="0" name="">Apostacratus/What the frost is going on here?
 			<Action>AddPortrait/Apostacratus/,Apostacratus/,left,Blue,Mad,20,0</Action>
 			<Action>MovePortrait/Apostacratus/,15,0,80</Action>
@@ -633,7 +635,7 @@
 		</Branch>
 	</Dialogue>
 
-	<Dialogue trigger="OnTurn/18" convID="Apostacratus Will Arrive" r="false">
+	<Dialogue trigger="OnTurn/27" convID="Apostacratus Will Arrive" r="false">
 		<Branch num="0" name="">Sooth/[Sooth senses a presence. He looks to the south and smirks] Some of our friends will be here soon.
 			<Action>AddPortrait/Sooth/,Sooth/,right,Black,Quizzical</Action>
 			<Reply>Continue./NextBranch</Reply>

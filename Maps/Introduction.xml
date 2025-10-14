@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Level mapname="Introduction" maptype="Cut Scene: Static" maxplayers="1" musictrack="" winAura="0" nextbattle="First Battle" saveable="true" saveCheck="false" campaign="Secret Jam" lastEdited="10/12/2025 8:28:47 PM">
+<Level mapname="Introduction" maptype="Cut Scene: Static" maxplayers="1" musictrack="" winAura="0" nextbattle="First Battle" saveable="true" saveCheck="false" campaign="Secret Jam" lastEdited="10/13/2025 10:07:05 PM">
 
 	<Narration> -DIA:Introduction-| -PIC:Cave_Sandstone- -DIA:Setting Establishing-| -DIA:Visitors Arrive- -PIC:Cave-| -DIA:Effect of Visitors-    -PIC:Town_Night-|   -DIA:Infiltration-      -PIC:Castle_Night-</Narration>
 	
@@ -39,12 +39,13 @@
 			<Reply>Yes, add my custom characters to the roster./NextBranch</Reply>
 		</Branch>
 		<Branch num="1" name="">/
-			<Action>CustomCharsToRoster/0,true</Action>
+			<Action>Run/AddCustomCharactersToRoster</Action>
+			<Action>NextFrame/</Action>
 		</Branch>
 	</Dialogue>
 
 	<Dialogue trigger="None/" convID="Setting Establishing" r="false">
-		<Branch num="0" name="">Tillie Starwright/Our story takes place in the small town of Glaer. Every summer, the unbearable sun finds a perfect and horrible place in the sky. Without intervention, our people wilt, our crops wither, and our joy dries out.
+		<Branch num="0" name="">Tillie Starwright/Our story takes place in the small town of Glaer. Spring has come and gone, and now we near the most dreaded season--summer. The sun will find an unbearable and horrible place in the sky. Without intervention, our people wilt, our crops wither, and our joy dries out.
 			<Action>AddPortrait/Tillie/Starwright,Tillie Starwright,right,Black,Sad,-4,1</Action>
 			<Action>MovePortrait/Tillie/Starwright,-2,1,60</Action>
 			<Reply>Continue./NextFrame</Reply>
@@ -52,7 +53,7 @@
 	</Dialogue>
 
 	<Dialogue trigger="None/" convID="Effect of Visitors" r="false">
-		<Branch num="0" name="">Tillie Starwright/I've been paying close attention. Each year, some new set of esoteric hand motions. Some new chant and rhyme that makes the cold happen. Then they leave as quickly as they came. It's as if they're making it up - that they don't even understand their own powers.
+		<Branch num="0" name="">Tillie Starwright/I've been paying close attention. Each year, some new set of esoteric hand motions. A different group of people in different robes. Some new chant and rhyme that makes the cold happen. Then they leave as quickly as they came. It's as if they're making it up - that they don't even understand their own powers.
 			<Action>AddPortrait/Tillie/Starwright,Tillie Starwright,right,Black,Concerned,-2,1</Action>
 			<Action>AddPortrait/Jules/Acepocket,Jules Acepocket,left,Blue,Happy,16,0</Action>
 			<Reply>Continue./NextBranch</Reply>
@@ -76,7 +77,7 @@
 			<Action>AddPortrait/Sooth/,Sooth/,left,Black,Amused,22,0</Action>
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
-		<Branch num="1" name="">Tillie Starwright/That power should belong to us.
+		<Branch num="1" name="">Tillie Starwright/That power should belong to reasonable people, like us.
 			<Action>ChangeExpression/Bront/the Unbelievable,Mean</Action>
 			<Action>ChangeExpression/Rustler/,Mean</Action>
 			<Action>ChangeExpression/Sooth/,Mean</Action>
@@ -88,7 +89,7 @@
 	</Dialogue>
 
 	<Dialogue trigger="None/" convID="Visitors Arrive" r="false">
-		<Branch num="0" name="">Tillie Starwright/But [i]luckily[/i] each summer finds some new group of [i]saviors[/i], offerring protection from the sun. As long as I can remember, every season has had some variation of "give us gold and we'll give you cold". How [i]generous[/i].
+		<Branch num="0" name="">Tillie Starwright/Luckily for our little town, we are regularly [i]blessed[/i] by the goodwill of outsiders. Every year, someone or other comes along, and clouds out the sun with a spell of frost. All in exchange for a [i]little[/i] tribute.
 			<Action>AddPortrait/Jules/Acepocket,Jules Acepocket,left,Blue,Happy,26,0</Action>
 			<Action>AddPortrait/Charatass/,Charatass/,left,Blue,Happy,30,1</Action>
 			<Action>AddPortrait/Tillie/Starwright,Tillie Starwright,right,Black,Concerned,-2,1</Action>
@@ -98,7 +99,7 @@
 			<Action>AddPortrait/Grumbly/Leader,Grumbly Leader,left,Orange,Sad,10,1</Action>
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>
-		<Branch num="1" name="">Tillie Starwright/The people of Glaer would happily give anything for respite from the sun. When offered a less intense hot-season in exchange for some tribute, the town happily buys in.
+		<Branch num="1" name="">Tillie Starwright/The people of Glaer would happily give anything for respite from the sun. When offered a less intense hot-season in exchange for fealty, the town happily buys in.
 			<Action>FlipPortrait/Grumbly/Leader</Action>
 			<Action>ChangeExpression/Upset/Villager,Happy</Action>
 			<Action>ChangeExpression/Grumbly/Leader,Happy</Action>

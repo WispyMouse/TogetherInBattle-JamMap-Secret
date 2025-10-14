@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Level mapname="Second Battle" maptype="Single Player" maxplayers="4" battleBG="" musictrack="Form Up!" winAura="0" winMorale="0" lossMorale="0" nextbattle="Final Scene" defeatScene="" saveable="true" procgen="false" campaign="Secret Jam" lastEdited="10/12/2025 10:59:18 PM">
+<Level mapname="Second Battle" maptype="Single Player" maxplayers="4" battleBG="" musictrack="Form Up!" winAura="0" winMorale="0" lossMorale="0" nextbattle="Final Scene" defeatScene="" saveable="true" procgen="false" campaign="Secret Jam" lastEdited="10/13/2025 10:07:51 PM">
 
-	<Army num="0" AI="false" aiProfile="Balanced" name="Coldfront" color="Black" alliedWith="" assignRoster="0"></Army>
+	<Army num="0" AI="false" aiProfile="Balanced" name="The New Coldfront" color="Black" alliedWith="" assignRoster="0"></Army>
 	<Army num="1" AI="true" aiProfile="Aggressive" name="Disrespectful Upstarts" color="Red" alliedWith="2,3" assignRoster="-1"></Army>
 	<Army num="2" AI="true" aiProfile="Balanced" name="Spiteful Liars" color="Blue" alliedWith="1" assignRoster="-1"></Army>
 	<Army num="3" AI="true" aiProfile="Arena" name="Ungrateful Villagers" color="Orange" alliedWith="1" assignRoster="-1"></Army>
