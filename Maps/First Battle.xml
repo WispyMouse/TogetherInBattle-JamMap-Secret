@@ -328,13 +328,6 @@
 		<Action>LoadConv/Grab Lantern Dialogue</Action>
 	</Script>
 
-	<Script>Give Everyone Blessing of Frost
-		<Action>RosterToList/Everyone,0,true</Action>
-		<Action>RemoveFromList/Everyone,Coolio Frostybones</Action>
-		<Action>ForLoop/-ii-,0-LASTINLIST[Everyone],1,GiveItem,LIST{Everyone,-ii-},Blessing of Frost,,,true</Action>
-		<Action>LearnSkill/Bront the Unbelievable,Borrowed Frost Breath,false</Action>
-	</Script>
-
 	<Script>_AlertInside
 		<Action>Log/Informing enemies!</Action>
 		<Action>LoadConv/Alert Inside Enemies</Action>

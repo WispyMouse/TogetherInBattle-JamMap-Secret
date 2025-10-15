@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Level mapname="Between" maptype="Cut Scene: Static" maxplayers="1" musictrack="" winAura="0" nextbattle="Second Battle" saveable="true" saveCheck="true" campaign="Secret Jam" lastEdited="10/12/2025 1:38:26 PM">
+<Level mapname="Between" maptype="Cut Scene: Static" maxplayers="1" musictrack="" winAura="0" nextbattle="Second Battle" saveable="true" saveCheck="true" campaign="Secret Jam" lastEdited="10/14/2025 11:32:48 PM">
 
-	<Narration>  -DIA:Between Start- -PIC:Castle_Night-| -DIA:We Have It- -PIC:Cave-| -DIA:Giving To The People-  -PIC:Town_Night-| -DIA:But One Day- -PIC:Psy_Academy_Night-</Narration>
+	<Narration>  -DIA:Between Start- -PIC:Castle_Night-| -DIA:We Have It- -PIC:Cave-| -DIA:Giving To The People-  -PIC:Town_Night-</Narration>
 	
 	<NewRoster num="0"></NewRoster>
 
@@ -19,6 +19,15 @@
 		<Action>AddBark/Tillie Starwright,Deployment,Pay no mind to the thing in the altar room. It is a prop;; you see.</Action>
 		<Action>AddBark/Jerald Swiftrig,Deployment,As if you lot could even operate such a complicated device. The documentation on this [i]wondrous power[/i] is lacking;; and so are your mental faculties!</Action>
 		<Action>AddBark/Coolio Frostybones,Deployment,WITHOUT EXCEPTION, NONE HERE ARE MEANT TO WIELD THE LANTERN.</Action>
+		<Action>Run/Give Everyone Blessing of Frost</Action>
+		<Action>RemoveBarks/Coolio Frostybones,Attack</Action>
+		<Action>RemoveBarks/Coolio Frostybones,Victory</Action>
+		<Action>AddBark/Coolio Frostybones,Attack,THE GREATNESS OF BRONT IS ILLOGICAL.</Action>
+		<Action>AddBark/Coolio Frostybones,Attack,BRONT HOLDS POWER BEYOND ALL BELIEF.</Action>
+		<Action>AddBark/Coolio Frostybones,Attack,MOST THINGS ARE BENEATH BRONT WHILE HE IS FLYING.</Action>
+		<Action>AddBark/Coolio Frostybones,Victory,PLEASE GIVE US MONEY.</Action>
+		<Action>AddBark/Coolio Frostybones,Victory,[A crackling imitation comes from the Golem] Yeah!</Action>
+		<Action>AddBark/Coolio Frostybones,Victory,THIS COULD HAVE BEEN AVOIDED IF ANYONE COMMUNICATED SINCERELY.</Action>
 	</Script>
 
 	<Dialogue trigger="None/" convID="Between Start" r="false">
@@ -59,7 +68,8 @@
 
 	<Dialogue trigger="None/" convID="Giving To The People" r="false">
 		<Branch num="0" name="">Tillie Starwright/And so, we returned to the town. To grand reception, it was announced that we--[b]The New Coldfront[/b]--would bring the frost this year. Got a little shrine and everything.
-			<Action>AddPortrait/Tillie/Starwright,Tillie Starwright,right,Black,-6,1</Action>
+			<Action>RemovePortrait/Tillie/Starwright</Action>
+			<Action>AddPortrait/Tillie/Starwright,Tillie Starwright,right,Black,Kind,-6,1</Action>
 			<Action>MovePortrait/Tillie/Starwright,-2,1,80</Action>
 			<Reply>Continue./NextBranch</Reply>
 		</Branch>

@@ -56,5 +56,12 @@
 		<Action>SpawnFloatingTextAt/Got 1 aura!,-Y-,-X-,0xFFFF00,15</Action>
 		<Action>PlaySound/Coins Jingle</Action>
 	</Script>
+	
+	<Script>Give Everyone Blessing of Frost
+		<Action>RosterToList/Everyone,0,true</Action>
+		<Action>RemoveFromList/Everyone,Coolio Frostybones</Action>
+		<Action>ForLoop/-ii-,0-LASTINLIST[Everyone],1,GiveItem,LIST{Everyone,-ii-},Blessing of Frost,,,true</Action>
+		<Action>LearnSkill/Bront the Unbelievable,Borrowed Frost Breath,false</Action>
+	</Script>
 
 </PersistentDialogue>
