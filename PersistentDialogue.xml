@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<PersistentDialogue desc="Dialogue and scripts that are universally available in every scene in the campaign (e.g. death monologues or scripts used in items and skills)." campaign="Secret Jam" lastEdited="10/13/2025 10:03:51 PM">
+<PersistentDialogue desc="Dialogue and scripts that are universally available in every scene in the campaign (e.g. death monologues or scripts used in items and skills)." campaign="Secret Jam" lastEdited="10/15/2025 7:54:59 PM">
 
 	<Script>Initialize_Try
 		<Action>Log/Running Initialize_Try. Have we already initialized? (-VAL:Initialized-)</Action>
@@ -15,7 +15,6 @@
 		<Action>Run/Recruit If Not Recruited,Recruit Name,Sooth,Recruit Load ID,Sooth:</Action>
 		<Action>Run/Recruit If Not Recruited,Recruit Name,Jerald Swiftrig,Recruit Load ID,Jerald:Swiftrig</Action>
 		<Action>Run/Recruit If Not Recruited,Recruit Name,Rustler,Recruit Load ID,Rustler:</Action>
-		<Action>Run/LevelRoster</Action>
 		<Action>SetVal/Custom Characters Used,=:0</Action>
 		<Action>Log/Recruited default units.</Action>
 	</Script>
@@ -25,11 +24,10 @@
 		<Action>CustomCharsToRoster/0,true</Action>
 		<Action>SetVal/Custom Characters Used,=:1</Action>
 		<Action>SwitchRoster/0</Action>
-		<Action>Run/LevelRoster</Action>
 	</Script>
 
 	<Script>LevelRoster
-		<Action>LevelUpArmy/0,,4,true</Action>
+		<Action>LevelUpArmy/0,0,4</Action>
 	</Script>
 
 	<Script>RecruitFrostGolem
@@ -56,7 +54,7 @@
 		<Action>SpawnFloatingTextAt/Got 1 aura!,-Y-,-X-,0xFFFF00,15</Action>
 		<Action>PlaySound/Coins Jingle</Action>
 	</Script>
-	
+
 	<Script>Give Everyone Blessing of Frost
 		<Action>RosterToList/Everyone,0,true</Action>
 		<Action>RemoveFromList/Everyone,Coolio Frostybones</Action>

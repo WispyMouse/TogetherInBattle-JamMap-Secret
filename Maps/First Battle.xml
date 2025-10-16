@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Level mapname="First Battle" maptype="Single Player" maxplayers="3" battleBG="" musictrack="Against the Cult" winAura="0" winMorale="0" lossMorale="0" nextbattle="Between" defeatScene="" saveable="true" procgen="false" campaign="Secret Jam" lastEdited="10/14/2025 3:24:54 PM">
+<Level mapname="First Battle" maptype="Single Player" maxplayers="3" battleBG="" musictrack="Against the Cult" winAura="0" winMorale="0" lossMorale="0" nextbattle="Between" defeatScene="" saveable="true" procgen="false" campaign="Secret Jam" lastEdited="10/15/2025 8:41:57 PM">
 
-	<Army num="0" AI="false" aiProfile="Balanced" name="Curious Adventurers" color="Black" alliedWith="" assignRoster="-1"></Army>
+	<Army num="0" AI="false" aiProfile="Balanced" name="Curious Adventurers" color="Black" alliedWith="" assignRoster="0"></Army>
 	<Army num="1" AI="true" aiProfile="Balanced" name="Pretenders" color="Blue" alliedWith="2,99" assignRoster="-1"></Army>
-	<Army num="2" AI="true" aiProfile="Balanced" name="Inactive Golem" color="White" alliedWith="1" assignRoster="-1"></Army>
+	<Army num="2" AI="false" aiProfile="Balanced" name="Inactive Golem" color="White" alliedWith="1,99" assignRoster="-1"></Army>
 	
 	<Condition>Global Lighting,.9,1,.8,.6,.6</Condition>
 	<Condition>Defeat Army,1,0</Condition>
@@ -148,8 +148,8 @@
 	<Unit>0,99,Altar,4,10,None,None</Unit>
 	<Unit>0,99,CastleWallVertical,4,11,None,None</Unit>
 	<Unit>0,99,CastleWallVertical,4,14,None,None</Unit>
-	<Unit>0,99,SwitchAltar,4,15,None,None</Unit>
 	<Unit trigger="Use Once,OpenLanternRoom">0,99,Rug,4,15,None,None</Unit>
+	<Unit>0,99,SwitchAltar,4,15,None,None</Unit>
 	<Unit>0,99,RugTurq9BL,4,16,None,None</Unit>
 	<Unit>0,99,RugTurq9B,4,17,None,None</Unit>
 	<Unit>0,99,TableMap,4,17,None,None</Unit>
@@ -165,8 +165,8 @@
 	<Unit>0,99,DoorWood,5,16,None,None</Unit>
 	<Unit>0,99,CastleWallHorizontal,5,17,None,None</Unit>
 	<Unit>0,99,CastleWallHorizontal,5,18,None,None</Unit>
-	<Unit>0,99,SwitchAltar,6,3,None,None</Unit>
 	<Unit trigger="Use Once,OpenLanternRoom">0,99,Rug,6,3,None,None</Unit>
+	<Unit>0,99,SwitchAltar,6,3,None,None</Unit>
 	<Unit>0,99,CastleWallVertical,6,4,None,None</Unit>
 	<Unit>0,99,CastleWallT_W,6,7,None,None</Unit>
 	<Unit>0,99,CastleWallWindowHorizontal,6,8,None,None</Unit>
@@ -217,7 +217,6 @@
 	<Unit>0,99,BedHorizontalAlt,9,18,None,None</Unit>
 	<Unit>0,99,CastleWallVertical,10,1,None,None</Unit>
 	<Unit>0,99,TablePapers,10,2,None,None</Unit>
-	<Unit>0,99,CandelabraLit,10,5,None,None</Unit>
 	<Unit>0,99,CastleWallVertical,10,6,None,None</Unit>
 	<Unit>0,99,RugTurq9L,10,8,None,None</Unit>
 	<Unit>0,99,RugTurq9R,10,9,None,None</Unit>
@@ -232,7 +231,7 @@
 	<Unit>0,99,Barrel,11,16,None,None</Unit>
 	<Unit>0,99,RackSparse,11,18,None,None</Unit>
 	<Unit>0,99,CastleWallVertical,12,1,None,None</Unit>
-	<Unit>0,99,ItemSack,12,5,None,Steel Claw/Blue Orb/Pie/Bandages</Unit>
+	<Unit>0,99,ItemSack,12,5,None,Steel Claw/Pie/Bandages/Grapple Chain</Unit>
 	<Unit>0,99,CastleWallVertical,12,6,None,None</Unit>
 	<Unit>0,99,TableFood,12,7,None,None</Unit>
 	<Unit>0,99,RugTurq9L,12,8,None,None</Unit>
@@ -411,13 +410,13 @@
 			<Action>AddPortrait/Rustler/,Rustler/,left,Black,Headache,12</Action>
 			<Action>AddPortrait/Laina/Bigspook,Laina Bigspook,left,Black,Headache,17,0</Action>
 			<Action>AddPortrait/Sooth/,Sooth/,left,Black,Headache,22,0</Action>
-			<Action>PortraitParticles/Bront/the Unbelievable,SparkleBurst,1</Action>
-			<Action>PortraitParticles/Jerald/Swiftrig,SparkleBurst,2</Action>
-			<Action>PortraitParticles/Tillie/Starwright,SparkleBurst,3</Action>
-			<Action>PortraitParticles/Rustler/,SparkleBurst,4</Action>
-			<Action>PortraitParticles/Laina/Bigspook,SparkleBurst,5</Action>
-			<Action>PortraitParticles/Sooth/,SparkleBurst,6</Action>
-			<Action>Wait/6</Action>
+			<Action>PortraitParticles/Bront/the Unbelievable,SparkleBurst,0</Action>
+			<Action>PortraitParticles/Jerald/Swiftrig,SparkleBurst,1</Action>
+			<Action>PortraitParticles/Tillie/Starwright,SparkleBurst,2</Action>
+			<Action>PortraitParticles/Rustler/,SparkleBurst,3</Action>
+			<Action>PortraitParticles/Laina/Bigspook,SparkleBurst,4</Action>
+			<Action>PortraitParticles/Sooth/,SparkleBurst,5</Action>
+			<Action>Wait/5</Action>
 			<Action>ChangeExpression/Bront/the Unbelievable,Happy</Action>
 			<Action>ChangeExpression/Jerald/Swiftrig,Happy</Action>
 			<Action>ChangeExpression/Tillie/Starwright,Happy</Action>
