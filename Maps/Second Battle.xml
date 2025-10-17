@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Level mapname="Second Battle" maptype="Single Player" maxplayers="4" battleBG="" musictrack="Form Up!" winAura="0" winMorale="0" lossMorale="0" nextbattle="Final Scene" defeatScene="" saveable="true" procgen="false" campaign="Secret Jam" lastEdited="10/15/2025 7:41:09 PM">
+<Level mapname="Second Battle" maptype="Single Player" maxplayers="4" battleBG="" musictrack="Form Up!" winAura="0" winMorale="0" lossMorale="0" nextbattle="Final Scene" defeatScene="" saveable="true" procgen="false" campaign="Secret Jam" lastEdited="10/16/2025 5:50:12 PM">
 
-	<Army num="0" AI="false" aiProfile="Balanced" name="The New Coldfront" color="Black" alliedWith="" assignRoster="0"></Army>
+	<Army num="0" AI="false" aiProfile="Balanced" name="The New Coldfront" color="Black" alliedWith="" assignRoster="-1"></Army>
 	<Army num="1" AI="true" aiProfile="Aggressive" name="Disrespectful Upstarts" color="Red" alliedWith="" assignRoster="-1"></Army>
 	<Army num="2" AI="true" aiProfile="Balanced" name="Spiteful Liars" color="Blue" alliedWith="" assignRoster="-1"></Army>
 	<Army num="3" AI="true" aiProfile="Arena" name="Ungrateful Villagers" color="Orange" alliedWith="" assignRoster="-1"></Army>
@@ -57,7 +57,6 @@
 	<RowElev>1,1,1,1,1,1,1,1,1,1,1,1,1,1,1</RowElev>
 	<RowElev>1,1,1,1,1,1,1,1,1,1,1,1,1,1,1</RowElev>
 	
-	<Unit tag="Add,TargetValue,20">0,99,BarricadeWood,3,6,None,None</Unit>
 	<Unit>0,99,BoulderSnow,4,3,None,None</Unit>
 	<Unit>0,99,CastleSandstoneWallNW,4,4,None,None</Unit>
 	<Unit>0,99,CastleSandstoneWallHorizontal,4,5,None,None</Unit>
@@ -73,7 +72,6 @@
 	<Unit>0,99,LampAlt,5,0,None,None</Unit>
 	<Unit>0,99,CastleSandstoneWallVertical,5,4,None,None</Unit>
 	<Unit tag="Elev,=:1">0,99,BridgeIce,5,7,None,None</Unit>
-	<Unit>0,99,IcePatch,5,9,None,None</Unit>
 	<Unit>0,99,StairsSandstone_E,5,10,None,None</Unit>
 	<Unit>0,99,CastleSandstoneWallVertical,6,4,None,None</Unit>
 	<Unit tag="Elev,=:1">0,99,BridgeIce,6,7,None,None</Unit>
@@ -90,25 +88,24 @@
 	<Unit tag="Elev,=:1">0,99,BridgeIce,8,7,None,None</Unit>
 	<Unit>0,99,StairsSandstone_E,8,10,None,None</Unit>
 	<Unit tag="Add,TargetValue,10">0,99,BoulderSandstone,9,4,None,None</Unit>
-	<Unit>0,99,IcePatch,9,7,None,None</Unit>
 	<Unit>0,99,StairsSandstone_E,9,10,None,None</Unit>
+	<Unit>0,99,Switch,9,14,None,None</Unit>
 	<Unit>0,99,BridgeStone,10,1,None,None</Unit>
 	<Unit>0,99,CastleSandstoneWallSW,10,4,None,None</Unit>
 	<Unit>0,99,CastleSandstoneWallHorizontal,10,5,None,None</Unit>
-	<Unit tag="Open">0,99,DoorWood,10,6,None,None</Unit>
+	<Unit>0,99,DoorWood,10,6,None,None</Unit>
 	<Unit>0,99,CastleSandstoneWallWindowHorizontal,10,7,None,None</Unit>
 	<Unit>0,99,CastleSandstoneWallHorizontal,10,8,None,None</Unit>
 	<Unit tag="Add,TargetValue,10">0,0,RocksSandstone,10,9,None,None</Unit>
 	<Unit>0,99,CastleSandstoneWallHorizontal,10,10,None,None</Unit>
 	<Unit>0,99,CastleSandstoneWallT_N,10,11,None,None</Unit>
 	<Unit>0,99,CastleSandstoneWallWindowHorizontal,10,12,None,None</Unit>
-	<Unit tag="Add,TargetValue,20">0,99,DoorSteelHorizontal,10,13,None,None</Unit>
+	<Unit tag="Add,TargetValue,20/Locked">0,99,DoorSteelHorizontal,10,13,None,None</Unit>
 	<Unit>0,99,CastleSandstoneWallWindowHorizontal,10,14,None,None</Unit>
 	<Unit>0,99,BridgeStone,11,1,None,None</Unit>
 	<Unit tag="Elev,=:1">0,99,BridgeStone,11,1,None,None</Unit>
 	<Unit>0,99,BushSnow,11,3,None,None</Unit>
 	<Unit>0,99,LampAlt,11,5,None,None</Unit>
-	<Unit tag="Add,TargetValue,20">0,99,BarricadeWood,11,6,None,None</Unit>
 	<Unit>0,99,CastleSandstoneWallVertical,11,11,None,None</Unit>
 	<Unit>0,99,StairsSandstone_N,11,13,None,None</Unit>
 	<Unit>0,99,BookcaseFull,11,14,None,None</Unit>
@@ -130,17 +127,22 @@
 	<Unit tag="LevelTo,4">0,1,Meek/Upstart,14,7,Up,None</Unit>
 	<Unit tag="LevelTo,4">0,1,Credible Upstart/,14,9,Up,None</Unit>
 	<Unit tag="LevelTo,4">0,1,Concerned Upstart/,14,10,Up,None</Unit>
-	<Unit tag="LevelTo,3">8,2,Hired Mercenary Guard/,0,12,Left,None</Unit>
 	<Unit tag="LevelTo,5">8,2,Charatass/,0,13,Left,None</Unit>
-	<Unit tag="LevelTo,3">8,2,Frostborne Charity Enforcer/,1,12,Left,None</Unit>
+	<Unit tag="LevelTo,3">8,2,Frostborne Charity Enforcer/,1,11,Left,None</Unit>
 	<Unit tag="LevelTo,5">8,2,Jules/Acepocket,1,13,Left,None</Unit>
+	<Unit tag="LevelTo,3">8,2,Hired Mercenary Guard/,2,11,Left,None</Unit>
 	<Unit tag="LevelTo,5">8,2,Apostacratus/,2,12,Left,None</Unit>
 	<Unit tag="LevelTo,3">8,2,Frostborne Charity Investor/,2,13,Left,None</Unit>
-	<Unit tag="LevelTo,3">4,3,Peeved/Villager,6,1,Right,None</Unit>
-	<Unit tag="LevelTo,3">4,3,Troublemaking Villager/,7,1,Right,None</Unit>
+	<Unit tag="LevelTo,3">4,3,Peeved/Villager,5,2,Right,None</Unit>
+	<Unit tag="LevelTo,3">4,3,Troublemaking Villager/,6,2,Right,None</Unit>
 	<Unit tag="LevelTo,3">4,3,Upset/Villager,7,2,Right,None</Unit>
-	<Unit tag="LevelTo,3">4,3,Critical Villager/,9,1,Right,None</Unit>
 	<Unit tag="LevelTo,3">4,3,Grumbly/Leader,9,2,Right,None</Unit>
+	<Unit tag="LevelTo,3">4,3,Critical Villager/,10,2,Right,None</Unit>
+
+	<Script>Open Room
+		<Action>Unlock/10,13</Action>
+		<Action>AddTextOverlay/Altar room door unlocked</Action>
+	</Script>
 
 	<Dialogue trigger="OnLoaded/" convID="Initialize" r="false">
 		<Branch num="0" name="">/You see nothing

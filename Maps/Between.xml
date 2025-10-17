@@ -2,8 +2,6 @@
 <Level mapname="Between" maptype="Cut Scene: Static" maxplayers="1" musictrack="" winAura="0" nextbattle="Second Battle" saveable="true" saveCheck="true" campaign="Secret Jam" lastEdited="10/14/2025 11:32:48 PM">
 
 	<Narration>  -DIA:Between Start- -PIC:Castle_Night-| -DIA:We Have It- -PIC:Cave-| -DIA:Giving To The People-  -PIC:Town_Night-</Narration>
-	
-	<NewRoster num="0"></NewRoster>
 
 	<Script>Replace Map Two Dialogues
 		<Action>RemoveBarks/Bront the Unbelievable,Deployment</Action>
